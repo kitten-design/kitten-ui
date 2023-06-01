@@ -1,4 +1,10 @@
-import { attachClassName, css, getColor, getVariant, cx } from 'kitten-styles';
+import {
+  attachClassName,
+  css,
+  getColor,
+  getVariant,
+  cx,
+} from '@kitten-ui/styles';
 import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { TextProps } from './Text';
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { autoUpdate } from '@floating-ui/react';
 import { useDidUpdate } from 'kitten-hooks';
-import { KittenPlacement } from 'kitten-styles';
+import { KittenPlacement } from '@kitten-ui/styles';
 
 interface Payload {
   opened: boolean;

@@ -1,4 +1,4 @@
-import type { DefaultProps } from 'kitten-styles';
+import type { DefaultProps } from '@kitten-ui/styles';
 import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';
 

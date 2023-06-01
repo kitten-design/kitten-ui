@@ -1,4 +1,4 @@
-import { attachClassName, css, cx, rem } from 'kitten-styles';
+import { attachClassName, css, cx, rem } from '@kitten-ui/styles';
 import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { ButtonGroupProps } from './ButtonGroup';
 

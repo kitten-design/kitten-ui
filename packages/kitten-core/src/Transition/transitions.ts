@@ -1,4 +1,4 @@
-import { rem } from 'kitten-styles';
+import { rem } from '@kitten-ui/styles';
 import React from 'react';
 
 export interface KittenTransitionStyles {

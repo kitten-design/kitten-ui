@@ -10,7 +10,7 @@ importers:
       eslint-plugin-react: ^7.32.2
       eslint-plugin-simple-import-sort: ^10.0.0
       prettier: ^2.8.4
-      rimraf: '*'
+      rimraf: ^3.0.2
     devDependencies:
       commitizen: 4.3.0
       cz-conventional-changelog-chinese: 2.3.0
@@ -23,7 +23,7 @@ importers:
   example:
     specifiers:
       '@emotion/react': ^11.10.6
-      '@kitten/utils': workspace:*
+      '@kitten-ui/utils': workspace:*
       '@mantine/core': ^6.0.4
       '@mantine/hooks': ^6.0.4
       '@tabler/icons-react': ^2.11.0
@@ -34,7 +34,7 @@ importers:
       axios: ^1.4.0
       kitten-core: workspace:*
       kitten-hooks: workspace:*
-      kitten-styles: workspace:*
+      @kitten-ui/styles: workspace:*
       lodash: ^4.17.21
       purify-ts: ^2.0.0
       react: ^18.2.0
@@ -45,7 +45,7 @@ importers:
       vite: ^4.1.0
     dependencies:
       '@emotion/react': 11.10.6_pmekkgnqduwlme35zpnqhenc34
-      '@kitten/utils': link:../packages/kitten-utils
+      '@kitten-ui/utils': link:../packages/kitten-utils
       '@mantine/core': 6.0.4_t7jtalnwvyidfaogp2b564lbfq
       '@mantine/hooks': 6.0.4_react@18.2.0
       '@tabler/icons-react': 2.11.0_react@18.2.0
@@ -53,7 +53,7 @@ importers:
       axios: 1.4.0
       kitten-core: link:../packages/kitten-core
       kitten-hooks: link:../packages/kitten-hooks
-      kitten-styles: link:../packages/kitten-styles
+      @kitten-ui/styles: link:../packages/@kitten-ui/styles
       lodash: 4.17.21
       purify-ts: 2.0.0
       react: 18.2.0
@@ -70,13 +70,13 @@ importers:
   packages/kitten-core:
     specifiers:
       '@floating-ui/react': ^0.22.3
-      '@kitten/utils': workspace:*
+      '@kitten-ui/utils': workspace:*
       '@types/lodash': ^4.14.192
       '@types/react': ^18.0.27
       '@types/react-dom': ^18.0.10
       '@types/react-transition-group': ^4.4.5
       kitten-hooks: workspace:*
-      kitten-styles: workspace:*
+      @kitten-ui/styles: workspace:*
       lodash: ^4.17.21
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -87,9 +87,9 @@ importers:
       zustand: ^4.3.5
     dependencies:
       '@floating-ui/react': 0.22.3_biqbaboplfbrettd7655fr4n2y
-      '@kitten/utils': link:../kitten-utils
+      '@kitten-ui/utils': link:../kitten-utils
       kitten-hooks: link:../kitten-hooks
-      kitten-styles: link:../kitten-styles
+      @kitten-ui/styles: link:../@kitten-ui/styles
       lodash: 4.17.21
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -106,7 +106,7 @@ importers:
 
   packages/kitten-hooks:
     specifiers:
-      '@kitten/utils': workspace:*
+      '@kitten-ui/utils': workspace:*
       '@types/react': ^18.0.27
       '@types/react-dom': ^18.0.10
       react: ^18.2.0
@@ -115,7 +115,7 @@ importers:
       vite: ^4.1.0
       vite-plugin-dts: ^2.0.2
     dependencies:
-      '@kitten/utils': link:../kitten-utils
+      '@kitten-ui/utils': link:../kitten-utils
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
@@ -125,9 +125,9 @@ importers:
       vite: 4.1.4
       vite-plugin-dts: 2.0.2_vite@4.1.4
 
-  packages/kitten-styles:
+  packages/@kitten-ui/styles:
     specifiers:
-      '@kitten/utils': workspace:*
+      '@kitten-ui/utils': workspace:*
       '@twind/core': ^1.1.3
       '@twind/preset-tailwind': ^1.1.4
       '@types/chroma-js': ^2.4.0
@@ -138,7 +138,7 @@ importers:
       vite: ^4.1.0
       vite-plugin-dts: ^2.0.2
     dependencies:
-      '@kitten/utils': link:../kitten-utils
+      '@kitten-ui/utils': link:../kitten-utils
       '@twind/core': 1.1.3_typescript@4.9.5
       '@twind/preset-tailwind': 1.1.4_3zgnruiul6lsk2vdq6ajg5kdh4
       chroma-js: 2.4.2

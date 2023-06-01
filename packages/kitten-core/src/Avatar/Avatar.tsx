@@ -6,7 +6,7 @@ import type {
   KittenRadius,
   KittenSize,
   KittenVariant,
-} from 'kitten-styles';
+} from '@kitten-ui/styles';
 import { createPolymorphicComponent, getFirstChar } from '@kitten-ui/utils';
 import React from 'react';
 import { Box } from '../Box';

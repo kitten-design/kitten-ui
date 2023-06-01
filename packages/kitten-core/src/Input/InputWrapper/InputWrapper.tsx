@@ -1,4 +1,4 @@
-import type { DefaultProps, KittenSize } from 'kitten-styles';
+import type { DefaultProps, KittenSize } from '@kitten-ui/styles';
 import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React, { Fragment } from 'react';
 import { Box } from '../../Box';

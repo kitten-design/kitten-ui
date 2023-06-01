@@ -1,5 +1,5 @@
 import { useDidUpdate } from 'kitten-hooks';
-import type { DefaultProps } from 'kitten-styles';
+import type { DefaultProps } from '@kitten-ui/styles';
 import React, { useEffect, useState } from 'react';
 import { useTransitionStyles } from './Transition.style';
 import { KittenTransition } from './transitions';

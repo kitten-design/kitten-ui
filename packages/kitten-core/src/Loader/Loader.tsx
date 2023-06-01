@@ -1,4 +1,10 @@
-import { cx, DefaultProps, KittenColor, KittenSize, rem } from 'kitten-styles';
+import {
+  cx,
+  DefaultProps,
+  KittenColor,
+  KittenSize,
+  rem,
+} from '@kitten-ui/styles';
 import React, { FC } from 'react';
 import { Box } from '../Box';
 import { Bars } from './loaders/Bars';

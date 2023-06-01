@@ -6,7 +6,7 @@ import {
   KittenColor,
   KittenPlacement,
   KittenSize,
-} from 'kitten-styles';
+} from '@kitten-ui/styles';
 import { createPolymorphicComponent, isElement } from '@kitten-ui/utils';
 import React, { cloneElement, useRef } from 'react';
 import { Box } from '../Box';

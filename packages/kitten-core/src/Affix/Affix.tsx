@@ -1,4 +1,4 @@
-import { DefaultProps, getZIndex } from 'kitten-styles';
+import { DefaultProps, getZIndex } from '@kitten-ui/styles';
 import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';
 import { Box } from '../Box';

@@ -1,4 +1,4 @@
-import { DefaultProps } from 'kitten-styles';
+import { DefaultProps } from '@kitten-ui/styles';
 import {
   createPolymorphicComponent,
   getChildrenByType,

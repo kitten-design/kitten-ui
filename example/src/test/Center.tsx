@@ -1,6 +1,6 @@
 import { IconArrowLeft } from '@tabler/icons-react';
 import { Anchor, Box, Button, Center } from 'kitten-core';
-import { rem } from 'kitten-styles';
+import { rem } from '@kitten-ui/styles';
 
 function changeTheme() {
   if (document.body.className === 'dark') {

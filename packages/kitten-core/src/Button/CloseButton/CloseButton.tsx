@@ -1,4 +1,4 @@
-import { rem } from 'kitten-styles';
+import { rem } from '@kitten-ui/styles';
 import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';
 import { ActionIcon, ActionIconProps } from '../ActionIcon/ActionIcon';

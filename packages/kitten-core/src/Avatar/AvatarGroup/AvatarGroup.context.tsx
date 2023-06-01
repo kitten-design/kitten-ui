@@ -1,4 +1,4 @@
-import { KittenSize } from 'kitten-styles';
+import { KittenSize } from '@kitten-ui/styles';
 import React, { createContext, useContext } from 'react';
 
 interface ContextType {

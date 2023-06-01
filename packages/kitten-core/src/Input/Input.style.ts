@@ -7,7 +7,7 @@ import {
   cx,
   getVariant,
   rem,
-} from 'kitten-styles';
+} from '@kitten-ui/styles';
 import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { InputProps } from './Input';
 import { InputRootContextValue } from './InputWrapper/InputWrapper.context';

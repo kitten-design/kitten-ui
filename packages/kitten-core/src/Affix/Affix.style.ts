@@ -1,4 +1,4 @@
-import { attachClassName, cx } from 'kitten-styles';
+import { attachClassName, cx } from '@kitten-ui/styles';
 import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { isNil } from 'lodash';
 import { AffixProps } from './Affix';

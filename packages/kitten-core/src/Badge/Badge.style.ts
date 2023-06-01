@@ -5,7 +5,7 @@ import {
   getColor,
   KittenPosition,
   rem,
-} from 'kitten-styles';
+} from '@kitten-ui/styles';
 import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { BadgeProps } from './Badge';
 

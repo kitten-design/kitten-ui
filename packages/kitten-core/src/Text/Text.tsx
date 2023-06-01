@@ -8,7 +8,7 @@ import type {
   KittenTextTransform,
   KittenVariant,
   KittenWeight,
-} from 'kitten-styles';
+} from '@kitten-ui/styles';
 import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';
 import { Box } from '../Box';

@@ -6,7 +6,7 @@ import {
   getVariantClasses,
   KittenSize,
   rem,
-} from 'kitten-styles';
+} from '@kitten-ui/styles';
 import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { isNumber } from 'lodash';
 import { BUTTON_VARIANT } from '../Button.style';

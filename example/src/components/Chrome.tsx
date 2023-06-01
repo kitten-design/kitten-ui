@@ -1,5 +1,5 @@
 import { useIsomorphicEffect } from 'kitten-hooks';
-import { cx } from 'kitten-styles';
+import { cx } from '@kitten-ui/styles';
 import { ReactNode, useRef } from 'react';
 
 type ChromeProps = {

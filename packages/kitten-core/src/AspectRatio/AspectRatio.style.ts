@@ -1,4 +1,4 @@
-import { apply, attachClassName, css, cx } from 'kitten-styles';
+import { apply, attachClassName, css, cx } from '@kitten-ui/styles';
 import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { AspectRatioProps } from './AspectRatio';
 

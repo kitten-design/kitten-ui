@@ -1,4 +1,4 @@
-import { cx, DefaultProps, KittenToastPosition } from 'kitten-styles';
+import { cx, DefaultProps, KittenToastPosition } from '@kitten-ui/styles';
 import React, { useEffect, useRef } from 'react';
 import { TransitionStatus } from 'react-transition-group';
 import { Toast } from './Toast';

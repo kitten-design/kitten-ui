@@ -1,5 +1,5 @@
 import { Button } from 'kitten-core';
-import { update } from 'kitten-styles';
+import { update } from '@kitten-ui/styles';
 
 export default function KittenStyle() {
   return (

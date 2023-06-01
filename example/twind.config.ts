@@ -1,4 +1,4 @@
-import { config } from 'kitten-styles';
+import { config } from '@kitten-ui/styles';
 export default config;
 
 declare module '@twind/core' {
@@ -8,8 +8,8 @@ declare module '@twind/core' {
 
     // We want to add sm and lg modifiers to the form-input
     'form-input':
-      | ''    // plain form-input
+      | '' // plain form-input
       | 'sm' // form-input-sm
-      | 'lg' // form-input-lg
+      | 'lg'; // form-input-lg
   }
 }

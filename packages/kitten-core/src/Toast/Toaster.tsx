@@ -3,7 +3,7 @@ import {
   getZIndex,
   KittenToastPosition,
   rem,
-} from 'kitten-styles';
+} from '@kitten-ui/styles';
 import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React, { useRef } from 'react';
 import { Transition, TransitionGroup } from 'react-transition-group';

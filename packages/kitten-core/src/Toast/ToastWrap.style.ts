@@ -1,4 +1,4 @@
-import { KittenToastPosition } from 'kitten-styles';
+import { KittenToastPosition } from '@kitten-ui/styles';
 import { TransitionStatus } from 'react-transition-group';
 
 interface NotificationStateStylesProps {

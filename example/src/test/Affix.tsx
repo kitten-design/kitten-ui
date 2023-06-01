@@ -1,7 +1,7 @@
 import { IconArrowUp } from '@tabler/icons-react';
 import { Affix, Box, Button, Text, Transition } from 'kitten-core';
 import { useWindowScroll } from 'kitten-hooks';
-import { rem } from 'kitten-styles';
+import { rem } from '@kitten-ui/styles';
 
 function changeTheme() {
   if (document.body.className === 'dark') {
