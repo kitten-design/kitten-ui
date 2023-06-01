@@ -14,6 +14,7 @@
     "directory": "packages/kitten-utils"
   },
   "keywords": [
+    "kitten-ui",
     "react",
     "utils",
     "library",
