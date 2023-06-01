@@ -6,7 +6,7 @@ import {
   KittenSize,
   rem,
 } from 'kitten-styles';
-import { PolymorphicComponentProps } from 'kitten-utils';
+import { PolymorphicComponentProps } from '@kitten/utils';
 import { TagProps } from './Tag';
 
 const BADGE_VARIANTS = ['light', 'filled', 'outline', 'gradient'];

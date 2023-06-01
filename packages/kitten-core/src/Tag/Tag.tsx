@@ -6,7 +6,7 @@ import type {
   KittenSize,
   KittenVariant,
 } from 'kitten-styles';
-import { createPolymorphicComponent } from 'kitten-utils';
+import { createPolymorphicComponent } from '@kitten/utils';
 import React from 'react';
 import { Box } from '../Box';
 import { useTagStyles } from './Tag.style';

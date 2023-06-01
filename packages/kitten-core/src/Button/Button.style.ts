@@ -7,7 +7,7 @@ import {
   KittenSize,
   rem,
 } from 'kitten-styles';
-import { PolymorphicComponentProps } from 'kitten-utils';
+import { PolymorphicComponentProps } from '@kitten/utils';
 import { ButtonProps } from './Button';
 
 export const BUTTON_VARIANT = [

@@ -7,7 +7,7 @@ import {
   KittenPlacement,
   KittenSize,
 } from 'kitten-styles';
-import { createPolymorphicComponent, isElement } from 'kitten-utils';
+import { createPolymorphicComponent, isElement } from '@kitten/utils';
 import React, { cloneElement, useRef } from 'react';
 import { Box } from '../Box';
 import { OptionalPortal } from '../Portal';

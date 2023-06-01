@@ -1,4 +1,4 @@
-import { PolymorphicComponentProps } from 'kitten-utils';
+import { PolymorphicComponentProps } from '@kitten/utils';
 import React from 'react';
 import { create } from 'zustand';
 import { ToastProps } from './Toast';

@@ -1,5 +1,5 @@
 import { attachClassName, cx, getColor } from 'kitten-styles';
-import { PolymorphicComponentProps } from 'kitten-utils';
+import { PolymorphicComponentProps } from '@kitten/utils';
 import { AnchorProps } from './Anchor';
 
 export function useAnchorStyles(

@@ -4,7 +4,7 @@ import {
   KittenToastPosition,
   rem,
 } from 'kitten-styles';
-import { createPolymorphicComponent } from 'kitten-utils';
+import { createPolymorphicComponent } from '@kitten/utils';
 import React, { useRef } from 'react';
 import { Transition, TransitionGroup } from 'react-transition-group';
 import { Box } from '../Box';

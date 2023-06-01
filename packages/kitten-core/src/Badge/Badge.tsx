@@ -5,7 +5,7 @@ import {
   KittenPosition,
   KittenRadius,
 } from 'kitten-styles';
-import { createPolymorphicComponent } from 'kitten-utils';
+import { createPolymorphicComponent } from '@kitten/utils';
 import React from 'react';
 import { Box } from '../Box';
 import { useBadgeStyles } from './Badge.style';

@@ -1,5 +1,5 @@
 import { Box, Button } from 'kitten-core';
-import { getFileAndDownload } from 'kitten-utils';
+import { getFileAndDownload } from '@kitten/utils';
 import { useState } from 'react';
 
 function changeTheme() {

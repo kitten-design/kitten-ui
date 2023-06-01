@@ -14,7 +14,7 @@
     "@floating-ui/react": "^0.22.3",
     "kitten-hooks": "workspace:*",
     "kitten-styles": "workspace:*",
-    "kitten-utils": "workspace:*",
+    "@kitten/utils": "workspace:*",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

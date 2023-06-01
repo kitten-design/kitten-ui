@@ -1,11 +1,25 @@
 {
-  "name": "kitten-utils",
+  "name": "@kitten/utils",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
-  "module": "src/index.ts",
-  "types": "src/index.ts",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "sideEffects": false,
+  "author": "Yandif <me.yandif@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/kitten-design/Kitten.git",
+    "type": "git",
+    "directory": "packages/kitten-utils"
+  },
+  "keywords": [
+    "react",
+    "utils",
+    "library",
+    "frontend"
+  ],
   "scripts": {
     "build": "pnpm build:lib && vite build",
     "build:lib": "tsc --project ./tsconfig.build.json"

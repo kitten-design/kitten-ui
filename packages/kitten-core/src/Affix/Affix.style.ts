@@ -1,5 +1,5 @@
 import { attachClassName, cx } from 'kitten-styles';
-import { PolymorphicComponentProps } from 'kitten-utils';
+import { PolymorphicComponentProps } from '@kitten/utils';
 import { isNil } from 'lodash';
 import { AffixProps } from './Affix';
 

@@ -6,7 +6,7 @@ import {
   KittenPosition,
   rem,
 } from 'kitten-styles';
-import { PolymorphicComponentProps } from 'kitten-utils';
+import { PolymorphicComponentProps } from '@kitten/utils';
 import { BadgeProps } from './Badge';
 
 export function useBadgeStyles(

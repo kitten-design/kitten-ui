@@ -1,5 +1,5 @@
 import { DefaultProps } from 'kitten-styles';
-import { createPolymorphicComponent, getChildrenByType } from 'kitten-utils';
+import { createPolymorphicComponent, getChildrenByType } from '@kitten/utils';
 import React from 'react';
 import { Box } from '../../Box';
 import { Button } from '../Button';

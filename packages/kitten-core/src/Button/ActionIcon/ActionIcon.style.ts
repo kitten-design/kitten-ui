@@ -7,7 +7,7 @@ import {
   KittenSize,
   rem,
 } from 'kitten-styles';
-import { PolymorphicComponentProps } from 'kitten-utils';
+import { PolymorphicComponentProps } from '@kitten/utils';
 import { isNumber } from 'lodash';
 import { BUTTON_VARIANT } from '../Button.style';
 import { ActionIconProps } from './ActionIcon';

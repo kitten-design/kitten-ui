@@ -15,7 +15,7 @@
     "@twind/preset-tailwind": "^1.1.4",
     "chroma-js": "^2.4.2",
     "csstype": "^3.1.1",
-    "kitten-utils": "workspace:*",
+    "@kitten/utils": "workspace:*",
     "twind": "^0.16.19"
   },
   "devDependencies": {

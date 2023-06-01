@@ -1,5 +1,5 @@
 import { attachClassName, css, getColor, getVariant, cx } from 'kitten-styles';
-import { PolymorphicComponentProps } from 'kitten-utils';
+import { PolymorphicComponentProps } from '@kitten/utils';
 import { TextProps } from './Text';
 
 const TEXT_VARIANT = ['gradient'];

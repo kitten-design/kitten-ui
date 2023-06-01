@@ -7,7 +7,7 @@ import type {
   KittenSize,
   KittenVariant,
 } from 'kitten-styles';
-import { createPolymorphicComponent, getFirstChar } from 'kitten-utils';
+import { createPolymorphicComponent, getFirstChar } from '@kitten/utils';
 import React from 'react';
 import { Box } from '../Box';
 import { useAvatarStyles } from './Avatar.style';
@@ -35,7 +35,7 @@ export const Avatar = createPolymorphicComponent<
   const { className, src, children, alt, imageProps, count, ...others } = props;
 
   const { error } = useImage(src);
-  
+
   const classes = useAvatarStyles(props);
 
   return (

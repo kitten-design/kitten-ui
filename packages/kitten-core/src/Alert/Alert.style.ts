@@ -5,7 +5,7 @@ import {
   getVariantClasses,
   rem,
 } from 'kitten-styles';
-import { PolymorphicComponentProps } from 'kitten-utils';
+import { PolymorphicComponentProps } from '@kitten/utils';
 import { AlertProps } from './Alert';
 
 export const ALERT_VARIANT = ['filled', 'outline', 'light'];
