@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Button, Image } from 'kitten-core';
+import { AspectRatio, Box, Button, Image } from '@kitten-ui/core';
 
 function changeTheme() {
   if (document.body.className === 'dark') {

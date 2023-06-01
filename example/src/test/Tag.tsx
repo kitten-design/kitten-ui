@@ -1,4 +1,4 @@
-import { Tag, Box, Button } from 'kitten-core';
+import { Tag, Box, Button } from '@kitten-ui/core';
 
 function changeTheme() {
   if (document.body.className === 'dark') {

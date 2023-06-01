@@ -1,4 +1,4 @@
-import { Box, Button, Input, Tag } from 'kitten-core';
+import { Box, Button, Input, Tag } from '@kitten-ui/core';
 import React from 'react';
 import { DataSet, useDataSet } from '../DataSet';
 

@@ -1,5 +1,5 @@
 import { IconArrowLeft } from '@tabler/icons-react';
-import { Anchor, Box, Button, Center } from 'kitten-core';
+import { Anchor, Box, Button, Center } from '@kitten-ui/core';
 import { rem } from '@kitten-ui/styles';
 
 function changeTheme() {

@@ -1,5 +1,5 @@
 import { IconWorldUp } from '@tabler/icons-react';
-import { Box, Button, Input } from 'kitten-core';
+import { Box, Button, Input } from '@kitten-ui/core';
 import { useState } from 'react';
 
 function changeTheme() {

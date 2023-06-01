@@ -1,5 +1,5 @@
 import { IconClearAll } from '@tabler/icons-react';
-import { Box, Button, Badge, Avatar } from 'kitten-core';
+import { Box, Button, Badge, Avatar } from '@kitten-ui/core';
 import { useState } from 'react';
 
 function changeTheme() {

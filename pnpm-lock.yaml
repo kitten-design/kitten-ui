@@ -23,6 +23,8 @@ importers:
   example:
     specifiers:
       '@emotion/react': ^11.10.6
+      '@kitten-ui/core': workspace:*
+      '@kitten-ui/hooks': workspace:*
       '@kitten-ui/styles': workspace:*
       '@kitten-ui/utils': workspace:*
       '@mantine/core': ^6.0.4
@@ -33,8 +35,6 @@ importers:
       '@types/react-dom': ^18.0.10
       '@vitejs/plugin-react-swc': ^3.0.0
       axios: ^1.4.0
-      kitten-core: workspace:*
-      kitten-hooks: workspace:*
       lodash: ^4.17.21
       purify-ts: ^2.0.0
       react: ^18.2.0
@@ -45,6 +45,8 @@ importers:
       vite: ^4.1.0
     dependencies:
       '@emotion/react': 11.10.6_pmekkgnqduwlme35zpnqhenc34
+      '@kitten-ui/core': link:../packages/kitten-core
+      '@kitten-ui/hooks': link:../packages/kitten-hooks
       '@kitten-ui/styles': link:../packages/kitten-styles
       '@kitten-ui/utils': link:../packages/kitten-utils
       '@mantine/core': 6.0.4_t7jtalnwvyidfaogp2b564lbfq
@@ -52,8 +54,6 @@ importers:
       '@tabler/icons-react': 2.11.0_react@18.2.0
       '@types/lodash': 4.14.192
       axios: 1.4.0
-      kitten-core: link:../packages/kitten-core
-      kitten-hooks: link:../packages/kitten-hooks
       lodash: 4.17.21
       purify-ts: 2.0.0
       react: 18.2.0
@@ -70,13 +70,13 @@ importers:
   packages/kitten-core:
     specifiers:
       '@floating-ui/react': ^0.22.3
+      '@kitten-ui/hooks': workspace:*
       '@kitten-ui/styles': workspace:*
       '@kitten-ui/utils': workspace:*
       '@types/lodash': ^4.14.192
       '@types/react': ^18.0.27
       '@types/react-dom': ^18.0.10
       '@types/react-transition-group': ^4.4.5
-      kitten-hooks: workspace:*
       lodash: ^4.17.21
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -87,9 +87,9 @@ importers:
       zustand: ^4.3.5
     dependencies:
       '@floating-ui/react': 0.22.3_biqbaboplfbrettd7655fr4n2y
+      '@kitten-ui/hooks': link:../kitten-hooks
       '@kitten-ui/styles': link:../kitten-styles
       '@kitten-ui/utils': link:../kitten-utils
-      kitten-hooks: link:../kitten-hooks
       lodash: 4.17.21
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -127,7 +127,7 @@ importers:
 
   packages/kitten-styles:
     specifiers:
-      '@kitten-ui/utils': 0.0.1
+      '@kitten-ui/utils': workspace:*
       '@twind/core': ^1.1.3
       '@twind/preset-tailwind': ^1.1.4
       '@types/chroma-js': ^2.4.0

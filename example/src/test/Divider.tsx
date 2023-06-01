@@ -1,5 +1,5 @@
 import { IconSearch } from '@tabler/icons-react';
-import { Box, Button, Divider, Text } from 'kitten-core';
+import { Box, Button, Divider, Text } from '@kitten-ui/core';
 
 function changeTheme() {
   if (document.body.className === 'dark') {

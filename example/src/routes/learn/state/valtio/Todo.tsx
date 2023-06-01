@@ -1,4 +1,4 @@
-import { Box, Button, Center, Text, Title } from 'kitten-core';
+import { Box, Button, Center, Text, Title } from '@kitten-ui/core';
 import { Fragment, useEffect, useRef } from 'react';
 import { proxy, useSnapshot } from 'valtio';
 

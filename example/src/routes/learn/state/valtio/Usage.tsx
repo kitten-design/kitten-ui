@@ -1,4 +1,4 @@
-import { Center } from 'kitten-core';
+import { Center } from '@kitten-ui/core';
 import React, { Suspense } from 'react';
 import { proxy, useSnapshot } from 'valtio';
 import { derive } from 'valtio/utils';

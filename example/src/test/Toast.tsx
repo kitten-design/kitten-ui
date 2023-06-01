@@ -1,5 +1,5 @@
 import { Icon360View } from '@tabler/icons-react';
-import { Box, Button, Toast, toast, Toaster } from 'kitten-core';
+import { Box, Button, Toast, toast, Toaster } from '@kitten-ui/core';
 
 function changeTheme() {
   if (document.body.className === 'dark') {

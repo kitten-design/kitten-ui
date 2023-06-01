@@ -1,4 +1,4 @@
-import { Box, Button, Tooltip } from 'kitten-core';
+import { Box, Button, Tooltip } from '@kitten-ui/core';
 import { useState } from 'react';
 import { Chrome } from '../components/Chrome';
 

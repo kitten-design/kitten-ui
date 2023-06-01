@@ -1,4 +1,4 @@
-import { Button } from 'kitten-core';
+import { Button } from '@kitten-ui/core';
 import { update } from '@kitten-ui/styles';
 
 export default function KittenStyle() {

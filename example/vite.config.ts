@@ -9,7 +9,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           react: ['react', 'react-dom'],
-          kitCore: ['kitten-core'],
+          kitCore: ['@kitten-ui/core'],
         },
       },
     },

@@ -1,4 +1,4 @@
-import { Box, Button } from 'kitten-core';
+import { Box, Button } from '@kitten-ui/core';
 import { getFileAndDownload } from '@kitten-ui/utils';
 import { useState } from 'react';
 

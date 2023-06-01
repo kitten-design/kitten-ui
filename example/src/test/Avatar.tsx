@@ -1,6 +1,6 @@
-import { Box, Button } from 'kitten-core';
+import { Box, Button } from '@kitten-ui/core';
 // import { Avatar } from '@mantine/core';
-import { Avatar } from 'kitten-core';
+import { Avatar } from '@kitten-ui/core';
 
 function changeTheme() {
   if (document.body.className === 'dark') {

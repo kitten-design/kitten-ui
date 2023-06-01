@@ -1,4 +1,4 @@
-import { Title, Box, Button } from 'kitten-core';
+import { Title, Box, Button } from '@kitten-ui/core';
 // import {  } from '@mantine/core';
 function changeTheme() {
   if (document.body.className === 'dark') {
