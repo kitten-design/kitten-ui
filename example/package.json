@@ -1,7 +1,7 @@
 {
   "name": "example",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,10 +15,10 @@
     "@tabler/icons-react": "^2.11.0",
     "@types/lodash": "^4.14.192",
     "axios": "^1.4.0",
-    "@kitten-ui/core": "workspace:*",
-    "@kitten-ui/hooks": "workspace:*",
-    "@kitten-ui/styles": "workspace:*",
-    "@kitten-ui/utils": "workspace:*",
+    "@kitten-ui/core": "0.0.2",
+    "@kitten-ui/hooks": "0.0.2",
+    "@kitten-ui/styles": "0.0.2",
+    "@kitten-ui/utils": "0.0.2",
     "lodash": "^4.17.21",
     "purify-ts": "^2.0.0",
     "react": "^18.2.0",

@@ -1,6 +1,6 @@
 {
   "name": "@kitten-ui/styles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "dist/index.js",
   "module": "lib/index.js",
@@ -35,7 +35,7 @@
     "@twind/preset-tailwind": "^1.1.4",
     "chroma-js": "^2.4.2",
     "csstype": "^3.1.1",
-    "@kitten-ui/utils": "workspace:*",
+    "@kitten-ui/utils": "0.0.2",
     "twind": "^0.16.19"
   },
   "devDependencies": {
