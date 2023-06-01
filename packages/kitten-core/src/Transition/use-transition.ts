@@ -1,4 +1,4 @@
-import { useDidUpdate } from 'kitten-hooks';
+import { useDidUpdate } from '@kitten-ui/hooks';
 import { isFunction } from 'lodash';
 import { useEffect, useRef, useState } from 'react';
 

@@ -1,4 +1,4 @@
-import { useIsomorphicEffect } from 'kitten-hooks';
+import { useIsomorphicEffect } from '@kitten-ui/hooks';
 import { cx } from '@kitten-ui/styles';
 import { ReactNode, useRef } from 'react';
 

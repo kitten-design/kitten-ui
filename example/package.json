@@ -16,7 +16,7 @@
     "@types/lodash": "^4.14.192",
     "axios": "^1.4.0",
     "kitten-core": "workspace:*",
-    "kitten-hooks": "workspace:*",
+    "@kitten-ui/hooks": "workspace:*",
     "@kitten-ui/styles": "workspace:*",
     "@kitten-ui/utils": "workspace:*",
     "lodash": "^4.17.21",

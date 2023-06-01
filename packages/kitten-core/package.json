@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@floating-ui/react": "^0.22.3",
-    "kitten-hooks": "workspace:*",
+    "@kitten-ui/hooks": "workspace:*",
     "@kitten-ui/styles": "workspace:*",
     "@kitten-ui/utils": "workspace:*",
     "lodash": "^4.17.21",

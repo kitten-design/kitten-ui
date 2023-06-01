@@ -1,4 +1,4 @@
-import { useId } from 'kitten-hooks';
+import { useId } from '@kitten-ui/hooks';
 import type {
   DefaultProps,
   KittenColor,

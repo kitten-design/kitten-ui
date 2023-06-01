@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { autoUpdate } from '@floating-ui/react';
-import { useDidUpdate } from 'kitten-hooks';
+import { useDidUpdate } from '@kitten-ui/hooks';
 import { KittenPlacement } from '@kitten-ui/styles';
 
 interface Payload {

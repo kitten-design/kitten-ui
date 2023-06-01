@@ -1,4 +1,4 @@
-import { useImage } from 'kitten-hooks';
+import { useImage } from '@kitten-ui/hooks';
 import { DefaultProps, KittenFit, KittenRadius, rem } from '@kitten-ui/styles';
 import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';

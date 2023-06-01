@@ -1,4 +1,4 @@
-import { useClipboard } from 'kitten-hooks';
+import { useClipboard } from '@kitten-ui/hooks';
 import React from 'react';
 
 export interface CopyButtonProps {

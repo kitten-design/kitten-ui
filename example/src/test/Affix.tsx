@@ -1,6 +1,6 @@
 import { IconArrowUp } from '@tabler/icons-react';
 import { Affix, Box, Button, Text, Transition } from 'kitten-core';
-import { useWindowScroll } from 'kitten-hooks';
+import { useWindowScroll } from '@kitten-ui/hooks';
 import { rem } from '@kitten-ui/styles';
 
 function changeTheme() {

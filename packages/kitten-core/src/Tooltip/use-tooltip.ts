@@ -15,7 +15,7 @@ import {
   useInteractions,
   useRole,
 } from '@floating-ui/react';
-import { useDidUpdate, useId } from 'kitten-hooks';
+import { useDidUpdate, useId } from '@kitten-ui/hooks';
 import { KittenPlacement } from '@kitten-ui/styles';
 import { useCallback, useState } from 'react';
 import { useTooltipGroupContext } from './TooltipGroup/TooltipGroup.context';

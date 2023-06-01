@@ -1,4 +1,4 @@
-import { useImage } from 'kitten-hooks';
+import { useImage } from '@kitten-ui/hooks';
 import type {
   DefaultProps,
   KittenColor,
