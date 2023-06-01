@@ -8,7 +8,7 @@ import React, {
 } from 'react';
 
 /**
- * Retrieve child components of a specific component type
+ * Get child components of a specific component type
  */
 export function getChildrenByType<T extends FC>(
   children: ReactNode,
