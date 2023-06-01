@@ -1,4 +1,4 @@
-import { autoDarkColor, css, Preset } from '@twind/core';
+import { autoDarkColor, Preset } from '@twind/core';
 import { DefaultTheme, theme } from './theme';
 
 export * from './colors';

@@ -1,4 +1,4 @@
-import { match, ThemeConfig } from '@twind/core';
+import { ThemeConfig } from '@twind/core';
 import { TailwindTheme } from '@twind/preset-tailwind';
 import { colors } from './colors';
 
