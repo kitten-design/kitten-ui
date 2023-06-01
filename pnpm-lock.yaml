@@ -32,6 +32,7 @@ importers:
       kitten-core: workspace:*
       kitten-hooks: workspace:*
       kitten-styles: workspace:*
+      kitten-utils: workspace:*
       lodash: ^4.17.21
       purify-ts: ^2.0.0
       react: ^18.2.0
@@ -50,6 +51,7 @@ importers:
       kitten-core: link:../packages/kitten-core
       kitten-hooks: link:../packages/kitten-hooks
       kitten-styles: link:../packages/kitten-styles
+      kitten-utils: link:../packages/kitten-utils
       lodash: 4.17.21
       purify-ts: 2.0.0
       react: 18.2.0

@@ -1,5 +1,5 @@
-import { IconWorldUp } from '@tabler/icons-react';
-import { Box, Button, Input, Toaster, toast } from 'kitten-core';
+import { Box, Button } from 'kitten-core';
+import { getFileAndDownload } from 'kitten-utils';
 import { useState } from 'react';
 
 function changeTheme() {
@@ -23,58 +23,6 @@ function KittenCore() {
           }}>
           主题
         </Button>
-        <Button
-          onClick={() => {
-            setDisabled(!disabled);
-          }}>
-          setDisabled
-        </Button>
-        <Button
-          onClick={() => {
-            setError(!error);
-            toast({ message: '123' });
-          }}>
-          setError
-        </Button>
-        <Toaster />
-        {['xs', 'sm', 'md', 'lg', 'xl'].map((size) => {
-          return (
-            <div key={size}>
-              <Input.InputWrapper label="标签" error="错误" description="描述">
-                <Input
-                  size={size}
-                  className="m-2"
-                  icon={<IconWorldUp />}
-                  rightSection={<div>@</div>}
-                  placeholder="哈哈"
-                  error={error}
-                  disabled={disabled}
-                />
-              </Input.InputWrapper>
-
-              <Input
-                size={size}
-                className="m-2"
-                icon={<IconWorldUp />}
-                rightSection={<div>@</div>}
-                placeholder="哈哈"
-                error={error}
-                variant="filled"
-                disabled={disabled}
-              />
-              <Input
-                size={size}
-                className="m-2"
-                icon={'@'}
-                rightSection={<div>@</div>}
-                placeholder="哈哈"
-                error={error}
-                variant="subtle"
-                disabled={disabled}
-              />
-            </div>
-          );
-        })}
       </Box>
     </Box>
   );

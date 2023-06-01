@@ -2,13 +2,14 @@
   "name": "kitten",
   "private": "true",
   "version": "0.0.0",
-  "description": "UI kit",
+  "description": "kitten Components Monorepo",
   "main": "index.js",
+  "repository": "https://github.com/kitten-design/Kitten.git",
+  "author": "Yandif <me.yandif@gmail.com>",
   "scripts": {
     "build": "pnpm --stream -r run build",
     "commit": "git add . && git-cz"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.36.0",

@@ -18,6 +18,7 @@
     "kitten-core": "workspace:*",
     "kitten-hooks": "workspace:*",
     "kitten-styles": "workspace:*",
+    "kitten-utils": "workspace:*",
     "lodash": "^4.17.21",
     "purify-ts": "^2.0.0",
     "react": "^18.2.0",
