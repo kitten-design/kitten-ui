@@ -1,2 +1,3 @@
 # Kitten
-Preact components library
+
+React components library (work in progress)

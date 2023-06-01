@@ -1,0 +1,26 @@
+{
+  "name": "kitten",
+  "private": "true",
+  "version": "0.0.0",
+  "description": "UI kit",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm --stream -r run build",
+    "commit": "git add . && git-cz"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^2.8.4",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog-chinese": "^2.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog-chinese"
+    }
+  }
+}
