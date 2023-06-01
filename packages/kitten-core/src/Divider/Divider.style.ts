@@ -6,7 +6,7 @@ import {
   KittenSize,
   rem,
 } from 'kitten-styles';
-import { PolymorphicComponentProps } from '@kitten/utils';
+import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { DividerProps } from './Divider';
 
 const sizes: Record<KittenSize, string> = {

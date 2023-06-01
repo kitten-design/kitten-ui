@@ -1,5 +1,5 @@
 import { attachClassName, cx, getVariant, rem } from 'kitten-styles';
-import { PolymorphicComponentProps } from '@kitten/utils';
+import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { ToastProps } from './Toast';
 
 export function useToastStyles(

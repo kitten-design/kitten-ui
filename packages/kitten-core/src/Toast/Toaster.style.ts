@@ -5,7 +5,7 @@ import {
   KittenToastPosition,
   rem,
 } from 'kitten-styles';
-import { PolymorphicComponentProps } from '@kitten/utils';
+import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { ToasterProps } from './Toaster';
 
 export default function getPositionStyles(

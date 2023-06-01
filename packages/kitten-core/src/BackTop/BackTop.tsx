@@ -1,6 +1,6 @@
 import { useWindowScroll } from 'kitten-hooks';
 import { DefaultProps, rem } from 'kitten-styles';
-import { createPolymorphicComponent } from '@kitten/utils';
+import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';
 import { Affix } from '../Affix';
 import { Button } from '../Button';

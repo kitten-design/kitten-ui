@@ -1,6 +1,6 @@
 import { useImage } from 'kitten-hooks';
 import { DefaultProps, KittenFit, KittenRadius, rem } from 'kitten-styles';
-import { createPolymorphicComponent } from '@kitten/utils';
+import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';
 import { Box } from '../Box';
 import { Text } from '../Text/Text';

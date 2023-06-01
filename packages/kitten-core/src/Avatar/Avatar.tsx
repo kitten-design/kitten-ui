@@ -7,7 +7,7 @@ import type {
   KittenSize,
   KittenVariant,
 } from 'kitten-styles';
-import { createPolymorphicComponent, getFirstChar } from '@kitten/utils';
+import { createPolymorphicComponent, getFirstChar } from '@kitten-ui/utils';
 import React from 'react';
 import { Box } from '../Box';
 import { useAvatarStyles } from './Avatar.style';

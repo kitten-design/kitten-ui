@@ -1,5 +1,5 @@
 import { getVariant, KittenSize } from 'kitten-styles';
-import { createPolymorphicComponent } from '@kitten/utils';
+import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';
 import { Loader } from '../../Loader/Loader';
 import { Button, ButtonProps } from '../Button';

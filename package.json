@@ -1,10 +1,10 @@
 {
-  "name": "kitten",
-  "private": "true",
+  "name": "kitten-ui",
+  "private": true,
   "version": "0.0.1",
-  "description": "kitten Components Monorepo",
+  "description": "kitten-ui Components Monorepo",
   "main": "index.js",
-  "repository": "https://github.com/kitten-design/Kitten.git",
+  "repository": "https://github.com/kitten-design/kitten-ui.git",
   "author": "Yandif <me.yandif@gmail.com>",
   "scripts": {
     "build": "pnpm --stream -r run build",

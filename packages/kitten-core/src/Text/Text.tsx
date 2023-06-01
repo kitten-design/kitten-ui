@@ -9,7 +9,7 @@ import type {
   KittenVariant,
   KittenWeight,
 } from 'kitten-styles';
-import { createPolymorphicComponent } from '@kitten/utils';
+import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';
 import { Box } from '../Box';
 import { useTextStyles } from './Text.style';

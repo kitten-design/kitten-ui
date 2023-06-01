@@ -1,6 +1,5 @@
 {
-  "name": "@kitten/utils",
-  "private": true,
+  "name": "@kitten-ui/utils",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
@@ -10,7 +9,7 @@
   "author": "Yandif <me.yandif@gmail.com>",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/kitten-design/Kitten.git",
+    "url": "https://github.com/kitten-design/kitten-ui.git",
     "type": "git",
     "directory": "packages/kitten-utils"
   },
@@ -20,6 +19,9 @@
     "library",
     "frontend"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rimraf ./lib && rimraf ./dist && pnpm build:lib && vite build",
     "build:lib": "tsc --project ./tsconfig.build.json"

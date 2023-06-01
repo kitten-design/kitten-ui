@@ -6,7 +6,7 @@ import {
   KittenColor,
   rem,
 } from 'kitten-styles';
-import { PolymorphicComponentProps } from '@kitten/utils';
+import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { TooltipProps } from './Tooltip';
 import { isNumber } from 'lodash';
 

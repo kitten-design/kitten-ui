@@ -1,5 +1,5 @@
 import { apply, attachClassName, css, cx } from 'kitten-styles';
-import { PolymorphicComponentProps } from '@kitten/utils';
+import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { AspectRatioProps } from './AspectRatio';
 
 export function useAspectRatioStyles(

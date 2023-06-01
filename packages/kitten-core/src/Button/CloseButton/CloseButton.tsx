@@ -1,5 +1,5 @@
 import { rem } from 'kitten-styles';
-import { createPolymorphicComponent } from '@kitten/utils';
+import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';
 import { ActionIcon, ActionIconProps } from '../ActionIcon/ActionIcon';
 import { CloseIcon } from './CloseIcon';

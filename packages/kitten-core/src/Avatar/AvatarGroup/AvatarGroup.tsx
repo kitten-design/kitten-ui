@@ -1,5 +1,8 @@
 import type { DefaultProps, KittenSize } from 'kitten-styles';
-import { createPolymorphicComponent, getChildrenByType } from '@kitten/utils';
+import {
+  createPolymorphicComponent,
+  getChildrenByType,
+} from '@kitten-ui/utils';
 import React, { cloneElement } from 'react';
 import { Box } from '../../Box';
 import { Avatar } from '../Avatar';

@@ -8,7 +8,7 @@ import {
   KittenSize,
   rem,
 } from 'kitten-styles';
-import { PolymorphicComponentProps } from '@kitten/utils';
+import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { AvatarProps } from './Avatar';
 import { useAvatarGroupContext } from './AvatarGroup/AvatarGroup.context';
 

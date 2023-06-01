@@ -1,4 +1,4 @@
-import { createPolymorphicComponent } from '@kitten/utils';
+import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';
 import { Text, TextProps } from '../Text';
 import { useAnchorStyles } from './Anchor.style';
