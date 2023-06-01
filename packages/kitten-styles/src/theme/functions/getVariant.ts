@@ -28,6 +28,9 @@ export type GetVariantOutput = {
   };
 };
 
+/**
+ * Get color information based on variant type
+ */
 export function getVariant(props: GetVariantInput): GetVariantOutput {
   const { variant, color, gradient = { from: 'indigo', to: 'cyan' } } = props;
 

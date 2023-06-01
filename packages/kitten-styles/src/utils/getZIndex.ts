@@ -6,6 +6,9 @@ const elevations = {
   max: 9999,
 } as const;
 
+/**
+ * Get z-index
+ */
 export function getZIndex(level: keyof typeof elevations) {
   return elevations[level];
 }

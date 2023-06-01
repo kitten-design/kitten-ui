@@ -1,5 +1,5 @@
 /**
- * 附加默认类名
+ * Append default class name
  */
 export function attachClassName<T extends Record<string, string>>(
   component: string,

@@ -2,6 +2,9 @@ import { KittenColor, KittenOpacity, KittenShade } from '../types';
 
 import { tw } from '@twind/core';
 
+/**
+ * Get color suffix
+ */
 export function getColor(
   props: {
     color?: KittenColor;
@@ -27,6 +30,9 @@ export function getColor(
   return `${color}-${shade}`;
 }
 
+/**
+ * Check if the value is a theme color
+ */
 export function isThemeColor(color: string = '') {
   return [...new Set(Object.keys(tw.theme('colors')))].includes(color);
 }

@@ -1,3 +1,6 @@
+/**
+ * Unit Converter Factory
+ */
 function createConverter(units: string) {
   return (px: unknown) => {
     if (typeof px === 'number') {
@@ -15,5 +18,12 @@ function createConverter(units: string) {
   };
 }
 
+/**
+ * Convert to rem
+ */
 export const rem = createConverter('rem');
+
+/**
+ * Convert to em
+ */
 export const em = createConverter('em');
