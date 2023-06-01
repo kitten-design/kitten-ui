@@ -1,4 +1,4 @@
-import { attachClassName, cx, getColor } from '@kitten-ui/styles';
+import { attachClassName, cx } from '@kitten-ui/styles';
 import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { AnchorProps } from './Anchor';
 

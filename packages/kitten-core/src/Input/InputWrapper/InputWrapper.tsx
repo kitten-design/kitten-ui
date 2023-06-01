@@ -5,7 +5,6 @@ import { Box } from '../../Box';
 import { InputWrapperProvider } from './InputWrapper.context';
 import { useInputWrapperStyles } from './InputWrapper.style';
 import { getInputOffsets } from './get-input-offsets';
-import { Tooltip } from '../../Tooltip';
 
 export interface InputWrapperProps extends DefaultProps {
   label?: React.ReactNode;

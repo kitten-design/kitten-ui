@@ -2,7 +2,6 @@ import { FloatingArrow, useMergeRefs } from '@floating-ui/react';
 import {
   DefaultProps,
   getZIndex,
-  KittenArrowPosition,
   KittenColor,
   KittenPlacement,
   KittenSize,

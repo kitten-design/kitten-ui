@@ -82,8 +82,7 @@ function getVariantClasses(props: GetVariantInput) {
     return {};
   }
 
-  const { from, to, deg, color, background, border, hover, dark } =
-    getVariant(props);
+  const { from, to, deg, color, background, border, dark } = getVariant(props);
 
   return {
     placeholder:

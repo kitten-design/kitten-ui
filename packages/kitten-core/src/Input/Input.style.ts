@@ -10,7 +10,7 @@ import {
 } from '@kitten-ui/styles';
 import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { InputProps } from './Input';
-import { InputRootContextValue } from './InputWrapper/InputWrapper.context';
+import { InputWrapperContextValue } from './InputWrapper/InputWrapper.context';
 
 export const sizes: Record<KittenSize, number> = {
   xs: 30,
@@ -86,7 +86,7 @@ function getVariantStyles({
 
 export function useInputStyles(
   props: PolymorphicComponentProps<'input', InputProps>,
-  rootContext: InputRootContextValue,
+  rootContext: InputWrapperContextValue,
 ) {
   const {
     className,

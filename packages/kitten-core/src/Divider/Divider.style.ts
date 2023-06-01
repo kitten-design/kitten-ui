@@ -1,6 +1,5 @@
 import {
   attachClassName,
-  css,
   cx,
   getColor,
   KittenSize,

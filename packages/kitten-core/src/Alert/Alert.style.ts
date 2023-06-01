@@ -1,10 +1,4 @@
-import {
-  attachClassName,
-  css,
-  cx,
-  getVariantClasses,
-  rem,
-} from '@kitten-ui/styles';
+import { attachClassName, cx, getVariantClasses, rem } from '@kitten-ui/styles';
 import { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { AlertProps } from './Alert';
 
