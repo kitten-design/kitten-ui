@@ -21,7 +21,7 @@
     "frontend"
   ],
   "scripts": {
-    "build": "pnpm build:lib && vite build",
+    "build": "rimraf ./lib && rimraf ./dist && pnpm build:lib && vite build",
     "build:lib": "tsc --project ./tsconfig.build.json"
   },
   "devDependencies": {
