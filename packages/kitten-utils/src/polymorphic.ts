@@ -8,28 +8,28 @@ import type {
 } from 'react';
 import { forwardRef } from 'react';
 
-/** 合并属性 */
+/** Merge properties */
 export type Merge<T, P> = P & Omit<T, keyof P>;
 
-/** 合并元素属性 */
+/** Merge component props */
 export type MergeProps<C extends ElementType, P = {}> = Merge<
   ComponentProps<C>,
   P
 >;
 
-/** 合并元素属性（带有ref） */
+/** Merge component props (with ref) */
 export type MergePropsWithRef<C extends ElementType, P = {}> = Merge<
   ComponentPropsWithRef<C>,
   P
 >;
 
-/** 多态组件参数 */
+/** Polymorphic component props */
 export type PolymorphicComponentProps<
   C extends ElementType,
   P = {},
 > = MergePropsWithRef<C, P & { as?: C }>;
 
-/** 多态组件 */
+/** Polymorphic component */
 export type PolymorphicComponent<C extends ElementType, P = {}, S = {}> = (<
   As extends ElementType = C,
 >(
@@ -38,7 +38,7 @@ export type PolymorphicComponent<C extends ElementType, P = {}, S = {}> = (<
   Omit<FunctionComponent<PolymorphicComponentProps<C, P>>, never> &
   S;
 
-/** 创建多态组件 */
+/** Creating a polymorphic component */
 export function createPolymorphicComponent<
   C extends ElementType,
   P = {},

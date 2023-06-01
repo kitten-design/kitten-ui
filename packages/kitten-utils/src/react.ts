@@ -7,6 +7,9 @@ import React, {
   ReactNode,
 } from 'react';
 
+/**
+ * Retrieve child components of a specific component type
+ */
 export function getChildrenByType<T extends FC>(
   children: ReactNode,
   Component: T,
@@ -31,6 +34,9 @@ export function getChildrenByType<T extends FC>(
   return result as C[];
 }
 
+/**
+ * Validate as React Element
+ */
 export function isElement(value: any): value is React.ReactElement {
   if (Array.isArray(value) || value === null) {
     return false;

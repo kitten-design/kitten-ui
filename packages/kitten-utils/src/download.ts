@@ -1,7 +1,5 @@
 /**
- * Fetch file
- * @param url
- * @returns Promise<Blob>
+ * Fetches a file from a URL
  */
 export function getFile(url: string) {
   return fetch(url)
@@ -13,9 +11,7 @@ export function getFile(url: string) {
 }
 
 /**
- * Download file from blob
- * @param blob
- * @param fileName
+ * Downloads a file from Blob
  */
 export function downloadFile(blob: Blob, fileName: string) {
   const downloadUrl = URL.createObjectURL(blob);
@@ -28,9 +24,7 @@ export function downloadFile(blob: Blob, fileName: string) {
 }
 
 /**
- * Fetch file and download file
- * @param url
- * @param fileName
+ * Downloads a file from a URL
  */
 export function getFileAndDownload(url: string, fileName: string) {
   getFile(url)
