@@ -1,6 +1,6 @@
 import { Box } from '@kitten-ui/core';
 import { useState } from 'react';
-import { Button } from '@kitten-ui/components';
+import { Button } from '@kitten-ui/core';
 
 function changeTheme() {
   if (document.body.className === 'dark') {
