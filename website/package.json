@@ -1,7 +1,7 @@
 {
-  "name": "yandif.com",
+  "name": "website",
   "version": "0.0.1",
-  "description": "yandif.com",
+  "description": "kitten-ui docs website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
