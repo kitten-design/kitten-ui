@@ -23,10 +23,13 @@
     "access": "public"
   },
   "scripts": {
+    "prepare": "panda codegen",
     "build": "rimraf ./lib && rimraf ./dist && pnpm build:lib && vite build",
     "build:lib": "tsc --project ./tsconfig.build.json"
   },
   "devDependencies": {
+    "@pandacss/dev": "^0.3.1",
+    "@pandacss/types": "^0.3.1",
     "@types/react": "^18.0.27",
     "typescript": "^4.9.5",
     "vite": "^4.1.4",
