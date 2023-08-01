@@ -1,5 +1,5 @@
 import React from 'react';
-import { css } from 'style-engine/css';
+import { css } from '@kitten-ui/styles/css';
 
 export function Button() {
   return (
