@@ -1,2 +1,2 @@
-export * from './components/Button';
 export { kittenPreset } from './themes';
+export * from './components/Box';

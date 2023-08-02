@@ -31,7 +31,7 @@
     "react": ">=16.8.0"
   },
   "dependencies": {
-    "@pandacss/preset-panda": "^0.9.0",
+    "@kitten-ui/styles": "^0.0.2",
     "react": "^18.2.0"
   },
   "devDependencies": {

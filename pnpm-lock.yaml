@@ -114,9 +114,9 @@ importers:
 
   packages/kitten-components:
     dependencies:
-      '@pandacss/preset-panda':
-        specifier: ^0.9.0
-        version: 0.9.0
+      '@kitten-ui/styles':
+        specifier: ^0.0.2
+        version: 0.0.2(react@18.2.0)(typescript@5.1.6)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -3199,6 +3199,7 @@ packages:
     resolution: {integrity: sha512-0DiMK4aVf+VOIDbO+UPIc9tItliGlD5ScOys6p5mUKq6E6opNpFs9adXoay6E6h2a3XrVrmNLgbNXrHI+xisDg==}
     dependencies:
       '@pandacss/types': 0.9.0
+    dev: true
 
   /@pandacss/shared@0.3.1:
     resolution: {integrity: sha512-CddcnuspUE6LjHFGbepaEA7SypVn4chKVT3MlUAZBuKd1j/6QZ+w4veNPHwgFwq+g0eSuZnfRyLEzeQcA4XuVw==}
@@ -3294,6 +3295,7 @@ packages:
 
   /@pandacss/types@0.9.0:
     resolution: {integrity: sha512-iXj5YAmsZmVDpRNaHxoKdyUnuEo/oYVU/CW8eSTfVM35SNWUcNIFwyuaCJebDgNzSZQtiXYMTsicGrSvhDbfAQ==}
+    dev: true
 
   /@pkgr/utils@2.4.2:
     resolution: {integrity: sha512-POgTXhjrTfbTV63DiFXav4lBHiICLKKwDeaKn9Nphwj7WH6m0hMMCaJkMyRWjgtPFyRKRVoMXXjczsTQRDEhYw==}

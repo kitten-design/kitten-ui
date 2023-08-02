@@ -289,4 +289,4 @@ export const colors = {
     900: { value: '#0f172a' },
     950: { value: '#020617' },
   },
-}
+};

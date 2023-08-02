@@ -1,4 +1,4 @@
-import type { TextStyles, Tokens } from '@pandacss/types'
+import type { TextStyles, Tokens } from '@pandacss/types';
 
 export const fontSizes: Tokens['fontSizes'] = {
   '2xs': { value: '0.5rem' },
@@ -15,7 +15,7 @@ export const fontSizes: Tokens['fontSizes'] = {
   '7xl': { value: '4.5rem' },
   '8xl': { value: '6rem' },
   '9xl': { value: '8rem' },
-}
+};
 
 export const fontWeights: Tokens['fontWeights'] = {
   thin: { value: '100' },
@@ -27,7 +27,7 @@ export const fontWeights: Tokens['fontWeights'] = {
   bold: { value: '700' },
   extrabold: { value: '800' },
   black: { value: '900' },
-}
+};
 
 export const letterSpacings: Tokens['letterSpacings'] = {
   tighter: { value: '-0.05em' },
@@ -36,7 +36,7 @@ export const letterSpacings: Tokens['letterSpacings'] = {
   wide: { value: '0.025em' },
   wider: { value: '0.05em' },
   widest: { value: '0.1em' },
-}
+};
 
 export const lineHeights: Tokens['lineHeights'] = {
   none: { value: '1' },
@@ -45,7 +45,7 @@ export const lineHeights: Tokens['lineHeights'] = {
   normal: { value: '1.5' },
   relaxed: { value: '1.625' },
   loose: { value: '2' },
-}
+};
 
 export const fonts: Tokens['fonts'] = {
   sans: {
@@ -67,7 +67,14 @@ export const fonts: Tokens['fonts'] = {
     ],
   },
   serif: {
-    value: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+    value: [
+      'ui-serif',
+      'Georgia',
+      'Cambria',
+      '"Times New Roman"',
+      'Times',
+      'serif',
+    ],
   },
   mono: {
     value: [
@@ -81,7 +88,7 @@ export const fonts: Tokens['fonts'] = {
       'monospace',
     ],
   },
-}
+};
 
 export const textStyles: TextStyles = {
   xs: {
@@ -162,4 +169,4 @@ export const textStyles: TextStyles = {
       lineHeight: '1',
     },
   },
-}
+};

@@ -1,13 +1,19 @@
-import type { Tokens } from '@pandacss/types'
-import { colors } from './colors'
-import { animations } from './keyframes'
-import { borders } from './borders'
-import { shadows } from './shadows'
-import { sizes } from './sizes'
-import { spacing } from './spacing'
-import { fonts, fontSizes, fontWeights, letterSpacings, lineHeights } from './typography'
+import type { Tokens } from '@pandacss/types';
+import { colors } from './colors';
+import { animations } from './keyframes';
+import { borders } from './borders';
+import { shadows } from './shadows';
+import { sizes } from './sizes';
+import { spacing } from './spacing';
+import {
+  fonts,
+  fontSizes,
+  fontWeights,
+  letterSpacings,
+  lineHeights,
+} from './typography';
 
-const defineTokens = <T extends Tokens>(v: T) => v
+const defineTokens = <T extends Tokens>(v: T) => v;
 
 export const tokens = defineTokens({
   borders,
@@ -56,4 +62,4 @@ export const tokens = defineTokens({
   spacing,
   sizes,
   animations,
-})
+});
