@@ -1,6 +1,6 @@
 import type { Tokens } from '@pandacss/types';
 import { colors } from './colors';
-import { animations } from './keyframes';
+import { animations } from './animations';
 import { borders } from './borders';
 import { shadows } from './shadows';
 import { sizes } from './sizes';

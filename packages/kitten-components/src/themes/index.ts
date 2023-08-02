@@ -1,14 +1,19 @@
 import { definePreset } from '@pandacss/dev';
 import { breakpoints } from './breakpoints';
 import { keyframes } from './keyframes';
+import { layerStyles } from './layerStyles';
+import { semanticTokens } from './semanticTokens';
+import { textStyles } from './textStyles';
 import { tokens } from './tokens';
-import { textStyles } from './typography';
 
 export const kittenPreset = definePreset({
   theme: {
     keyframes,
     breakpoints,
     tokens,
+    semanticTokens,
     textStyles,
+    layerStyles,
+    recipes: {},
   },
 });

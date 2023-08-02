@@ -23,7 +23,7 @@
     "access": "public"
   },
   "scripts": {
-    "prepare": "panda codegen",
+    "prepare": "panda codegen --clean",
     "build": "rimraf ./lib && rimraf ./dist && pnpm build:lib && vite build",
     "build:lib": "tsc --project ./tsconfig.build.json"
   },

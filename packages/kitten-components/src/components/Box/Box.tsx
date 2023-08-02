@@ -1,7 +1,7 @@
 import { HTMLStyledProps, styled } from '@kitten-ui/styles/jsx';
 import {
-  createPolymorphicComponent,
   PolymorphicComponentProps,
+  createPolymorphicComponent,
 } from '@kitten-ui/utils';
 import React from 'react';
 
