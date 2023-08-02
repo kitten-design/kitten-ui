@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@kitten-ui/styles": "^0.0.2",
+    "@kitten-ui/utils": "workspace:*",
     "react": "^18.2.0"
   },
   "devDependencies": {

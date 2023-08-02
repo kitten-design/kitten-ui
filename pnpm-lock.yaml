@@ -117,6 +117,9 @@ importers:
       '@kitten-ui/styles':
         specifier: ^0.0.2
         version: 0.0.2(react@18.2.0)(typescript@5.1.6)
+      '@kitten-ui/utils':
+        specifier: workspace:*
+        version: link:../kitten-utils
       react:
         specifier: ^18.2.0
         version: 18.2.0
