@@ -1,13 +1,14 @@
 import { definePreset } from '@pandacss/dev';
-import type { Preset } from '@pandacss/types';
+import { breakpoints } from './breakpoints';
+import { keyframes } from './keyframes';
+import { tokens } from './tokens';
+import { textStyles } from './typography';
 
-export const kittenPreset: Preset = definePreset({
+export const kittenPreset = definePreset({
   theme: {
-    tokens: {
-      colors: {
-        primary: { value: 'blue' },
-        secondary: { value: 'green' },
-      },
-    },
+    keyframes,
+    breakpoints,
+    tokens,
+    textStyles,
   },
 });
