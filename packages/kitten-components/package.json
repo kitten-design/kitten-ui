@@ -4,7 +4,7 @@
   "type": "module",
   "main": "dist/index.js",
   "module": "src/index.ts",
-  "types": "lib/index.d.ts",
+  "types": "src/index.ts",
   "author": "Yandif <me.yandif@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -31,6 +31,7 @@
     "react": ">=16.8.0"
   },
   "dependencies": {
+    "@pandacss/preset-panda": "^0.9.0",
     "react": "^18.2.0"
   },
   "devDependencies": {

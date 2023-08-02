@@ -1,4 +1,6 @@
 import { defineConfig } from '@pandacss/dev';
+import { kittenPreset } from './src/themes';
+import pandaPreset from '@pandacss/preset-panda';
 
 export default defineConfig({
   // Whether to use css reset
@@ -14,6 +16,8 @@ export default defineConfig({
   theme: {
     extend: {},
   },
+
+  presets: [pandaPreset, kittenPreset],
 
   emitPackage: true,
 
