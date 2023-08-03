@@ -18,12 +18,20 @@ const Button: React.FC<ButtonProps> = (props) => {
 
 export default function App() {
   return (
-    <div className={css({ layerStyle: 'container', w: '1/3' })}>
-      This is inside a container style
-      <Button size="lg" visual={'funky'} shape={'square'}>
-        Click me
-      </Button>
-      <Box color="red.600">123</Box>
+    <div className="dark1">
+      <div
+        className={css({
+          layerStyle: 'container',
+          w: '1/3',
+          bg: 'red.300',
+          _dark1: { bg: 'green.300' },
+        })}>
+        This is inside a container style
+        <Button size="lg" visual={'funky'} shape={'square'}>
+          Click me
+        </Button>
+        <Box color="red.600">123</Box>
+      </div>
     </div>
   );
 }
