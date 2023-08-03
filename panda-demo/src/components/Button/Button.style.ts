@@ -1,6 +1,6 @@
-import { cva, type RecipeVariantProps } from '@kitten-ui/styles/css';
+import { styled } from '@kitten-ui/styles/jsx';
 
-export const buttonStyle = cva({
+export const ButtonRoot = styled('button', {
   base: {
     userSelect: 'none',
     fontWeight: 'semibold',
@@ -32,11 +32,11 @@ export const buttonStyle = cva({
       xl: { borderRadius: 'xl' },
     },
     size: {
-      xs: { h: '1.875rem', px: '0.875rem' },
-      sm: { h: '2.25rem', px: '1.125rem' },
-      md: { h: '2.625rem', px: '1.375rem' },
-      lg: { h: '3.125rem', px: '1.625rem' },
-      xl: { h: '3.75rem', px: '2rem' },
+      xs: { h: '1.875rem', px: '0.875rem', fontSize: 'xs' },
+      sm: { h: '2.25rem', px: '1.125rem', fontSize: 'sm' },
+      md: { h: '2.625rem', px: '1.375rem', fontSize: 'md' },
+      lg: { h: '3.125rem', px: '1.625rem', fontSize: 'lg' },
+      xl: { h: '3.75rem', px: '2rem', fontSize: 'xl' },
     },
     compact: { true: {} },
   },
@@ -55,4 +55,4 @@ export const buttonStyle = cva({
   },
 });
 
-export type ButtonVariants = RecipeVariantProps<typeof buttonStyle>;
+ButtonRoot.displayName = 'ButtonRoot';

@@ -4,12 +4,12 @@ import { Box, Button } from './';
 export default function App() {
   const [theme, setTheme] = React.useState('light');
   return (
-    <>
+    <Box className={theme} w="100vw" h="100vh">
       <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换
       </Button>
-      <Box className={theme}>
-        {(['xs', 'sm', 'md', 'lg', 'xl', 'full'] as const).map((radius) => {
+      <Box as="p">
+        {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((radius) => {
           return (
             <span key={radius}>
               {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => {
@@ -17,6 +17,7 @@ export default function App() {
                   <Button
                     borderRadius={radius}
                     size={size}
+                    radius={radius}
                     compact={theme !== 'light'}>
                     按钮
                   </Button>
@@ -26,6 +27,7 @@ export default function App() {
           );
         })}
       </Box>
-    </>
+      hello world
+    </Box>
   );
 }

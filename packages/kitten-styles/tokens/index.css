@@ -415,7 +415,14 @@
   --breakpoints-md: 768px;
   --breakpoints-lg: 1024px;
   --breakpoints-xl: 1280px;
-  --breakpoints-2xl: 1536px
+  --breakpoints-2xl: 1536px;
+  --colors--box-color: #262626;
+  --colors--box-bg: #fafafa
+}
+
+.dark {
+  --colors--box-color: #f5f5f5;
+  --colors--box-bg: #171717
 }
   }
   

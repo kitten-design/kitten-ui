@@ -1663,6 +1663,14 @@ const tokens = {
     "value": "1536px",
     "variable": "var(--breakpoints-2xl)"
   },
+  "colors.Box.color": {
+    "value": "var(--colors--box-color)",
+    "variable": "var(--colors--box-color)"
+  },
+  "colors.Box.bg": {
+    "value": "var(--colors--box-bg)",
+    "variable": "var(--colors--box-bg)"
+  },
   "spacing.-1": {
     "value": "calc(var(--spacing-1) * -1)",
     "variable": "var(--spacing-1)"
@@ -1838,6 +1846,14 @@ const tokens = {
   "colors.colorPalette.950": {
     "value": "var(--colors-color-palette-950)",
     "variable": "var(--colors-color-palette-950)"
+  },
+  "colors.colorPalette.color": {
+    "value": "var(--colors-color-palette-color)",
+    "variable": "var(--colors-color-palette-color)"
+  },
+  "colors.colorPalette.bg": {
+    "value": "var(--colors-color-palette-bg)",
+    "variable": "var(--colors-color-palette-bg)"
   }
 }
 
