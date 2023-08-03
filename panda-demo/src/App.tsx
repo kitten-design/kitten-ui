@@ -1,35 +1,45 @@
-import { Box } from '@kitten-ui/components';
-import { css } from '@kitten-ui/styles/css';
-import { button, ButtonVariant } from '@kitten-ui/styles/recipes';
 import React from 'react';
+import { Box, Button } from './';
+import { cva, cx, css } from '@kitten-ui/styles/css';
 
-type ButtonProps = ButtonVariant & {
-  children: React.ReactNode;
-};
-
-const Button: React.FC<ButtonProps> = (props) => {
-  const { children, size } = props;
-  return (
-    <button {...props} className={button({ size })}>
-      <>{children}</>
-    </button>
-  );
-};
+const someButton = cva({
+  base: { padding: 4 },
+  variants: {
+    variant: {
+      primary: {
+        bg: { base: 'colorPalette.500', _dark: 'colorPalette.200' },
+        color: { base: 'white', _dark: 'gray.900' },
+      },
+    },
+  },
+  defaultVariants: { variant: 'primary' },
+});
 
 export default function App() {
   return (
     <Box>
-      <div
-        className={css({
-          layerStyle: 'container',
-          w: '1/3',
-          bg: 'red.300',
-        })}>
-        This is inside a container style
-        <Button size="lg" visual={'funky'} shape={'square'}>
+      <Button colorPalette={'blue'}>按钮</Button>
+      <div className="light">
+        <button className={cx(css({ colorPalette: 'blue' }), someButton())}>
           Click me
-        </Button>
-        <Box color="red.600">123</Box>
+        </button>
+        <button className={cx(css({ colorPalette: 'green' }), someButton())}>
+          Click me
+        </button>
+        <button className={cx(css({ colorPalette: 'red' }), someButton())}>
+          Click me
+        </button>
+      </div>
+      <div className="dark">
+        <button className={cx(css({ colorPalette: 'blue' }), someButton())}>
+          Click me
+        </button>
+        <button className={cx(css({ colorPalette: 'green' }), someButton())}>
+          Click me
+        </button>
+        <button className={cx(css({ colorPalette: 'red' }), someButton())}>
+          Click me
+        </button>
       </div>
     </Box>
   );

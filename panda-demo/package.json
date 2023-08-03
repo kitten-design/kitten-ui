@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "prepare": "panda codegen --clean",
+    "studio": "panda studio",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"

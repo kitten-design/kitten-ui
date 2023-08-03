@@ -280,7 +280,7 @@ const tokens = {
     "variable": "var(--colors-transparent)"
   },
   "colors.rose.50": {
-    "value": "red",
+    "value": "#fff1f2",
     "variable": "var(--colors-rose-50)"
   },
   "colors.rose.100": {

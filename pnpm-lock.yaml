@@ -235,17 +235,17 @@ importers:
         version: 18.2.0
     devDependencies:
       '@types/react':
-        specifier: ^18.0.27
-        version: 18.0.28
+        specifier: ^18.2.18
+        version: 18.2.18
       typescript:
-        specifier: ^4.9.5
-        version: 4.9.5
+        specifier: ^5.1.6
+        version: 5.1.6
       vite:
-        specifier: ^4.1.4
-        version: 4.1.4(@types/node@20.4.5)
+        specifier: ^4.4.8
+        version: 4.4.8(@types/node@20.4.5)
       vite-plugin-dts:
-        specifier: ^2.0.2
-        version: 2.0.2(@types/node@20.4.5)(vite@4.1.4)
+        specifier: ^3.4.0
+        version: 3.4.0(@types/node@20.4.5)(typescript@5.1.6)(vite@4.4.8)
 
   panda-demo:
     dependencies:
@@ -5670,8 +5670,8 @@ packages:
       typescript: 5.1.6
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.4.8(@types/node@20.4.5)
-      vitefu: 0.2.4(vite@4.4.8)
+      vite: 4.4.7(@types/node@20.4.5)
+      vitefu: 0.2.4(vite@4.4.7)
       which-pm: 2.0.0
       yargs-parser: 21.1.1
       zod: 3.21.4
@@ -11957,6 +11957,30 @@ packages:
       - supports-color
     dev: true
 
+  /vite-plugin-dts@3.4.0(@types/node@20.4.5)(typescript@5.1.6)(vite@4.4.8):
+    resolution: {integrity: sha512-B5UbhiF83hPlJpdri3k2FlseO2qIQfY95XJib7z1s8NTQKgPK+KgeuOQf8FR1hnE/pSU+RA3ra2T18HvymPDyA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      typescript: '*'
+      vite: '*'
+    peerDependenciesMeta:
+      vite:
+        optional: true
+    dependencies:
+      '@microsoft/api-extractor': 7.36.3(@types/node@20.4.5)
+      '@rollup/pluginutils': 5.0.2
+      '@vue/language-core': 1.8.8(typescript@5.1.6)
+      debug: 4.3.4
+      kolorist: 1.8.0
+      typescript: 5.1.6
+      vite: 4.4.8(@types/node@20.4.5)
+      vue-tsc: 1.8.8(typescript@5.1.6)
+    transitivePeerDependencies:
+      - '@types/node'
+      - rollup
+      - supports-color
+    dev: true
+
   /vite@4.1.4(@types/node@20.4.5):
     resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -12140,6 +12164,17 @@ packages:
         optional: true
     dependencies:
       vite: 4.3.9(@types/node@20.4.5)
+    dev: true
+
+  /vitefu@0.2.4(vite@4.4.7):
+    resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
+    peerDependencies:
+      vite: ^3.0.0 || ^4.0.0
+    peerDependenciesMeta:
+      vite:
+        optional: true
+    dependencies:
+      vite: 4.4.7(@types/node@20.4.5)
     dev: true
 
   /vitefu@0.2.4(vite@4.4.8):

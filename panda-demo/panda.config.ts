@@ -7,6 +7,9 @@ export default defineConfig({
   outdir: '@kitten-ui/styles',
   jsxFramework: 'react',
   presets: [kittenPreset],
+  theme: {
+    extend: {},
+  },
   exclude: [],
   include: [
     './src/**/*.{js,jsx,ts,tsx}',

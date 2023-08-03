@@ -1,18 +1,16 @@
-import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
 import { styled } from '@kitten-ui/styles/jsx';
 import type { PolymorphicComponentProps } from '@kitten-ui/utils';
 import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';
+import { KittenProps } from '../../types/props';
 
-type _BoxProps = HTMLStyledProps<'div'>;
+export type BoxProps = PolymorphicComponentProps<'div', KittenProps<'div'>>;
 
-export type BoxProps = PolymorphicComponentProps<'div', _BoxProps>;
-
-export const Box = createPolymorphicComponent<'div', _BoxProps>(
+export const Box = createPolymorphicComponent<'div', KittenProps<'div'>>(
   (props, ref) => {
-    const { className, as = 'div', ...others } = props;
+    const { as = 'div', ...others } = props;
     const Element = styled(as);
-    return <Element ref={ref} className={className} {...others} />;
+    return <Element ref={ref} {...others} />;
   },
 );
 

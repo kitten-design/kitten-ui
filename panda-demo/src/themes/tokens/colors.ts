@@ -4,7 +4,7 @@ export const colors = {
   white: { value: '#fff' },
   transparent: { value: 'rgb(0 0 0 / 0)' },
   rose: {
-    50: { value: 'red' },
+    50: { value: '#fff1f2' },
     100: { value: '#ffe4e6' },
     200: { value: '#fecdd3' },
     300: { value: '#fda4af' },
