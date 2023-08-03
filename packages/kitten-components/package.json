@@ -23,7 +23,8 @@
     "access": "public"
   },
   "scripts": {
-    "prepare": "panda codegen --clean",
+    "prepare": "panda codegen",
+    "studio": "panda studio",
     "build": "rimraf ./lib && rimraf ./dist && pnpm build:lib && vite build",
     "build:lib": "tsc --project ./tsconfig.build.json"
   },
@@ -31,7 +32,7 @@
     "react": ">=16.8.0"
   },
   "dependencies": {
-    "@kitten-ui/styles": "^0.0.2",
+    "@kitten-ui/styles": "workspace:*",
     "@kitten-ui/utils": "workspace:*",
     "react": "^18.2.0"
   },

@@ -8,5 +8,5 @@ export default defineConfig({
   jsxFramework: 'react',
   presets: [kittenPreset],
   exclude: [],
-  include: ['./src/**/*.{js,jsx,ts,tsx}', './pages/**/*.{js,jsx,ts,tsx}'],
+  include: ['./src/**/*.{js,jsx,ts,tsx}'],
 });

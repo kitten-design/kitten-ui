@@ -1,6 +1,5 @@
 import { defineConfig, splitVendorChunkPlugin } from 'vite';
 import dts from 'vite-plugin-dts';
-import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,7 +14,7 @@ export default defineConfig({
       fileName: 'index',
     },
     rollupOptions: {
-      external: ['react', 'style-engine'],
+      external: ['react', '@kitten-ui/styles'],
       output: {
         globals: { react: 'React' },
       },
@@ -28,9 +27,8 @@ export default defineConfig({
       cleanVueFileName: true,
       copyDtsFiles: false,
       // rollupTypes: true,
-      outputDir: 'lib',
+      outDir: 'lib',
     }),
     splitVendorChunkPlugin(),
-    vanillaExtractPlugin(),
   ],
 });
