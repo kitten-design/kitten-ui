@@ -1,9 +1,12 @@
 import { HTMLStyledProps } from '@kitten-ui/styles/jsx';
 import { PolymorphicComponentProps } from '@kitten-ui/utils';
-import { ComponentProps, ElementType } from 'react';
+import { ComponentPropsWithoutRef, ElementType } from 'react';
 
-export type KittenProps<C extends ElementType> = HTMLStyledProps<C> &
-  ComponentProps<C>;
+export type KittenProps<C extends ElementType, P = {}> = HTMLStyledProps<C> &
+  ComponentPropsWithoutRef<C> &
+  P;
 
-export type KittenComponentProps<C extends ElementType> =
-  PolymorphicComponentProps<C, KittenProps<C>>;
+export type KittenComponentProps<
+  C extends ElementType,
+  P = {},
+> = PolymorphicComponentProps<C, KittenProps<C, P>>;
