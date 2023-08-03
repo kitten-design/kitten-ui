@@ -1,5 +1,5 @@
 import { defineConfig } from '@pandacss/dev';
-import { kittenPreset } from '@kitten-ui/components';
+import { kittenPreset } from './src/themes';
 
 export default defineConfig({
   preflight: true,

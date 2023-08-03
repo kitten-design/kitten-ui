@@ -7,11 +7,11 @@ type ButtonProps = ButtonVariant & {
   children: React.ReactNode;
 };
 
-const Button = (props: ButtonProps) => {
+const Button: React.FC<ButtonProps> = (props) => {
   const { children, size } = props;
   return (
     <button {...props} className={button({ size })}>
-      {children}
+      <>{children}</>
     </button>
   );
 };
