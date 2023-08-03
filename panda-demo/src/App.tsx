@@ -1,6 +1,6 @@
+import { css, cva, cx } from '@kitten-ui/styles/css';
 import React from 'react';
 import { Box, Button } from './';
-import { cva, cx, css } from '@kitten-ui/styles/css';
 
 const someButton = cva({
   base: { padding: 4 },

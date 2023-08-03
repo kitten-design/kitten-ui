@@ -8,7 +8,7 @@
   "author": "Yandif <me.yandif@gmail.com>",
   "scripts": {
     "build": "pnpm --stream -r run build",
-    "commit": "git add . && git-cz"
+    "commit": "git-cz"
   },
   "license": "MIT",
   "devDependencies": {
