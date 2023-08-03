@@ -1,4 +1,5 @@
 import { SemanticTokens } from '@pandacss/types';
+import { ButtonColors } from '../../components/Button/Button.token';
 
 export const colors: SemanticTokens['colors'] = {
   Box: {
@@ -9,4 +10,5 @@ export const colors: SemanticTokens['colors'] = {
       value: { base: '{colors.neutral.50}', _dark: '{colors.neutral.900}' },
     },
   },
+  ...ButtonColors,
 };

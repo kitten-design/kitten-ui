@@ -15,4 +15,15 @@ export default defineConfig({
     './src/**/*.{js,jsx,ts,tsx}',
     './node_modules/@kitten-ui/styles/src/**/*.tsx',
   ],
+  staticCss: {
+    css: [
+      {
+        properties: {
+          borderRadius: ['*'],
+        },
+        responsive: true,
+      },
+    ],
+    recipes: {},
+  },
 });

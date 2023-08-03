@@ -1671,6 +1671,190 @@ const tokens = {
     "value": "var(--colors--box-bg)",
     "variable": "var(--colors--box-bg)"
   },
+  "colors.Button.disabled.color": {
+    "value": "var(--colors--button-disabled-color)",
+    "variable": "var(--colors--button-disabled-color)"
+  },
+  "colors.Button.disabled.bg": {
+    "value": "var(--colors--button-disabled-bg)",
+    "variable": "var(--colors--button-disabled-bg)"
+  },
+  "colors.rose.ButtonFilled": {
+    "value": "var(--colors-rose--button-filled)",
+    "variable": "var(--colors-rose--button-filled)"
+  },
+  "colors.rose.ButtonFilledHover": {
+    "value": "var(--colors-rose--button-filled-hover)",
+    "variable": "var(--colors-rose--button-filled-hover)"
+  },
+  "colors.pink.ButtonFilled": {
+    "value": "var(--colors-pink--button-filled)",
+    "variable": "var(--colors-pink--button-filled)"
+  },
+  "colors.pink.ButtonFilledHover": {
+    "value": "var(--colors-pink--button-filled-hover)",
+    "variable": "var(--colors-pink--button-filled-hover)"
+  },
+  "colors.fuchsia.ButtonFilled": {
+    "value": "var(--colors-fuchsia--button-filled)",
+    "variable": "var(--colors-fuchsia--button-filled)"
+  },
+  "colors.fuchsia.ButtonFilledHover": {
+    "value": "var(--colors-fuchsia--button-filled-hover)",
+    "variable": "var(--colors-fuchsia--button-filled-hover)"
+  },
+  "colors.purple.ButtonFilled": {
+    "value": "var(--colors-purple--button-filled)",
+    "variable": "var(--colors-purple--button-filled)"
+  },
+  "colors.purple.ButtonFilledHover": {
+    "value": "var(--colors-purple--button-filled-hover)",
+    "variable": "var(--colors-purple--button-filled-hover)"
+  },
+  "colors.violet.ButtonFilled": {
+    "value": "var(--colors-violet--button-filled)",
+    "variable": "var(--colors-violet--button-filled)"
+  },
+  "colors.violet.ButtonFilledHover": {
+    "value": "var(--colors-violet--button-filled-hover)",
+    "variable": "var(--colors-violet--button-filled-hover)"
+  },
+  "colors.indigo.ButtonFilled": {
+    "value": "var(--colors-indigo--button-filled)",
+    "variable": "var(--colors-indigo--button-filled)"
+  },
+  "colors.indigo.ButtonFilledHover": {
+    "value": "var(--colors-indigo--button-filled-hover)",
+    "variable": "var(--colors-indigo--button-filled-hover)"
+  },
+  "colors.blue.ButtonFilled": {
+    "value": "var(--colors-blue--button-filled)",
+    "variable": "var(--colors-blue--button-filled)"
+  },
+  "colors.blue.ButtonFilledHover": {
+    "value": "var(--colors-blue--button-filled-hover)",
+    "variable": "var(--colors-blue--button-filled-hover)"
+  },
+  "colors.sky.ButtonFilled": {
+    "value": "var(--colors-sky--button-filled)",
+    "variable": "var(--colors-sky--button-filled)"
+  },
+  "colors.sky.ButtonFilledHover": {
+    "value": "var(--colors-sky--button-filled-hover)",
+    "variable": "var(--colors-sky--button-filled-hover)"
+  },
+  "colors.cyan.ButtonFilled": {
+    "value": "var(--colors-cyan--button-filled)",
+    "variable": "var(--colors-cyan--button-filled)"
+  },
+  "colors.cyan.ButtonFilledHover": {
+    "value": "var(--colors-cyan--button-filled-hover)",
+    "variable": "var(--colors-cyan--button-filled-hover)"
+  },
+  "colors.teal.ButtonFilled": {
+    "value": "var(--colors-teal--button-filled)",
+    "variable": "var(--colors-teal--button-filled)"
+  },
+  "colors.teal.ButtonFilledHover": {
+    "value": "var(--colors-teal--button-filled-hover)",
+    "variable": "var(--colors-teal--button-filled-hover)"
+  },
+  "colors.emerald.ButtonFilled": {
+    "value": "var(--colors-emerald--button-filled)",
+    "variable": "var(--colors-emerald--button-filled)"
+  },
+  "colors.emerald.ButtonFilledHover": {
+    "value": "var(--colors-emerald--button-filled-hover)",
+    "variable": "var(--colors-emerald--button-filled-hover)"
+  },
+  "colors.green.ButtonFilled": {
+    "value": "var(--colors-green--button-filled)",
+    "variable": "var(--colors-green--button-filled)"
+  },
+  "colors.green.ButtonFilledHover": {
+    "value": "var(--colors-green--button-filled-hover)",
+    "variable": "var(--colors-green--button-filled-hover)"
+  },
+  "colors.lime.ButtonFilled": {
+    "value": "var(--colors-lime--button-filled)",
+    "variable": "var(--colors-lime--button-filled)"
+  },
+  "colors.lime.ButtonFilledHover": {
+    "value": "var(--colors-lime--button-filled-hover)",
+    "variable": "var(--colors-lime--button-filled-hover)"
+  },
+  "colors.yellow.ButtonFilled": {
+    "value": "var(--colors-yellow--button-filled)",
+    "variable": "var(--colors-yellow--button-filled)"
+  },
+  "colors.yellow.ButtonFilledHover": {
+    "value": "var(--colors-yellow--button-filled-hover)",
+    "variable": "var(--colors-yellow--button-filled-hover)"
+  },
+  "colors.amber.ButtonFilled": {
+    "value": "var(--colors-amber--button-filled)",
+    "variable": "var(--colors-amber--button-filled)"
+  },
+  "colors.amber.ButtonFilledHover": {
+    "value": "var(--colors-amber--button-filled-hover)",
+    "variable": "var(--colors-amber--button-filled-hover)"
+  },
+  "colors.orange.ButtonFilled": {
+    "value": "var(--colors-orange--button-filled)",
+    "variable": "var(--colors-orange--button-filled)"
+  },
+  "colors.orange.ButtonFilledHover": {
+    "value": "var(--colors-orange--button-filled-hover)",
+    "variable": "var(--colors-orange--button-filled-hover)"
+  },
+  "colors.red.ButtonFilled": {
+    "value": "var(--colors-red--button-filled)",
+    "variable": "var(--colors-red--button-filled)"
+  },
+  "colors.red.ButtonFilledHover": {
+    "value": "var(--colors-red--button-filled-hover)",
+    "variable": "var(--colors-red--button-filled-hover)"
+  },
+  "colors.neutral.ButtonFilled": {
+    "value": "var(--colors-neutral--button-filled)",
+    "variable": "var(--colors-neutral--button-filled)"
+  },
+  "colors.neutral.ButtonFilledHover": {
+    "value": "var(--colors-neutral--button-filled-hover)",
+    "variable": "var(--colors-neutral--button-filled-hover)"
+  },
+  "colors.stone.ButtonFilled": {
+    "value": "var(--colors-stone--button-filled)",
+    "variable": "var(--colors-stone--button-filled)"
+  },
+  "colors.stone.ButtonFilledHover": {
+    "value": "var(--colors-stone--button-filled-hover)",
+    "variable": "var(--colors-stone--button-filled-hover)"
+  },
+  "colors.zinc.ButtonFilled": {
+    "value": "var(--colors-zinc--button-filled)",
+    "variable": "var(--colors-zinc--button-filled)"
+  },
+  "colors.zinc.ButtonFilledHover": {
+    "value": "var(--colors-zinc--button-filled-hover)",
+    "variable": "var(--colors-zinc--button-filled-hover)"
+  },
+  "colors.gray.ButtonFilled": {
+    "value": "var(--colors-gray--button-filled)",
+    "variable": "var(--colors-gray--button-filled)"
+  },
+  "colors.gray.ButtonFilledHover": {
+    "value": "var(--colors-gray--button-filled-hover)",
+    "variable": "var(--colors-gray--button-filled-hover)"
+  },
+  "colors.slate.ButtonFilled": {
+    "value": "var(--colors-slate--button-filled)",
+    "variable": "var(--colors-slate--button-filled)"
+  },
+  "colors.slate.ButtonFilledHover": {
+    "value": "var(--colors-slate--button-filled-hover)",
+    "variable": "var(--colors-slate--button-filled-hover)"
+  },
   "spacing.-1": {
     "value": "calc(var(--spacing-1) * -1)",
     "variable": "var(--spacing-1)"
@@ -1854,6 +2038,14 @@ const tokens = {
   "colors.colorPalette.bg": {
     "value": "var(--colors-color-palette-bg)",
     "variable": "var(--colors-color-palette-bg)"
+  },
+  "colors.colorPalette.ButtonFilled": {
+    "value": "var(--colors-color-palette--button-filled)",
+    "variable": "var(--colors-color-palette--button-filled)"
+  },
+  "colors.colorPalette.ButtonFilledHover": {
+    "value": "var(--colors-color-palette--button-filled-hover)",
+    "variable": "var(--colors-color-palette--button-filled-hover)"
   }
 }
 

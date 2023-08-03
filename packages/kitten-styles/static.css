@@ -1,0 +1,205 @@
+@layer utilities {
+  .rounded_xs {
+    border-radius: var(--radii-xs)
+    }
+
+  .rounded_sm {
+    border-radius: var(--radii-sm)
+    }
+
+  .rounded_md {
+    border-radius: var(--radii-md)
+    }
+
+  .rounded_lg {
+    border-radius: var(--radii-lg)
+    }
+
+  .rounded_xl {
+    border-radius: var(--radii-xl)
+    }
+
+  .rounded_full {
+    border-radius: var(--radii-full)
+    }
+
+  @media screen and (min-width: 640px) {
+    .sm\:rounded_xs {
+      border-radius: var(--radii-xs)
+    }
+        }
+
+  @media screen and (min-width: 640px) {
+    .sm\:rounded_sm {
+      border-radius: var(--radii-sm)
+    }
+        }
+
+  @media screen and (min-width: 640px) {
+    .sm\:rounded_md {
+      border-radius: var(--radii-md)
+    }
+        }
+
+  @media screen and (min-width: 640px) {
+    .sm\:rounded_lg {
+      border-radius: var(--radii-lg)
+    }
+        }
+
+  @media screen and (min-width: 640px) {
+    .sm\:rounded_xl {
+      border-radius: var(--radii-xl)
+    }
+        }
+
+  @media screen and (min-width: 640px) {
+    .sm\:rounded_full {
+      border-radius: var(--radii-full)
+    }
+        }
+
+  @media screen and (min-width: 768px) {
+    .md\:rounded_xs {
+      border-radius: var(--radii-xs)
+    }
+        }
+
+  @media screen and (min-width: 768px) {
+    .md\:rounded_sm {
+      border-radius: var(--radii-sm)
+    }
+        }
+
+  @media screen and (min-width: 768px) {
+    .md\:rounded_md {
+      border-radius: var(--radii-md)
+    }
+        }
+
+  @media screen and (min-width: 768px) {
+    .md\:rounded_lg {
+      border-radius: var(--radii-lg)
+    }
+        }
+
+  @media screen and (min-width: 768px) {
+    .md\:rounded_xl {
+      border-radius: var(--radii-xl)
+    }
+        }
+
+  @media screen and (min-width: 768px) {
+    .md\:rounded_full {
+      border-radius: var(--radii-full)
+    }
+        }
+
+  @media screen and (min-width: 1024px) {
+    .lg\:rounded_xs {
+      border-radius: var(--radii-xs)
+    }
+        }
+
+  @media screen and (min-width: 1024px) {
+    .lg\:rounded_sm {
+      border-radius: var(--radii-sm)
+    }
+        }
+
+  @media screen and (min-width: 1024px) {
+    .lg\:rounded_md {
+      border-radius: var(--radii-md)
+    }
+        }
+
+  @media screen and (min-width: 1024px) {
+    .lg\:rounded_lg {
+      border-radius: var(--radii-lg)
+    }
+        }
+
+  @media screen and (min-width: 1024px) {
+    .lg\:rounded_xl {
+      border-radius: var(--radii-xl)
+    }
+        }
+
+  @media screen and (min-width: 1024px) {
+    .lg\:rounded_full {
+      border-radius: var(--radii-full)
+    }
+        }
+
+  @media screen and (min-width: 1280px) {
+    .xl\:rounded_xs {
+      border-radius: var(--radii-xs)
+    }
+        }
+
+  @media screen and (min-width: 1280px) {
+    .xl\:rounded_sm {
+      border-radius: var(--radii-sm)
+    }
+        }
+
+  @media screen and (min-width: 1280px) {
+    .xl\:rounded_md {
+      border-radius: var(--radii-md)
+    }
+        }
+
+  @media screen and (min-width: 1280px) {
+    .xl\:rounded_lg {
+      border-radius: var(--radii-lg)
+    }
+        }
+
+  @media screen and (min-width: 1280px) {
+    .xl\:rounded_xl {
+      border-radius: var(--radii-xl)
+    }
+        }
+
+  @media screen and (min-width: 1280px) {
+    .xl\:rounded_full {
+      border-radius: var(--radii-full)
+    }
+        }
+
+  @media screen and (min-width: 1536px) {
+    .\32xl\:rounded_xs {
+      border-radius: var(--radii-xs)
+    }
+        }
+
+  @media screen and (min-width: 1536px) {
+    .\32xl\:rounded_sm {
+      border-radius: var(--radii-sm)
+    }
+        }
+
+  @media screen and (min-width: 1536px) {
+    .\32xl\:rounded_md {
+      border-radius: var(--radii-md)
+    }
+        }
+
+  @media screen and (min-width: 1536px) {
+    .\32xl\:rounded_lg {
+      border-radius: var(--radii-lg)
+    }
+        }
+
+  @media screen and (min-width: 1536px) {
+    .\32xl\:rounded_xl {
+      border-radius: var(--radii-xl)
+    }
+        }
+
+  @media screen and (min-width: 1536px) {
+    .\32xl\:rounded_full {
+      border-radius: var(--radii-full)
+    }
+        }
+}

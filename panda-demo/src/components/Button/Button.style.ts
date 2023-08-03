@@ -9,27 +9,33 @@ export const ButtonRoot = styled('button', {
     textAlign: 'center',
     cursor: 'pointer',
     display: 'inline-block',
+    borderRadius: 'sm',
+    _active: {
+      transform: 'translateY(0.0625rem)',
+    },
+    _disabled: {
+      cursor: 'not-allowed!',
+      bg: 'Button.disabled.bg!',
+      color: 'Button.disabled.color!',
+      transform: 'unset!',
+    },
   },
   variants: {
     variant: {
       default: {},
       filled: {
         colorPalette: 'blue',
-        bg: { base: 'colorPalette.500', _dark: 'colorPalette.200' },
-        color: { base: 'white', _dark: 'gray.900' },
+        bg: {
+          base: 'colorPalette.ButtonFilled',
+          _hover: 'colorPalette.ButtonFilledHover',
+        },
+        color: 'white',
       },
       light: {},
       outline: {},
       subtle: {},
       transparent: {},
       white: {},
-    },
-    radius: {
-      xs: { borderRadius: 'xs' },
-      sm: { borderRadius: 'sm' },
-      md: { borderRadius: 'md' },
-      lg: { borderRadius: 'lg' },
-      xl: { borderRadius: 'xl' },
     },
     size: {
       xs: { h: '1.875rem', px: '0.875rem', fontSize: 'xs' },
@@ -50,7 +56,6 @@ export const ButtonRoot = styled('button', {
   defaultVariants: {
     variant: 'filled',
     size: 'sm',
-    radius: 'sm',
     compact: false,
   },
 });
