@@ -4,7 +4,7 @@ export const layerStyles = defineLayerStyles({
   container: {
     description: 'container styles',
     value: {
-      color: 'gray.50',
+      color: 'red.500',
       backgroundColor: 'green.400',
       border: '2px solid',
       borderColor: 'gray.500',

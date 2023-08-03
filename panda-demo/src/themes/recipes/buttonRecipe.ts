@@ -1,11 +1,11 @@
 import { defineRecipe } from '@pandacss/dev';
 
 export const buttonRecipe = defineRecipe({
-  className: 'button-asdf',
+  className: 'button',
   description: 'The styles for the Button component',
   base: {
     display: 'flex',
-    border: '1px solid green',
+    border: '1px solid red',
   },
   variants: {
     visual: {

@@ -1,8 +1,7 @@
-import { HTMLStyledProps, styled } from '@kitten-ui/styles/jsx';
-import {
-  PolymorphicComponentProps,
-  createPolymorphicComponent,
-} from '@kitten-ui/utils';
+import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
+import { styled } from '@kitten-ui/styles/jsx';
+import type { PolymorphicComponentProps } from '@kitten-ui/utils';
+import { createPolymorphicComponent } from '@kitten-ui/utils';
 import React from 'react';
 
 type _BoxProps = HTMLStyledProps<'div'>;
