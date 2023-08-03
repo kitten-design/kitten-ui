@@ -1,46 +1,31 @@
-import { css, cva, cx } from '@kitten-ui/styles/css';
 import React from 'react';
 import { Box, Button } from './';
 
-const someButton = cva({
-  base: { padding: 4 },
-  variants: {
-    variant: {
-      primary: {
-        bg: { base: 'colorPalette.500', _dark: 'colorPalette.200' },
-        color: { base: 'white', _dark: 'gray.900' },
-      },
-    },
-  },
-  defaultVariants: { variant: 'primary' },
-});
-
 export default function App() {
+  const [theme, setTheme] = React.useState('light');
   return (
-    <Box>
-      <Button colorPalette={'blue'}>按钮</Button>
-      <div className="light">
-        <button className={cx(css({ colorPalette: 'blue' }), someButton())}>
-          Click me
-        </button>
-        <button className={cx(css({ colorPalette: 'green' }), someButton())}>
-          Click me
-        </button>
-        <button className={cx(css({ colorPalette: 'red' }), someButton())}>
-          Click me
-        </button>
-      </div>
-      <div className="dark">
-        <button className={cx(css({ colorPalette: 'blue' }), someButton())}>
-          Click me
-        </button>
-        <button className={cx(css({ colorPalette: 'green' }), someButton())}>
-          Click me
-        </button>
-        <button className={cx(css({ colorPalette: 'red' }), someButton())}>
-          Click me
-        </button>
-      </div>
-    </Box>
+    <>
+      <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+        切换
+      </Button>
+      <Box className={theme}>
+        {(['xs', 'sm', 'md', 'lg', 'xl', 'full'] as const).map((radius) => {
+          return (
+            <span key={radius}>
+              {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => {
+                return (
+                  <Button
+                    borderRadius={radius}
+                    size={size}
+                    compact={theme !== 'light'}>
+                    按钮
+                  </Button>
+                );
+              })}
+            </span>
+          );
+        })}
+      </Box>
+    </>
   );
 }

@@ -60,24 +60,16 @@ const tokens = {
     "variable": "var(--radii-sm)"
   },
   "radii.md": {
-    "value": "0.375rem",
+    "value": "0.5rem",
     "variable": "var(--radii-md)"
   },
   "radii.lg": {
-    "value": "0.5rem",
+    "value": "1rem",
     "variable": "var(--radii-lg)"
   },
   "radii.xl": {
-    "value": "0.75rem",
+    "value": "2rem",
     "variable": "var(--radii-xl)"
-  },
-  "radii.2xl": {
-    "value": "1rem",
-    "variable": "var(--radii-2xl)"
-  },
-  "radii.3xl": {
-    "value": "1.5rem",
-    "variable": "var(--radii-3xl)"
   },
   "radii.full": {
     "value": "9999px",

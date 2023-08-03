@@ -23,5 +23,5 @@ interface ButtonRecipe {
   splitVariantProps<Props extends ButtonVariantProps>(props: Props): [ButtonVariantProps, Pretty<Omit<Props, keyof ButtonVariantProps>>]
 }
 
-/** The styles for the Button component */
+
 export declare const button: ButtonRecipe

@@ -1,19 +1,32 @@
 import { cx } from '@kitten-ui/styles/css';
-import { HTMLStyledProps } from '@kitten-ui/styles/jsx';
-import { ButtonVariantProps, button } from '@kitten-ui/styles/recipes';
-import { PCP, cpc } from '@kitten-ui/utils';
+import { type HTMLStyledProps } from '@kitten-ui/styles/jsx';
+import { cpc, type PCP } from '@kitten-ui/utils';
 import React from 'react';
 import { Box } from '../Box';
+import { buttonStyle, type ButtonVariants } from './Button.style';
 
-interface Props extends HTMLStyledProps<'button'>, ButtonVariantProps {}
+type Props = HTMLStyledProps<'button'> & ButtonVariants & {};
 
 export type ButtonProps = PCP<'button', Props>;
 
 export const Button = cpc<'button', Props>((props, ref) => {
-  const { className, as = 'button', children, ...others } = props;
+  const {
+    className,
+    as = 'button',
+    children,
+    size,
+    compact,
+    variant,
+    radius,
+    ...others
+  } = props;
 
   return (
-    <Box ref={ref} as={as} className={cx(button(), className)} {...others}>
+    <Box
+      ref={ref}
+      as={as}
+      className={cx(buttonStyle({ size, compact, variant, radius }), className)}
+      {...others}>
       {children}
     </Box>
   );
