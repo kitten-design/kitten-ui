@@ -11,9 +11,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@kitten-ui/utils": "workspace:*",
     "@kitten-ui/components": "workspace:*",
     "@kitten-ui/styles": "workspace:*",
+    "@kitten-ui/utils": "workspace:*",
+    "chroma-js": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2"
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@pandacss/dev": "^0.9.0",
     "@pandacss/types": "^0.9.0",
+    "@types/chroma-js": "^2.4.0",
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",

@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Box, Button } from './';
 
 export default function App() {
   const [theme, setTheme] = React.useState('light');
+  const ref = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    console.log(ref);
+  }, []);
   return (
     <Box className={theme} w="100vw" h="100vh">
       <Button
+        ref={ref}
         rounded={'lg'}
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换
@@ -19,11 +24,12 @@ export default function App() {
                   {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((radius) => {
                     return (
                       <Button
+                        key={size + radius}
                         size={size}
                         rounded={radius}
                         compact={theme !== 'light'}
                         disabled={theme !== 'light'}>
-                        按 钮
+                        按钮
                       </Button>
                     );
                   })}
@@ -40,12 +46,13 @@ export default function App() {
               {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((radius) => {
                 return (
                   <Button
+                    key={size + radius}
                     colorPalette="red"
                     size={size}
                     rounded={radius}
                     compact={theme === 'light'}
                     disabled={theme === 'light'}>
-                    按 钮
+                    按钮
                   </Button>
                 );
               })}

@@ -1,5 +1,8 @@
 import { styled } from '@kitten-ui/styles/jsx';
 
+/* default colorPalette */
+const colorPalette = 'blue';
+
 export const ButtonRoot = styled('button', {
   base: {
     userSelect: 'none',
@@ -10,6 +13,8 @@ export const ButtonRoot = styled('button', {
     cursor: 'pointer',
     display: 'inline-block',
     borderRadius: 'sm',
+    border: '1px solid',
+    borderColor: 'transparent',
 
     _disabled: {
       cursor: 'not-allowed!',
@@ -20,9 +25,17 @@ export const ButtonRoot = styled('button', {
   },
   variants: {
     variant: {
-      default: {},
+      default: {
+        bg: {
+          base: 'Button.default.bg',
+          _hover: 'Button.default.bgHover',
+          _active: 'Button.default.bgActive',
+        },
+        color: 'Button.default.color',
+        borderColor: 'Button.default.borderColor',
+      },
       filled: {
-        colorPalette: 'blue',
+        colorPalette,
         bg: {
           base: 'colorPalette.ButtonFilled',
           _hover: 'colorPalette.ButtonFilledHover',
@@ -30,7 +43,15 @@ export const ButtonRoot = styled('button', {
         },
         color: 'white',
       },
-      light: {},
+      light: {
+        colorPalette,
+        bg: {
+          base: 'colorPalette.ButtonLight',
+          _hover: 'colorPalette.ButtonLightHover',
+          _active: 'colorPalette.ButtonLightActive',
+        },
+        color: 'colorPalette.ButtonLightColor',
+      },
       outline: {},
       subtle: {},
       transparent: {},
@@ -53,7 +74,7 @@ export const ButtonRoot = styled('button', {
     { size: 'xl', compact: true, css: { h: '2.5rem', px: '0.875rem' } },
   ],
   defaultVariants: {
-    variant: 'filled',
+    variant: 'light',
     size: 'sm',
     compact: false,
   },

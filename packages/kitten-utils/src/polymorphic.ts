@@ -9,8 +9,7 @@ import type {
 import { forwardRef } from 'react';
 
 /** Merge properties */
-// export type Merge<T, P> = P & Omit<T, keyof P>;
-export type Merge<T, P> = P & T;
+export type Merge<T, P> = P & Omit<T, keyof P>;
 
 /** Merge component props */
 export type MergeProps<C extends ElementType, P = {}> = Merge<

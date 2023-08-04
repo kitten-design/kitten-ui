@@ -1671,6 +1671,26 @@ const tokens = {
     "value": "var(--colors--box-bg)",
     "variable": "var(--colors--box-bg)"
   },
+  "colors.Button.default.color": {
+    "value": "var(--colors--button-default-color)",
+    "variable": "var(--colors--button-default-color)"
+  },
+  "colors.Button.default.bg": {
+    "value": "var(--colors--button-default-bg)",
+    "variable": "var(--colors--button-default-bg)"
+  },
+  "colors.Button.default.bgHover": {
+    "value": "var(--colors--button-default-bg-hover)",
+    "variable": "var(--colors--button-default-bg-hover)"
+  },
+  "colors.Button.default.bgActive": {
+    "value": "var(--colors--button-default-bg-active)",
+    "variable": "var(--colors--button-default-bg-active)"
+  },
+  "colors.Button.default.borderColor": {
+    "value": "var(--colors--button-default-border-color)",
+    "variable": "var(--colors--button-default-border-color)"
+  },
   "colors.Button.disabled.color": {
     "value": "var(--colors--button-disabled-color)",
     "variable": "var(--colors--button-disabled-color)"
@@ -1691,6 +1711,22 @@ const tokens = {
     "value": "var(--colors-rose--button-filled-active)",
     "variable": "var(--colors-rose--button-filled-active)"
   },
+  "colors.rose.ButtonLight": {
+    "value": "var(--colors-rose--button-light)",
+    "variable": "var(--colors-rose--button-light)"
+  },
+  "colors.rose.ButtonLightHover": {
+    "value": "var(--colors-rose--button-light-hover)",
+    "variable": "var(--colors-rose--button-light-hover)"
+  },
+  "colors.rose.ButtonLightActive": {
+    "value": "var(--colors-rose--button-light-active)",
+    "variable": "var(--colors-rose--button-light-active)"
+  },
+  "colors.rose.ButtonLightColor": {
+    "value": "var(--colors-rose--button-light-color)",
+    "variable": "var(--colors-rose--button-light-color)"
+  },
   "colors.pink.ButtonFilled": {
     "value": "var(--colors-pink--button-filled)",
     "variable": "var(--colors-pink--button-filled)"
@@ -1702,6 +1738,22 @@ const tokens = {
   "colors.pink.ButtonFilledActive": {
     "value": "var(--colors-pink--button-filled-active)",
     "variable": "var(--colors-pink--button-filled-active)"
+  },
+  "colors.pink.ButtonLight": {
+    "value": "var(--colors-pink--button-light)",
+    "variable": "var(--colors-pink--button-light)"
+  },
+  "colors.pink.ButtonLightHover": {
+    "value": "var(--colors-pink--button-light-hover)",
+    "variable": "var(--colors-pink--button-light-hover)"
+  },
+  "colors.pink.ButtonLightActive": {
+    "value": "var(--colors-pink--button-light-active)",
+    "variable": "var(--colors-pink--button-light-active)"
+  },
+  "colors.pink.ButtonLightColor": {
+    "value": "var(--colors-pink--button-light-color)",
+    "variable": "var(--colors-pink--button-light-color)"
   },
   "colors.fuchsia.ButtonFilled": {
     "value": "var(--colors-fuchsia--button-filled)",
@@ -1715,6 +1767,22 @@ const tokens = {
     "value": "var(--colors-fuchsia--button-filled-active)",
     "variable": "var(--colors-fuchsia--button-filled-active)"
   },
+  "colors.fuchsia.ButtonLight": {
+    "value": "var(--colors-fuchsia--button-light)",
+    "variable": "var(--colors-fuchsia--button-light)"
+  },
+  "colors.fuchsia.ButtonLightHover": {
+    "value": "var(--colors-fuchsia--button-light-hover)",
+    "variable": "var(--colors-fuchsia--button-light-hover)"
+  },
+  "colors.fuchsia.ButtonLightActive": {
+    "value": "var(--colors-fuchsia--button-light-active)",
+    "variable": "var(--colors-fuchsia--button-light-active)"
+  },
+  "colors.fuchsia.ButtonLightColor": {
+    "value": "var(--colors-fuchsia--button-light-color)",
+    "variable": "var(--colors-fuchsia--button-light-color)"
+  },
   "colors.purple.ButtonFilled": {
     "value": "var(--colors-purple--button-filled)",
     "variable": "var(--colors-purple--button-filled)"
@@ -1726,6 +1794,22 @@ const tokens = {
   "colors.purple.ButtonFilledActive": {
     "value": "var(--colors-purple--button-filled-active)",
     "variable": "var(--colors-purple--button-filled-active)"
+  },
+  "colors.purple.ButtonLight": {
+    "value": "var(--colors-purple--button-light)",
+    "variable": "var(--colors-purple--button-light)"
+  },
+  "colors.purple.ButtonLightHover": {
+    "value": "var(--colors-purple--button-light-hover)",
+    "variable": "var(--colors-purple--button-light-hover)"
+  },
+  "colors.purple.ButtonLightActive": {
+    "value": "var(--colors-purple--button-light-active)",
+    "variable": "var(--colors-purple--button-light-active)"
+  },
+  "colors.purple.ButtonLightColor": {
+    "value": "var(--colors-purple--button-light-color)",
+    "variable": "var(--colors-purple--button-light-color)"
   },
   "colors.violet.ButtonFilled": {
     "value": "var(--colors-violet--button-filled)",
@@ -1739,6 +1823,22 @@ const tokens = {
     "value": "var(--colors-violet--button-filled-active)",
     "variable": "var(--colors-violet--button-filled-active)"
   },
+  "colors.violet.ButtonLight": {
+    "value": "var(--colors-violet--button-light)",
+    "variable": "var(--colors-violet--button-light)"
+  },
+  "colors.violet.ButtonLightHover": {
+    "value": "var(--colors-violet--button-light-hover)",
+    "variable": "var(--colors-violet--button-light-hover)"
+  },
+  "colors.violet.ButtonLightActive": {
+    "value": "var(--colors-violet--button-light-active)",
+    "variable": "var(--colors-violet--button-light-active)"
+  },
+  "colors.violet.ButtonLightColor": {
+    "value": "var(--colors-violet--button-light-color)",
+    "variable": "var(--colors-violet--button-light-color)"
+  },
   "colors.indigo.ButtonFilled": {
     "value": "var(--colors-indigo--button-filled)",
     "variable": "var(--colors-indigo--button-filled)"
@@ -1750,6 +1850,22 @@ const tokens = {
   "colors.indigo.ButtonFilledActive": {
     "value": "var(--colors-indigo--button-filled-active)",
     "variable": "var(--colors-indigo--button-filled-active)"
+  },
+  "colors.indigo.ButtonLight": {
+    "value": "var(--colors-indigo--button-light)",
+    "variable": "var(--colors-indigo--button-light)"
+  },
+  "colors.indigo.ButtonLightHover": {
+    "value": "var(--colors-indigo--button-light-hover)",
+    "variable": "var(--colors-indigo--button-light-hover)"
+  },
+  "colors.indigo.ButtonLightActive": {
+    "value": "var(--colors-indigo--button-light-active)",
+    "variable": "var(--colors-indigo--button-light-active)"
+  },
+  "colors.indigo.ButtonLightColor": {
+    "value": "var(--colors-indigo--button-light-color)",
+    "variable": "var(--colors-indigo--button-light-color)"
   },
   "colors.blue.ButtonFilled": {
     "value": "var(--colors-blue--button-filled)",
@@ -1763,6 +1879,22 @@ const tokens = {
     "value": "var(--colors-blue--button-filled-active)",
     "variable": "var(--colors-blue--button-filled-active)"
   },
+  "colors.blue.ButtonLight": {
+    "value": "var(--colors-blue--button-light)",
+    "variable": "var(--colors-blue--button-light)"
+  },
+  "colors.blue.ButtonLightHover": {
+    "value": "var(--colors-blue--button-light-hover)",
+    "variable": "var(--colors-blue--button-light-hover)"
+  },
+  "colors.blue.ButtonLightActive": {
+    "value": "var(--colors-blue--button-light-active)",
+    "variable": "var(--colors-blue--button-light-active)"
+  },
+  "colors.blue.ButtonLightColor": {
+    "value": "var(--colors-blue--button-light-color)",
+    "variable": "var(--colors-blue--button-light-color)"
+  },
   "colors.sky.ButtonFilled": {
     "value": "var(--colors-sky--button-filled)",
     "variable": "var(--colors-sky--button-filled)"
@@ -1774,6 +1906,22 @@ const tokens = {
   "colors.sky.ButtonFilledActive": {
     "value": "var(--colors-sky--button-filled-active)",
     "variable": "var(--colors-sky--button-filled-active)"
+  },
+  "colors.sky.ButtonLight": {
+    "value": "var(--colors-sky--button-light)",
+    "variable": "var(--colors-sky--button-light)"
+  },
+  "colors.sky.ButtonLightHover": {
+    "value": "var(--colors-sky--button-light-hover)",
+    "variable": "var(--colors-sky--button-light-hover)"
+  },
+  "colors.sky.ButtonLightActive": {
+    "value": "var(--colors-sky--button-light-active)",
+    "variable": "var(--colors-sky--button-light-active)"
+  },
+  "colors.sky.ButtonLightColor": {
+    "value": "var(--colors-sky--button-light-color)",
+    "variable": "var(--colors-sky--button-light-color)"
   },
   "colors.cyan.ButtonFilled": {
     "value": "var(--colors-cyan--button-filled)",
@@ -1787,6 +1935,22 @@ const tokens = {
     "value": "var(--colors-cyan--button-filled-active)",
     "variable": "var(--colors-cyan--button-filled-active)"
   },
+  "colors.cyan.ButtonLight": {
+    "value": "var(--colors-cyan--button-light)",
+    "variable": "var(--colors-cyan--button-light)"
+  },
+  "colors.cyan.ButtonLightHover": {
+    "value": "var(--colors-cyan--button-light-hover)",
+    "variable": "var(--colors-cyan--button-light-hover)"
+  },
+  "colors.cyan.ButtonLightActive": {
+    "value": "var(--colors-cyan--button-light-active)",
+    "variable": "var(--colors-cyan--button-light-active)"
+  },
+  "colors.cyan.ButtonLightColor": {
+    "value": "var(--colors-cyan--button-light-color)",
+    "variable": "var(--colors-cyan--button-light-color)"
+  },
   "colors.teal.ButtonFilled": {
     "value": "var(--colors-teal--button-filled)",
     "variable": "var(--colors-teal--button-filled)"
@@ -1798,6 +1962,22 @@ const tokens = {
   "colors.teal.ButtonFilledActive": {
     "value": "var(--colors-teal--button-filled-active)",
     "variable": "var(--colors-teal--button-filled-active)"
+  },
+  "colors.teal.ButtonLight": {
+    "value": "var(--colors-teal--button-light)",
+    "variable": "var(--colors-teal--button-light)"
+  },
+  "colors.teal.ButtonLightHover": {
+    "value": "var(--colors-teal--button-light-hover)",
+    "variable": "var(--colors-teal--button-light-hover)"
+  },
+  "colors.teal.ButtonLightActive": {
+    "value": "var(--colors-teal--button-light-active)",
+    "variable": "var(--colors-teal--button-light-active)"
+  },
+  "colors.teal.ButtonLightColor": {
+    "value": "var(--colors-teal--button-light-color)",
+    "variable": "var(--colors-teal--button-light-color)"
   },
   "colors.emerald.ButtonFilled": {
     "value": "var(--colors-emerald--button-filled)",
@@ -1811,6 +1991,22 @@ const tokens = {
     "value": "var(--colors-emerald--button-filled-active)",
     "variable": "var(--colors-emerald--button-filled-active)"
   },
+  "colors.emerald.ButtonLight": {
+    "value": "var(--colors-emerald--button-light)",
+    "variable": "var(--colors-emerald--button-light)"
+  },
+  "colors.emerald.ButtonLightHover": {
+    "value": "var(--colors-emerald--button-light-hover)",
+    "variable": "var(--colors-emerald--button-light-hover)"
+  },
+  "colors.emerald.ButtonLightActive": {
+    "value": "var(--colors-emerald--button-light-active)",
+    "variable": "var(--colors-emerald--button-light-active)"
+  },
+  "colors.emerald.ButtonLightColor": {
+    "value": "var(--colors-emerald--button-light-color)",
+    "variable": "var(--colors-emerald--button-light-color)"
+  },
   "colors.green.ButtonFilled": {
     "value": "var(--colors-green--button-filled)",
     "variable": "var(--colors-green--button-filled)"
@@ -1822,6 +2018,22 @@ const tokens = {
   "colors.green.ButtonFilledActive": {
     "value": "var(--colors-green--button-filled-active)",
     "variable": "var(--colors-green--button-filled-active)"
+  },
+  "colors.green.ButtonLight": {
+    "value": "var(--colors-green--button-light)",
+    "variable": "var(--colors-green--button-light)"
+  },
+  "colors.green.ButtonLightHover": {
+    "value": "var(--colors-green--button-light-hover)",
+    "variable": "var(--colors-green--button-light-hover)"
+  },
+  "colors.green.ButtonLightActive": {
+    "value": "var(--colors-green--button-light-active)",
+    "variable": "var(--colors-green--button-light-active)"
+  },
+  "colors.green.ButtonLightColor": {
+    "value": "var(--colors-green--button-light-color)",
+    "variable": "var(--colors-green--button-light-color)"
   },
   "colors.lime.ButtonFilled": {
     "value": "var(--colors-lime--button-filled)",
@@ -1835,6 +2047,22 @@ const tokens = {
     "value": "var(--colors-lime--button-filled-active)",
     "variable": "var(--colors-lime--button-filled-active)"
   },
+  "colors.lime.ButtonLight": {
+    "value": "var(--colors-lime--button-light)",
+    "variable": "var(--colors-lime--button-light)"
+  },
+  "colors.lime.ButtonLightHover": {
+    "value": "var(--colors-lime--button-light-hover)",
+    "variable": "var(--colors-lime--button-light-hover)"
+  },
+  "colors.lime.ButtonLightActive": {
+    "value": "var(--colors-lime--button-light-active)",
+    "variable": "var(--colors-lime--button-light-active)"
+  },
+  "colors.lime.ButtonLightColor": {
+    "value": "var(--colors-lime--button-light-color)",
+    "variable": "var(--colors-lime--button-light-color)"
+  },
   "colors.yellow.ButtonFilled": {
     "value": "var(--colors-yellow--button-filled)",
     "variable": "var(--colors-yellow--button-filled)"
@@ -1846,6 +2074,22 @@ const tokens = {
   "colors.yellow.ButtonFilledActive": {
     "value": "var(--colors-yellow--button-filled-active)",
     "variable": "var(--colors-yellow--button-filled-active)"
+  },
+  "colors.yellow.ButtonLight": {
+    "value": "var(--colors-yellow--button-light)",
+    "variable": "var(--colors-yellow--button-light)"
+  },
+  "colors.yellow.ButtonLightHover": {
+    "value": "var(--colors-yellow--button-light-hover)",
+    "variable": "var(--colors-yellow--button-light-hover)"
+  },
+  "colors.yellow.ButtonLightActive": {
+    "value": "var(--colors-yellow--button-light-active)",
+    "variable": "var(--colors-yellow--button-light-active)"
+  },
+  "colors.yellow.ButtonLightColor": {
+    "value": "var(--colors-yellow--button-light-color)",
+    "variable": "var(--colors-yellow--button-light-color)"
   },
   "colors.amber.ButtonFilled": {
     "value": "var(--colors-amber--button-filled)",
@@ -1859,6 +2103,22 @@ const tokens = {
     "value": "var(--colors-amber--button-filled-active)",
     "variable": "var(--colors-amber--button-filled-active)"
   },
+  "colors.amber.ButtonLight": {
+    "value": "var(--colors-amber--button-light)",
+    "variable": "var(--colors-amber--button-light)"
+  },
+  "colors.amber.ButtonLightHover": {
+    "value": "var(--colors-amber--button-light-hover)",
+    "variable": "var(--colors-amber--button-light-hover)"
+  },
+  "colors.amber.ButtonLightActive": {
+    "value": "var(--colors-amber--button-light-active)",
+    "variable": "var(--colors-amber--button-light-active)"
+  },
+  "colors.amber.ButtonLightColor": {
+    "value": "var(--colors-amber--button-light-color)",
+    "variable": "var(--colors-amber--button-light-color)"
+  },
   "colors.orange.ButtonFilled": {
     "value": "var(--colors-orange--button-filled)",
     "variable": "var(--colors-orange--button-filled)"
@@ -1870,6 +2130,22 @@ const tokens = {
   "colors.orange.ButtonFilledActive": {
     "value": "var(--colors-orange--button-filled-active)",
     "variable": "var(--colors-orange--button-filled-active)"
+  },
+  "colors.orange.ButtonLight": {
+    "value": "var(--colors-orange--button-light)",
+    "variable": "var(--colors-orange--button-light)"
+  },
+  "colors.orange.ButtonLightHover": {
+    "value": "var(--colors-orange--button-light-hover)",
+    "variable": "var(--colors-orange--button-light-hover)"
+  },
+  "colors.orange.ButtonLightActive": {
+    "value": "var(--colors-orange--button-light-active)",
+    "variable": "var(--colors-orange--button-light-active)"
+  },
+  "colors.orange.ButtonLightColor": {
+    "value": "var(--colors-orange--button-light-color)",
+    "variable": "var(--colors-orange--button-light-color)"
   },
   "colors.red.ButtonFilled": {
     "value": "var(--colors-red--button-filled)",
@@ -1883,6 +2159,22 @@ const tokens = {
     "value": "var(--colors-red--button-filled-active)",
     "variable": "var(--colors-red--button-filled-active)"
   },
+  "colors.red.ButtonLight": {
+    "value": "var(--colors-red--button-light)",
+    "variable": "var(--colors-red--button-light)"
+  },
+  "colors.red.ButtonLightHover": {
+    "value": "var(--colors-red--button-light-hover)",
+    "variable": "var(--colors-red--button-light-hover)"
+  },
+  "colors.red.ButtonLightActive": {
+    "value": "var(--colors-red--button-light-active)",
+    "variable": "var(--colors-red--button-light-active)"
+  },
+  "colors.red.ButtonLightColor": {
+    "value": "var(--colors-red--button-light-color)",
+    "variable": "var(--colors-red--button-light-color)"
+  },
   "colors.neutral.ButtonFilled": {
     "value": "var(--colors-neutral--button-filled)",
     "variable": "var(--colors-neutral--button-filled)"
@@ -1894,6 +2186,22 @@ const tokens = {
   "colors.neutral.ButtonFilledActive": {
     "value": "var(--colors-neutral--button-filled-active)",
     "variable": "var(--colors-neutral--button-filled-active)"
+  },
+  "colors.neutral.ButtonLight": {
+    "value": "var(--colors-neutral--button-light)",
+    "variable": "var(--colors-neutral--button-light)"
+  },
+  "colors.neutral.ButtonLightHover": {
+    "value": "var(--colors-neutral--button-light-hover)",
+    "variable": "var(--colors-neutral--button-light-hover)"
+  },
+  "colors.neutral.ButtonLightActive": {
+    "value": "var(--colors-neutral--button-light-active)",
+    "variable": "var(--colors-neutral--button-light-active)"
+  },
+  "colors.neutral.ButtonLightColor": {
+    "value": "var(--colors-neutral--button-light-color)",
+    "variable": "var(--colors-neutral--button-light-color)"
   },
   "colors.stone.ButtonFilled": {
     "value": "var(--colors-stone--button-filled)",
@@ -1907,6 +2215,22 @@ const tokens = {
     "value": "var(--colors-stone--button-filled-active)",
     "variable": "var(--colors-stone--button-filled-active)"
   },
+  "colors.stone.ButtonLight": {
+    "value": "var(--colors-stone--button-light)",
+    "variable": "var(--colors-stone--button-light)"
+  },
+  "colors.stone.ButtonLightHover": {
+    "value": "var(--colors-stone--button-light-hover)",
+    "variable": "var(--colors-stone--button-light-hover)"
+  },
+  "colors.stone.ButtonLightActive": {
+    "value": "var(--colors-stone--button-light-active)",
+    "variable": "var(--colors-stone--button-light-active)"
+  },
+  "colors.stone.ButtonLightColor": {
+    "value": "var(--colors-stone--button-light-color)",
+    "variable": "var(--colors-stone--button-light-color)"
+  },
   "colors.zinc.ButtonFilled": {
     "value": "var(--colors-zinc--button-filled)",
     "variable": "var(--colors-zinc--button-filled)"
@@ -1918,6 +2242,22 @@ const tokens = {
   "colors.zinc.ButtonFilledActive": {
     "value": "var(--colors-zinc--button-filled-active)",
     "variable": "var(--colors-zinc--button-filled-active)"
+  },
+  "colors.zinc.ButtonLight": {
+    "value": "var(--colors-zinc--button-light)",
+    "variable": "var(--colors-zinc--button-light)"
+  },
+  "colors.zinc.ButtonLightHover": {
+    "value": "var(--colors-zinc--button-light-hover)",
+    "variable": "var(--colors-zinc--button-light-hover)"
+  },
+  "colors.zinc.ButtonLightActive": {
+    "value": "var(--colors-zinc--button-light-active)",
+    "variable": "var(--colors-zinc--button-light-active)"
+  },
+  "colors.zinc.ButtonLightColor": {
+    "value": "var(--colors-zinc--button-light-color)",
+    "variable": "var(--colors-zinc--button-light-color)"
   },
   "colors.gray.ButtonFilled": {
     "value": "var(--colors-gray--button-filled)",
@@ -1931,6 +2271,22 @@ const tokens = {
     "value": "var(--colors-gray--button-filled-active)",
     "variable": "var(--colors-gray--button-filled-active)"
   },
+  "colors.gray.ButtonLight": {
+    "value": "var(--colors-gray--button-light)",
+    "variable": "var(--colors-gray--button-light)"
+  },
+  "colors.gray.ButtonLightHover": {
+    "value": "var(--colors-gray--button-light-hover)",
+    "variable": "var(--colors-gray--button-light-hover)"
+  },
+  "colors.gray.ButtonLightActive": {
+    "value": "var(--colors-gray--button-light-active)",
+    "variable": "var(--colors-gray--button-light-active)"
+  },
+  "colors.gray.ButtonLightColor": {
+    "value": "var(--colors-gray--button-light-color)",
+    "variable": "var(--colors-gray--button-light-color)"
+  },
   "colors.slate.ButtonFilled": {
     "value": "var(--colors-slate--button-filled)",
     "variable": "var(--colors-slate--button-filled)"
@@ -1942,6 +2298,22 @@ const tokens = {
   "colors.slate.ButtonFilledActive": {
     "value": "var(--colors-slate--button-filled-active)",
     "variable": "var(--colors-slate--button-filled-active)"
+  },
+  "colors.slate.ButtonLight": {
+    "value": "var(--colors-slate--button-light)",
+    "variable": "var(--colors-slate--button-light)"
+  },
+  "colors.slate.ButtonLightHover": {
+    "value": "var(--colors-slate--button-light-hover)",
+    "variable": "var(--colors-slate--button-light-hover)"
+  },
+  "colors.slate.ButtonLightActive": {
+    "value": "var(--colors-slate--button-light-active)",
+    "variable": "var(--colors-slate--button-light-active)"
+  },
+  "colors.slate.ButtonLightColor": {
+    "value": "var(--colors-slate--button-light-color)",
+    "variable": "var(--colors-slate--button-light-color)"
   },
   "spacing.-1": {
     "value": "calc(var(--spacing-1) * -1)",
@@ -2127,6 +2499,18 @@ const tokens = {
     "value": "var(--colors-color-palette-bg)",
     "variable": "var(--colors-color-palette-bg)"
   },
+  "colors.colorPalette.bgHover": {
+    "value": "var(--colors-color-palette-bg-hover)",
+    "variable": "var(--colors-color-palette-bg-hover)"
+  },
+  "colors.colorPalette.bgActive": {
+    "value": "var(--colors-color-palette-bg-active)",
+    "variable": "var(--colors-color-palette-bg-active)"
+  },
+  "colors.colorPalette.borderColor": {
+    "value": "var(--colors-color-palette-border-color)",
+    "variable": "var(--colors-color-palette-border-color)"
+  },
   "colors.colorPalette.ButtonFilled": {
     "value": "var(--colors-color-palette--button-filled)",
     "variable": "var(--colors-color-palette--button-filled)"
@@ -2138,6 +2522,22 @@ const tokens = {
   "colors.colorPalette.ButtonFilledActive": {
     "value": "var(--colors-color-palette--button-filled-active)",
     "variable": "var(--colors-color-palette--button-filled-active)"
+  },
+  "colors.colorPalette.ButtonLight": {
+    "value": "var(--colors-color-palette--button-light)",
+    "variable": "var(--colors-color-palette--button-light)"
+  },
+  "colors.colorPalette.ButtonLightHover": {
+    "value": "var(--colors-color-palette--button-light-hover)",
+    "variable": "var(--colors-color-palette--button-light-hover)"
+  },
+  "colors.colorPalette.ButtonLightActive": {
+    "value": "var(--colors-color-palette--button-light-active)",
+    "variable": "var(--colors-color-palette--button-light-active)"
+  },
+  "colors.colorPalette.ButtonLightColor": {
+    "value": "var(--colors-color-palette--button-light-color)",
+    "variable": "var(--colors-color-palette--button-light-color)"
   }
 }
 
