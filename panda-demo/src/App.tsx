@@ -10,25 +10,29 @@ export default function App() {
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换
       </Button>
-      <Box as="p">
-        {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => {
-          return (
-            <span key={size}>
-              {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((radius) => {
-                return (
-                  <Button
-                    size={size}
-                    rounded={radius}
-                    compact={theme !== 'light'}
-                    disabled={theme !== 'light'}>
-                    按钮
-                  </Button>
-                );
-              })}
-            </span>
-          );
-        })}
-      </Box>
+      {new Array(1).fill(1).map((v, i) => {
+        return (
+          <Box key={i} as="p">
+            {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => {
+              return (
+                <span key={size}>
+                  {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((radius) => {
+                    return (
+                      <Button
+                        size={size}
+                        rounded={radius}
+                        compact={theme !== 'light'}
+                        disabled={theme !== 'light'}>
+                        按 钮
+                      </Button>
+                    );
+                  })}
+                </span>
+              );
+            })}
+          </Box>
+        );
+      })}
       <Box as="p">
         {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => {
           return (
@@ -41,7 +45,7 @@ export default function App() {
                     rounded={radius}
                     compact={theme === 'light'}
                     disabled={theme === 'light'}>
-                    按钮
+                    按 钮
                   </Button>
                 );
               })}

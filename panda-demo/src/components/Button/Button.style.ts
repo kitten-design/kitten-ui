@@ -10,9 +10,7 @@ export const ButtonRoot = styled('button', {
     cursor: 'pointer',
     display: 'inline-block',
     borderRadius: 'sm',
-    _active: {
-      transform: 'translateY(0.0625rem)',
-    },
+
     _disabled: {
       cursor: 'not-allowed!',
       bg: 'Button.disabled.bg!',
@@ -28,6 +26,7 @@ export const ButtonRoot = styled('button', {
         bg: {
           base: 'colorPalette.ButtonFilled',
           _hover: 'colorPalette.ButtonFilledHover',
+          _active: 'colorPalette.ButtonFilledActive',
         },
         color: 'white',
       },

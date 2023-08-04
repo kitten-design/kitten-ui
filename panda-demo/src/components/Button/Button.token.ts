@@ -22,5 +22,6 @@ Object.keys(colors)
     ButtonColors[color] = {
       ButtonFilled: { value: `{colors.${color}.500}` },
       ButtonFilledHover: { value: `{colors.${color}.600}` },
+      ButtonFilledActive: { value: `{colors.${color}.700}` },
     };
   });
