@@ -54,6 +54,8 @@ export function getVariantColors(_colors: Tokens['colors']) {
   return semanticColors;
 }
 
+const whiteColor = Chroma(token('colors.white'));
+
 export const ButtonColors: SemanticTokens['colors'] = {
   ...getVariantColors(colors),
 
@@ -85,10 +87,10 @@ export const ButtonColors: SemanticTokens['colors'] = {
     },
     white: {
       bgHover: {
-        value: chromaToRgba(Chroma(token('colors.white')).darken(0.1)),
+        value: chromaToRgba(whiteColor.darken(0.1)),
       },
       bgActive: {
-        value: chromaToRgba(Chroma(token('colors.white')).darken(0.2)),
+        value: chromaToRgba(whiteColor.darken(0.2)),
       },
     },
   },

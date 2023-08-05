@@ -11,6 +11,7 @@ export default function App() {
   return (
     <Box className={theme} w="100vw" h="100vh">
       <Button
+        fullWidth
         ref={ref}
         rounded={'lg'}
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>

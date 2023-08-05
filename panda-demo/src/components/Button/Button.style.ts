@@ -94,6 +94,12 @@ export const ButtonRoot = styled('button', {
       xl: { h: '3.75rem', px: '2rem', fontSize: 'xl' },
     },
     compact: { true: {} },
+    fullWidth: {
+      true: {
+        display: 'block',
+        w: 'full',
+      },
+    },
   },
   compoundVariants: [
     { size: 'xs', compact: true, css: { h: '1.375rem', px: '0.4375rem' } },
@@ -106,6 +112,7 @@ export const ButtonRoot = styled('button', {
     variant: 'filled',
     size: 'sm',
     compact: false,
+    fullWidth: false,
   },
 });
 
