@@ -1,14 +1,12 @@
-import React, {
-  Children,
+import type {
   ComponentProps,
   FC,
   ForwardedRef,
-  forwardRef,
   ForwardRefRenderFunction,
-  isValidElement,
   ReactElement,
   ReactNode,
 } from 'react';
+import React, { Children, forwardRef, isValidElement } from 'react';
 
 /**
  * Get child components of a specific component type
@@ -56,6 +54,8 @@ export function isElement(value: any): value is React.ReactElement {
   return false;
 }
 
-export function crc<T, P = {}>(render: ForwardRefRenderFunction<T, P>) {
+export function crc<T, P = Record<string, any>>(
+  render: ForwardRefRenderFunction<T, P>,
+) {
   return forwardRef(render) as FC<P & { ref?: ForwardedRef<T> }>;
 }

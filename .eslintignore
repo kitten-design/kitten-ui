@@ -1,4 +1,4 @@
-./remix.config.js
+./packages/kitten-styles
 node_modules
 public
 build

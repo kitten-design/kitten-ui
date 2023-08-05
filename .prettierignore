@@ -1,3 +1,4 @@
+./packages/kitten-styles
 node_modules
 public
 build

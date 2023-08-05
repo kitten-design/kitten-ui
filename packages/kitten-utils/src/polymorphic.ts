@@ -12,27 +12,29 @@ import { forwardRef } from 'react';
 export type Merge<T, P> = P & Omit<T, keyof P>;
 
 /** Merge component props */
-export type MergeProps<C extends ElementType, P = {}> = Merge<
+export type MergeProps<C extends ElementType, P = Record<string, any>> = Merge<
   ComponentProps<C>,
   P
 >;
 
 /** Merge component props (with ref) */
-export type MergePropsWithRef<C extends ElementType, P = {}> = Merge<
-  ComponentPropsWithRef<C>,
-  P
->;
+export type MergePropsWithRef<
+  C extends ElementType,
+  P = Record<string, any>,
+> = Merge<ComponentPropsWithRef<C>, P>;
 
 /** Polymorphic component props */
 export type PolymorphicComponentProps<
   C extends ElementType,
-  P = {},
+  P = Record<string, any>,
 > = MergePropsWithRef<C, P & { as?: C }>;
 
 /** Polymorphic component */
-export type PolymorphicComponent<C extends ElementType, P = {}, S = {}> = (<
-  As extends ElementType = C,
->(
+export type PolymorphicComponent<
+  C extends ElementType,
+  P = Record<string, any>,
+  S = Record<string, any>,
+> = (<As extends ElementType = C>(
   props: PolymorphicComponentProps<As, P>,
 ) => ReactElement) &
   Omit<FunctionComponent<PolymorphicComponentProps<C, P>>, never> &
@@ -41,14 +43,14 @@ export type PolymorphicComponent<C extends ElementType, P = {}, S = {}> = (<
 /** Creating a polymorphic component */
 export function createPolymorphicComponent<
   C extends ElementType,
-  P = {},
-  S = {},
+  P = Record<string, any>,
+  S = Record<string, any>,
 >(render: ForwardRefRenderFunction<any, PolymorphicComponentProps<C, P>>) {
   return forwardRef(render) as unknown as PolymorphicComponent<C, P, S>;
 }
 
-export type PCP<C extends ElementType, P = {}> = PolymorphicComponentProps<
-  C,
-  P
->;
+export type PCP<
+  C extends ElementType,
+  P = Record<string, any>,
+> = PolymorphicComponentProps<C, P>;
 export const cpc = createPolymorphicComponent;

@@ -1699,6 +1699,18 @@ const tokens = {
     "value": "var(--colors-rose--button-light-color)",
     "variable": "var(--colors-rose--button-light-color)"
   },
+  "colors.rose.ButtonOutline": {
+    "value": "var(--colors-rose--button-outline)",
+    "variable": "var(--colors-rose--button-outline)"
+  },
+  "colors.rose.ButtonOutlineHover": {
+    "value": "var(--colors-rose--button-outline-hover)",
+    "variable": "var(--colors-rose--button-outline-hover)"
+  },
+  "colors.rose.ButtonOutlineActive": {
+    "value": "var(--colors-rose--button-outline-active)",
+    "variable": "var(--colors-rose--button-outline-active)"
+  },
   "colors.pink.ButtonFilled": {
     "value": "var(--colors-pink--button-filled)",
     "variable": "var(--colors-pink--button-filled)"
@@ -1726,6 +1738,18 @@ const tokens = {
   "colors.pink.ButtonLightColor": {
     "value": "var(--colors-pink--button-light-color)",
     "variable": "var(--colors-pink--button-light-color)"
+  },
+  "colors.pink.ButtonOutline": {
+    "value": "var(--colors-pink--button-outline)",
+    "variable": "var(--colors-pink--button-outline)"
+  },
+  "colors.pink.ButtonOutlineHover": {
+    "value": "var(--colors-pink--button-outline-hover)",
+    "variable": "var(--colors-pink--button-outline-hover)"
+  },
+  "colors.pink.ButtonOutlineActive": {
+    "value": "var(--colors-pink--button-outline-active)",
+    "variable": "var(--colors-pink--button-outline-active)"
   },
   "colors.fuchsia.ButtonFilled": {
     "value": "var(--colors-fuchsia--button-filled)",
@@ -1755,6 +1779,18 @@ const tokens = {
     "value": "var(--colors-fuchsia--button-light-color)",
     "variable": "var(--colors-fuchsia--button-light-color)"
   },
+  "colors.fuchsia.ButtonOutline": {
+    "value": "var(--colors-fuchsia--button-outline)",
+    "variable": "var(--colors-fuchsia--button-outline)"
+  },
+  "colors.fuchsia.ButtonOutlineHover": {
+    "value": "var(--colors-fuchsia--button-outline-hover)",
+    "variable": "var(--colors-fuchsia--button-outline-hover)"
+  },
+  "colors.fuchsia.ButtonOutlineActive": {
+    "value": "var(--colors-fuchsia--button-outline-active)",
+    "variable": "var(--colors-fuchsia--button-outline-active)"
+  },
   "colors.purple.ButtonFilled": {
     "value": "var(--colors-purple--button-filled)",
     "variable": "var(--colors-purple--button-filled)"
@@ -1782,6 +1818,18 @@ const tokens = {
   "colors.purple.ButtonLightColor": {
     "value": "var(--colors-purple--button-light-color)",
     "variable": "var(--colors-purple--button-light-color)"
+  },
+  "colors.purple.ButtonOutline": {
+    "value": "var(--colors-purple--button-outline)",
+    "variable": "var(--colors-purple--button-outline)"
+  },
+  "colors.purple.ButtonOutlineHover": {
+    "value": "var(--colors-purple--button-outline-hover)",
+    "variable": "var(--colors-purple--button-outline-hover)"
+  },
+  "colors.purple.ButtonOutlineActive": {
+    "value": "var(--colors-purple--button-outline-active)",
+    "variable": "var(--colors-purple--button-outline-active)"
   },
   "colors.violet.ButtonFilled": {
     "value": "var(--colors-violet--button-filled)",
@@ -1811,6 +1859,18 @@ const tokens = {
     "value": "var(--colors-violet--button-light-color)",
     "variable": "var(--colors-violet--button-light-color)"
   },
+  "colors.violet.ButtonOutline": {
+    "value": "var(--colors-violet--button-outline)",
+    "variable": "var(--colors-violet--button-outline)"
+  },
+  "colors.violet.ButtonOutlineHover": {
+    "value": "var(--colors-violet--button-outline-hover)",
+    "variable": "var(--colors-violet--button-outline-hover)"
+  },
+  "colors.violet.ButtonOutlineActive": {
+    "value": "var(--colors-violet--button-outline-active)",
+    "variable": "var(--colors-violet--button-outline-active)"
+  },
   "colors.indigo.ButtonFilled": {
     "value": "var(--colors-indigo--button-filled)",
     "variable": "var(--colors-indigo--button-filled)"
@@ -1838,6 +1898,18 @@ const tokens = {
   "colors.indigo.ButtonLightColor": {
     "value": "var(--colors-indigo--button-light-color)",
     "variable": "var(--colors-indigo--button-light-color)"
+  },
+  "colors.indigo.ButtonOutline": {
+    "value": "var(--colors-indigo--button-outline)",
+    "variable": "var(--colors-indigo--button-outline)"
+  },
+  "colors.indigo.ButtonOutlineHover": {
+    "value": "var(--colors-indigo--button-outline-hover)",
+    "variable": "var(--colors-indigo--button-outline-hover)"
+  },
+  "colors.indigo.ButtonOutlineActive": {
+    "value": "var(--colors-indigo--button-outline-active)",
+    "variable": "var(--colors-indigo--button-outline-active)"
   },
   "colors.blue.ButtonFilled": {
     "value": "var(--colors-blue--button-filled)",
@@ -1867,6 +1939,18 @@ const tokens = {
     "value": "var(--colors-blue--button-light-color)",
     "variable": "var(--colors-blue--button-light-color)"
   },
+  "colors.blue.ButtonOutline": {
+    "value": "var(--colors-blue--button-outline)",
+    "variable": "var(--colors-blue--button-outline)"
+  },
+  "colors.blue.ButtonOutlineHover": {
+    "value": "var(--colors-blue--button-outline-hover)",
+    "variable": "var(--colors-blue--button-outline-hover)"
+  },
+  "colors.blue.ButtonOutlineActive": {
+    "value": "var(--colors-blue--button-outline-active)",
+    "variable": "var(--colors-blue--button-outline-active)"
+  },
   "colors.sky.ButtonFilled": {
     "value": "var(--colors-sky--button-filled)",
     "variable": "var(--colors-sky--button-filled)"
@@ -1894,6 +1978,18 @@ const tokens = {
   "colors.sky.ButtonLightColor": {
     "value": "var(--colors-sky--button-light-color)",
     "variable": "var(--colors-sky--button-light-color)"
+  },
+  "colors.sky.ButtonOutline": {
+    "value": "var(--colors-sky--button-outline)",
+    "variable": "var(--colors-sky--button-outline)"
+  },
+  "colors.sky.ButtonOutlineHover": {
+    "value": "var(--colors-sky--button-outline-hover)",
+    "variable": "var(--colors-sky--button-outline-hover)"
+  },
+  "colors.sky.ButtonOutlineActive": {
+    "value": "var(--colors-sky--button-outline-active)",
+    "variable": "var(--colors-sky--button-outline-active)"
   },
   "colors.cyan.ButtonFilled": {
     "value": "var(--colors-cyan--button-filled)",
@@ -1923,6 +2019,18 @@ const tokens = {
     "value": "var(--colors-cyan--button-light-color)",
     "variable": "var(--colors-cyan--button-light-color)"
   },
+  "colors.cyan.ButtonOutline": {
+    "value": "var(--colors-cyan--button-outline)",
+    "variable": "var(--colors-cyan--button-outline)"
+  },
+  "colors.cyan.ButtonOutlineHover": {
+    "value": "var(--colors-cyan--button-outline-hover)",
+    "variable": "var(--colors-cyan--button-outline-hover)"
+  },
+  "colors.cyan.ButtonOutlineActive": {
+    "value": "var(--colors-cyan--button-outline-active)",
+    "variable": "var(--colors-cyan--button-outline-active)"
+  },
   "colors.teal.ButtonFilled": {
     "value": "var(--colors-teal--button-filled)",
     "variable": "var(--colors-teal--button-filled)"
@@ -1950,6 +2058,18 @@ const tokens = {
   "colors.teal.ButtonLightColor": {
     "value": "var(--colors-teal--button-light-color)",
     "variable": "var(--colors-teal--button-light-color)"
+  },
+  "colors.teal.ButtonOutline": {
+    "value": "var(--colors-teal--button-outline)",
+    "variable": "var(--colors-teal--button-outline)"
+  },
+  "colors.teal.ButtonOutlineHover": {
+    "value": "var(--colors-teal--button-outline-hover)",
+    "variable": "var(--colors-teal--button-outline-hover)"
+  },
+  "colors.teal.ButtonOutlineActive": {
+    "value": "var(--colors-teal--button-outline-active)",
+    "variable": "var(--colors-teal--button-outline-active)"
   },
   "colors.emerald.ButtonFilled": {
     "value": "var(--colors-emerald--button-filled)",
@@ -1979,6 +2099,18 @@ const tokens = {
     "value": "var(--colors-emerald--button-light-color)",
     "variable": "var(--colors-emerald--button-light-color)"
   },
+  "colors.emerald.ButtonOutline": {
+    "value": "var(--colors-emerald--button-outline)",
+    "variable": "var(--colors-emerald--button-outline)"
+  },
+  "colors.emerald.ButtonOutlineHover": {
+    "value": "var(--colors-emerald--button-outline-hover)",
+    "variable": "var(--colors-emerald--button-outline-hover)"
+  },
+  "colors.emerald.ButtonOutlineActive": {
+    "value": "var(--colors-emerald--button-outline-active)",
+    "variable": "var(--colors-emerald--button-outline-active)"
+  },
   "colors.green.ButtonFilled": {
     "value": "var(--colors-green--button-filled)",
     "variable": "var(--colors-green--button-filled)"
@@ -2006,6 +2138,18 @@ const tokens = {
   "colors.green.ButtonLightColor": {
     "value": "var(--colors-green--button-light-color)",
     "variable": "var(--colors-green--button-light-color)"
+  },
+  "colors.green.ButtonOutline": {
+    "value": "var(--colors-green--button-outline)",
+    "variable": "var(--colors-green--button-outline)"
+  },
+  "colors.green.ButtonOutlineHover": {
+    "value": "var(--colors-green--button-outline-hover)",
+    "variable": "var(--colors-green--button-outline-hover)"
+  },
+  "colors.green.ButtonOutlineActive": {
+    "value": "var(--colors-green--button-outline-active)",
+    "variable": "var(--colors-green--button-outline-active)"
   },
   "colors.lime.ButtonFilled": {
     "value": "var(--colors-lime--button-filled)",
@@ -2035,6 +2179,18 @@ const tokens = {
     "value": "var(--colors-lime--button-light-color)",
     "variable": "var(--colors-lime--button-light-color)"
   },
+  "colors.lime.ButtonOutline": {
+    "value": "var(--colors-lime--button-outline)",
+    "variable": "var(--colors-lime--button-outline)"
+  },
+  "colors.lime.ButtonOutlineHover": {
+    "value": "var(--colors-lime--button-outline-hover)",
+    "variable": "var(--colors-lime--button-outline-hover)"
+  },
+  "colors.lime.ButtonOutlineActive": {
+    "value": "var(--colors-lime--button-outline-active)",
+    "variable": "var(--colors-lime--button-outline-active)"
+  },
   "colors.yellow.ButtonFilled": {
     "value": "var(--colors-yellow--button-filled)",
     "variable": "var(--colors-yellow--button-filled)"
@@ -2062,6 +2218,18 @@ const tokens = {
   "colors.yellow.ButtonLightColor": {
     "value": "var(--colors-yellow--button-light-color)",
     "variable": "var(--colors-yellow--button-light-color)"
+  },
+  "colors.yellow.ButtonOutline": {
+    "value": "var(--colors-yellow--button-outline)",
+    "variable": "var(--colors-yellow--button-outline)"
+  },
+  "colors.yellow.ButtonOutlineHover": {
+    "value": "var(--colors-yellow--button-outline-hover)",
+    "variable": "var(--colors-yellow--button-outline-hover)"
+  },
+  "colors.yellow.ButtonOutlineActive": {
+    "value": "var(--colors-yellow--button-outline-active)",
+    "variable": "var(--colors-yellow--button-outline-active)"
   },
   "colors.amber.ButtonFilled": {
     "value": "var(--colors-amber--button-filled)",
@@ -2091,6 +2259,18 @@ const tokens = {
     "value": "var(--colors-amber--button-light-color)",
     "variable": "var(--colors-amber--button-light-color)"
   },
+  "colors.amber.ButtonOutline": {
+    "value": "var(--colors-amber--button-outline)",
+    "variable": "var(--colors-amber--button-outline)"
+  },
+  "colors.amber.ButtonOutlineHover": {
+    "value": "var(--colors-amber--button-outline-hover)",
+    "variable": "var(--colors-amber--button-outline-hover)"
+  },
+  "colors.amber.ButtonOutlineActive": {
+    "value": "var(--colors-amber--button-outline-active)",
+    "variable": "var(--colors-amber--button-outline-active)"
+  },
   "colors.orange.ButtonFilled": {
     "value": "var(--colors-orange--button-filled)",
     "variable": "var(--colors-orange--button-filled)"
@@ -2118,6 +2298,18 @@ const tokens = {
   "colors.orange.ButtonLightColor": {
     "value": "var(--colors-orange--button-light-color)",
     "variable": "var(--colors-orange--button-light-color)"
+  },
+  "colors.orange.ButtonOutline": {
+    "value": "var(--colors-orange--button-outline)",
+    "variable": "var(--colors-orange--button-outline)"
+  },
+  "colors.orange.ButtonOutlineHover": {
+    "value": "var(--colors-orange--button-outline-hover)",
+    "variable": "var(--colors-orange--button-outline-hover)"
+  },
+  "colors.orange.ButtonOutlineActive": {
+    "value": "var(--colors-orange--button-outline-active)",
+    "variable": "var(--colors-orange--button-outline-active)"
   },
   "colors.red.ButtonFilled": {
     "value": "var(--colors-red--button-filled)",
@@ -2147,6 +2339,18 @@ const tokens = {
     "value": "var(--colors-red--button-light-color)",
     "variable": "var(--colors-red--button-light-color)"
   },
+  "colors.red.ButtonOutline": {
+    "value": "var(--colors-red--button-outline)",
+    "variable": "var(--colors-red--button-outline)"
+  },
+  "colors.red.ButtonOutlineHover": {
+    "value": "var(--colors-red--button-outline-hover)",
+    "variable": "var(--colors-red--button-outline-hover)"
+  },
+  "colors.red.ButtonOutlineActive": {
+    "value": "var(--colors-red--button-outline-active)",
+    "variable": "var(--colors-red--button-outline-active)"
+  },
   "colors.neutral.ButtonFilled": {
     "value": "var(--colors-neutral--button-filled)",
     "variable": "var(--colors-neutral--button-filled)"
@@ -2174,6 +2378,18 @@ const tokens = {
   "colors.neutral.ButtonLightColor": {
     "value": "var(--colors-neutral--button-light-color)",
     "variable": "var(--colors-neutral--button-light-color)"
+  },
+  "colors.neutral.ButtonOutline": {
+    "value": "var(--colors-neutral--button-outline)",
+    "variable": "var(--colors-neutral--button-outline)"
+  },
+  "colors.neutral.ButtonOutlineHover": {
+    "value": "var(--colors-neutral--button-outline-hover)",
+    "variable": "var(--colors-neutral--button-outline-hover)"
+  },
+  "colors.neutral.ButtonOutlineActive": {
+    "value": "var(--colors-neutral--button-outline-active)",
+    "variable": "var(--colors-neutral--button-outline-active)"
   },
   "colors.stone.ButtonFilled": {
     "value": "var(--colors-stone--button-filled)",
@@ -2203,6 +2419,18 @@ const tokens = {
     "value": "var(--colors-stone--button-light-color)",
     "variable": "var(--colors-stone--button-light-color)"
   },
+  "colors.stone.ButtonOutline": {
+    "value": "var(--colors-stone--button-outline)",
+    "variable": "var(--colors-stone--button-outline)"
+  },
+  "colors.stone.ButtonOutlineHover": {
+    "value": "var(--colors-stone--button-outline-hover)",
+    "variable": "var(--colors-stone--button-outline-hover)"
+  },
+  "colors.stone.ButtonOutlineActive": {
+    "value": "var(--colors-stone--button-outline-active)",
+    "variable": "var(--colors-stone--button-outline-active)"
+  },
   "colors.zinc.ButtonFilled": {
     "value": "var(--colors-zinc--button-filled)",
     "variable": "var(--colors-zinc--button-filled)"
@@ -2230,6 +2458,18 @@ const tokens = {
   "colors.zinc.ButtonLightColor": {
     "value": "var(--colors-zinc--button-light-color)",
     "variable": "var(--colors-zinc--button-light-color)"
+  },
+  "colors.zinc.ButtonOutline": {
+    "value": "var(--colors-zinc--button-outline)",
+    "variable": "var(--colors-zinc--button-outline)"
+  },
+  "colors.zinc.ButtonOutlineHover": {
+    "value": "var(--colors-zinc--button-outline-hover)",
+    "variable": "var(--colors-zinc--button-outline-hover)"
+  },
+  "colors.zinc.ButtonOutlineActive": {
+    "value": "var(--colors-zinc--button-outline-active)",
+    "variable": "var(--colors-zinc--button-outline-active)"
   },
   "colors.gray.ButtonFilled": {
     "value": "var(--colors-gray--button-filled)",
@@ -2259,6 +2499,18 @@ const tokens = {
     "value": "var(--colors-gray--button-light-color)",
     "variable": "var(--colors-gray--button-light-color)"
   },
+  "colors.gray.ButtonOutline": {
+    "value": "var(--colors-gray--button-outline)",
+    "variable": "var(--colors-gray--button-outline)"
+  },
+  "colors.gray.ButtonOutlineHover": {
+    "value": "var(--colors-gray--button-outline-hover)",
+    "variable": "var(--colors-gray--button-outline-hover)"
+  },
+  "colors.gray.ButtonOutlineActive": {
+    "value": "var(--colors-gray--button-outline-active)",
+    "variable": "var(--colors-gray--button-outline-active)"
+  },
   "colors.slate.ButtonFilled": {
     "value": "var(--colors-slate--button-filled)",
     "variable": "var(--colors-slate--button-filled)"
@@ -2287,6 +2539,18 @@ const tokens = {
     "value": "var(--colors-slate--button-light-color)",
     "variable": "var(--colors-slate--button-light-color)"
   },
+  "colors.slate.ButtonOutline": {
+    "value": "var(--colors-slate--button-outline)",
+    "variable": "var(--colors-slate--button-outline)"
+  },
+  "colors.slate.ButtonOutlineHover": {
+    "value": "var(--colors-slate--button-outline-hover)",
+    "variable": "var(--colors-slate--button-outline-hover)"
+  },
+  "colors.slate.ButtonOutlineActive": {
+    "value": "var(--colors-slate--button-outline-active)",
+    "variable": "var(--colors-slate--button-outline-active)"
+  },
   "colors.Button.default.color": {
     "value": "var(--colors--button-default-color)",
     "variable": "var(--colors--button-default-color)"
@@ -2314,6 +2578,14 @@ const tokens = {
   "colors.Button.disabled.bg": {
     "value": "var(--colors--button-disabled-bg)",
     "variable": "var(--colors--button-disabled-bg)"
+  },
+  "colors.Button.white.bgHover": {
+    "value": "var(--colors--button-white-bg-hover)",
+    "variable": "var(--colors--button-white-bg-hover)"
+  },
+  "colors.Button.white.bgActive": {
+    "value": "var(--colors--button-white-bg-active)",
+    "variable": "var(--colors--button-white-bg-active)"
   },
   "spacing.-1": {
     "value": "calc(var(--spacing-1) * -1)",
@@ -2526,6 +2798,18 @@ const tokens = {
   "colors.colorPalette.ButtonLightColor": {
     "value": "var(--colors-color-palette--button-light-color)",
     "variable": "var(--colors-color-palette--button-light-color)"
+  },
+  "colors.colorPalette.ButtonOutline": {
+    "value": "var(--colors-color-palette--button-outline)",
+    "variable": "var(--colors-color-palette--button-outline)"
+  },
+  "colors.colorPalette.ButtonOutlineHover": {
+    "value": "var(--colors-color-palette--button-outline-hover)",
+    "variable": "var(--colors-color-palette--button-outline-hover)"
+  },
+  "colors.colorPalette.ButtonOutlineActive": {
+    "value": "var(--colors-color-palette--button-outline-active)",
+    "variable": "var(--colors-color-palette--button-outline-active)"
   },
   "colors.colorPalette.bgHover": {
     "value": "var(--colors-color-palette-bg-hover)",

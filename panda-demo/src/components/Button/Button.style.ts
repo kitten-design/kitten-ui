@@ -20,6 +20,7 @@ export const ButtonRoot = styled('button', {
       cursor: 'not-allowed!',
       bg: 'Button.disabled.bg!',
       color: 'Button.disabled.color!',
+      borderColor: 'transparent',
       transform: 'unset!',
     },
   },
@@ -52,10 +53,38 @@ export const ButtonRoot = styled('button', {
         },
         color: 'colorPalette.ButtonLightColor',
       },
-      outline: {},
-      subtle: {},
-      transparent: {},
-      white: {},
+      outline: {
+        colorPalette,
+        bg: {
+          base: 'transparent',
+          _hover: 'colorPalette.ButtonOutlineHover',
+          _active: 'colorPalette.ButtonOutlineActive',
+        },
+        color: 'colorPalette.ButtonOutline',
+        borderColor: 'colorPalette.ButtonOutline',
+      },
+      subtle: {
+        colorPalette,
+        bg: {
+          base: 'transparent',
+          _hover: 'colorPalette.ButtonLightHover',
+          _active: 'colorPalette.ButtonLightActive',
+        },
+        color: 'colorPalette.ButtonLightColor',
+      },
+      transparent: {
+        bg: 'transparent',
+        color: 'colorPalette.ButtonLightColor',
+      },
+      white: {
+        colorPalette,
+        bg: {
+          base: 'white',
+          _hover: 'Button.white.bgHover',
+          _active: 'Button.white.bgActive',
+        },
+        color: 'colorPalette.ButtonFilled',
+      },
     },
     size: {
       xs: { h: '1.875rem', px: '0.875rem', fontSize: 'xs' },
@@ -74,7 +103,7 @@ export const ButtonRoot = styled('button', {
     { size: 'xl', compact: true, css: { h: '2.5rem', px: '0.875rem' } },
   ],
   defaultVariants: {
-    variant: 'light',
+    variant: 'white',
     size: 'sm',
     compact: false,
   },

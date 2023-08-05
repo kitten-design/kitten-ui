@@ -28,6 +28,16 @@ function getLightColors(_color: string) {
   };
 }
 
+function getOutlineColors(_color: string) {
+  const color = token(`colors.${_color}.400` as any);
+
+  return {
+    ButtonOutline: { value: `{colors.${_color}.400}` },
+    ButtonOutlineHover: { value: chromaToRgba(Chroma(color).alpha(0.05)) },
+    ButtonOutlineActive: { value: chromaToRgba(Chroma(color).alpha(0.1)) },
+  };
+}
+
 export function getVariantColors(_colors: Tokens['colors']) {
   const semanticColors: SemanticTokens['colors'] = {};
   Object.keys(_colors!)
@@ -38,6 +48,7 @@ export function getVariantColors(_colors: Tokens['colors']) {
       semanticColors[color] = {
         ...getFilledColors(color),
         ...getLightColors(color),
+        ...getOutlineColors(color),
       };
     });
   return semanticColors;
@@ -45,6 +56,7 @@ export function getVariantColors(_colors: Tokens['colors']) {
 
 export const ButtonColors: SemanticTokens['colors'] = {
   ...getVariantColors(colors),
+
   Button: {
     default: {
       color: {
@@ -69,6 +81,14 @@ export const ButtonColors: SemanticTokens['colors'] = {
       },
       bg: {
         value: { base: '{colors.gray.200}', _dark: '{colors.neutral.600}' },
+      },
+    },
+    white: {
+      bgHover: {
+        value: chromaToRgba(Chroma(token('colors.white')).darken(0.1)),
+      },
+      bgActive: {
+        value: chromaToRgba(Chroma(token('colors.white')).darken(0.3)),
       },
     },
   },
