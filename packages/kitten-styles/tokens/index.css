@@ -418,13 +418,6 @@
   --breakpoints-2xl: 1536px;
   --colors--box-color: #262626;
   --colors--box-bg: #fafafa;
-  --colors--button-default-color: #262626;
-  --colors--button-default-bg: #fafafa;
-  --colors--button-default-bg-hover: #f5f5f5;
-  --colors--button-default-bg-active: #e5e5e5;
-  --colors--button-default-border-color: #737373;
-  --colors--button-disabled-color: #6b7280;
-  --colors--button-disabled-bg: #e5e7eb;
   --colors-rose--button-filled: #f43f5e;
   --colors-rose--button-filled-hover: #e11d48;
   --colors-rose--button-filled-active: #be123c;
@@ -578,7 +571,14 @@
   --colors-slate--button-light: rgba(71, 85, 105, 0.1);
   --colors-slate--button-light-hover: rgba(71, 85, 105, 0.12);
   --colors-slate--button-light-active: rgba(71, 85, 105, 0.15);
-  --colors-slate--button-light-color: #64748b
+  --colors-slate--button-light-color: #64748b;
+  --colors--button-default-color: #262626;
+  --colors--button-default-bg: #fafafa;
+  --colors--button-default-bg-hover: #f5f5f5;
+  --colors--button-default-bg-active: #e5e5e5;
+  --colors--button-default-border-color: #737373;
+  --colors--button-disabled-color: #6b7280;
+  --colors--button-disabled-bg: #e5e7eb
 }
 
 .dark {

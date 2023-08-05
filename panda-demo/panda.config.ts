@@ -1,4 +1,5 @@
 import { defineConfig } from '@pandacss/dev';
+
 import { kittenPreset } from './src/themes';
 
 export default defineConfig({

@@ -2,6 +2,9 @@ import React, {
   Children,
   ComponentProps,
   FC,
+  ForwardedRef,
+  forwardRef,
+  ForwardRefRenderFunction,
   isValidElement,
   ReactElement,
   ReactNode,
@@ -51,4 +54,8 @@ export function isElement(value: any): value is React.ReactElement {
   }
 
   return false;
+}
+
+export function crc<T, P = {}>(render: ForwardRefRenderFunction<T, P>) {
+  return forwardRef(render) as FC<P & { ref?: ForwardedRef<T> }>;
 }

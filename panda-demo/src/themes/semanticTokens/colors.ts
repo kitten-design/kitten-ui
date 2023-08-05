@@ -1,4 +1,5 @@
-import { SemanticTokens } from '@pandacss/types';
+import type { SemanticTokens } from '@pandacss/types';
+
 import { BoxColors } from '../../components/Box/Box.token';
 import { ButtonColors } from '../../components/Button/Button.token';
 

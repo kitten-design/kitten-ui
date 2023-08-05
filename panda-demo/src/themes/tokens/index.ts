@@ -1,7 +1,8 @@
 import type { Tokens } from '@pandacss/types';
-import { colors } from './colors';
+
 import { animations } from './animations';
 import { borders } from './borders';
+import { colors } from './colors';
 import { shadows } from './shadows';
 import { sizes } from './sizes';
 import { spacing } from './spacing';

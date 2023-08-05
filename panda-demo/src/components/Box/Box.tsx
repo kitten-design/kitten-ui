@@ -1,4 +1,5 @@
-import { HTMLStyledProps, styled } from '@kitten-ui/styles/jsx';
+import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
+import { styled } from '@kitten-ui/styles/jsx';
 
 export const Box = styled('div', {
   base: { color: 'Box.color', bg: 'Box.bg' },

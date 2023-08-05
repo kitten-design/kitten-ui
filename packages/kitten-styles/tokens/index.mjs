@@ -1671,34 +1671,6 @@ const tokens = {
     "value": "var(--colors--box-bg)",
     "variable": "var(--colors--box-bg)"
   },
-  "colors.Button.default.color": {
-    "value": "var(--colors--button-default-color)",
-    "variable": "var(--colors--button-default-color)"
-  },
-  "colors.Button.default.bg": {
-    "value": "var(--colors--button-default-bg)",
-    "variable": "var(--colors--button-default-bg)"
-  },
-  "colors.Button.default.bgHover": {
-    "value": "var(--colors--button-default-bg-hover)",
-    "variable": "var(--colors--button-default-bg-hover)"
-  },
-  "colors.Button.default.bgActive": {
-    "value": "var(--colors--button-default-bg-active)",
-    "variable": "var(--colors--button-default-bg-active)"
-  },
-  "colors.Button.default.borderColor": {
-    "value": "var(--colors--button-default-border-color)",
-    "variable": "var(--colors--button-default-border-color)"
-  },
-  "colors.Button.disabled.color": {
-    "value": "var(--colors--button-disabled-color)",
-    "variable": "var(--colors--button-disabled-color)"
-  },
-  "colors.Button.disabled.bg": {
-    "value": "var(--colors--button-disabled-bg)",
-    "variable": "var(--colors--button-disabled-bg)"
-  },
   "colors.rose.ButtonFilled": {
     "value": "var(--colors-rose--button-filled)",
     "variable": "var(--colors-rose--button-filled)"
@@ -2315,6 +2287,34 @@ const tokens = {
     "value": "var(--colors-slate--button-light-color)",
     "variable": "var(--colors-slate--button-light-color)"
   },
+  "colors.Button.default.color": {
+    "value": "var(--colors--button-default-color)",
+    "variable": "var(--colors--button-default-color)"
+  },
+  "colors.Button.default.bg": {
+    "value": "var(--colors--button-default-bg)",
+    "variable": "var(--colors--button-default-bg)"
+  },
+  "colors.Button.default.bgHover": {
+    "value": "var(--colors--button-default-bg-hover)",
+    "variable": "var(--colors--button-default-bg-hover)"
+  },
+  "colors.Button.default.bgActive": {
+    "value": "var(--colors--button-default-bg-active)",
+    "variable": "var(--colors--button-default-bg-active)"
+  },
+  "colors.Button.default.borderColor": {
+    "value": "var(--colors--button-default-border-color)",
+    "variable": "var(--colors--button-default-border-color)"
+  },
+  "colors.Button.disabled.color": {
+    "value": "var(--colors--button-disabled-color)",
+    "variable": "var(--colors--button-disabled-color)"
+  },
+  "colors.Button.disabled.bg": {
+    "value": "var(--colors--button-disabled-bg)",
+    "variable": "var(--colors--button-disabled-bg)"
+  },
   "spacing.-1": {
     "value": "calc(var(--spacing-1) * -1)",
     "variable": "var(--spacing-1)"
@@ -2499,18 +2499,6 @@ const tokens = {
     "value": "var(--colors-color-palette-bg)",
     "variable": "var(--colors-color-palette-bg)"
   },
-  "colors.colorPalette.bgHover": {
-    "value": "var(--colors-color-palette-bg-hover)",
-    "variable": "var(--colors-color-palette-bg-hover)"
-  },
-  "colors.colorPalette.bgActive": {
-    "value": "var(--colors-color-palette-bg-active)",
-    "variable": "var(--colors-color-palette-bg-active)"
-  },
-  "colors.colorPalette.borderColor": {
-    "value": "var(--colors-color-palette-border-color)",
-    "variable": "var(--colors-color-palette-border-color)"
-  },
   "colors.colorPalette.ButtonFilled": {
     "value": "var(--colors-color-palette--button-filled)",
     "variable": "var(--colors-color-palette--button-filled)"
@@ -2538,6 +2526,18 @@ const tokens = {
   "colors.colorPalette.ButtonLightColor": {
     "value": "var(--colors-color-palette--button-light-color)",
     "variable": "var(--colors-color-palette--button-light-color)"
+  },
+  "colors.colorPalette.bgHover": {
+    "value": "var(--colors-color-palette-bg-hover)",
+    "variable": "var(--colors-color-palette-bg-hover)"
+  },
+  "colors.colorPalette.bgActive": {
+    "value": "var(--colors-color-palette-bg-active)",
+    "variable": "var(--colors-color-palette-bg-active)"
+  },
+  "colors.colorPalette.borderColor": {
+    "value": "var(--colors-color-palette-border-color)",
+    "variable": "var(--colors-color-palette-border-color)"
   }
 }
 
