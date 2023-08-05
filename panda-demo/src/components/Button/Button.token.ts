@@ -88,7 +88,7 @@ export const ButtonColors: SemanticTokens['colors'] = {
         value: chromaToRgba(Chroma(token('colors.white')).darken(0.1)),
       },
       bgActive: {
-        value: chromaToRgba(Chroma(token('colors.white')).darken(0.3)),
+        value: chromaToRgba(Chroma(token('colors.white')).darken(0.2)),
       },
     },
   },

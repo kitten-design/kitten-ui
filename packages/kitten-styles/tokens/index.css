@@ -646,7 +646,7 @@
   --colors--button-disabled-color: #6b7280;
   --colors--button-disabled-bg: #e5e7eb;
   --colors--button-white-bg-hover: rgba(250, 250, 250, 1);
-  --colors--button-white-bg-active: rgba(239, 239, 239, 1)
+  --colors--button-white-bg-active: rgba(245, 245, 245, 1)
 }
 
 .dark {

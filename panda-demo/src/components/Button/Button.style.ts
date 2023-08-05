@@ -103,7 +103,7 @@ export const ButtonRoot = styled('button', {
     { size: 'xl', compact: true, css: { h: '2.5rem', px: '0.875rem' } },
   ],
   defaultVariants: {
-    variant: 'white',
+    variant: 'filled',
     size: 'sm',
     compact: false,
   },
