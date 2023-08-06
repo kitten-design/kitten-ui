@@ -1,4 +1,9 @@
 export const spacing = {
+  xs: { value: '0.625rem' },
+  sm: { value: '0.75rem' },
+  md: { value: '1rem' },
+  lg: { value: '1.25rem' },
+  xl: { value: '2rem' },
   0: { value: '0rem' },
   0.5: { value: '0.125rem' },
   1: { value: '0.25rem' },

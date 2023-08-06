@@ -1387,6 +1387,26 @@ const tokens = {
     "value": "24rem",
     "variable": "var(--spacing-96)"
   },
+  "spacing.xs": {
+    "value": "0.625rem",
+    "variable": "var(--spacing-xs)"
+  },
+  "spacing.sm": {
+    "value": "0.75rem",
+    "variable": "var(--spacing-sm)"
+  },
+  "spacing.md": {
+    "value": "1rem",
+    "variable": "var(--spacing-md)"
+  },
+  "spacing.lg": {
+    "value": "1.25rem",
+    "variable": "var(--spacing-lg)"
+  },
+  "spacing.xl": {
+    "value": "2rem",
+    "variable": "var(--spacing-xl)"
+  },
   "spacing.0.5": {
     "value": "0.125rem",
     "variable": "var(--spacing-0\\.5)"
@@ -1523,22 +1543,6 @@ const tokens = {
     "value": "24rem",
     "variable": "var(--sizes-96)"
   },
-  "sizes.0.5": {
-    "value": "0.125rem",
-    "variable": "var(--sizes-0\\.5)"
-  },
-  "sizes.1.5": {
-    "value": "0.375rem",
-    "variable": "var(--sizes-1\\.5)"
-  },
-  "sizes.2.5": {
-    "value": "0.625rem",
-    "variable": "var(--sizes-2\\.5)"
-  },
-  "sizes.3.5": {
-    "value": "0.875rem",
-    "variable": "var(--sizes-3\\.5)"
-  },
   "sizes.xs": {
     "value": "20rem",
     "variable": "var(--sizes-xs)"
@@ -1558,6 +1562,22 @@ const tokens = {
   "sizes.xl": {
     "value": "36rem",
     "variable": "var(--sizes-xl)"
+  },
+  "sizes.0.5": {
+    "value": "0.125rem",
+    "variable": "var(--sizes-0\\.5)"
+  },
+  "sizes.1.5": {
+    "value": "0.375rem",
+    "variable": "var(--sizes-1\\.5)"
+  },
+  "sizes.2.5": {
+    "value": "0.625rem",
+    "variable": "var(--sizes-2\\.5)"
+  },
+  "sizes.3.5": {
+    "value": "0.875rem",
+    "variable": "var(--sizes-3\\.5)"
   },
   "sizes.2xl": {
     "value": "42rem",
@@ -2702,6 +2722,26 @@ const tokens = {
   "spacing.-96": {
     "value": "calc(var(--spacing-96) * -1)",
     "variable": "var(--spacing-96)"
+  },
+  "spacing.-xs": {
+    "value": "calc(var(--spacing-xs) * -1)",
+    "variable": "var(--spacing-xs)"
+  },
+  "spacing.-sm": {
+    "value": "calc(var(--spacing-sm) * -1)",
+    "variable": "var(--spacing-sm)"
+  },
+  "spacing.-md": {
+    "value": "calc(var(--spacing-md) * -1)",
+    "variable": "var(--spacing-md)"
+  },
+  "spacing.-lg": {
+    "value": "calc(var(--spacing-lg) * -1)",
+    "variable": "var(--spacing-lg)"
+  },
+  "spacing.-xl": {
+    "value": "calc(var(--spacing-xl) * -1)",
+    "variable": "var(--spacing-xl)"
   },
   "spacing.-0.5": {
     "value": "calc(var(--spacing-0\\.5) * -1)",

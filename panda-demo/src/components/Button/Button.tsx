@@ -1,20 +1,56 @@
 import { crc } from '@kitten-ui/utils';
-import React, { ComponentProps } from 'react';
+import type { ReactNode } from 'react';
+import React from 'react';
 
-import { ButtonRoot } from './Button.style';
+import { Box } from '../Box';
+import type { ButtonInnerProps, ButtonRootProps } from './Button.style';
+import { ButtonInner, ButtonLoading, ButtonRoot } from './Button.style';
 
-export type ButtonProps = ComponentProps<typeof ButtonRoot>;
+export type ButtonProps = ButtonRootProps & {
+  loading?: boolean;
+  leftSection?: ReactNode;
+  rightSection?: ReactNode;
+
+  justify?: ButtonInnerProps['justifyContent'];
+};
 
 export const Button = crc<HTMLButtonElement, ButtonProps>((props, ref) => {
-  const { children, ...others } = props;
+  const { children, loading, leftSection, rightSection, justify, ...others } =
+    props;
+
+  const left = leftSection;
+  const right = rightSection;
 
   return (
-    <ButtonRoot ref={ref} {...others}>
-      {children}
+    <ButtonRoot
+      ref={ref}
+      data-loading={!!loading}
+      data-left={!!left}
+      data-right={!!right}
+      pointerEvents={loading ? 'none' : 'auto'}
+      {...others}>
+      <ButtonInner justifyContent={justify}>
+        {!!left && (
+          <Box as="span" mr="xs">
+            {left}
+          </Box>
+        )}
+        {children}
+        {!!right && (
+          <Box as="span" ml="xs">
+            {right}
+          </Box>
+        )}
+        {loading && (
+          <ButtonLoading
+            rounded={props?.rounded}
+            borderRadius={props?.borderRadius}>
+            ⭕️
+          </ButtonLoading>
+        )}
+      </ButtonInner>
     </ButtonRoot>
   );
 });
 
 Button.displayName = 'Button';
-
-const a: ButtonProps = {};

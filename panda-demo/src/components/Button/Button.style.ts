@@ -1,4 +1,5 @@
 import { styled } from '@kitten-ui/styles/jsx';
+import type { ComponentProps } from 'react';
 
 /* default colorPalette */
 const colorPalette = 'blue';
@@ -22,6 +23,10 @@ export const ButtonRoot = styled('button', {
       color: 'Button.disabled.color!',
       borderColor: 'transparent',
       transform: 'unset!',
+    },
+
+    '&[data-loading] &': {
+      pointerEvents: 'none',
     },
   },
   variants: {
@@ -85,28 +90,76 @@ export const ButtonRoot = styled('button', {
         },
         color: 'colorPalette.ButtonFilled',
       },
-    },
-    size: {
-      xs: { h: '1.875rem', px: '0.875rem', fontSize: 'xs' },
-      sm: { h: '2.25rem', px: '1.125rem', fontSize: 'sm' },
-      md: { h: '2.625rem', px: '1.375rem', fontSize: 'md' },
-      lg: { h: '3.125rem', px: '1.625rem', fontSize: 'lg' },
-      xl: { h: '3.75rem', px: '2rem', fontSize: 'xl' },
-    },
-    compact: { true: {} },
-    fullWidth: {
-      true: {
-        display: 'block',
-        w: 'full',
+      gradient: {
+        colorPalette,
+        gradientFrom: 'colorPalette.400',
+        gradientTo: 'colorPalette.600',
+        bgGradient: 'to-br',
+        color: 'white',
+        border: 'none',
       },
     },
+    size: {
+      xs: {
+        h: '1.875rem',
+        pl: { base: '0.875rem', '&[data-left]': 'calc(0.875rem / 1.5)' },
+        pr: { base: '0.875rem', '&[data-right]': 'calc(0.875rem / 1.5)' },
+        fontSize: 'xs',
+      },
+      sm: {
+        h: '2.25rem',
+        pl: { base: '1.125rem', '&[data-left]': 'calc(1.125rem / 1.5)' },
+        pr: { base: '1.125rem', '&[data-right]': 'calc(1.125rem / 1.5)' },
+        fontSize: 'sm',
+      },
+      md: {
+        h: '2.625rem',
+        pl: { base: '1.375rem', '&[data-left]': 'calc(1.375rem / 1.5)' },
+        pr: { base: '1.375rem', '&[data-right]': 'calc(1.375rem / 1.5)' },
+        fontSize: 'md',
+      },
+      lg: {
+        h: '3.125rem',
+        pl: { base: '1.625rem', '&[data-left]': 'calc(1.625rem / 1.5)' },
+        pr: { base: '1.625rem', '&[data-right]': 'calc(1.625rem / 1.5)' },
+        fontSize: 'lg',
+      },
+      xl: {
+        h: '3.75rem',
+        pl: { base: '2rem', '&[data-left]': 'calc(2rem / 1.5)' },
+        pr: { base: '2rem', '&[data-right]': 'calc(2rem / 1.5)' },
+        fontSize: 'xl',
+      },
+    },
+    compact: { true: {} },
+    fullWidth: { true: { display: 'block', w: 'full' } },
   },
   compoundVariants: [
-    { size: 'xs', compact: true, css: { h: '1.375rem', px: '0.4375rem' } },
-    { size: 'sm', compact: true, css: { h: '1.625rem', px: '0.5rem' } },
-    { size: 'md', compact: true, css: { h: '1.875rem', px: '0.625rem' } },
-    { size: 'lg', compact: true, css: { h: '2.125rem', px: '0.75rem' } },
-    { size: 'xl', compact: true, css: { h: '2.5rem', px: '0.875rem' } },
+    {
+      size: 'xs',
+      compact: true,
+      css: { h: '1.375rem', pl: '0.4375rem', pr: '0.4375rem' },
+    },
+    {
+      size: 'sm',
+      compact: true,
+      css: { h: '1.625rem', pl: '0.5rem', pr: '0.5rem' },
+    },
+    {
+      size: 'md',
+      compact: true,
+      css: { h: '1.875rem', pl: '0.625rem', pr: '0.625rem' },
+    },
+    {
+      size: 'lg',
+      compact: true,
+      css: { h: '2.125rem', pl: '0.75rem', pr: '0.75rem' },
+    },
+    {
+      size: 'xl',
+      compact: true,
+      css: { h: '2.5rem', pl: '0.875rem', pr: '0.875rem' },
+    },
   ],
   defaultVariants: {
     variant: 'filled',
@@ -115,5 +168,28 @@ export const ButtonRoot = styled('button', {
     fullWidth: false,
   },
 });
-
 ButtonRoot.displayName = 'ButtonRoot';
+export type ButtonRootProps = ComponentProps<typeof ButtonRoot>;
+
+export const ButtonInner = styled('div', {
+  base: { display: 'flex', alignItems: 'center', justifyContent: 'center' },
+});
+ButtonInner.displayName = 'ButtonInner';
+export type ButtonInnerProps = ComponentProps<typeof ButtonInner>;
+
+export const ButtonLoading = styled('div', {
+  base: {
+    cursor: 'not-allowed',
+    bg: { base: 'rgba(255, 255, 255, 0.5)', _dark: 'rgba(26, 27, 30, 0.5)' },
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute',
+    top: '-0.0625rem',
+    right: '-0.0625rem',
+    bottom: '-0.0625rem',
+    left: '-0.0625rem',
+  },
+});
+ButtonLoading.displayName = 'ButtonLoading';
+export type ButtonLoadingProps = ComponentProps<typeof ButtonLoading>;
