@@ -2,7 +2,6 @@ import { IconDownload, IconPhoto } from '@tabler/icons-react';
 import React from 'react';
 
 import { Box, Button } from './';
-import { Loader } from './components/Loader';
 
 export default function App() {
   const [theme, setTheme] = React.useState('light');

@@ -99,7 +99,7 @@ export const ButtonRoot = styled('button', {
         gradientTo: 'colorPalette.600',
         bgGradient: 'to-br',
         color: 'white',
-        border: 'none',
+        border: '1px solid red',
       },
     },
     size: {
