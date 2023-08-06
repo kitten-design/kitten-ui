@@ -10,17 +10,31 @@ export default function App() {
 
   return (
     <Box className={theme} w="100vw" h="100vh" styled>
-      <Button
-        leftSection={<IconPhoto size={14} />}
-        rightSection={<IconDownload size={14} />}
-        loading={loading}
-        fullWidth
-        rounded={'full'}
-        onClick={() => {
-          alert('123');
-        }}>
-        切换
-      </Button>
+      {(
+        [
+          'outline',
+          'light',
+          'default',
+          'transparent',
+          'white',
+          'filled',
+          'subtle',
+          'gradient',
+        ] as const
+      ).map((v) => {
+        return (
+          <Button
+            variant={v}
+            leftSection={<IconPhoto size={14} />}
+            rightSection={<IconDownload size={14} />}
+            loading={loading}
+            onClick={() => {
+              alert('123');
+            }}>
+            切换
+          </Button>
+        );
+      })}
       <Button
         onClick={() => {
           setLoading(!loading);

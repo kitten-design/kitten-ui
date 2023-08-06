@@ -3,7 +3,8 @@ import type { ComponentProps } from 'react';
 
 export const LoaderRoot = styled('div', {
   base: {
-    '--color': 'colors.blue.500',
+    colorPalette: 'blue',
+    '--loader-color': 'colors.colorPalette.500',
   },
   variants: {
     size: {
@@ -14,9 +15,9 @@ export const LoaderRoot = styled('div', {
       xl: { w: '3.625rem', h: '3.625rem' },
     },
     variant: {
-      bars: { fill: 'var(--color)' },
-      oval: { stroke: 'var(--color)' },
-      dots: { fill: 'var(--color)' },
+      bars: { fill: 'var(--loader-color)' },
+      oval: { stroke: 'var(--loader-color)' },
+      dots: { fill: 'var(--loader-color)' },
     },
   },
   defaultVariants: {

@@ -21,6 +21,7 @@ export default defineConfig({
       {
         properties: {
           borderRadius: ['*'],
+          '--color': ['*'],
         },
         responsive: true,
       },

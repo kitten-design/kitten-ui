@@ -18,7 +18,7 @@ function getFilledColors(_color: string) {
 }
 
 function getLightColors(_color: string) {
-  const color = token(`colors.${_color}.600` as any);
+  const color = token(`colors.${_color}.500` as any);
 
   return {
     ButtonLight: { value: chromaToRgba(Chroma(color).alpha(0.1)) },

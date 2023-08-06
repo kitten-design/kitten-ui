@@ -20,10 +20,15 @@ export const ButtonRoot = styled('button', {
 
     _disabled: {
       cursor: 'not-allowed!',
-      bg: 'Button.disabled.bg!',
-      color: 'Button.disabled.color!',
-      borderColor: 'transparent',
-      transform: 'unset!',
+      '&[data-loading=false]': {
+        bg: 'Button.disabled.bg!',
+        color: 'Button.disabled.color!',
+        borderColor: 'transparent',
+      },
+    },
+    '&[data-loading=true]': {
+      cursor: 'not-allowed!',
+      pointerEvents: 'none',
     },
   },
   variants: {
@@ -75,6 +80,7 @@ export const ButtonRoot = styled('button', {
         color: 'colorPalette.ButtonLightColor',
       },
       transparent: {
+        colorPalette,
         bg: 'transparent',
         color: 'colorPalette.ButtonLightColor',
       },
@@ -197,7 +203,7 @@ export type ButtonInnerProps = ComponentProps<typeof ButtonInner>;
 export const ButtonLoading = styled('div', {
   base: {
     cursor: 'not-allowed',
-    bg: { base: 'rgba(255, 255, 255, 0.5)', _dark: 'rgba(26, 27, 30, 0.5)' },
+    bg: { base: 'rgba(255, 255, 255, 0.4)', _dark: 'rgba(26, 27, 30, 0.4)' },
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

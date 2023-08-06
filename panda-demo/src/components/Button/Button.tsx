@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import React from 'react';
 
 import { Box } from '../Box';
+import { Loader } from '../Loader';
 import type { ButtonInnerProps, ButtonRootProps } from './Button.style';
 import { ButtonInner, ButtonLoading, ButtonRoot } from './Button.style';
 
@@ -17,8 +18,17 @@ export interface ButtonProps
 }
 
 export const Button = crc<HTMLButtonElement, ButtonProps>((props, ref) => {
-  const { children, loading, leftSection, rightSection, justify, ...others } =
-    props;
+  const {
+    children,
+    disabled,
+    loading,
+    leftSection,
+    rightSection,
+    justify,
+    variant,
+    colorPalette,
+    ...others
+  } = props;
 
   const left = leftSection;
   const right = rightSection;
@@ -29,7 +39,9 @@ export const Button = crc<HTMLButtonElement, ButtonProps>((props, ref) => {
       data-loading={!!loading}
       data-left={!!left}
       data-right={!!right}
-      pointerEvents={loading ? 'none' : 'auto'}
+      colorPalette={colorPalette}
+      variant={variant}
+      disabled={disabled || loading}
       {...others}>
       <ButtonInner justifyContent={justify}>
         {!!left && (
@@ -47,7 +59,22 @@ export const Button = crc<HTMLButtonElement, ButtonProps>((props, ref) => {
           <ButtonLoading
             rounded={props?.rounded}
             borderRadius={props?.borderRadius}>
-            ⭕️
+            {!['gradient', 'filled', 'default'].includes(variant!) && (
+              <Loader colorPalette={colorPalette} />
+            )}
+            {['gradient', 'filled'].includes(variant!) && (
+              <Loader
+                key="loader-2"
+                css={{
+                  '--loader-color': 'colors.white',
+                }}
+              />
+            )}
+            {variant === 'default' && (
+              <Loader
+                css={{ '--loader-color': 'colors.Button.default.color' }}
+              />
+            )}
           </ButtonLoading>
         )}
       </ButtonInner>
