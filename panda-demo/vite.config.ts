@@ -1,15 +1,35 @@
 import react from '@vitejs/plugin-react-swc';
-import { defineConfig } from 'vite';
+import { defineConfig, splitVendorChunkPlugin } from 'vite';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
-  plugins: [react()],
+  esbuild: {
+    jsx: 'transform',
+  },
+
+  plugins: [
+    react(),
+    dts({
+      staticImport: true,
+      insertTypesEntry: true,
+      cleanVueFileName: true,
+      copyDtsFiles: false,
+      // rollupTypes: true,
+      outDir: 'lib',
+    }),
+    splitVendorChunkPlugin(),
+  ],
   build: {
+    target: 'es2015',
+    lib: {
+      name: 'kittenComponents',
+      entry: './src/index.ts',
+      fileName: 'index',
+    },
     rollupOptions: {
+      external: ['react', '@kitten-ui/styles'],
       output: {
-        manualChunks: {
-          react: ['react', 'react-dom'],
-          kittenComponent: ['@kitten-ui/components'],
-        },
+        globals: { react: 'React' },
       },
     },
   },

@@ -308,6 +308,9 @@ importers:
       vite:
         specifier: ^4.4.8
         version: 4.4.8(@types/node@20.4.5)
+      vite-plugin-dts:
+        specifier: ^3.4.0
+        version: 3.4.0(@types/node@20.4.5)(typescript@5.1.6)(vite@4.4.8)
 
   website:
     dependencies:
@@ -2712,7 +2715,7 @@ packages:
       '@rushstack/ts-command-line': 4.15.1
       colors: 1.2.5
       lodash: 4.17.21
-      resolve: 1.22.2
+      resolve: 1.22.4
       semver: 7.5.4
       source-map: 0.6.1
       typescript: 5.0.4
@@ -3721,7 +3724,7 @@ packages:
       fs-extra: 7.0.1
       import-lazy: 4.0.0
       jju: 1.4.0
-      resolve: 1.22.2
+      resolve: 1.22.4
       semver: 7.5.4
       z-schema: 5.0.5
     dev: true
