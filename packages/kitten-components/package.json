@@ -32,7 +32,6 @@
     "react": ">=16.8.0"
   },
   "dependencies": {
-    "@kitten-ui/styles": "workspace:*",
     "@kitten-ui/utils": "workspace:*",
     "react": "^18.2.0"
   },

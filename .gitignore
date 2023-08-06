@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 lib
-./packages/kitten-styles/*
+packages/kitten-styles/*
