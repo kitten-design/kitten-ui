@@ -1,15 +1,19 @@
-import { token } from '@kitten-ui/styles/tokens';
 import type { SemanticTokens, Tokens } from '@pandacss/types';
 import Chroma from 'chroma-js';
 
 import { colors } from '../../themes/tokens/colors';
+
+type Color = keyof Omit<
+  typeof colors,
+  'current' | 'black' | 'white' | 'transparent'
+>;
 
 function chromaToRgba(chromaColor: Chroma.Color) {
   const rgbaArray = chromaColor.rgba();
   return `rgba(${rgbaArray[0]}, ${rgbaArray[1]}, ${rgbaArray[2]}, ${rgbaArray[3]})`;
 }
 
-function getFilledColors(_color: string) {
+function getFilledColors(_color: Color) {
   return {
     ButtonFilled: { value: `{colors.${_color}.500}` },
     ButtonFilledHover: { value: `{colors.${_color}.600}` },
@@ -17,8 +21,8 @@ function getFilledColors(_color: string) {
   };
 }
 
-function getLightColors(_color: string) {
-  const color = token(`colors.${_color}.500` as any);
+function getLightColors(_color: Color) {
+  const color = colors[_color]?.[500].value;
 
   return {
     ButtonLight: { value: chromaToRgba(Chroma(color).alpha(0.1)) },
@@ -28,9 +32,8 @@ function getLightColors(_color: string) {
   };
 }
 
-function getOutlineColors(_color: string) {
-  const color = token(`colors.${_color}.400` as any);
-
+function getOutlineColors(_color: Color) {
+  const color = colors[_color]?.[400].value;
   return {
     ButtonOutline: { value: `{colors.${_color}.400}` },
     ButtonOutlineHover: { value: chromaToRgba(Chroma(color).alpha(0.05)) },
@@ -40,21 +43,21 @@ function getOutlineColors(_color: string) {
 
 export function getVariantColors(_colors: Tokens['colors']) {
   const semanticColors: SemanticTokens['colors'] = {};
-  Object.keys(_colors!)
-    .filter(
+  (
+    Object.keys(_colors!).filter(
       (color) => !['current', 'black', 'white', 'transparent'].includes(color),
-    )
-    .forEach((color) => {
-      semanticColors[color] = {
-        ...getFilledColors(color),
-        ...getLightColors(color),
-        ...getOutlineColors(color),
-      };
-    });
+    ) as Color[]
+  ).forEach((color) => {
+    semanticColors[color] = {
+      ...getFilledColors(color),
+      ...getLightColors(color),
+      ...getOutlineColors(color),
+    };
+  });
   return semanticColors;
 }
 
-const whiteColor = Chroma(token('colors.white'));
+const whiteColor = Chroma(colors.white.value);
 
 export const ButtonColors: SemanticTokens['colors'] = {
   ...getVariantColors(colors),
