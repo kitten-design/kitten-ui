@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
+import { defineConfig, splitVendorChunkPlugin } from 'vite';
 import dts from 'vite-plugin-dts';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   esbuild: {
     jsx: 'transform',
@@ -14,20 +14,22 @@ export default defineConfig({
       fileName: 'index',
     },
     rollupOptions: {
-      external: ['react'],
+      external: ['react', '@kitten-ui/styles'],
       output: {
         globals: { react: 'React' },
       },
     },
   },
   plugins: [
+    react(),
     dts({
       staticImport: true,
       insertTypesEntry: true,
       cleanVueFileName: true,
       copyDtsFiles: false,
-      // rollupTypes: true,\
-      outputDir: 'lib',
+      // rollupTypes: true,
+      outDir: 'lib',
     }),
+    splitVendorChunkPlugin(),
   ],
 });

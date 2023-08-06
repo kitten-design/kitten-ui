@@ -14,10 +14,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
-    "jsxFactory": "React.createElement",
-    "outDir": "./lib"
+    "jsx": "react"
   },
-  "include": ["src", "src/$/T.style.ts"],
+  "include": ["src", "node_modules/@kitten-ui/styles"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
