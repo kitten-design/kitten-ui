@@ -1,16 +1,13 @@
-import { styled } from '@kitten-ui/styles/jsx';
-import type { ComponentProps } from 'react';
+import { crc } from '@kitten-ui/utils';
+import React from 'react';
 
-export const Box = styled('div', {
-  base: {},
-  variants: {
-    styled: { true: { color: 'Box.color', bg: 'Box.bg' } },
-  },
-  defaultVariants: {
-    styled: false,
-  },
+import type { BoxRootProps } from './Box.style';
+import { BoxRoot } from './Box.style';
+
+export interface BoxProps
+  extends React.DOMAttributes<HTMLDivElement>,
+    BoxRootProps {}
+
+export const Box = crc<HTMLDivElement, BoxProps>((props, ref) => {
+  return <BoxRoot ref={ref} {...props} />;
 });
-
-Box.displayName = 'Box';
-
-export type BoxProps = ComponentProps<typeof Box>;

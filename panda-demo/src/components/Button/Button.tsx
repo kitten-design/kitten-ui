@@ -6,13 +6,15 @@ import { Box } from '../Box';
 import type { ButtonInnerProps, ButtonRootProps } from './Button.style';
 import { ButtonInner, ButtonLoading, ButtonRoot } from './Button.style';
 
-export type ButtonProps = ButtonRootProps & {
+export interface ButtonProps
+  extends React.DOMAttributes<HTMLButtonElement>,
+    ButtonRootProps {
   loading?: boolean;
   leftSection?: ReactNode;
   rightSection?: ReactNode;
 
   justify?: ButtonInnerProps['justifyContent'];
-};
+}
 
 export const Button = crc<HTMLButtonElement, ButtonProps>((props, ref) => {
   const { children, loading, leftSection, rightSection, justify, ...others } =

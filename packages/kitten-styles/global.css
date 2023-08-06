@@ -33,8 +33,4 @@
     --scale-x: 1;
     --scale-y: 1
     }
-
-  * {
-    transition: background-color 0.1s ease-in-out
-    }
 }
