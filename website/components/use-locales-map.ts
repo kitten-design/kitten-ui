@@ -11,12 +11,12 @@ export default function useLocalesMap(localesMap) {
     throw new Error('localesMap 必须是一个对象');
   }
 
-  if (!localesMap.hasOwnProperty(defaultLocale)) {
+  if (!localesMap?.[defaultLocale]) {
     throw new Error(`localesMap 必须包含默认语言环境"${defaultLocale}"`);
   }
 
   if (
-    localesMap.hasOwnProperty(locale) &&
+    localesMap?.[locale] &&
     typeof localesMap[locale] !== typeof localesMap[defaultLocale]
   ) {
     throw new Error(

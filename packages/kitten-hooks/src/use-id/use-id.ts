@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import { useIsomorphicEffect } from '../use-isomorphic-effect/use-isomorphic-effect';
 
 export function useId(staticId?: string) {
