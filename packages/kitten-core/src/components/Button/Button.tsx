@@ -1,4 +1,4 @@
-import { crc } from '@kitten-ui/utils';
+import { cpc } from '@kitten-ui/utils';
 import type { ReactNode } from 'react';
 import React from 'react';
 
@@ -7,9 +7,7 @@ import { Loader } from '../Loader';
 import type { ButtonInnerProps, ButtonRootProps } from './Button.style';
 import { ButtonInner, ButtonLoading, ButtonRoot } from './Button.style';
 
-export interface ButtonProps
-  extends React.DOMAttributes<HTMLButtonElement>,
-    ButtonRootProps {
+export interface ButtonProps extends ButtonRootProps {
   loading?: boolean;
   leftSection?: ReactNode;
   rightSection?: ReactNode;
@@ -17,7 +15,7 @@ export interface ButtonProps
   justify?: ButtonInnerProps['justifyContent'];
 }
 
-export const Button = crc<HTMLButtonElement, ButtonProps>((props, ref) => {
+export const Button = cpc<'button', ButtonProps>((props, ref) => {
   const {
     children,
     disabled,

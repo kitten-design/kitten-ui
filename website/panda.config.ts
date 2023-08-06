@@ -1,6 +1,5 @@
+import { kittenPreset } from '@kitten-ui/core';
 import { defineConfig } from '@pandacss/dev';
-
-import { kittenPreset } from './src/themes';
 
 export default defineConfig({
   preflight: true,
@@ -13,8 +12,8 @@ export default defineConfig({
   },
   exclude: [],
   include: [
-    './src/**/*.{js,jsx,ts,tsx}',
-    './node_modules/@kitten-ui/styles/src/**/*.tsx',
+    './pages/**/*.{js,jsx,ts,tsx,mdx}',
+    './components/**/*.{js,jsx,ts,tsx,mdx}',
   ],
   staticCss: {
     css: [

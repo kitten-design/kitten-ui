@@ -28,7 +28,7 @@ export default function App() {
             rightSection={<IconDownload size={14} />}
             loading={loading}
             onClick={() => {
-              alert('123');
+              console.log('123');
             }}>
             切换
           </Button>
@@ -47,7 +47,7 @@ export default function App() {
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换
       </Button>
-      {new Array(1).fill(1).map((v, i) => {
+      {new Array(1).fill(1).map((_v, i) => {
         return (
           <Box key={i} as="p">
             {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => {
