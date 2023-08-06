@@ -1,5 +1,3 @@
 packages:
-  - panda-demo
-  - example
   - packages/*
   - website
