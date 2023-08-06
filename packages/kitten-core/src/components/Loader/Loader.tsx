@@ -12,9 +12,7 @@ const LOADERS = {
   dots: Dots,
 };
 
-export interface LoaderProps
-  extends React.DOMAttributes<HTMLButtonElement>,
-    LoaderRootProps {}
+export interface LoaderProps extends LoaderRootProps {}
 
 export const Loader: FC<LoaderProps> = (props) => {
   const { variant = 'oval', ...others } = props;
@@ -23,7 +21,7 @@ export const Loader: FC<LoaderProps> = (props) => {
     <LoaderRoot
       {...others}
       role="presentation"
-      as={LOADERS[variant]}
+      as={LOADERS[variant] as any}
       variant={variant}
     />
   );

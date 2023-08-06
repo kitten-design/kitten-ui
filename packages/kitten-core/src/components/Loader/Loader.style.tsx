@@ -19,6 +19,7 @@ export const LoaderRoot = styled('div', {
       oval: { stroke: 'var(--loader-color)' },
       dots: { fill: 'var(--loader-color)' },
     },
+    as: {},
   },
   defaultVariants: {
     size: 'sm',

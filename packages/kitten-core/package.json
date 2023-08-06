@@ -32,7 +32,6 @@
     "build:lib": "tsc --project ./tsconfig.build.json"
   },
   "dependencies": {
-    "@kitten-ui/components": "workspace:*",
     "@kitten-ui/utils": "workspace:*",
     "@tabler/icons-react": "^2.30.0",
     "chroma-js": "^2.4.2",
