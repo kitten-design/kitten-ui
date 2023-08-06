@@ -1,6 +1,7 @@
-import { DocsThemeConfig } from 'nextra-theme-docs';
-import useLocalesMap from './components/use-locales-map';
 import { useRouter } from 'next/router';
+import type { DocsThemeConfig } from 'nextra-theme-docs';
+
+import useLocalesMap from './components/use-locales-map';
 
 const config: DocsThemeConfig = {
   logo: () =>

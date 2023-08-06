@@ -1,9 +1,9 @@
-import type { NextraThemeLayoutProps } from 'nextra';
 import Head from 'next/head';
+import type { NextraThemeLayoutProps } from 'nextra';
 
 export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
   const { title, frontMatter, headings } = pageOpts;
-  
+
   return (
     <div>
       <Head>
