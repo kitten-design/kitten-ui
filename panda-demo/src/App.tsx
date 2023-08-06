@@ -1,15 +1,13 @@
 import { IconDownload, IconPhoto } from '@tabler/icons-react';
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 
 import { Box, Button } from './';
+import { Loader } from './components/Loader';
 
 export default function App() {
   const [theme, setTheme] = React.useState('light');
   const [loading, setLoading] = React.useState(false);
-  const ref = useRef<HTMLButtonElement>(null);
-  useEffect(() => {
-    console.log(ref);
-  }, []);
+
   return (
     <Box className={theme} w="100vw" h="100vh" styled>
       <Button
@@ -32,7 +30,6 @@ export default function App() {
       <Button
         leftSection={<IconPhoto size={14} />}
         rightSection={<IconDownload size={14} />}
-        ref={ref}
         rounded={'lg'}
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换
@@ -51,7 +48,7 @@ export default function App() {
                         key={size + radius}
                         size={size}
                         rounded={radius}
-                        compact={theme !== 'light'}
+                        compact={theme === 'light'}
                         disabled={theme !== 'light'}>
                         按钮
                       </Button>

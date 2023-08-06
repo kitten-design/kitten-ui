@@ -1,4 +1,5 @@
 import { styled } from '@kitten-ui/styles/jsx';
+import type { SystemStyleObject } from '@pandacss/types';
 import type { ComponentProps } from 'react';
 
 /* default colorPalette */
@@ -23,10 +24,6 @@ export const ButtonRoot = styled('button', {
       color: 'Button.disabled.color!',
       borderColor: 'transparent',
       transform: 'unset!',
-    },
-
-    '&[data-loading] &': {
-      pointerEvents: 'none',
     },
   },
   variants: {
@@ -138,27 +135,47 @@ export const ButtonRoot = styled('button', {
     {
       size: 'xs',
       compact: true,
-      css: { h: '1.375rem', pl: '0.4375rem', pr: '0.4375rem' },
+      css: {
+        h: '1.375rem',
+        pl: { base: '0.4375rem', '&[data-left]': 'calc(0.4375rem / 1.5)' },
+        pr: { base: '0.4375rem', '&[data-right]': 'calc(0.4375rem / 1.5)' },
+      } as SystemStyleObject,
     },
     {
       size: 'sm',
       compact: true,
-      css: { h: '1.625rem', pl: '0.5rem', pr: '0.5rem' },
+      css: {
+        h: '1.625rem',
+        pl: { base: '0.5rem', '&[data-left]': 'calc(0.5rem / 1.5)' },
+        pr: { base: '0.5rem', '&[data-right]': 'calc(0.5rem / 1.5)' },
+      } as SystemStyleObject,
     },
     {
       size: 'md',
       compact: true,
-      css: { h: '1.875rem', pl: '0.625rem', pr: '0.625rem' },
+      css: {
+        h: '1.875rem',
+        pl: { base: '0.625rem', '&[data-left]': 'calc(0.625rem / 1.5)' },
+        pr: { base: '0.625rem', '&[data-right]': 'calc(0.625rem / 1.5)' },
+      } as SystemStyleObject,
     },
     {
       size: 'lg',
       compact: true,
-      css: { h: '2.125rem', pl: '0.75rem', pr: '0.75rem' },
+      css: {
+        h: '2.125rem',
+        pl: { base: '0.75rem', '&[data-left]': 'calc(0.75rem / 1.5)' },
+        pr: { base: '0.75rem', '&[data-right]': 'calc(0.75rem / 1.5)' },
+      } as SystemStyleObject,
     },
     {
       size: 'xl',
       compact: true,
-      css: { h: '2.5rem', pl: '0.875rem', pr: '0.875rem' },
+      css: {
+        h: '2.5rem',
+        pl: { base: '0.875rem', '&[data-left]': 'calc(0.875rem / 1.5)' },
+        pr: { base: '0.875rem', '&[data-right]': 'calc(0.875rem / 1.5)' },
+      } as SystemStyleObject,
     },
   ],
   defaultVariants: {
