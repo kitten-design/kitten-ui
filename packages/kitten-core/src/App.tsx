@@ -1,103 +1,20 @@
-import { IconDownload, IconPhoto } from '@tabler/icons-react';
 import React from 'react';
 
 import { Box, Button } from './';
+import { Center } from './components/Center/Center';
 
 export default function App() {
   const [theme, setTheme] = React.useState('light');
-  const [loading, setLoading] = React.useState(false);
 
   return (
     <Box className={theme} w="100vw" h="100vh" styled>
-      {(
-        [
-          'outline',
-          'light',
-          'default',
-          'transparent',
-          'white',
-          'filled',
-          'subtle',
-          'gradient',
-        ] as const
-      ).map((v) => {
-        return (
-          <Button
-            variant={v}
-            leftSection={<IconPhoto size={14} />}
-            rightSection={<IconDownload size={14} />}
-            loading={loading}
-            onClick={() => {
-              console.log('123');
-            }}>
-            切换
-          </Button>
-        );
-      })}
-      <Button
-        onClick={() => {
-          setLoading(!loading);
-        }}>
+      <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换
       </Button>
-      <Button
-        leftSection={<IconPhoto size={14} />}
-        rightSection={<IconDownload size={14} />}
-        rounded={'lg'}
-        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-        切换
-      </Button>
-      {new Array(1).fill(1).map((_v, i) => {
-        return (
-          <Box key={i} as="p">
-            {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => {
-              return (
-                <span key={size}>
-                  {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((radius) => {
-                    return (
-                      <Button
-                        leftSection={<IconPhoto size={14} />}
-                        rightSection={<IconDownload size={14} />}
-                        key={size + radius}
-                        size={size}
-                        rounded={radius}
-                        compact={theme === 'light'}
-                        disabled={theme !== 'light'}>
-                        按钮
-                      </Button>
-                    );
-                  })}
-                </span>
-              );
-            })}
-          </Box>
-        );
-      })}
-      <Box as="p">
-        {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => {
-          return (
-            <span key={size}>
-              {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((radius) => {
-                return (
-                  <Button
-                    onClick={() => {
-                      alert('123');
-                    }}
-                    key={size + radius}
-                    colorPalette="red"
-                    size={size}
-                    rounded={radius}
-                    compact={theme === 'light'}
-                    disabled={theme === 'light'}>
-                    按钮
-                  </Button>
-                );
-              })}
-            </span>
-          );
-        })}
-      </Box>
-      hello world
+
+      <Center bg="green.200" inline w="100px" h="100px">
+        <Button>123</Button>
+      </Center>
     </Box>
   );
 }

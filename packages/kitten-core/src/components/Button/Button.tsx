@@ -11,7 +11,7 @@ import type {
 } from './Button.style';
 import { ButtonInner, ButtonLoading, ButtonRoot } from './Button.style';
 
-export interface ButtonProps extends ButtonRootProps {
+interface Props extends ButtonRootProps {
   loading?: boolean;
   leftSection?: ReactNode;
   rightSection?: ReactNode;
@@ -19,71 +19,71 @@ export interface ButtonProps extends ButtonRootProps {
   justify?: ButtonInnerProps['justifyContent'];
 }
 
-export const Button = cpc<'button', ButtonProps & ButtonRootVariants>(
-  (props, ref) => {
-    const {
-      children,
-      disabled,
-      loading,
-      leftSection,
-      rightSection,
-      justify,
-      variant,
-      colorPalette,
-      ...others
-    } = props;
+export type ButtonProps = Props & ButtonRootVariants;
 
-    const left = leftSection;
-    const right = rightSection;
+export const Button = cpc<'button', ButtonProps>((props, ref) => {
+  const {
+    children,
+    disabled,
+    loading,
+    leftSection,
+    rightSection,
+    justify,
+    variant,
+    colorPalette,
+    ...others
+  } = props;
 
-    return (
-      <ButtonRoot
-        ref={ref}
-        data-loading={!!loading}
-        data-left={!!left}
-        data-right={!!right}
-        colorPalette={colorPalette}
-        variant={variant}
-        disabled={disabled || loading}
-        {...others}>
-        <ButtonInner justifyContent={justify}>
-          {!!left && (
-            <Box as="span" mr="xs">
-              {left}
-            </Box>
-          )}
-          {children}
-          {!!right && (
-            <Box as="span" ml="xs">
-              {right}
-            </Box>
-          )}
-          {loading && (
-            <ButtonLoading
-              rounded={props?.rounded}
-              borderRadius={props?.borderRadius}>
-              {!['gradient', 'filled', 'default'].includes(variant!) && (
-                <Loader colorPalette={colorPalette} />
-              )}
-              {['gradient', 'filled'].includes(variant!) && (
-                <Loader
-                  key="loader-2"
-                  css={{
-                    '--loader-color': 'colors.white',
-                  }}
-                />
-              )}
-              {variant === 'default' && (
-                <Loader
-                  css={{ '--loader-color': 'colors.Button.default.color' }}
-                />
-              )}
-            </ButtonLoading>
-          )}
-        </ButtonInner>
-      </ButtonRoot>
-    );
-  },
-);
+  const left = leftSection;
+  const right = rightSection;
+
+  return (
+    <ButtonRoot
+      ref={ref}
+      data-loading={!!loading}
+      data-left={!!left}
+      data-right={!!right}
+      colorPalette={colorPalette}
+      variant={variant}
+      disabled={disabled || loading}
+      {...others}>
+      <ButtonInner justifyContent={justify}>
+        {!!left && (
+          <Box as="span" mr="xs">
+            {left}
+          </Box>
+        )}
+        {children}
+        {!!right && (
+          <Box as="span" ml="xs">
+            {right}
+          </Box>
+        )}
+        {loading && (
+          <ButtonLoading
+            rounded={props?.rounded}
+            borderRadius={props?.borderRadius}>
+            {!['gradient', 'filled', 'default'].includes(variant!) && (
+              <Loader colorPalette={colorPalette} />
+            )}
+            {['gradient', 'filled'].includes(variant!) && (
+              <Loader
+                key="loader-2"
+                css={{
+                  '--loader-color': 'colors.white',
+                }}
+              />
+            )}
+            {variant === 'default' && (
+              <Loader
+                css={{ '--loader-color': 'colors.Button.default.color' }}
+              />
+            )}
+          </ButtonLoading>
+        )}
+      </ButtonInner>
+    </ButtonRoot>
+  );
+});
 
 Button.displayName = 'Button';

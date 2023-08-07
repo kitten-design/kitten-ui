@@ -4,9 +4,11 @@ import { cpc } from '../../utils';
 import type { BoxRootProps, BoxRootVariants } from './Box.style';
 import { BoxRoot } from './Box.style';
 
-export interface BoxProps extends BoxRootProps {}
+export interface Props extends BoxRootProps {}
 
-export const Box = cpc<'div', BoxProps & BoxRootVariants>((props, ref) => {
+export type BoxProps = Props & BoxRootVariants;
+
+export const Box = cpc<'div', BoxProps>((props, ref) => {
   return <BoxRoot ref={ref} {...props} />;
 });
 Box.displayName = 'Box';

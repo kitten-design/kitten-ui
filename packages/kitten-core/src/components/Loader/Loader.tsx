@@ -13,22 +13,22 @@ const LOADERS = {
   dots: Dots,
 };
 
-export interface LoaderProps extends LoaderRootProps {}
+export interface Props extends LoaderRootProps {}
 
-export const Loader = cpc<'div', LoaderProps & LoaderRootVariants>(
-  (props, ref) => {
-    const { variant = 'oval', ...others } = props;
+export type LoaderProps = Props & LoaderRootVariants;
 
-    return (
-      <LoaderRoot
-        ref={ref}
-        {...others}
-        role="presentation"
-        variant={variant}
-        {...{ as: LOADERS[variant] }}
-      />
-    );
-  },
-);
+export const Loader = cpc<'div', LoaderProps>((props, ref) => {
+  const { variant = 'oval', ...others } = props;
+
+  return (
+    <LoaderRoot
+      ref={ref}
+      {...others}
+      role="presentation"
+      variant={variant}
+      {...{ as: LOADERS[variant] }}
+    />
+  );
+});
 
 Loader.displayName = 'Loader';
