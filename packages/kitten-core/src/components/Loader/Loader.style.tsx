@@ -21,7 +21,6 @@ export const LoaderRootStyles = cva({
       oval: { stroke: 'var(--loader-color)' },
       dots: { fill: 'var(--loader-color)' },
     },
-    as: {},
   },
   defaultVariants: {
     size: 'sm',
@@ -30,6 +29,6 @@ export const LoaderRootStyles = cva({
 });
 
 export type LoaderRootVariants = RecipeVariantProps<typeof LoaderRootStyles>;
-export type LoaderRootProps = HTMLStyledProps<'div'> & LoaderRootVariants;
+export type LoaderRootProps = HTMLStyledProps<'div'>;
 export const LoaderRoot = styled('div', LoaderRootStyles);
 LoaderRoot.displayName = 'LoaderRoot';

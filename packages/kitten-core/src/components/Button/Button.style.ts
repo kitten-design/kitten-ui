@@ -195,7 +195,7 @@ export const buttonRootStyles = cva({
 });
 
 export type ButtonRootVariants = RecipeVariantProps<typeof buttonRootStyles>;
-export type ButtonRootProps = HTMLStyledProps<'button'> & ButtonRootVariants;
+export type ButtonRootProps = HTMLStyledProps<'button'>;
 export const ButtonRoot = styled('button', buttonRootStyles);
 ButtonRoot.displayName = 'ButtonRoot';
 

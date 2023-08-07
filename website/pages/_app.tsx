@@ -1,13 +1,11 @@
-import '../global.css';
+import './globals.css';
 
 import { Button } from '@kitten-ui/core';
-import { css } from '@kitten-ui/styles/css';
 
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
-      <button className={css({ bg: 'blue.600!' })}>123123</button>
-      <Button bg="blue.600!">按钮</Button>
+      <Button>按钮</Button>
       <Component {...pageProps} />
     </>
   );

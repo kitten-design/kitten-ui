@@ -14,6 +14,6 @@ const BoxRootStyles = cva({
 });
 
 export type BoxRootVariants = RecipeVariantProps<typeof BoxRootStyles>;
-export type BoxRootProps = HTMLStyledProps<'div'> & BoxRootVariants;
+export type BoxRootProps = HTMLStyledProps<'div'>;
 export const BoxRoot = styled('div', BoxRootStyles);
 BoxRoot.displayName = 'BoxRoot';

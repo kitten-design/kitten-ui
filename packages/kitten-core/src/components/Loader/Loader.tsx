@@ -1,7 +1,8 @@
-import type { FC } from 'react';
+import { cpc } from '@kitten-ui/utils';
 import React from 'react';
 
-import { LoaderRoot, type LoaderRootProps } from './Loader.style';
+import type { LoaderRootProps, LoaderRootVariants } from './Loader.style';
+import { LoaderRoot } from './Loader.style';
 import { Bars } from './loaders/Bars';
 import { Dots } from './loaders/Dots';
 import { Oval } from './loaders/Oval';
@@ -14,17 +15,20 @@ const LOADERS = {
 
 export interface LoaderProps extends LoaderRootProps {}
 
-export const Loader: FC<LoaderProps> = (props) => {
-  const { variant = 'oval', ...others } = props;
+export const Loader = cpc<'div', LoaderProps & LoaderRootVariants>(
+  (props, ref) => {
+    const { variant = 'oval', ...others } = props;
 
-  return (
-    <LoaderRoot
-      {...others}
-      role="presentation"
-      as={LOADERS[variant] as any}
-      variant={variant}
-    />
-  );
-};
+    return (
+      <LoaderRoot
+        ref={ref}
+        {...others}
+        role="presentation"
+        variant={variant}
+        {...{ as: LOADERS[variant] }}
+      />
+    );
+  },
+);
 
 Loader.displayName = 'Loader';

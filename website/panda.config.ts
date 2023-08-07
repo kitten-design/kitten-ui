@@ -10,8 +10,7 @@ export default defineConfig({
   exclude: [],
   include: [
     './node_modules/@kitten-ui/core/dist/panda.buildinfo.json',
-    './node_modules/@kitten-ui/core/**/*.{js,jsx,ts,tsx,mdx}',
-    './pages/**/*.{js,jsx,ts,tsx,mdx}',
-    './components/**/*.{js,jsx,ts,tsx,mdx}',
+    './pages/**/*.{ts,tsx,js,jsx}',
+    './components/**/*.{ts,tsx,js,jsx}',
   ],
 });
