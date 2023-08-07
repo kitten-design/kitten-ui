@@ -1,6 +1,6 @@
-import { cpc } from '@kitten-ui/utils';
 import React from 'react';
 
+import { cpc } from '../../utils';
 import type { BoxRootProps, BoxRootVariants } from './Box.style';
 import { BoxRoot } from './Box.style';
 
