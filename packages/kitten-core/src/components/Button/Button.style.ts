@@ -210,7 +210,7 @@ ButtonInner.displayName = 'ButtonInner';
 export const ButtonLoadingStyles = cva({
   base: {
     cursor: 'not-allowed',
-    bg: { base: 'rgba(255, 255, 255, 0.4)', _dark: 'rgba(26, 27, 30, 0.4)' },
+    bg: { base: 'rgba(255, 255, 255, 0.5)', _dark: 'rgba(26, 27, 30, 0.5)' },
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
