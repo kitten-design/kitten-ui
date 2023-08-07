@@ -31,7 +31,7 @@
     "dev": "vite",
     "build": "rimraf ./lib && rimraf ./dist &&  pnpm build:lib && vite build && pnpm ship",
     "build:lib": "tsc  --project ./tsconfig.build.json",
-    "ship": "panda ship --outfile dist/panda.buildinfo.json",
+    "ship": "panda ship --outfile dist/panda.json",
     "studio": "panda studio -c ./panda.config.ts"
   },
   "dependencies": {

@@ -11,7 +11,10 @@ export default defineConfig({
     extend: {},
   },
   exclude: [],
-  include: ['./src/**/*.{js,jsx,ts,tsx}'],
+  include: [
+    './node_modules/@kitten-ui/core/dist/panda.json',
+    './src/**/*.{js,jsx,ts,tsx}',
+  ],
   staticCss: {
     css: [
       {
