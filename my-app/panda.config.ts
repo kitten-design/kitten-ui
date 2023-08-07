@@ -12,17 +12,15 @@ export default defineConfig({
   },
   exclude: [],
   include: [
-    './node_modules/@kitten-ui/styles/dist/panda.buildinfo.json',
-    './src/**/*.{js,jsx,ts,tsx,mdx}',
-    './pages/**/*.{js,jsx,ts,tsx,mdx}',
-    './components/**/*.{js,jsx,ts,tsx,mdx}',
+    './node_modules/@kitten-ui/core/dist/panda.buildinfo.json',
+    './src/**/*.{ts,tsx,js,jsx}',
+    // './src/app/**/*.{ts,tsx,js,jsx}',
   ],
   staticCss: {
     css: [
       {
         properties: {
           borderRadius: ['*'],
-          colors: ['*'],
           bg: ['*'],
         },
         responsive: true,

@@ -1,4 +1,5 @@
 packages:
+  - my-app
   - packages/*
   - website
   - vite-project

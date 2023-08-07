@@ -7,9 +7,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <button className={css({ bg: 'blue.600!' })}>123123</button>
-      <Button bg="blue.600!" loading>
-        按钮
-      </Button>
+      <Button bg="blue.600!">按钮</Button>
       <Component {...pageProps} />
     </>
   );

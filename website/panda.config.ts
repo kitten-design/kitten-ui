@@ -7,26 +7,11 @@ export default defineConfig({
   outdir: '@kitten-ui/styles',
   jsxFramework: 'react',
   presets: [kittenPreset],
-  theme: {
-    extend: {},
-  },
   exclude: [],
   include: [
-    './node_modules/@kitten-ui/styles/dist/panda.buildinfo.json',
+    './node_modules/@kitten-ui/core/dist/panda.buildinfo.json',
+    './node_modules/@kitten-ui/core/**/*.{js,jsx,ts,tsx,mdx}',
     './pages/**/*.{js,jsx,ts,tsx,mdx}',
     './components/**/*.{js,jsx,ts,tsx,mdx}',
   ],
-  staticCss: {
-    css: [
-      {
-        properties: {
-          borderRadius: ['*'],
-          colors: ['*'],
-          bg: ['*'],
-        },
-        responsive: true,
-      },
-    ],
-    recipes: {},
-  },
 });

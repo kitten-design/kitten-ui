@@ -26,11 +26,11 @@
   },
   "scripts": {
     "prepare": "panda codegen --clean",
-    "gen-css": "panda cssgen --outfile dist/styles.css",
     "dev": "vite",
-    "studio": "panda studio",
-    "build": "rimraf ./lib && rimraf ./dist && pnpm build:lib && vite build && pnpm gen-css",
-    "build:lib": "tsc  --project ./tsconfig.build.json"
+    "build": "rimraf ./lib && rimraf ./dist &&  pnpm build:lib && vite build && pnpm ship",
+    "build:lib": "tsc  --project ./tsconfig.build.json",
+    "ship": "panda ship --outfile dist/panda.buildinfo.json",
+    "studio": "panda studio -c ./panda.config.ts"
   },
   "dependencies": {
     "@kitten-ui/utils": "workspace:*",
