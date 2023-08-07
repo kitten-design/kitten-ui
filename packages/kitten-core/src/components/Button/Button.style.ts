@@ -1,11 +1,13 @@
+import { cva } from '@kitten-ui/styles/css';
 import { styled } from '@kitten-ui/styles/jsx';
-import type { SystemStyleObject } from '@pandacss/types';
-import type { ComponentProps } from 'react';
+import type { SystemStyleObject } from '@kitten-ui/styles/types';
+
+import type { KittenProps } from '../../utils';
 
 /* default colorPalette */
 const colorPalette = 'blue';
 
-export const ButtonRoot = styled('button', {
+export const buttonRootCva = cva({
   base: {
     userSelect: 'none',
     fontWeight: 'semibold',
@@ -191,16 +193,20 @@ export const ButtonRoot = styled('button', {
     fullWidth: false,
   },
 });
-ButtonRoot.displayName = 'ButtonRoot';
-export type ButtonRootProps = ComponentProps<typeof ButtonRoot>;
 
-export const ButtonInner = styled('div', {
+export type ButtonRootProps = KittenProps<'button', typeof buttonRootCva>;
+export const ButtonRoot = styled('button', buttonRootCva);
+ButtonRoot.displayName = 'ButtonRoot';
+
+export const ButtonInnerStyles = cva({
   base: { display: 'flex', alignItems: 'center', justifyContent: 'center' },
 });
-ButtonInner.displayName = 'ButtonInner';
-export type ButtonInnerProps = ComponentProps<typeof ButtonInner>;
 
-export const ButtonLoading = styled('div', {
+export type ButtonInnerProps = KittenProps<'div', typeof ButtonInnerStyles>;
+export const ButtonInner = styled('div', ButtonInnerStyles);
+ButtonInner.displayName = 'ButtonInner';
+
+export const ButtonLoadingStyles = cva({
   base: {
     cursor: 'not-allowed',
     bg: { base: 'rgba(255, 255, 255, 0.4)', _dark: 'rgba(26, 27, 30, 0.4)' },
@@ -214,5 +220,7 @@ export const ButtonLoading = styled('div', {
     left: '-0.0625rem',
   },
 });
+
+export type ButtonLoadingProps = KittenProps<'div', typeof ButtonLoadingStyles>;
+export const ButtonLoading = styled('div', ButtonLoadingStyles);
 ButtonLoading.displayName = 'ButtonLoading';
-export type ButtonLoadingProps = ComponentProps<typeof ButtonLoading>;

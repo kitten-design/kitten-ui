@@ -1,7 +1,9 @@
+import { cva } from '@kitten-ui/styles/css';
 import { styled } from '@kitten-ui/styles/jsx';
-import type { ComponentProps } from 'react';
 
-export const LoaderRoot = styled('div', {
+import type { KittenProps } from '../../utils';
+
+export const LoaderRootStyles = cva({
   base: {
     colorPalette: 'blue',
     '--loader-color': 'colors.colorPalette.500',
@@ -27,6 +29,6 @@ export const LoaderRoot = styled('div', {
   },
 });
 
+export type LoaderRootProps = KittenProps<'div', typeof LoaderRootStyles>;
+export const LoaderRoot = styled('div', LoaderRootStyles);
 LoaderRoot.displayName = 'LoaderRoot';
-
-export type LoaderRootProps = ComponentProps<typeof LoaderRoot>;

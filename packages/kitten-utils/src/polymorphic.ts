@@ -48,9 +48,3 @@ export function createPolymorphicComponent<
 >(render: ForwardRefRenderFunction<any, PolymorphicComponentProps<C, P>>) {
   return forwardRef(render) as unknown as PolymorphicComponent<C, P, S>;
 }
-
-export type PCP<
-  C extends ElementType,
-  P = Record<string, any>,
-> = PolymorphicComponentProps<C, P>;
-export const cpc = createPolymorphicComponent;
