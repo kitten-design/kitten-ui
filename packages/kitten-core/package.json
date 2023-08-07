@@ -35,7 +35,7 @@
     "studio": "panda studio -c ./panda.config.ts"
   },
   "dependencies": {
-    "@kitten-ui/styles": "^0.0.2",
+    "@kitten-ui/styles": "*",
     "@kitten-ui/utils": "workspace:*",
     "@tabler/icons-react": "^2.30.0",
     "chroma-js": "^2.4.2",
