@@ -1,7 +1,7 @@
+import type { RecipeVariantProps } from '@kitten-ui/styles/css';
 import { cva } from '@kitten-ui/styles/css';
+import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
 import { styled } from '@kitten-ui/styles/jsx';
-
-import type { KittenProps } from '../../utils';
 
 export const LoaderRootStyles = cva({
   base: {
@@ -29,6 +29,7 @@ export const LoaderRootStyles = cva({
   },
 });
 
-export type LoaderRootProps = KittenProps<'div', typeof LoaderRootStyles>;
+export type LoaderRootVariants = RecipeVariantProps<typeof LoaderRootStyles>;
+export type LoaderRootProps = HTMLStyledProps<'div'> & LoaderRootVariants;
 export const LoaderRoot = styled('div', LoaderRootStyles);
 LoaderRoot.displayName = 'LoaderRoot';

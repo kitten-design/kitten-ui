@@ -1,13 +1,13 @@
+import type { RecipeVariantProps } from '@kitten-ui/styles/css';
 import { cva } from '@kitten-ui/styles/css';
+import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
 import { styled } from '@kitten-ui/styles/jsx';
 import type { SystemStyleObject } from '@kitten-ui/styles/types';
-
-import type { KittenProps } from '../../utils';
 
 /* default colorPalette */
 const colorPalette = 'blue';
 
-export const buttonRootCva = cva({
+export const buttonRootStyles = cva({
   base: {
     userSelect: 'none',
     fontWeight: 'semibold',
@@ -194,15 +194,16 @@ export const buttonRootCva = cva({
   },
 });
 
-export type ButtonRootProps = KittenProps<'button', typeof buttonRootCva>;
-export const ButtonRoot = styled('button', buttonRootCva);
+export type ButtonRootVariants = RecipeVariantProps<typeof buttonRootStyles>;
+export type ButtonRootProps = HTMLStyledProps<'button'> & ButtonRootVariants;
+export const ButtonRoot = styled('button', buttonRootStyles);
 ButtonRoot.displayName = 'ButtonRoot';
 
 export const ButtonInnerStyles = cva({
   base: { display: 'flex', alignItems: 'center', justifyContent: 'center' },
 });
 
-export type ButtonInnerProps = KittenProps<'div', typeof ButtonInnerStyles>;
+export type ButtonInnerProps = HTMLStyledProps<'div'>;
 export const ButtonInner = styled('div', ButtonInnerStyles);
 ButtonInner.displayName = 'ButtonInner';
 
@@ -221,6 +222,6 @@ export const ButtonLoadingStyles = cva({
   },
 });
 
-export type ButtonLoadingProps = KittenProps<'div', typeof ButtonLoadingStyles>;
+export type ButtonLoadingProps = HTMLStyledProps<'div'>;
 export const ButtonLoading = styled('div', ButtonLoadingStyles);
 ButtonLoading.displayName = 'ButtonLoading';

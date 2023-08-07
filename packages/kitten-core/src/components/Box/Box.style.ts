@@ -1,7 +1,7 @@
+import type { RecipeVariantProps } from '@kitten-ui/styles/css';
 import { cva } from '@kitten-ui/styles/css';
+import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
 import { styled } from '@kitten-ui/styles/jsx';
-
-import type { KittenProps } from '../../utils';
 
 const BoxRootStyles = cva({
   base: {},
@@ -12,8 +12,8 @@ const BoxRootStyles = cva({
     styled: false,
   },
 });
+
+export type BoxRootVariants = RecipeVariantProps<typeof BoxRootStyles>;
+export type BoxRootProps = HTMLStyledProps<'div'> & BoxRootVariants;
 export const BoxRoot = styled('div', BoxRootStyles);
-
 BoxRoot.displayName = 'BoxRoot';
-
-export type BoxRootProps = KittenProps<'div', typeof BoxRootStyles>;
