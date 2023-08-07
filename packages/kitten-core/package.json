@@ -19,7 +19,9 @@
     "ui",
     "library",
     "frontend",
-    "hooks"
+    "hooks",
+    "panda",
+    "pandacss"
   ],
   "publishConfig": {
     "access": "public"
