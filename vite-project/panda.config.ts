@@ -13,6 +13,7 @@ export default defineConfig({
   exclude: [],
   include: [
     './node_modules/@kitten-ui/styles/dist/panda.buildinfo.json',
+    './src/**/*.{js,jsx,ts,tsx,mdx}',
     './pages/**/*.{js,jsx,ts,tsx,mdx}',
     './components/**/*.{js,jsx,ts,tsx,mdx}',
   ],

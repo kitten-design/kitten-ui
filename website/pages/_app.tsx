@@ -1,4 +1,4 @@
-import '../styles.css';
+import '../global.css';
 
 import { Button } from '@kitten-ui/core';
 import { css } from '@kitten-ui/styles/css';
@@ -6,8 +6,10 @@ import { css } from '@kitten-ui/styles/css';
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
-      <div className={css({ bg: 'red.600' })}>123123</div>
-      <Button>按钮</Button>
+      <button className={css({ bg: 'blue.600!' })}>123123</button>
+      <Button bg="blue.600!" loading>
+        按钮
+      </Button>
       <Component {...pageProps} />
     </>
   );

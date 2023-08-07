@@ -12,10 +12,7 @@ export default defineConfig({
     extend: {},
   },
   exclude: [],
-  include: [
-    './src/**/*.{js,jsx,ts,tsx}',
-    './node_modules/@kitten-ui/styles/src/**/*.tsx',
-  ],
+  include: ['./src/**/*.{js,jsx,ts,tsx}'],
   staticCss: {
     css: [
       {

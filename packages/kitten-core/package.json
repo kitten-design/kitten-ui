@@ -26,10 +26,11 @@
   },
   "scripts": {
     "prepare": "panda codegen --clean",
+    "gen-css": "panda cssgen --outfile dist/styles.css",
     "dev": "vite",
     "studio": "panda studio",
-    "build": "rimraf ./lib && rimraf ./dist && pnpm build:lib && vite build",
-    "build:lib": "tsc --project ./tsconfig.build.json"
+    "build": "rimraf ./lib && rimraf ./dist && pnpm build:lib && vite build && pnpm gen-css",
+    "build:lib": "tsc  --project ./tsconfig.build.json"
   },
   "dependencies": {
     "@kitten-ui/utils": "workspace:*",
@@ -46,6 +47,7 @@
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
+    "tsup": "^7.2.0",
     "typescript": "^5.1.6",
     "vite": "^4.4.8",
     "vite-plugin-dts": "^3.5.1"

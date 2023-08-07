@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "kitten-ui docs website",
   "scripts": {
-    "prepare": "panda codegen",
+    "prepare": "panda codegen --clean",
     "dev": "rm -rf .next && next dev",
     "build": "next build",
     "start": "next start"
@@ -19,6 +19,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
     "@pandacss/dev": "^0.9.0",
     "@types/node": "20.4.8",
     "typescript": "^5.1.6"

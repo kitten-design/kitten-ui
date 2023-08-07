@@ -4,16 +4,6 @@ import type { DocsThemeConfig } from 'nextra-theme-docs';
 import useLocalesMap from './components/use-locales-map';
 
 const config: DocsThemeConfig = {
-  head: () => {
-    return (
-      <>
-        <style
-          dangerouslySetInnerHTML={{
-            __html: '@layer reset, base, tokens, recipes, utilities;',
-          }}></style>
-      </>
-    );
-  },
   logo: () =>
     useLocalesMap({
       'zh-CN': '学习笔记',

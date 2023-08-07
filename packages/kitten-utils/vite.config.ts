@@ -27,7 +27,7 @@ export default defineConfig({
       cleanVueFileName: true,
       copyDtsFiles: false,
       // rollupTypes: true,
-      outputDir: 'lib',
+      outDir: 'lib',
     }),
     splitVendorChunkPlugin(),
   ],
