@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Button } from './';
+import { Box, Button, Center } from '../';
 
 export default function App() {
   const [theme, setTheme] = React.useState('light');
@@ -10,6 +10,10 @@ export default function App() {
       <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换
       </Button>
+
+      <Center bg="green.200" inline w="100px" h="100px">
+        <Button>123</Button>
+      </Center>
     </Box>
   );
 }
