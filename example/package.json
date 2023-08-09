@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@kitten-ui/styles": "*",
+    "@kitten-ui/styles": "^0.0.3",
     "@kitten-ui/core": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

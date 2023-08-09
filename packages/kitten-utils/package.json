@@ -29,9 +29,9 @@
   },
   "devDependencies": {
     "@types/chroma-js": "^2.4.0",
-    "@types/react": "^18.2.18",
+    "@types/react": "^18.2.19",
     "typescript": "^5.1.6",
-    "vite": "^4.4.8",
+    "vite": "^4.4.9",
     "vite-plugin-dts": "^3.5.1"
   },
   "peerDependencies": {
