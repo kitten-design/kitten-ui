@@ -2,15 +2,18 @@ import { useIsomorphicEffect } from '@kitten-ui/hooks';
 import React, { useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 
+import type { BoxProps } from '../Box';
 import { Box } from '../Box';
 import { OptionalPortal } from './OptionalPortal';
 
-export interface PortalProps extends React.ComponentPropsWithoutRef<'div'> {
+interface Props extends React.ComponentPropsWithoutRef<'div'> {
   children: React.ReactNode;
   target?: HTMLElement | string;
   className?: string;
   innerRef?: React.MutableRefObject<HTMLDivElement>;
 }
+
+export type PortalProps = Props & BoxProps;
 
 export function Portal(props: PortalProps) {
   const { target, innerRef, ...others } = props;
