@@ -9,7 +9,12 @@ import type {
   ButtonRootProps,
   ButtonRootVariants,
 } from './Button.style';
-import { ButtonInner, ButtonLoading, ButtonRoot } from './Button.style';
+import {
+  ButtonInner,
+  ButtonLabel,
+  ButtonLoading,
+  ButtonRoot,
+} from './Button.style';
 import { ButtonGroup } from './ButtonGroup/ButtonGroup';
 
 interface Props extends ButtonRootProps {
@@ -53,20 +58,21 @@ export const Button = cpc<
       variant={variant}
       disabled={disabled || loading}
       {...others}>
-      <ButtonInner justifyContent={justify}>
+      <ButtonInner data-button-inner justifyContent={justify}>
         {!!left && (
-          <Box as="span" mr="xs">
+          <Box data-button-leftSection as="span" mr="xs">
             {left}
           </Box>
         )}
-        {children}
+        <ButtonLabel>{children}</ButtonLabel>
         {!!right && (
-          <Box as="span" ml="xs">
+          <Box data-button-rightSection as="span" ml="xs">
             {right}
           </Box>
         )}
         {loading && (
           <ButtonLoading
+            data-button-loading
             rounded={props?.rounded}
             borderRadius={props?.borderRadius}>
             {!['gradient', 'filled', 'default'].includes(variant!) && (

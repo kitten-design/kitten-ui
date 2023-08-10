@@ -200,12 +200,26 @@ export const ButtonRoot = styled('button', buttonRootStyles);
 ButtonRoot.displayName = 'ButtonRoot';
 
 export const ButtonInnerStyles = cva({
-  base: { display: 'flex', alignItems: 'center', justifyContent: 'center' },
+  base: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
-
 export type ButtonInnerProps = HTMLStyledProps<'div'>;
 export const ButtonInner = styled('div', ButtonInnerStyles);
 ButtonInner.displayName = 'ButtonInner';
+
+export const ButtonLabelStyles = cva({
+  base: {
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+  },
+});
+export type ButtonLabelProps = HTMLStyledProps<'span'>;
+export const ButtonLabel = styled('span', ButtonLabelStyles);
+ButtonLabel.displayName = 'ButtonLabel';
 
 export const ButtonLoadingStyles = cva({
   base: {
