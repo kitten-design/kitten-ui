@@ -9,6 +9,6 @@ interface Props extends CenterRootProps {}
 export type CenterProps = Props & CenterRootVariants;
 
 export const Center = cpc<'div', CenterProps>((props, ref) => {
-  return <CenterRoot ref={ref} {...props} />;
+  return <CenterRoot data-center ref={ref} {...props} />;
 });
 Center.displayName = 'Center';

@@ -9,6 +9,6 @@ export interface Props extends KbdRootProps {}
 export type KbdProps = Props & KbdRootVariants;
 
 export const Kbd = cpc<'kbd', KbdProps>((props, ref) => {
-  return <KbdRoot ref={ref} {...props} />;
+  return <KbdRoot data-kbd ref={ref} {...props} />;
 });
 Kbd.displayName = 'Kbd';

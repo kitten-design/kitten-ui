@@ -22,6 +22,7 @@ export const Loader = cpc<'div', LoaderProps>((props, ref) => {
 
   return (
     <LoaderRoot
+      data-loader
       ref={ref}
       {...others}
       role="presentation"
