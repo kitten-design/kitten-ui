@@ -1,4 +1,4 @@
-import { IconAdjustments } from '@tabler/icons-react';
+import { Icon123, IconAdjustments, IconClock } from '@tabler/icons-react';
 import React from 'react';
 
 import { ActionIcon, Box, Button } from './';
@@ -16,6 +16,17 @@ export default function App() {
         </ActionIcon>
       ))}
       <br />
+      <ActionIcon.Group>
+        <ActionIcon variant="outline" loading={theme === 'light'}>
+          <IconAdjustments />
+        </ActionIcon>
+        <ActionIcon variant="outline" loading={theme === 'light'}>
+          <Icon123 />
+        </ActionIcon>
+        <ActionIcon variant="outline" loading={theme === 'light'}>
+          <IconClock />
+        </ActionIcon>
+      </ActionIcon.Group>
     </Box>
   );
 }
