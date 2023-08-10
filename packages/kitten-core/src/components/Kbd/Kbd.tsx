@@ -1,0 +1,14 @@
+import React from 'react';
+
+import { cpc } from '../../utils';
+import type { KbdRootProps, KbdRootVariants } from './Kbd.style';
+import { KbdRoot } from './Kbd.style';
+
+export interface Props extends KbdRootProps {}
+
+export type KbdProps = Props & KbdRootVariants;
+
+export const Kbd = cpc<'kbd', KbdProps>((props, ref) => {
+  return <KbdRoot ref={ref} {...props} />;
+});
+Kbd.displayName = 'Kbd';

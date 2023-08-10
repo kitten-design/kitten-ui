@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Button } from './';
+import { Box, Button, Kbd } from './';
 
 export default function App() {
   const [theme, setTheme] = React.useState('light');
@@ -10,6 +10,9 @@ export default function App() {
       <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换
       </Button>
+      <Box p="10">
+        <Kbd>⌘</Kbd> + <Kbd>Shift</Kbd> + <Kbd>M</Kbd>
+      </Box>
     </Box>
   );
 }
