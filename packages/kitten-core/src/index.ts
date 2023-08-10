@@ -5,4 +5,5 @@ export * from './components/Center';
 export * from './components/Kbd';
 export * from './components/Loader';
 export * from './components/Portal';
+export * from './components/Text';
 export * from './themes';
