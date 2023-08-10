@@ -1,7 +1,7 @@
+import { IconAdjustments } from '@tabler/icons-react';
 import React from 'react';
 
-import { Box, Button, Text } from './';
-
+import { ActionIcon, Box, Button } from './';
 export default function App() {
   const [theme, setTheme] = React.useState('light');
 
@@ -10,7 +10,12 @@ export default function App() {
       <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换
       </Button>
-      <Text inline>hello world</Text>
+      {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => (
+        <ActionIcon size={size} variant="outline" loading={theme === 'light'}>
+          <IconAdjustments />
+        </ActionIcon>
+      ))}
+      <br />
     </Box>
   );
 }

@@ -3,7 +3,7 @@ import { cva } from '@kitten-ui/styles/css';
 import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
 import { styled } from '@kitten-ui/styles/jsx';
 
-const ButtonGroupRootStyles = cva({
+const ActionIconGroupRootStyles = cva({
   base: {
     display: 'inline-flex',
   },
@@ -11,17 +11,17 @@ const ButtonGroupRootStyles = cva({
     vertical: {
       true: {
         flexDirection: 'column',
-        '& [data-button]:first-of-type:not(:last-of-type)': {
+        '& [data-action-icon]:first-of-type:not(:last-of-type)': {
           borderBottomLeftRadius: 0,
           borderBottomRightRadius: 0,
           borderBottomWidth: 'var(--border-width)',
         },
-        '& [data-button]:not(:last-of-type):not(:first-of-type)': {
+        '& [data-action-icon]:not(:last-of-type):not(:first-of-type)': {
           borderRadius: 0,
           borderTopWidth: 'var(--border-width)',
           borderBottomWidth: 'var(--border-width)',
         },
-        '& [data-button]:last-of-type:not(:first-of-type)': {
+        '& [data-action-icon]:last-of-type:not(:first-of-type)': {
           borderTopRightRadius: 0,
           borderTopLeftRadius: 0,
           borderTopWidth: 'var(--border-width)',
@@ -29,17 +29,17 @@ const ButtonGroupRootStyles = cva({
       },
       false: {
         flexDirection: 'row',
-        '& [data-button]:first-of-type:not(:last-of-type)': {
+        '& [data-action-icon]:first-of-type:not(:last-of-type)': {
           borderTopRightRadius: 0,
           borderBottomRightRadius: 0,
           borderRightWidth: 'var(--border-width)',
         },
-        '& [data-button]:not(:last-of-type):not(:first-of-type)': {
+        '& [data-action-icon]:not(:last-of-type):not(:first-of-type)': {
           borderRadius: 0,
           borderLeftWidth: 'var(--border-width)',
           borderRightWidth: 'var(--border-width)',
         },
-        '& [data-button]:last-of-type:not(:first-of-type)': {
+        '& [data-action-icon]:last-of-type:not(:first-of-type)': {
           borderTopLeftRadius: 0,
           borderBottomLeftRadius: 0,
           borderLeftWidth: 'var(--border-width)',
@@ -52,9 +52,9 @@ const ButtonGroupRootStyles = cva({
   },
 });
 
-export type ButtonGroupRootVariants = RecipeVariantProps<
-  typeof ButtonGroupRootStyles
+export type ActionIconGroupRootVariants = RecipeVariantProps<
+  typeof ActionIconGroupRootStyles
 >;
-export type ButtonGroupRootProps = HTMLStyledProps<'div'>;
-export const ButtonGroupRoot = styled('div', ButtonGroupRootStyles);
-ButtonGroupRoot.displayName = 'ButtonGroupRoot';
+export type ActionIconGroupRootProps = HTMLStyledProps<'div'>;
+export const ActionIconGroupRoot = styled('div', ActionIconGroupRootStyles);
+ActionIconGroupRoot.displayName = 'ButtonActionIconGroupRoot';
