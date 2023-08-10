@@ -10,6 +10,7 @@ import type {
   ButtonRootVariants,
 } from './Button.style';
 import { ButtonInner, ButtonLoading, ButtonRoot } from './Button.style';
+import { ButtonGroup } from './ButtonGroup/ButtonGroup';
 
 interface Props extends ButtonRootProps {
   loading?: boolean;
@@ -21,7 +22,11 @@ interface Props extends ButtonRootProps {
 
 export type ButtonProps = Props & ButtonRootVariants;
 
-export const Button = cpc<'button', ButtonProps>((props, ref) => {
+export const Button = cpc<
+  'button',
+  ButtonProps,
+  { ButtonGroup: typeof ButtonGroup }
+>((props, ref) => {
   const {
     children,
     disabled,
@@ -39,6 +44,7 @@ export const Button = cpc<'button', ButtonProps>((props, ref) => {
 
   return (
     <ButtonRoot
+      data-button
       ref={ref}
       data-loading={!!loading}
       data-left={!!left}
@@ -87,3 +93,4 @@ export const Button = cpc<'button', ButtonProps>((props, ref) => {
 });
 
 Button.displayName = 'Button';
+Button.ButtonGroup = ButtonGroup;

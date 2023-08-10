@@ -98,6 +98,35 @@ export default function App() {
         })}
       </Box>
       hello world
+      {(
+        [
+          'outline',
+          'light',
+          'default',
+          'transparent',
+          'white',
+          'filled',
+          'subtle',
+          'gradient',
+        ] as const
+      ).map((v) => {
+        return (
+          <div>
+            <Button.ButtonGroup buttonBorderWidth={2}>
+              123
+              <Button variant={v}>切换</Button>
+              <Button variant={v}> 切换</Button>
+              <Button variant={v}>切换</Button>
+            </Button.ButtonGroup>
+            <Button.ButtonGroup vertical buttonBorderWidth={1}>
+              123
+              <Button variant={v}>切换</Button>
+              <Button variant={v}>切换</Button>
+              <Button variant={v}>切换</Button>
+            </Button.ButtonGroup>
+          </div>
+        );
+      })}
     </Box>
   );
 }
