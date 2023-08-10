@@ -4,7 +4,6 @@ import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
 import { styled } from '@kitten-ui/styles/jsx';
 import type { SystemStyleObject } from '@kitten-ui/styles/types';
 
-/* default colorPalette */
 const colorPalette = 'blue';
 
 export const buttonRootStyles = cva({
