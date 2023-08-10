@@ -29,7 +29,6 @@ export const buttonRootStyles = cva({
     },
     '&[data-loading=true]': {
       cursor: 'not-allowed!',
-      pointerEvents: 'none',
     },
   },
   variants: {

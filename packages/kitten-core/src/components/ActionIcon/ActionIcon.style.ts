@@ -27,8 +27,7 @@ const ActionIconRootStyles = cva({
       },
     },
     '&[data-loading=true]': {
-      cursor: 'not-allowed!',
-      pointerEvents: 'none',
+      cursor: 'not-allowed',
     },
   },
   variants: {

@@ -18,6 +18,9 @@ export default function App() {
         </ActionIcon>
       ))}
       <br />
+      <ActionIcon variant="outline" disabled loading={theme !== 'light'}>
+        <IconAdjustments />
+      </ActionIcon>
       <ActionIcon.Group>
         <ActionIcon variant="outline" loading={theme !== 'light'}>
           <IconAdjustments />
