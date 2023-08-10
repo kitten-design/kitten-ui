@@ -6,8 +6,8 @@ import { ActionIcon } from '../ActionIcon';
 import type {
   ActionIconGroupRootProps,
   ActionIconGroupRootVariants,
-} from './ActionIconActionIconGroup.style';
-import { ActionIconGroupRoot } from './ActionIconActionIconGroup.style';
+} from './ActionIconGroup.style';
+import { ActionIconGroupRoot } from './ActionIconGroup.style';
 
 export interface Props extends ActionIconGroupRootProps {
   buttonBorderWidth?: number;
