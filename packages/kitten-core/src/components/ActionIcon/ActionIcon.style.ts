@@ -17,6 +17,19 @@ const ActionIconRootStyles = cva({
     borderRadius: 'sm',
     border: '1px solid',
     borderColor: 'transparent',
+
+    _disabled: {
+      cursor: 'not-allowed!',
+      '&[data-loading=false]': {
+        bg: 'Button.disabled.bg!',
+        color: 'Button.disabled.color!',
+        borderColor: 'transparent',
+      },
+    },
+    '&[data-loading=true]': {
+      cursor: 'not-allowed!',
+      pointerEvents: 'none',
+    },
   },
   variants: {
     variant: {

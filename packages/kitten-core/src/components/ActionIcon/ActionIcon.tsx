@@ -20,13 +20,8 @@ export const ActionIcon = cpc<
   ActionIconProps,
   { Group: typeof ActionIconGroup }
 >((props, ref) => {
-  const {
-    children,
-    loading,
-    variant = 'filled',
-    colorPalette,
-    ...others
-  } = props;
+  const { children, loading, disabled, variant, colorPalette, ...others } =
+    props;
 
   return (
     <ActionIconRoot
@@ -34,6 +29,8 @@ export const ActionIcon = cpc<
       ref={ref}
       colorPalette={colorPalette}
       variant={variant}
+      data-loading={!!loading}
+      disabled={disabled || loading}
       {...others}>
       {loading
         ? (() => {
@@ -62,5 +59,8 @@ export const ActionIcon = cpc<
     </ActionIconRoot>
   );
 });
+ActionIcon.defaultProps = {
+  variant: 'filled',
+};
 ActionIcon.displayName = 'ActionIcon';
 ActionIcon.Group = ActionIconGroup;

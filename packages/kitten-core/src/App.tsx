@@ -7,7 +7,9 @@ export default function App() {
 
   return (
     <Box className={theme} w="100vw" h="100vh" overflow={'auto'} styled>
-      <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+      <Button
+        loading
+        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换
       </Button>
       {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => (
@@ -17,13 +19,13 @@ export default function App() {
       ))}
       <br />
       <ActionIcon.Group>
-        <ActionIcon variant="outline" loading={theme === 'light'}>
+        <ActionIcon variant="outline" loading={theme !== 'light'}>
           <IconAdjustments />
         </ActionIcon>
         <ActionIcon variant="outline" loading={theme === 'light'}>
           <Icon123 />
         </ActionIcon>
-        <ActionIcon variant="outline" loading={theme === 'light'}>
+        <ActionIcon variant="outline" loading={theme !== 'light'}>
           <IconClock />
         </ActionIcon>
       </ActionIcon.Group>
