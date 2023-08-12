@@ -21,7 +21,7 @@ export default function App() {
       <ActionIcon variant="outline" disabled loading={theme !== 'light'}>
         <IconAdjustments />
       </ActionIcon>
-      <ActionIcon.Group>
+      <ActionIcon.Group vertical>
         <ActionIcon variant="outline" loading={theme !== 'light'}>
           <IconAdjustments />
         </ActionIcon>
