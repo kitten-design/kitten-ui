@@ -35,7 +35,7 @@ export const ActionIcon = cpc<
       {loading
         ? (() => {
             return (
-              <>
+              <React.Fragment>
                 {!['gradient', 'filled', 'default'].includes(variant!) && (
                   <Loader colorPalette={colorPalette} />
                 )}
@@ -52,15 +52,16 @@ export const ActionIcon = cpc<
                     css={{ '--loader-color': 'colors.Button.default.color' }}
                   />
                 )}
-              </>
+              </React.Fragment>
             );
           })()
         : children}
     </ActionIconRoot>
   );
 });
+
+ActionIcon.displayName = 'ActionIcon';
 ActionIcon.defaultProps = {
   variant: 'filled',
 };
-ActionIcon.displayName = 'ActionIcon';
 ActionIcon.Group = ActionIconGroup;

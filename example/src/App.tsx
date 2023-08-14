@@ -1,4 +1,4 @@
-import { Button, Center } from '@kitten-ui/core';
+import { Button, Center, CloseButton } from '@kitten-ui/core';
 
 export default function App() {
   return (
@@ -6,7 +6,11 @@ export default function App() {
       <Button colorPalette="red" variant="outline">
         按钮
       </Button>
-      <Center inline>123</Center>
+      <Center inline w="200px" h="200px">
+        {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => (
+          <CloseButton size={size} />
+        ))}
+      </Center>
     </div>
   );
 }

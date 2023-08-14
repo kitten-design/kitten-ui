@@ -95,8 +95,9 @@ export const Button = cpc<'button', ButtonProps, { Group: typeof ButtonGroup }>(
     );
   },
 );
+
+Button.displayName = 'Button';
 Button.defaultProps = {
   variant: 'filled',
 };
-Button.displayName = 'Button';
 Button.Group = ButtonGroup;

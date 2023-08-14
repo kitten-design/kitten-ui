@@ -1,7 +1,7 @@
-import { Icon123, IconAdjustments, IconClock } from '@tabler/icons-react';
 import React from 'react';
 
-import { ActionIcon, Box, Button } from './';
+import { Box, Button } from './';
+import { CloseButton } from './components/CloseButton';
 export default function App() {
   const [theme, setTheme] = React.useState('light');
 
@@ -13,25 +13,8 @@ export default function App() {
         切换
       </Button>
       {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => (
-        <ActionIcon size={size} variant="outline" loading={theme === 'light'}>
-          <IconAdjustments />
-        </ActionIcon>
+        <CloseButton size={size} colorPalette={'red'} />
       ))}
-      <br />
-      <ActionIcon variant="outline" disabled loading={theme !== 'light'}>
-        <IconAdjustments />
-      </ActionIcon>
-      <ActionIcon.Group vertical>
-        <ActionIcon variant="outline" loading={theme !== 'light'}>
-          <IconAdjustments />
-        </ActionIcon>
-        <ActionIcon variant="outline" loading={theme === 'light'}>
-          <Icon123 />
-        </ActionIcon>
-        <ActionIcon variant="outline" loading={theme !== 'light'}>
-          <IconClock />
-        </ActionIcon>
-      </ActionIcon.Group>
     </Box>
   );
 }
