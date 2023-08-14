@@ -42,18 +42,18 @@
     "chroma-js": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.2"
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.10.0",
-    "@pandacss/types": "^0.10.0",
+    "@pandacss/dev": "^0.11.0",
+    "@pandacss/types": "^0.11.0",
     "@types/chroma-js": "^2.4.0",
-    "@types/react": "^18.2.19",
+    "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6",
     "vite": "^4.4.9",
-    "vite-plugin-dts": "^3.5.1"
+    "vite-plugin-dts": "^3.5.2"
   }
 }
