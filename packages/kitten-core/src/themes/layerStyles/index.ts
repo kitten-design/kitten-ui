@@ -1,4 +1,5 @@
 import { defineLayerStyles } from '@pandacss/dev';
+import type { LayerStyles } from '@pandacss/types';
 
 export const layerStyles = defineLayerStyles({
   container: {
@@ -10,4 +11,4 @@ export const layerStyles = defineLayerStyles({
       borderColor: 'gray.500',
     },
   },
-});
+}) as LayerStyles;
