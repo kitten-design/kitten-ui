@@ -5,6 +5,7 @@
     "experimentalDecorators": true,
     "jsx": "react",
     "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
     "moduleResolution": "node",
     "noImplicitAny": false,
     "noUnusedLocals": true,
