@@ -139,13 +139,25 @@ importers:
 
   packages/kitten-dataset:
     dependencies:
+      '@legendapp/state':
+        specifier: ^1.9.0
+        version: 1.9.0(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
     devDependencies:
       '@types/react':
         specifier: ^18.2.20
         version: 18.2.20
+      '@types/react-dom':
+        specifier: ^18.2.7
+        version: 18.2.7
+      '@vitejs/plugin-react-swc':
+        specifier: ^3.3.2
+        version: 3.3.2(vite@4.4.9)
       typescript:
         specifier: ^5.1.6
         version: 5.1.6
@@ -1242,6 +1254,14 @@ packages:
 
   /@kitten-ui/styles@0.0.3:
     resolution: {integrity: sha512-b51e8IJgZ+l6MTbF8WNliwlYwsN0790StXgh8zV2eAfbGtOaKkbuUxu/q9NM6xQv6XDcbL1OUOSLdvQ6tS5p2A==}
+    dev: false
+
+  /@legendapp/state@1.9.0(react@18.2.0):
+    resolution: {integrity: sha512-zHMAlSTiRwoHMrZxoIWf9uJVtRkJCRuzejxJe5rRydOD+S23/wkJOFf9Jq2JAgML0sfgMBe4BP0Xu3WHuUs1GA==}
+    dependencies:
+      use-sync-external-store: 1.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - react
     dev: false
 
   /@microsoft/api-extractor-model@7.27.6(@types/node@20.4.7):
@@ -7191,6 +7211,14 @@ packages:
     dependencies:
       punycode: 2.3.0
     dev: true
+
+  /use-sync-external-store@1.2.0(react@18.2.0):
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
