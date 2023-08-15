@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Box, Button } from './';
-import { CloseButton } from './components/CloseButton';
+import { Box, Button, CopyButton } from './';
+
 export default function App() {
   const [theme, setTheme] = React.useState('light');
 
@@ -12,9 +12,13 @@ export default function App() {
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换
       </Button>
-      {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size) => (
-        <CloseButton size={size} colorPalette={'red'} />
-      ))}
+      <CopyButton value="https://mantine.dev">
+        {({ copied, copy }) => (
+          <Button colorPalette={copied ? 'teal' : 'blue'} onClick={copy}>
+            {copied ? 'Copied url' : 'Copy url'}
+          </Button>
+        )}
+      </CopyButton>
     </Box>
   );
 }

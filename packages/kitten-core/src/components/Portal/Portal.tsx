@@ -4,7 +4,6 @@ import { createPortal } from 'react-dom';
 
 import type { BoxProps } from '../Box';
 import { Box } from '../Box';
-import { OptionalPortal } from './OptionalPortal';
 
 interface Props extends React.ComponentPropsWithoutRef<'div'> {
   children: React.ReactNode;
@@ -15,7 +14,7 @@ interface Props extends React.ComponentPropsWithoutRef<'div'> {
 
 export type PortalProps = Props & BoxProps;
 
-export function Portal(props: PortalProps) {
+export const Portal = (props: PortalProps) => {
   const { target, innerRef, ...others } = props;
 
   const [mounted, setMounted] = useState(false);
@@ -54,7 +53,6 @@ export function Portal(props: PortalProps) {
   }
 
   return createPortal(<Box ref={innerRef} {...others} />, ref.current!);
-}
+};
 
 Portal.displayName = 'Portal';
-Portal.OptionalPortal = OptionalPortal;

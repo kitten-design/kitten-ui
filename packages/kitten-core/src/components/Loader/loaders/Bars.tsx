@@ -1,6 +1,8 @@
 import React from 'react';
 
-export function Bars(props: React.ComponentPropsWithoutRef<'svg'>) {
+export const Bars: React.FC<React.ComponentPropsWithoutRef<'svg'>> = (
+  props,
+) => {
   return (
     <svg viewBox="0 0 135 140" xmlns="http://www.w3.org/2000/svg" {...props}>
       <rect y="10" width="15" height="120" rx="6">
@@ -95,4 +97,4 @@ export function Bars(props: React.ComponentPropsWithoutRef<'svg'>) {
       </rect>
     </svg>
   );
-}
+};

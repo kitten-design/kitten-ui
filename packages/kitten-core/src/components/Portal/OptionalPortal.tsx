@@ -7,16 +7,16 @@ export interface OptionalPortalProps extends PortalProps {
   withinPortal?: boolean;
 }
 
-export function OptionalPortal({
+export const OptionalPortal: React.FC<OptionalPortalProps> = ({
   withinPortal = true,
   children,
   ...others
-}: OptionalPortalProps) {
+}) => {
   if (withinPortal) {
     return <Portal {...others}>{children}</Portal>;
   }
 
   return <React.Fragment>{children}</React.Fragment>;
-}
+};
 
 OptionalPortal.displayName = 'OptionalPortal';

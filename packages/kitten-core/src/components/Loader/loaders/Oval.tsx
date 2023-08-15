@@ -1,6 +1,8 @@
 import React from 'react';
 
-export function Oval(props: React.ComponentPropsWithoutRef<'svg'>) {
+export const Oval: React.FC<React.ComponentPropsWithoutRef<'svg'>> = (
+  props,
+) => {
   return (
     <svg {...props} viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
       <g fill="none" fillRule="evenodd">
@@ -20,4 +22,4 @@ export function Oval(props: React.ComponentPropsWithoutRef<'svg'>) {
       </g>
     </svg>
   );
-}
+};

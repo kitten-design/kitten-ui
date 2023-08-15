@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+export const CloseIcon = (props: React.ComponentPropsWithoutRef<'svg'>) => {
   return (
     <svg
       viewBox="0 0 15 15"
@@ -15,4 +15,4 @@ export function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
       />
     </svg>
   );
-}
+};

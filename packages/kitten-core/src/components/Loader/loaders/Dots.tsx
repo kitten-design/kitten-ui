@@ -1,6 +1,8 @@
 import React from 'react';
 
-export function Dots(props: React.ComponentPropsWithoutRef<'svg'>) {
+export const Dots: React.FC<React.ComponentPropsWithoutRef<'svg'>> = (
+  props,
+) => {
   return (
     <svg {...props} viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg">
       <circle cx="15" cy="15" r="15">
@@ -71,4 +73,4 @@ export function Dots(props: React.ComponentPropsWithoutRef<'svg'>) {
       </circle>
     </svg>
   );
-}
+};
