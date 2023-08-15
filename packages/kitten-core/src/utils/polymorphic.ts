@@ -35,8 +35,8 @@ export type PC<C extends ElementType, P = Empty, S = Empty> = (<
   Omit<FunctionComponent<PCP<C, P>>, never> &
   S;
 
-export function cpc<C extends ElementType, P = Empty, S = Empty>(
+export const cpc = <C extends ElementType, P = Empty, S = Empty>(
   render: ForwardRefRenderFunction<any, PCP<C, P>>,
-) {
+) => {
   return forwardRef(render) as unknown as PC<C, P, S>;
-}
+};

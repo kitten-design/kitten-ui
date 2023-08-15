@@ -1,7 +1,7 @@
 /**
  * Unit Converter Factory
  */
-function createConverter(units: string) {
+const createConverter = (units: string) => {
   return (px: unknown): string => {
     if (typeof px === 'number') {
       return `${px / 16}${units}`;
@@ -16,7 +16,7 @@ function createConverter(units: string) {
 
     return px as string;
   };
-}
+};
 
 /**
  * Convert to rem

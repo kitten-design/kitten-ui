@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Box, Button, CopyButton } from './';
 
-export default function App() {
+const App = () => {
   const [theme, setTheme] = React.useState('light');
 
   return (
@@ -21,4 +21,5 @@ export default function App() {
       </CopyButton>
     </Box>
   );
-}
+};
+export default App;

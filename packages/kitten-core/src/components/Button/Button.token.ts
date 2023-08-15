@@ -8,20 +8,20 @@ type Color = keyof Omit<
   'current' | 'black' | 'white' | 'transparent'
 >;
 
-function chromaToRgba(chromaColor: Chroma.Color) {
+const chromaToRgba = (chromaColor: Chroma.Color) => {
   const rgbaArray = chromaColor.rgba();
   return `rgba(${rgbaArray[0]}, ${rgbaArray[1]}, ${rgbaArray[2]}, ${rgbaArray[3]})`;
-}
+};
 
-function getFilledColors(_color: Color) {
+const getFilledColors = (_color: Color) => {
   return {
     ButtonFilled: { value: `{colors.${_color}.500}` },
     ButtonFilledHover: { value: `{colors.${_color}.600}` },
     ButtonFilledActive: { value: `{colors.${_color}.700}` },
   };
-}
+};
 
-function getLightColors(_color: Color) {
+const getLightColors = (_color: Color) => {
   const color = colors[_color]?.[500].value;
 
   return {
@@ -30,18 +30,18 @@ function getLightColors(_color: Color) {
     ButtonLightActive: { value: chromaToRgba(Chroma(color).alpha(0.15)) },
     ButtonLightColor: { value: `{colors.${_color}.500}` },
   };
-}
+};
 
-function getOutlineColors(_color: Color) {
+const getOutlineColors = (_color: Color) => {
   const color = colors[_color]?.[400].value;
   return {
     ButtonOutline: { value: `{colors.${_color}.400}` },
     ButtonOutlineHover: { value: chromaToRgba(Chroma(color).alpha(0.05)) },
     ButtonOutlineActive: { value: chromaToRgba(Chroma(color).alpha(0.1)) },
   };
-}
+};
 
-export function getVariantColors(_colors: Tokens['colors']) {
+export const getVariantColors = (_colors: Tokens['colors']) => {
   const semanticColors: SemanticTokens['colors'] = {};
   (
     Object.keys(_colors!).filter(
@@ -55,7 +55,7 @@ export function getVariantColors(_colors: Tokens['colors']) {
     };
   });
   return semanticColors;
-}
+};
 
 const whiteColor = Chroma(colors.white.value);
 
