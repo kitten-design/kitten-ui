@@ -24,6 +24,7 @@ export type Record<T extends RecordData> = {
   getValue<K extends keyof Observable<T>, A extends K[]>(
     keys: A,
   ): PickValues<T, A>;
+  toData(): T;
 };
 
 export const Record = <T extends RecordData>(
@@ -54,6 +55,9 @@ export const Record = <T extends RecordData>(
         });
         return result;
       }
+    },
+    toData: () => {
+      return record.data.get();
     },
   };
 

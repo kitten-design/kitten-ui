@@ -50,6 +50,9 @@ importers:
       '@kitten-ui/core':
         specifier: workspace:*
         version: link:../packages/kitten-core
+      '@kitten-ui/dataset':
+        specifier: workspace:*
+        version: link:../packages/kitten-dataset
       '@kitten-ui/styles':
         specifier: ^0.0.3
         version: 0.0.3

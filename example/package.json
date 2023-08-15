@@ -12,6 +12,7 @@
   "dependencies": {
     "@kitten-ui/core": "workspace:*",
     "@kitten-ui/styles": "^0.0.3",
+    "@kitten-ui/dataset": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

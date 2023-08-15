@@ -13,7 +13,12 @@ export const DataSet = <T extends RecordData>(data: T[] = []) => {
     current: undefined,
     records: [],
   };
-  const dataSet = observable(dataSetOrigin);
+  const dataSet = observable({
+    ...dataSetOrigin,
+    toData: () => {
+      return dataSet.records.get().map((r) => r.toData());
+    },
+  });
 
   const loadData = (data: T[]) => {
     const records = data?.map((v) => Record(v, dataSet));
