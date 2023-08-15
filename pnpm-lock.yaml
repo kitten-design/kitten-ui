@@ -137,6 +137,25 @@ importers:
         specifier: ^3.5.2
         version: 3.5.2(@types/node@20.4.7)(typescript@5.1.6)(vite@4.4.9)
 
+  packages/kitten-dataset:
+    dependencies:
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+    devDependencies:
+      '@types/react':
+        specifier: ^18.2.20
+        version: 18.2.20
+      typescript:
+        specifier: ^5.1.6
+        version: 5.1.6
+      vite:
+        specifier: ^4.4.9
+        version: 4.4.9(@types/node@20.4.7)
+      vite-plugin-dts:
+        specifier: ^3.5.2
+        version: 3.5.2(@types/node@20.4.7)(typescript@5.1.6)(vite@4.4.9)
+
   packages/kitten-hooks:
     dependencies:
       '@kitten-ui/utils':
