@@ -18,6 +18,7 @@ export default defineConfig({
       {
         properties: {
           borderRadius: ['*'],
+          boxShadow: ['*'],
         },
         responsive: true,
       },

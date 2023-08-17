@@ -33,4 +33,5 @@ export const shadows = {
       '0 1.0625rem 1.0625rem -0.4375rem rgba(0,0,0,.04)',
     ],
   },
+  inner: { value: 'inset 0 0.125rem 0.25rem 0 rgba(0,0,0,.05)' },
 };

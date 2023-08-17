@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Anchor, Box, Button } from './';
+import { Box, Button } from './';
 
 const App = () => {
   const [theme, setTheme] = React.useState('light');
@@ -10,9 +10,10 @@ const App = () => {
       <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换
       </Button>
-      <Anchor href="" target="_blank">
-        Anchor component
-      </Anchor>
+
+      {(['inner', 'xs', 'sm', 'md', 'lg', 'xl'] as const).map((v) => {
+        return <Box w="100px" h="100px" shadow={v} m="10px" />;
+      })}
     </Box>
   );
 };
