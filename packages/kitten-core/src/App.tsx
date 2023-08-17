@@ -7,7 +7,9 @@ const App = () => {
 
   return (
     <Box className={theme} w="100vw" h="100vh" overflow={'auto'} styled>
-      <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+      <Button
+        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+        colorPalette={'red'}>
         切换
       </Button>
 

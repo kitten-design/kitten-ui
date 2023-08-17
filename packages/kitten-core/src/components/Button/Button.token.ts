@@ -15,9 +15,19 @@ const chromaToRgba = (chromaColor: Chroma.Color) => {
 
 const getFilledColors = (_color: Color) => {
   return {
-    ButtonFilled: { value: `{colors.${_color}.500}` },
-    ButtonFilledHover: { value: `{colors.${_color}.600}` },
-    ButtonFilledActive: { value: `{colors.${_color}.700}` },
+    ButtonFilled: {
+      value: {
+        base: `{colors.${_color}.600}`,
+        _dark: `{colors.${_color}.800}`,
+      },
+    },
+    ButtonFilledHover: { value: `{colors.${_color}.700}` },
+    ButtonFilledActive: {
+      value: {
+        base: `{colors.${_color}.800}`,
+        _dark: `{colors.${_color}.600}`,
+      },
+    },
   };
 };
 
@@ -65,27 +75,27 @@ export const ButtonColors: SemanticTokens['colors'] = {
   Button: {
     default: {
       color: {
-        value: { base: '{colors.neutral.800}', _dark: '{colors.neutral.100}' },
+        value: { base: '{colors.dark.800}', _dark: '{colors.dark.100}' },
       },
       bg: {
-        value: { base: '{colors.neutral.50}', _dark: '{colors.neutral.800}' },
+        value: { base: '{colors.dark.50}', _dark: '{colors.dark.800}' },
       },
       bgHover: {
-        value: { base: '{colors.neutral.100}', _dark: '{colors.neutral.700}' },
+        value: { base: '{colors.dark.100}', _dark: '{colors.dark.700}' },
       },
       bgActive: {
-        value: { base: '{colors.neutral.200}', _dark: '{colors.neutral.600}' },
+        value: { base: '{colors.dark.200}', _dark: '{colors.dark.600}' },
       },
       borderColor: {
-        value: { base: '{colors.neutral.500}', _dark: '{colors.neutral.500}' },
+        value: { base: '{colors.dark.500}', _dark: '{colors.dark.500}' },
       },
     },
     disabled: {
       color: {
-        value: { base: '{colors.gray.500}', _dark: '{colors.neutral.300}' },
+        value: { base: '{colors.gray.500}', _dark: '{colors.dark.300}' },
       },
       bg: {
-        value: { base: '{colors.gray.200}', _dark: '{colors.neutral.600}' },
+        value: { base: '{colors.gray.200}', _dark: '{colors.dark.600}' },
       },
     },
     white: {

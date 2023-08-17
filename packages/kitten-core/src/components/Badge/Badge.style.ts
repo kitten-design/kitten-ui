@@ -36,7 +36,7 @@ export const badge = sva({
       true: {
         label: {
           border: '0.125rem solid',
-          borderColor: { base: 'white', _dark: 'neutral.700' },
+          borderColor: { base: 'white', _dark: 'dark.700' },
         },
       },
     },

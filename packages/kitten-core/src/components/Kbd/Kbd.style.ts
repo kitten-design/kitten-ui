@@ -11,9 +11,9 @@ const KbdRootStyles = cva({
     borderRadius: '0.25rem',
     border: '0.0625rem solid',
     borderBottomWidth: '0.1875rem!',
-    borderColor: { base: 'gray.300', _dark: 'neutral.400' },
-    color: { base: 'gray.700', _dark: 'neutral.50' },
-    bg: { base: 'gray.50', _dark: 'neutral.500' },
+    borderColor: { base: 'gray.300', _dark: 'dark.400' },
+    color: { base: 'gray.700', _dark: 'dark.50' },
+    bg: { base: 'gray.50', _dark: 'dark.500' },
   },
   variants: {
     size: {

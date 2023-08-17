@@ -1,10 +1,10 @@
 export const BoxColors = {
   Box: {
     color: {
-      value: { base: '{colors.neutral.800}', _dark: '{colors.neutral.100}' },
+      value: { base: '{colors.black}', _dark: '{colors.dark.50}' },
     },
     bg: {
-      value: { base: '{colors.neutral.50}', _dark: '{colors.neutral.900}' },
+      value: { base: '{colors.white}', _dark: '{colors.dark.700}' },
     },
   },
 };
