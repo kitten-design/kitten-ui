@@ -5,7 +5,6 @@ import { borders } from './borders';
 import { colors } from './colors';
 import { shadows } from './shadows';
 import { sizes } from './sizes';
-import { spacing } from './spacing';
 import {
   fonts,
   fontSizes,
@@ -50,15 +49,19 @@ export const tokens = defineTokens({
   shadows,
   colors,
   blurs: {
-    sm: { value: '4px' },
-    base: { value: '8px' },
+    xs: { value: '4px' },
+    sm: { value: '8px' },
     md: { value: '12px' },
     lg: { value: '16px' },
     xl: { value: '24px' },
-    '2xl': { value: '40px' },
-    '3xl': { value: '64px' },
   },
-  spacing,
+  spacing: {
+    xs: { value: '0.625rem' },
+    sm: { value: '0.75rem' },
+    md: { value: '1rem' },
+    lg: { value: '1.25rem' },
+    xl: { value: '2rem' },
+  },
   sizes,
   animations,
   zIndex: {
