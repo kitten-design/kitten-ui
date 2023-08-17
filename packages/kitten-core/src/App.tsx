@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Button } from './';
+import { Badge, Box, Button } from './';
 
 const App = () => {
   const [theme, setTheme] = React.useState('light');
@@ -13,9 +13,14 @@ const App = () => {
         colorPalette={'red'}>
         切换
       </Button>
-      <Button variant="filled" size="xl">
-        Button
-      </Button>
+
+      <br />
+
+      <Badge processing>
+        <Button variant="filled" size="xl">
+          Button
+        </Button>
+      </Badge>
       {(['inner', 'xs', 'sm', 'md', 'lg', 'xl'] as const).map((v) => {
         return <Box key={v} w="100px" h="100px" shadow={v} m="10px" />;
       })}
