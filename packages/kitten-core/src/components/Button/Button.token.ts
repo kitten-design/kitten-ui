@@ -74,20 +74,16 @@ export const ButtonColors: SemanticTokens['colors'] = {
 
   Button: {
     default: {
-      color: {
-        value: { base: '{colors.dark.800}', _dark: '{colors.dark.100}' },
-      },
-      bg: {
-        value: { base: '{colors.dark.50}', _dark: '{colors.dark.800}' },
-      },
+      color: { value: { base: '{colors.black}', _dark: '{colors.white}' } },
+      bg: { value: { base: '{colors.white}', _dark: '{colors.dark.600}' } },
       bgHover: {
-        value: { base: '{colors.dark.100}', _dark: '{colors.dark.700}' },
+        value: { base: '{colors.gray.50}', _dark: '{colors.dark.500}' },
       },
       bgActive: {
-        value: { base: '{colors.dark.200}', _dark: '{colors.dark.600}' },
+        value: { base: '{colors.gray.100}', _dark: '{colors.dark.400}' },
       },
       borderColor: {
-        value: { base: '{colors.dark.500}', _dark: '{colors.dark.500}' },
+        value: { base: '{colors.gray.400}', _dark: '{colors.dark.400}' },
       },
     },
     disabled: {

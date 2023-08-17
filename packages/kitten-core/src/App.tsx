@@ -13,7 +13,9 @@ const App = () => {
         colorPalette={'red'}>
         切换
       </Button>
-
+      <Button variant="transparent" size="xl">
+        Button
+      </Button>
       {(['inner', 'xs', 'sm', 'md', 'lg', 'xl'] as const).map((v) => {
         return <Box w="100px" h="100px" shadow={v} m="10px" />;
       })}
