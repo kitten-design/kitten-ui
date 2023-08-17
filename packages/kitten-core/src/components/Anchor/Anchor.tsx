@@ -9,6 +9,6 @@ export interface Props extends AnchorRootProps {}
 export type AnchorProps = Props & AnchorRootVariants;
 
 export const Anchor = cpc<'a', AnchorProps>((props, ref) => {
-  return <AnchorRoot data-Anchor ref={ref} {...props} />;
+  return <AnchorRoot data-anchor ref={ref} {...props} />;
 });
 Anchor.displayName = 'Anchor';

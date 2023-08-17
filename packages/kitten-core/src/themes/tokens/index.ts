@@ -61,4 +61,9 @@ export const tokens = defineTokens({
   spacing,
   sizes,
   animations,
+  zIndex: {
+    badge: { value: 200 },
+    affix: { value: 300 },
+    notifications: { value: 400 },
+  },
 });

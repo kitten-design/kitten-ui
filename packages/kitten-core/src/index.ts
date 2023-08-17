@@ -1,6 +1,7 @@
 import './css';
 export * from './components/ActionIcon';
 export * from './components/Anchor';
+export * from './components/Badge';
 export * from './components/Box';
 export * from './components/Button';
 export * from './components/Center';
