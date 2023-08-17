@@ -24,13 +24,32 @@ export const badge = sva({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      bg: 'colorPalette.600',
+      bg: { base: 'colorPalette.600', _dark: 'colorPalette.800' },
     },
   },
   variants: {
     inline: {
       true: { root: { display: 'inline-block' } },
       false: { root: { display: 'block' } },
+    },
+    withBorder: {
+      true: {
+        label: {
+          border: '0.125rem solid',
+          borderColor: { base: 'white', _dark: 'neutral.700' },
+        },
+      },
+    },
+    position: {
+      'top-start': { label: {} },
+      'top-center': { label: {} },
+      'top-end': { label: {} },
+      'middle-start': { label: {} },
+      'middle-center': { label: {} },
+      'middle-end': { label: {} },
+      'bottom-start': { label: {} },
+      'bottom-center': { label: {} },
+      'bottom-end': { label: {} },
     },
   },
   defaultVariants: {

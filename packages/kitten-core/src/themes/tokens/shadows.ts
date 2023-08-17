@@ -1,26 +1,36 @@
 export const shadows = {
-  xs: { value: '0 1px 2px 0 rgb(0 0 0 / 0.05)' },
+  xs: {
+    value: [
+      '0 0.0625rem 0.1875rem 0 rgba(0,0,0,.05)',
+      ' 0 0.0625rem 0.125rem rgba(0,0,0,.1)',
+    ],
+  },
   sm: {
-    value: ['0 1px 3px 0 rgb(0 0 0 / 0.1)', '0 1px 2px -1px rgb(0 0 0 / 0.1)'],
+    value: [
+      '0 0.0625rem 0.1875rem 0 rgba(0,0,0,.05)',
+      '0 0.625rem 0.9375rem -0.3125rem rgba(0,0,0,.05)',
+      '0 0.4375rem 0.4375rem -0.3125rem rgba(0,0,0,.04)',
+    ],
   },
   md: {
     value: [
-      '0 4px 6px -1px rgb(0 0 0 / 0.1)',
-      '0 2px 4px -2px rgb(0 0 0 / 0.1)',
+      '0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05)',
+      '0 1.25rem 1.5625rem -0.3125rem rgba(0,0,0,.05)',
+      '0 0.625rem 0.625rem -0.3125rem rgba(0,0,0,.04)',
     ],
   },
   lg: {
     value: [
-      '0 10px 15px -3px rgb(0 0 0 / 0.1)',
-      '0 4px 6px -4px rgb(0 0 0 / 0.1)',
+      '0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05)',
+      '0 1.75rem 1.4375rem -0.4375rem rgba(0,0,0,.05)',
+      '0 0.75rem 0.75rem -0.4375rem rgba(0,0,0,.04)',
     ],
   },
   xl: {
     value: [
-      '0 20px 25px -5px rgb(0 0 0 / 0.1)',
-      '0 8px 10px -6px rgb(0 0 0 / 0.1)',
+      '0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.05)',
+      '0 2.25rem 1.75rem -0.4375rem rgba(0,0,0,.05)',
+      '0 1.0625rem 1.0625rem -0.4375rem rgba(0,0,0,.04)',
     ],
   },
-  '2xl': { value: '0 25px 50px -12px rgb(0 0 0 / 0.25)' },
-  inner: { value: 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)' },
 };
