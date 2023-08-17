@@ -30,6 +30,12 @@ export const buttonRootStyles = cva({
     '&[data-loading=true]': {
       pointerEvents: 'none',
     },
+    _focusVisible: {
+      zIndex: 1,
+      outline: '0.125rem solid',
+      outlineColor: 'blue.600',
+      outlineOffset: '0.125rem',
+    },
   },
   variants: {
     variant: {
