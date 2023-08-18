@@ -1,5 +1,6 @@
 import type { RecipeVariantProps } from '@kitten-ui/styles/css';
 import { sva } from '@kitten-ui/styles/css';
+import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
 
 export const badge = sva({
   slots: ['root', 'label'],
@@ -126,3 +127,4 @@ export const badge = sva({
 });
 
 export type BadgeVariants = RecipeVariantProps<typeof badge>;
+export type BadgeVariantsProps = BadgeVariants & HTMLStyledProps<'div'>;

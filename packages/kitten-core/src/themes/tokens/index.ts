@@ -67,6 +67,7 @@ export const tokens = defineTokens({
   zIndex: {
     badge: { value: 200 },
     affix: { value: 300 },
-    notifications: { value: 400 },
+    modal: { value: 400 },
+    notifications: { value: 500 },
   },
 });

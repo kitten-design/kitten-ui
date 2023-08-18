@@ -1,13 +1,13 @@
 import { cx } from '@kitten-ui/styles/css';
-import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
 import { styled } from '@kitten-ui/styles/jsx';
 import type { Properties } from '@kitten-ui/styles/types/csstype';
 import React from 'react';
 
 import { cpc } from '../../utils';
-import { badge, type BadgeVariants } from './Badge.style';
+import type { BadgeVariantsProps } from './Badge.style';
+import { badge } from './Badge.style';
 
-type Props = BadgeVariants & HTMLStyledProps<'div'>;
+export interface Props extends BadgeVariantsProps {}
 
 export type BadgeProps = Props & {
   disabled?: boolean;

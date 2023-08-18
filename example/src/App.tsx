@@ -1,4 +1,11 @@
-import { Button, Center, CloseButton } from '@kitten-ui/core';
+import {
+  Affix,
+  Anchor,
+  Badge,
+  Button,
+  Center,
+  CloseButton,
+} from '@kitten-ui/core';
 import { DataSet, observer } from '@kitten-ui/dataset';
 
 const ds = DataSet([{ a: '' }]);
@@ -33,6 +40,14 @@ export default function App() {
         ))}
       </Center>
       <Input />
+      <Anchor />
+      <Affix>
+        <Badge processing>
+          <Button variant="filled" size="xl">
+            回到顶部
+          </Button>
+        </Badge>
+      </Affix>
     </div>
   );
 }
