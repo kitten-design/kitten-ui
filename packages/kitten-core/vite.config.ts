@@ -26,7 +26,6 @@ export default defineConfig({
       staticImport: true,
       insertTypesEntry: true,
       copyDtsFiles: false,
-      // rollupTypes: true,
       outDir: 'lib',
     }),
     splitVendorChunkPlugin(),
