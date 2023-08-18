@@ -25,7 +25,6 @@ export default defineConfig({
     dts({
       staticImport: true,
       insertTypesEntry: true,
-      cleanVueFileName: true,
       copyDtsFiles: false,
       // rollupTypes: true,
       outDir: 'lib',

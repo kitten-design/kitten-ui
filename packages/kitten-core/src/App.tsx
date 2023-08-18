@@ -16,7 +16,7 @@ const App = () => {
 
       <br />
 
-      <Badge processing>
+      <Badge>
         <Button variant="filled" size="xl">
           Button
         </Button>

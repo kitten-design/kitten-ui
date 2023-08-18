@@ -15,7 +15,11 @@
     "sourceMap": true,
     "strictNullChecks": true,
     "resolveJsonModule": true,
-    "outDir": "./lib"
+    "outDir": "./lib",
+    "baseUrl": "./",
+    "paths": {
+      "@kitten-ui/styles": ["./node_modules/@kitten-ui/styles/*"]
+    }
   },
   "compileOnSave": false,
   "include": ["src"]

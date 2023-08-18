@@ -14,7 +14,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@kitten-ui/styles": ["./node_modules/@kitten-ui/styles/*"]
+    }
   },
   "include": ["src", "./node_modules/@kitten-ui/styles/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
