@@ -120,6 +120,7 @@ export const badge = sva({
   defaultVariants: {
     inline: true,
     withBorder: false,
+    processing: false,
     position: 'top-end',
   },
 });

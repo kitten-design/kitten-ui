@@ -17,10 +17,22 @@ export type BadgeProps = Props & {
 };
 
 export const Badge = cpc<'div', BadgeProps>((props, ref) => {
-  const { disabled, label, className, size, offset, children, ...others } =
-    props;
+  const {
+    disabled,
+    label,
+    className,
+    size,
+    offset,
+    children,
 
-  const classes = badge(others);
+    inline,
+    withBorder,
+    position,
+    processing,
+    ...others
+  } = props;
+
+  const classes = badge({ inline, withBorder, position, processing });
 
   return (
     <styled.div
@@ -41,6 +53,7 @@ export const Badge = cpc<'div', BadgeProps>((props, ref) => {
     </styled.div>
   );
 });
+
 Badge.displayName = 'Badge';
 Badge.defaultProps = {
   rounded: 'full',
