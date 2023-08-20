@@ -9,7 +9,9 @@ const resetCss: GlobalStyleObject = {
 
 export const globalCss: GlobalStyleObject = {
   ...resetCss,
-  '*': { transition: 'background-color 0.1s ease-in-out' },
+  '*': {
+    transition: 'color 0.07s ease,background-color 0.07s ease',
+  },
   body: {
     m: 0,
     fontSize: 'md',
