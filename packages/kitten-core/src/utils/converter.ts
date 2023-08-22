@@ -2,7 +2,7 @@
  * Unit Converter Factory
  */
 const createConverter = (units: string) => {
-  return (px: unknown): string => {
+  return (px: string | number): string => {
     if (typeof px === 'number') {
       return `${px / 16}${units}`;
     }
@@ -14,7 +14,7 @@ const createConverter = (units: string) => {
       }
     }
 
-    return px as string;
+    return px;
   };
 };
 

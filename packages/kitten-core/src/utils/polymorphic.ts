@@ -8,9 +8,7 @@ import type {
 } from 'react';
 import { forwardRef } from 'react';
 
-type Empty = Record<string, any>;
-
-export type Merge<T, P> = P & Omit<T, keyof P>;
+import type { Empty, Merge } from './types';
 
 export type MergeProps<C extends ElementType, P = Empty> = Merge<
   ComponentProps<C>,
