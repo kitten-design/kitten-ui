@@ -1,7 +1,6 @@
-import { getChildrenByType } from '@kitten-ui/utils';
+import { cpc, getChildrenByType, rem } from '@kitten-ui/utils';
 import React from 'react';
 
-import { cpc, rem } from '../../../utils';
 import { ActionIcon } from '../ActionIcon';
 import type {
   ActionIconGroupRootProps,

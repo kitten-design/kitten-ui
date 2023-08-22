@@ -1,9 +1,9 @@
 import { cx } from '@kitten-ui/styles/css';
 import { styled } from '@kitten-ui/styles/jsx';
 import type { Properties } from '@kitten-ui/styles/types/csstype';
+import { cpc } from '@kitten-ui/utils';
 import React from 'react';
 
-import { cpc } from '../../utils';
 import type { BadgeVariantsProps } from './Badge.style';
 import { badge } from './Badge.style';
 

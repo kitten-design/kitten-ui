@@ -1,7 +1,7 @@
+import { cpc } from '@kitten-ui/utils';
 import type { ReactNode } from 'react';
 import React from 'react';
 
-import { cpc } from '../../utils';
 import { Box } from '../Box';
 import { Loader } from '../Loader';
 import type {

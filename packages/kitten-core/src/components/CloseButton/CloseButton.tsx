@@ -1,6 +1,6 @@
+import { cpc } from '@kitten-ui/utils';
 import React from 'react';
 
-import { cpc } from '../../utils';
 import { Loader } from '../Loader';
 import type {
   CloseButtonRootProps,

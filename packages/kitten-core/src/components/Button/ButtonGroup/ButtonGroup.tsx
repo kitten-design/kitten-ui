@@ -1,7 +1,7 @@
 import { getChildrenByType } from '@kitten-ui/utils';
+import { cpc, rem } from '@kitten-ui/utils';
 import React from 'react';
 
-import { cpc, rem } from '../../../utils';
 import { Button } from '../Button';
 import type {
   ButtonGroupRootProps,

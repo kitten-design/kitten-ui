@@ -1,6 +1,6 @@
+import { cpc } from '@kitten-ui/utils';
 import React from 'react';
 
-import { cpc } from '../../utils';
 import type { PortalProps } from '../Portal';
 import { OptionalPortal } from '../Portal';
 import type { AffixRootProps, AffixRootVariants } from './Affix.style';

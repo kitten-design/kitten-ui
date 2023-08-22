@@ -1,6 +1,6 @@
+import { cpc } from '@kitten-ui/utils';
 import React from 'react';
 
-import { cpc } from '../../utils';
 import type { AnchorRootProps, AnchorRootVariants } from './Anchor.style';
 import { AnchorRoot } from './Anchor.style';
 

@@ -1,6 +1,6 @@
+import { cpc } from '@kitten-ui/utils';
 import React from 'react';
 
-import { cpc } from '../../utils';
 import type { LoaderRootProps, LoaderRootVariants } from './Loader.style';
 import { LoaderRoot } from './Loader.style';
 import { Bars } from './loaders/Bars';
