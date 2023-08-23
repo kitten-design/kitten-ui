@@ -1,11 +1,12 @@
-import { rem } from '@kitten-ui/styles';
+import type { Property } from '@kitten-ui/styles/types/csstype';
+import { rem } from '@kitten-ui/utils';
 import type React from 'react';
 
 export interface KittenTransitionStyles {
   common?: React.CSSProperties;
   in: React.CSSProperties;
   out: React.CSSProperties;
-  transitionProperty: React.CSSProperties['transitionProperty'];
+  transitionProperty: Property.TransitionProperty;
 }
 
 export type KittenTransitionName =

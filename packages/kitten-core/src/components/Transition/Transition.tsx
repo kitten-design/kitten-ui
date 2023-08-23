@@ -1,11 +1,10 @@
-import type { DefaultProps } from '@kitten-ui/styles';
 import React, { useEffect, useState } from 'react';
 
-import { useTransitionStyles } from './Transition.style';
+import { getTransitionStyles } from './Transition.style';
 import type { KittenTransition } from './transitions';
 import { useTransition } from './use-transition';
 
-export interface TransitionProps extends DefaultProps {
+export interface TransitionProps {
   keepMounted?: boolean;
   transition: KittenTransition;
   duration?: number;
@@ -53,7 +52,7 @@ export const Transition: React.FC<TransitionProps> = (props) => {
       onExited,
     });
 
-  const styles = useTransitionStyles({
+  const styles = getTransitionStyles({
     transition,
     duration: transitionDuration,
     state: transitionStatus,

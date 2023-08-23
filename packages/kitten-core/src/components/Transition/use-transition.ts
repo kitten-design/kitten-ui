@@ -1,5 +1,5 @@
 import { useDidUpdate } from '@kitten-ui/hooks';
-import { isFunction } from 'lodash';
+import { isFunction } from '@kitten-ui/utils';
 import { useEffect, useRef, useState } from 'react';
 
 export type TransitionStatus =

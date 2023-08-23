@@ -1,3 +1,4 @@
+import type { Property } from '@kitten-ui/styles/types/csstype';
 import type React from 'react';
 
 import type { KittenTransition } from './transitions';
@@ -12,7 +13,7 @@ const transitionStatuses = {
   'pre-entering': 'out',
 } as const;
 
-export function useTransitionStyles({
+export function getTransitionStyles({
   transition,
   state,
   duration,
@@ -21,7 +22,7 @@ export function useTransitionStyles({
   transition: KittenTransition;
   state: keyof typeof transitionStatuses;
   duration: number;
-  timingFunction: React.CSSProperties['transitionTimingFunction'];
+  timingFunction: Property.TransitionTimingFunction;
 }): React.CSSProperties {
   const shared = {
     transitionDuration: `${duration}ms`,

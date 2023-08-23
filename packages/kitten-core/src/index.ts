@@ -12,4 +12,5 @@ export * from './components/Kbd';
 export * from './components/Loader';
 export * from './components/Portal';
 export * from './components/Text';
+export * from './components/Transition';
 export * from './themes';
