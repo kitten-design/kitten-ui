@@ -102,7 +102,7 @@ export const buttonRootStyles = cva({
       gradient: {
         colorPalette,
         gradientFrom: 'colorPalette.400',
-        gradientTo: 'colorPalette.600',
+        gradientTo: 'colorPalette.800',
         bgGradient: 'to-br',
         color: 'white',
         border: 'none',

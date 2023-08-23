@@ -4,6 +4,11 @@ import { BoxColors } from '../../components/Box/Box.token';
 import { ButtonColors } from '../../components/Button/Button.token';
 
 export const colors: SemanticTokens['colors'] = {
+  Common: {
+    borderColor: {
+      value: { base: '{colors.gray.400}', _dark: '{colors.dark.400}' },
+    },
+  },
   Body: {
     color: {
       value: { base: '{colors.black}', _dark: '{colors.dark.50}' },

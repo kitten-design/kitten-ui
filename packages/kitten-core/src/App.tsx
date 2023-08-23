@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Affix, Badge, Box, Button, Transition } from './';
+import { Box, Button, Tag } from './';
 
 const App = () => {
   const [theme, setTheme] = React.useState('light');
@@ -13,32 +13,56 @@ const App = () => {
         colorPalette={'red'}>
         切换
       </Button>
-
       <br />
-
-      <Badge processing>
-        <Button variant="filled" size="xl">
-          Button
-        </Button>
-      </Badge>
-      {(['inner', 'xs', 'sm', 'md', 'lg', 'xl'] as const).map((v) => {
-        return <Box key={v} w="100px" h="100px" shadow={v} m="10px" />;
+      {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((v) => {
+        return (
+          <Tag key={v} size={v} variant="filled">
+            标签
+          </Tag>
+        );
       })}
-      {
-        <Affix>
-          <Transition transition={'fade'} mounted={theme === 'light'}>
-            {(style) => {
-              return (
-                <Badge processing style={style}>
-                  <Button variant="filled" size="xl">
-                    回到顶部
-                  </Button>
-                </Badge>
-              );
-            }}
-          </Transition>
-        </Affix>
-      }
+      {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((v) => {
+        return (
+          <Tag key={v} size={v} variant="default">
+            标签
+          </Tag>
+        );
+      })}
+      {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((v) => {
+        return (
+          <Tag key={v} size={v} variant="gradient">
+            标签
+          </Tag>
+        );
+      })}
+      {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((v) => {
+        return (
+          <Tag key={v} size={v} variant="light">
+            标签
+          </Tag>
+        );
+      })}
+      {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((v) => {
+        return (
+          <Tag key={v} size={v} variant="outline">
+            标签
+          </Tag>
+        );
+      })}
+      {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((v) => {
+        return (
+          <Tag key={v} size={v} variant="transparent">
+            标签
+          </Tag>
+        );
+      })}
+      {(['xs', 'sm', 'md', 'lg', 'xl'] as const).map((v) => {
+        return (
+          <Tag key={v} size={v} variant="white">
+            标签
+          </Tag>
+        );
+      })}
     </Box>
   );
 };

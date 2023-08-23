@@ -11,8 +11,9 @@
   },
   "dependencies": {
     "@kitten-ui/core": "workspace:*",
-    "@kitten-ui/styles": "*",
     "@kitten-ui/dataset": "workspace:*",
+    "@kitten-ui/styles": "*",
+    "@tabler/icons-react": "^2.30.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
