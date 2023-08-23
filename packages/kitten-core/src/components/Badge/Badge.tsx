@@ -2,6 +2,7 @@ import { cx } from '@kitten-ui/styles/css';
 import { styled } from '@kitten-ui/styles/jsx';
 import type { Properties } from '@kitten-ui/styles/types/csstype';
 import { cpc } from '@kitten-ui/utils';
+import type { ReactNode } from 'react';
 import React from 'react';
 
 import type { BadgeVariantsProps } from './Badge.style';
@@ -11,7 +12,7 @@ export interface Props extends BadgeVariantsProps {}
 
 export type BadgeProps = Props & {
   disabled?: boolean;
-  label?: React.ReactNode;
+  label?: ReactNode;
   size?: Properties['width'];
   offset?: Properties['width'];
 };

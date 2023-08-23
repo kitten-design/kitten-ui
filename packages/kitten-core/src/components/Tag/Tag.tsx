@@ -1,10 +1,14 @@
 import { cpc } from '@kitten-ui/utils';
+import type { ReactNode } from 'react';
 import React from 'react';
 
 import type { TagRootProps, TagRootVariants } from './Tag.style';
 import { TagRoot } from './Tag.style';
 
-export interface Props extends TagRootProps {}
+export interface Props extends TagRootProps {
+  leftSection?: ReactNode;
+  rightSection?: ReactNode;
+}
 
 export type TagProps = Props & TagRootVariants;
 

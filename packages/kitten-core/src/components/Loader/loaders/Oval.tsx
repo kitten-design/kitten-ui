@@ -1,8 +1,7 @@
+import type { ComponentPropsWithoutRef, FC } from 'react';
 import React from 'react';
 
-export const Oval: React.FC<React.ComponentPropsWithoutRef<'svg'>> = (
-  props,
-) => {
+export const Oval: FC<ComponentPropsWithoutRef<'svg'>> = (props) => {
   return (
     <svg {...props} viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
       <g fill="none" fillRule="evenodd">

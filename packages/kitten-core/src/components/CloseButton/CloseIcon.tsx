@@ -1,6 +1,7 @@
+import type { ComponentPropsWithoutRef } from 'react';
 import React from 'react';
 
-export const CloseIcon = (props: React.ComponentPropsWithoutRef<'svg'>) => {
+export const CloseIcon = (props: ComponentPropsWithoutRef<'svg'>) => {
   return (
     <svg
       viewBox="0 0 15 15"

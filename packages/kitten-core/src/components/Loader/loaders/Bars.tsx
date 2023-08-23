@@ -1,8 +1,7 @@
+import type { ComponentPropsWithoutRef, FC } from 'react';
 import React from 'react';
 
-export const Bars: React.FC<React.ComponentPropsWithoutRef<'svg'>> = (
-  props,
-) => {
+export const Bars: FC<ComponentPropsWithoutRef<'svg'>> = (props) => {
   return (
     <svg viewBox="0 0 135 140" xmlns="http://www.w3.org/2000/svg" {...props}>
       <rect y="10" width="15" height="120" rx="6">

@@ -1,5 +1,5 @@
 import { cpc } from '@kitten-ui/utils';
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import { Loader } from '../Loader';
 import type {
@@ -35,7 +35,7 @@ export const ActionIcon = cpc<
       {loading
         ? (() => {
             return (
-              <React.Fragment>
+              <Fragment>
                 {!['gradient', 'filled', 'default'].includes(variant!) && (
                   <Loader colorPalette={colorPalette} />
                 )}
@@ -52,7 +52,7 @@ export const ActionIcon = cpc<
                     css={{ '--loader-color': 'colors.Button.default.color' }}
                   />
                 )}
-              </React.Fragment>
+              </Fragment>
             );
           })()
         : children}

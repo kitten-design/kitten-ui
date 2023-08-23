@@ -1,4 +1,5 @@
-import React from 'react';
+import type { FC } from 'react';
+import React, { Fragment } from 'react';
 
 import type { PortalProps } from './Portal';
 import { Portal } from './Portal';
@@ -7,7 +8,7 @@ export interface OptionalPortalProps extends PortalProps {
   withinPortal?: boolean;
 }
 
-export const OptionalPortal: React.FC<OptionalPortalProps> = ({
+export const OptionalPortal: FC<OptionalPortalProps> = ({
   withinPortal = true,
   children,
   ...others
@@ -16,7 +17,7 @@ export const OptionalPortal: React.FC<OptionalPortalProps> = ({
     return <Portal {...others}>{children}</Portal>;
   }
 
-  return <React.Fragment>{children}</React.Fragment>;
+  return <Fragment>{children}</Fragment>;
 };
 
 OptionalPortal.displayName = 'OptionalPortal';

@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import type { CSSProperties, FC, ReactElement } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 
 import { getTransitionStyles } from './Transition.style';
 import type { KittenTransition } from './transitions';
@@ -11,7 +12,7 @@ export interface TransitionProps {
   exitDuration?: number;
   timingFunction?: string;
   mounted?: boolean;
-  children(styles: React.CSSProperties): React.ReactElement<any, any>;
+  children(styles: CSSProperties): ReactElement<any, any>;
   onExited?: () => void;
   onExit?: () => void;
   onEnter?: () => void;
@@ -20,7 +21,7 @@ export interface TransitionProps {
 
 export type TransitionOverride = Partial<Omit<TransitionProps, 'mounted'>>;
 
-export const Transition: React.FC<TransitionProps> = (props) => {
+export const Transition: FC<TransitionProps> = (props) => {
   const {
     keepMounted,
     transition,
@@ -61,7 +62,7 @@ export const Transition: React.FC<TransitionProps> = (props) => {
 
   if (transitionDuration === 0) {
     return mounted ? (
-      <React.Fragment>{children({})}</React.Fragment>
+      <Fragment>{children({})}</Fragment>
     ) : keepMounted ? (
       children({ display: 'none' })
     ) : null;
@@ -72,7 +73,7 @@ export const Transition: React.FC<TransitionProps> = (props) => {
       children({ display: 'none' })
     ) : null
   ) : (
-    <React.Fragment>{children(styles)}</React.Fragment>
+    <Fragment>{children(styles)}</Fragment>
   );
 };
 
