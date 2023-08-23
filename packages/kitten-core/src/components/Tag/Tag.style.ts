@@ -19,7 +19,6 @@ const TagRootStyles = cva({
     cursor: 'inherit',
     textOverflow: 'ellipsis',
     overflow: 'hidden',
-    whiteSpace: 'nowrap',
     border: '0.0625rem solid',
     borderColor: 'Common.borderColor',
   },
