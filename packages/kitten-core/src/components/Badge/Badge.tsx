@@ -8,9 +8,7 @@ import React from 'react';
 import type { BadgeVariantsProps } from './Badge.style';
 import { badge } from './Badge.style';
 
-export interface Props extends BadgeVariantsProps {}
-
-export type BadgeProps = Props & {
+export type BadgeProps = BadgeVariantsProps & {
   disabled?: boolean;
   label?: ReactNode;
   size?: Properties['width'];

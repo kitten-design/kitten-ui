@@ -8,6 +8,9 @@ export const colors: SemanticTokens['colors'] = {
     borderColor: {
       value: { base: '{colors.gray.400}', _dark: '{colors.dark.400}' },
     },
+    dimmedColor: {
+      value: { base: '{colors.gray.600}', _dark: '{colors.dark.200}' },
+    },
   },
   Body: {
     color: {

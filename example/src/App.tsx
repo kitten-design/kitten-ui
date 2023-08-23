@@ -14,7 +14,8 @@ export default function App() {
         按钮
       </Button>
       <br />
-      <Tag>标签</Tag>
+
+      <Tag variant="default">标签</Tag>
     </div>
   );
 }

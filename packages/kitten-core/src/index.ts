@@ -8,6 +8,7 @@ export * from './components/Button';
 export * from './components/Center';
 export * from './components/CloseButton';
 export * from './components/CopyButton';
+export * from './components/Divider';
 export * from './components/Kbd';
 export * from './components/Loader';
 export * from './components/Portal';
