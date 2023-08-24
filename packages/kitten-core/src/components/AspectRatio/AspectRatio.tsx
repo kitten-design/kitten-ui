@@ -18,7 +18,7 @@ export const AspectRatio = cpc<'div', AspectRatioProps>((props, ref) => {
   const { ratio, style } = props;
   return (
     <AspectRatioRoot
-      data-AspectRatio
+      data-aspectRatio
       ref={ref}
       style={{ ...style, '--ar-ratio': `${ratio}` }}
       {...props}
