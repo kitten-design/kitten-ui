@@ -33,6 +33,7 @@ const TagRootStyles = cva({
         colorPalette,
         bg: 'colorPalette.ButtonFilled',
         color: 'white',
+        border: 'none',
       },
       light: {
         colorPalette,
