@@ -3,6 +3,7 @@ export * from './components/ActionIcon';
 export * from './components/Affix';
 export * from './components/Anchor';
 export * from './components/AspectRatio';
+export * from './components/Avatar';
 export * from './components/BackTop';
 export * from './components/Badge';
 export * from './components/Box';
