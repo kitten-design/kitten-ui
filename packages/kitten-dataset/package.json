@@ -29,7 +29,7 @@
     "build:lib": "tsc --project ./tsconfig.build.json"
   },
   "devDependencies": {
-    "@types/react": "^18.2.20",
+    "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "typescript": "^5.1.6",
@@ -40,7 +40,7 @@
     "react": ">=16.8.0"
   },
   "dependencies": {
-    "@legendapp/state": "^1.9.0",
+    "@legendapp/state": "^1.10.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
