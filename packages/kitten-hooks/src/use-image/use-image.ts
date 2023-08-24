@@ -5,6 +5,7 @@ import { useIsomorphicEffect } from '../use-isomorphic-effect/use-isomorphic-eff
 export interface ImageState {
   loaded: boolean;
   error: boolean;
+  event?: string | Event;
 }
 
 export function useImage(src?: string | null): ImageState {
@@ -22,8 +23,8 @@ export function useImage(src?: string | null): ImageState {
     img.onload = () => {
       setImageState({ loaded: true, error: false });
     };
-    img.onerror = () => {
-      setImageState({ loaded: false, error: true });
+    img.onerror = (event) => {
+      setImageState({ loaded: false, error: true, event });
     };
     img.src = src;
   }, [src]);
