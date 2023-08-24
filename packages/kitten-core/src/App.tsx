@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { Box, Button, CloseButton, Tag } from './';
-import { Alert } from './components/Alert';
-import { ImageIcon } from './components/Image/ImageIcon';
+import { Box, Button, CloseButton, Title } from './';
 
 const App = () => {
   const [theme, setTheme] = React.useState('light');
@@ -17,33 +15,12 @@ const App = () => {
         切换
       </Button>
       <CloseButton></CloseButton>
-      <Alert
-        colorPalette="green!"
-        w="300px"
-        title="title"
-        icon={<ImageIcon />}
-        variant="filled"
-        withCloseButton
-        onClose={() => {
-          console.log(1123);
-        }}>
-        test{' '}
-      </Alert>
-      <Alert icon={<ImageIcon />} variant="outline">
-        test{' '}
-      </Alert>{' '}
-      <Alert icon={<ImageIcon />} variant="light">
-        test{' '}
-      </Alert>
-      <Alert icon={<ImageIcon />} variant="transparent">
-        test{' '}
-      </Alert>{' '}
-      <Alert icon={<ImageIcon />} variant="white">
-        test{' '}
-      </Alert>
-      <Alert icon={<ImageIcon />} variant="default">
-        test{' '}
-      </Alert>
+      <Title order={1}>This is title</Title>
+      <Title order={2}>This is title</Title>
+      <Title order={3}>This is title</Title>
+      <Title order={4}>This is title</Title>
+      <Title order={5}>This is title</Title>
+      <Title order={6}>This is title</Title>
     </Box>
   );
 };

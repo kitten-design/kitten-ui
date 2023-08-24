@@ -17,5 +17,6 @@ export * from './components/Loader';
 export * from './components/Portal';
 export * from './components/Tag';
 export * from './components/Text';
+export * from './components/Title';
 export * from './components/Transition';
 export * from './themes';
