@@ -19,7 +19,6 @@ const App = () => {
       <Toast
         colorPalette={'red'}
         icon={<Icon123 />}
-        rounded={'full'}
         title="标题"
         withCloseButton>
         内容
@@ -28,17 +27,11 @@ const App = () => {
         colorPalette={'green'}
         loading
         icon={<Icon123 />}
-        rounded={'full'}
         title="标题"
         withCloseButton>
         内容
       </Toast>
-      <Toast
-        colorPalette={'green'}
-        loading
-        icon={<Icon123 />}
-        rounded={'full'}
-        withCloseButton>
+      <Toast colorPalette={'green'} loading icon={<Icon123 />} withCloseButton>
         内容
       </Toast>
     </Box>

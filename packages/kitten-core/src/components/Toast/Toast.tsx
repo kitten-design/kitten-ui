@@ -60,3 +60,6 @@ export const Toast = cpc<'div', ToastProps>((props, ref) => {
   );
 });
 Toast.displayName = 'Toast';
+Toast.defaultProps = {
+  rounded: 'sm',
+};

@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@kitten-ui/hooks": "workspace:*",
+    "@kitten-ui/dataset": "workspace:*",
     "@kitten-ui/styles": "^0.0.3",
     "@kitten-ui/utils": "workspace:*",
     "@tabler/icons-react": "^2.32.0",

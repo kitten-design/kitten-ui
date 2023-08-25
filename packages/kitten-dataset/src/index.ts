@@ -5,4 +5,4 @@ enableReactUse();
 enableLegendStateReact();
 
 export * from './core';
-export { enableLegendStateReact, observer } from '@legendapp/state/react';
+export { observer } from '@legendapp/state/react';
