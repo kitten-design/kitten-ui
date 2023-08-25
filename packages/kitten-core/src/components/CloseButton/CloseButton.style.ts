@@ -48,6 +48,7 @@ const CloseButtonRootStyles = cva({
           _hover: 'colorPalette.ButtonFilledHover',
           _active: 'colorPalette.ButtonFilledActive',
         },
+        border: 'none',
         color: 'white',
       },
       light: {
@@ -57,6 +58,7 @@ const CloseButtonRootStyles = cva({
           _hover: 'colorPalette.ButtonLightHover',
           _active: 'colorPalette.ButtonLightActive',
         },
+        border: 'none',
         color: 'colorPalette.ButtonLightColor',
       },
       outline: {
@@ -76,11 +78,13 @@ const CloseButtonRootStyles = cva({
           _hover: 'colorPalette.ButtonLightHover',
           _active: 'colorPalette.ButtonLightActive',
         },
+        border: 'none',
         color: 'colorPalette.ButtonLightColor',
       },
       transparent: {
         colorPalette,
         bg: 'transparent',
+        border: 'none',
         color: 'colorPalette.ButtonLightColor',
       },
       white: {
@@ -90,6 +94,7 @@ const CloseButtonRootStyles = cva({
           _hover: 'Button.white.bgHover',
           _active: 'Button.white.bgActive',
         },
+        border: 'none',
         color: 'colorPalette.ButtonFilled',
       },
       gradient: {

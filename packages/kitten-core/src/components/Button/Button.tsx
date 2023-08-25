@@ -57,13 +57,13 @@ export const Button = cpc<'button', ButtonProps, { Group: typeof ButtonGroup }>(
         {...others}>
         <ButtonInner data-button-inner justifyContent={justify}>
           {!!left && (
-            <Box data-button-leftSection as="span" mr="xs">
+            <Box data-button-left-section as="span" mr="xs">
               {left}
             </Box>
           )}
           <ButtonLabel>{children}</ButtonLabel>
           {!!right && (
-            <Box data-button-rightSection as="span" ml="xs">
+            <Box data-button-right-section as="span" ml="xs">
               {right}
             </Box>
           )}

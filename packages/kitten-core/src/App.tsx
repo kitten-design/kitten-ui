@@ -1,6 +1,8 @@
+import { Icon123 } from '@tabler/icons-react';
 import React from 'react';
 
-import { Box, Button, CloseButton, Title } from './';
+import { Box, Button } from './';
+import { Toast } from './components/Toast';
 
 const App = () => {
   const [theme, setTheme] = React.useState('light');
@@ -14,13 +16,31 @@ const App = () => {
         colorPalette={'red'}>
         切换
       </Button>
-      <CloseButton></CloseButton>
-      <Title order={1}>This is title</Title>
-      <Title order={2}>This is title</Title>
-      <Title order={3}>This is title</Title>
-      <Title order={4}>This is title</Title>
-      <Title order={5}>This is title</Title>
-      <Title order={6}>This is title</Title>
+      <Toast
+        colorPalette={'red'}
+        icon={<Icon123 />}
+        rounded={'full'}
+        title="标题"
+        withCloseButton>
+        内容
+      </Toast>
+      <Toast
+        colorPalette={'green'}
+        loading
+        icon={<Icon123 />}
+        rounded={'full'}
+        title="标题"
+        withCloseButton>
+        内容
+      </Toast>
+      <Toast
+        colorPalette={'green'}
+        loading
+        icon={<Icon123 />}
+        rounded={'full'}
+        withCloseButton>
+        内容
+      </Toast>
     </Box>
   );
 };
