@@ -35,15 +35,16 @@
     "studio": "panda studio -c ./panda.config.ts"
   },
   "dependencies": {
-    "@kitten-ui/hooks": "workspace:*",
     "@kitten-ui/dataset": "workspace:*",
+    "@kitten-ui/hooks": "workspace:*",
     "@kitten-ui/styles": "^0.0.3",
     "@kitten-ui/utils": "workspace:*",
     "@tabler/icons-react": "^2.32.0",
     "chroma-js": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0"
+    "react-router-dom": "^6.15.0",
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "@pandacss/dev": "^0.12.0",
@@ -51,6 +52,7 @@
     "@types/chroma-js": "^2.4.0",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "@types/react-transition-group": "^4.4.6",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6",

@@ -56,6 +56,7 @@ export const buttonRootStyles = cva({
           _active: 'colorPalette.ButtonFilledActive',
         },
         color: 'white',
+        border: 'none',
       },
       light: {
         colorPalette,
@@ -65,6 +66,7 @@ export const buttonRootStyles = cva({
           _active: 'colorPalette.ButtonLightActive',
         },
         color: 'colorPalette.ButtonLightColor',
+        border: 'none',
       },
       outline: {
         colorPalette,
@@ -83,12 +85,14 @@ export const buttonRootStyles = cva({
           _hover: 'colorPalette.ButtonLightHover',
           _active: 'colorPalette.ButtonLightActive',
         },
+        border: 'none',
         color: 'colorPalette.ButtonLightColor',
       },
       transparent: {
         colorPalette,
         bg: 'transparent',
         color: 'colorPalette.ButtonLightColor',
+        border: 'none',
       },
       white: {
         colorPalette,
@@ -97,6 +101,7 @@ export const buttonRootStyles = cva({
           _hover: 'Button.white.bgHover',
           _active: 'Button.white.bgActive',
         },
+        border: 'none',
         color: 'colorPalette.ButtonFilled',
       },
       gradient: {

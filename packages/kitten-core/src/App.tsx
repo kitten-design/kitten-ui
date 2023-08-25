@@ -1,8 +1,7 @@
-import { Icon123 } from '@tabler/icons-react';
+import { IconCheck } from '@tabler/icons-react';
 import React from 'react';
 
-import { Box, Button } from './';
-import { Toast } from './components/Toast';
+import { Box, Button, toast, Toaster, toastStore } from './';
 
 const App = () => {
   const [theme, setTheme] = React.useState('light');
@@ -16,24 +15,54 @@ const App = () => {
         colorPalette={'red'}>
         切换
       </Button>
-      <Toast
-        colorPalette={'red'}
-        icon={<Icon123 />}
-        title="标题"
-        withCloseButton>
-        内容
-      </Toast>
-      <Toast
-        colorPalette={'green'}
-        loading
-        icon={<Icon123 />}
-        title="标题"
-        withCloseButton>
-        内容
-      </Toast>
-      <Toast colorPalette={'green'} loading icon={<Icon123 />} withCloseButton>
-        内容
-      </Toast>
+      <Button
+        onClick={() => {
+          (
+            [
+              'top-left',
+              'top',
+              'top-right',
+              'bottom-left',
+              'bottom',
+              'bottom-right',
+            ] as const
+          ).forEach((element) => {
+            toast({
+              position: element,
+              icon: <IconCheck />,
+              title: '标题',
+              message: '哈哈哈' + Math.random(),
+              css: { colorPalette: Math.random() > 0.5 ? 'green' : 'blue' },
+              withCloseButton: true,
+              autoClose: false,
+            });
+          });
+        }}>
+        点击
+      </Button>
+      <Button
+        variant="subtle"
+        onClick={() => {
+          toast({
+            id: 'a',
+            icon: <IconCheck />,
+            title: '标题',
+            message: '哈哈哈' + Math.random(),
+            css: { colorPalette: Math.random() > 0.5 ? 'green' : 'blue' },
+            withCloseButton: true,
+            autoClose: false,
+          });
+        }}>
+        点击
+      </Button>
+      <Button
+        variant="light"
+        onClick={() => {
+          console.log(toastStore.toData());
+        }}>
+        打印数据
+      </Button>
+      <Toaster className={theme} />
     </Box>
   );
 };

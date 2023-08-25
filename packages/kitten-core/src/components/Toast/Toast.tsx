@@ -49,12 +49,7 @@ export const Toast = cpc<'div', ToastProps>((props, ref) => {
       </div>
 
       {withCloseButton && (
-        <CloseButton
-          data-toast-close
-          colorPalette={colorPalette}
-          onClick={onClose}
-          size="md"
-        />
+        <CloseButton data-toast-close onClick={onClose} size="md" />
       )}
     </ToastRoot>
   );

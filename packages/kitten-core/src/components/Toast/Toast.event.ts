@@ -1,73 +1,72 @@
-// import { DataSet } from '@kitten-ui/dataset';
-// import { isString } from '@kitten-ui/utils';
-// import type { ReactNode } from 'react';
+import { DataSet } from '@kitten-ui/dataset';
+import { isString } from '@kitten-ui/utils';
+import type { ReactNode } from 'react';
 
-// import type { ToastProps } from './Toast';
+import type { ToastProps } from './Toast';
 
-// type ToastPosition =
-//   | 'top-left'
-//   | 'top'
-//   | 'top-right'
-//   | 'bottom-left'
-//   | 'bottom'
-//   | 'bottom-right';
+export type ToastPosition =
+  | 'top-left'
+  | 'top'
+  | 'top-right'
+  | 'bottom-left'
+  | 'bottom'
+  | 'bottom-right';
 
-// type ToastConfig = {
-//   id?: string;
-//   position?: ToastPosition;
-//   autoClose?: boolean | number;
-//   onClose?(props: ToastConfig): void;
-//   onOpen?(props: ToastConfig): void;
-//   icon?: ReactNode;
-//   title?: ReactNode;
-//   message?: ReactNode;
-//   loading?: boolean;
-//   withCloseButton?: boolean;
-//   css?: ToastProps['css'];
-// };
+export type ToastConfig = {
+  id?: string;
+  position?: ToastPosition;
+  autoClose?: boolean | number;
+  onClose?(props: ToastConfig): void;
+  onOpen?(props: ToastConfig): void;
+  icon?: ReactNode;
+  title?: ReactNode;
+  message?: ReactNode;
+  loading?: boolean;
+  withCloseButton?: boolean;
+  css?: ToastProps['css'];
+};
 
-// type ToastConfigWithId = Omit<ToastConfig, 'id'> & { id: string };
+export type ToastConfigWithId = Omit<ToastConfig, 'id'> & { id: string };
 
-// export const toastStore = DataSet<ToastConfigWithId>([]);
+export const toastStore = DataSet<ToastConfigWithId>([]);
 
-// console.log(toastStore.toData());
+export const toast = (options: string | ToastConfig) => {
+  const uuid = `kitten-${Math.random().toString(36).slice(2, 11)}`;
 
-// const limit = 20;
+  if (isString(options)) {
+    toastStore.create({ id: uuid, position: 'top-right', message: options });
+    return uuid;
+  } else {
+    if (options.id) {
+      const record = toastStore.records
+        .get()
+        .find((v) => v.getValue('id') === options.id);
+      if (record) {
+        record?.setValue(options);
+        return options.id;
+      }
+    }
 
-// export const toast = (options: string | ToastConfig) => {
-//   const uuid = `kitten-${Math.random().toString(36).slice(2, 11)}`;
+    toastStore.create({ id: uuid, position: 'top-right', ...options });
+    return options.id || uuid;
+  }
+};
 
-//   if (isString(options)) {
-//     ({ id: uuid, message: options });
-//     return uuid;
-//   } else {
-//     setState({ id: uuid, ...options });
-//     return options.id || uuid;
-//   }
-// };
+toast.hide = (id: string) => {
+  const index = toastStore.records
+    .get()
+    .findIndex((v) => v.getValue('id') === id);
 
-// toast.hide = (id: string) => {
-//   useToastStore.setState((state) => {
-//     const index = state.data.findIndex((v) => v.id === id);
-//     state.data.splice(index >>> 0, 1);
-//     return {
-//       data: [...state.data],
-//     };
-//   });
-// };
+  toastStore.records.splice(index >>> 0, 1);
+};
 
-// toast.update = (options: ToastConfigWithId) => {
-//   useToastStore.setState((state) => {
-//     const data = state.data.find((v) => v.id === options.id);
-//     if (!data) return state;
+toast.update = (options: ToastConfigWithId) => {
+  const record = toastStore.records
+    .get()
+    .find((v) => v.getValue('id') === options.id);
+  record?.setValue(options);
+};
 
-//     Object.assign(data, options);
-//     return {
-//       data: [...state.data],
-//     };
-//   });
-// };
-
-// toast.clear = () => {
-//   useToastStore.setState({ data: [] });
-// };
+toast.clear = () => {
+  toastStore.clear();
+};

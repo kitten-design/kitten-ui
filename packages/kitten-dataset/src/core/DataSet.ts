@@ -18,6 +18,15 @@ export const DataSet = <T extends RecordData>(data: T[] = []) => {
     toData: () => {
       return dataSet.records.get().map((r) => r.toData());
     },
+    create: (data: T) => {
+      const newRecord = Record(data, dataSet);
+      dataSet.records.push(newRecord);
+      dataSet.current.set(newRecord);
+      return newRecord;
+    },
+    clear: () => {
+      dataSet.records.set([]);
+    },
   });
 
   const loadData = (data: T[]) => {
