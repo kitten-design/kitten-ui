@@ -19,7 +19,6 @@ export default defineConfig({
         properties: {
           borderRadius: ['*'],
           boxShadow: ['*'],
-          colorPalette: ['green'],
         },
         responsive: true,
       },

@@ -46,9 +46,9 @@ const App = () => {
           toast({
             id: 'a',
             icon: <IconCheck />,
-            title: '标题',
-            message: '哈哈哈' + Math.random(),
-            css: { colorPalette: Math.random() > 0.5 ? 'green' : 'blue' },
+            title: '标题'.repeat(100),
+            message: '哈哈哈'.repeat(100) + Math.random(),
+            css: { colorPalette: 'blue' },
             withCloseButton: true,
             autoClose: false,
           });

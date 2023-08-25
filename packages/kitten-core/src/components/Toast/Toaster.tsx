@@ -62,7 +62,6 @@ export const Toaster = observer(
                 data={v}
                 state={state}
                 duration={duration!}
-                maxHeight={'100px'}
               />
             )}
           </Transition>

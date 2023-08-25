@@ -24,7 +24,6 @@ const getAutoClose = (
 export interface ToastWrapProps {
   data: ToastConfigWithId;
   state: TransitionStatus;
-  maxHeight: number | string;
   duration: number;
   autoClose?: boolean | number;
   innerRef: React.ForwardedRef<HTMLDivElement>;
@@ -36,7 +35,12 @@ export default function ToastWrap({
   autoClose,
   innerRef,
 }: ToastWrapProps) {
-  const { autoClose: toasterAutoClose, message, withCloseButton } = data;
+  const {
+    autoClose: toasterAutoClose,
+    message,
+    withCloseButton,
+    ...others
+  } = data;
   const autoCloseTimeout = getAutoClose(autoClose, toasterAutoClose);
 
   const hideTimeout = useRef<number>();
@@ -72,7 +76,7 @@ export default function ToastWrap({
       {(style) => {
         return (
           <Toast
-            {...data}
+            {...others}
             ref={innerRef}
             style={{ ...style }}
             my="xs"
