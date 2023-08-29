@@ -1,4 +1,4 @@
-import { Avatar, Button, Tag } from '@kitten-ui/core';
+import { Avatar, Button } from '@kitten-ui/core';
 import { useState } from 'react';
 
 export default function App() {
