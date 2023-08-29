@@ -1,7 +1,7 @@
 import { IconCheck } from '@tabler/icons-react';
 import React from 'react';
 
-import { Box, Button, toast, Toaster, toastStore } from './';
+import { Box, Button, toast, Toaster, toastStore, Tooltip } from './';
 
 const App = () => {
   const [theme, setTheme] = React.useState('light');
@@ -62,7 +62,18 @@ const App = () => {
         }}>
         打印数据
       </Button>
-      <Toaster className={theme} />
+      <Toaster className={theme} /> <br />
+      <Tooltip label={'tooltip'} position="right" opened={true} withArrow>
+        <Button
+          mt="100px"
+          variant="light"
+          onClick={() => {
+            console.log(toastStore.toData());
+          }}>
+          打印数据
+        </Button>
+      </Tooltip>
+      <div style={{ height: '1000px', width: '1000px' }}>123</div>
     </Box>
   );
 };

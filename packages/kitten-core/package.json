@@ -35,6 +35,7 @@
     "studio": "panda studio -c ./panda.config.ts"
   },
   "dependencies": {
+    "@floating-ui/react": "^0.25.1",
     "@kitten-ui/dataset": "workspace:*",
     "@kitten-ui/hooks": "workspace:*",
     "@kitten-ui/styles": "^0.0.3",

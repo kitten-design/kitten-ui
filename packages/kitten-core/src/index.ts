@@ -19,5 +19,6 @@ export * from './components/Tag';
 export * from './components/Text';
 export * from './components/Title';
 export * from './components/Toast';
+export * from './components/Tooltip';
 export * from './components/Transition';
 export * from './themes';
