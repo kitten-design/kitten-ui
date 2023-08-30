@@ -163,6 +163,7 @@ Tooltip.defaultProps = {
   position: 'top',
   refProp: 'ref',
   withinPortal: false,
+  withArrow: true,
   inline: false,
   arrowSize: 6,
   arrowOffset: 4,

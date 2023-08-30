@@ -15,7 +15,7 @@ const TooltipRootStyles = cva({
     rounded: 'sm',
     bg: { base: 'gray.900', _dark: 'gray.200' },
     color: { base: 'white', _dark: 'black' },
-
+    maxW: '20rem',
     '& [data-tooltip-label]': {
       display: 'inline-block',
       maxW: 'calc(100vw - token(spacing.xs) * 2 - 1rem)',
@@ -44,7 +44,7 @@ const TooltipRootStyles = cva({
     },
   },
   defaultVariants: {
-    multiline: false,
+    multiline: true,
   },
 });
 
