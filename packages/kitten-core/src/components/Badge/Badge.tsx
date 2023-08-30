@@ -1,4 +1,4 @@
-import type { Properties } from '@kitten-ui/styles/types/csstype';
+import type { Properties } from '@kitten-ui/style/types/csstype';
 import { cpc } from '@kitten-ui/utils';
 import type { ReactNode } from 'react';
 import React from 'react';

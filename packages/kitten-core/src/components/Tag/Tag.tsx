@@ -1,4 +1,4 @@
-import { styled } from '@kitten-ui/styles/jsx';
+import { styled } from '@kitten-ui/style/jsx';
 import { cpc } from '@kitten-ui/utils';
 import type { ReactNode } from 'react';
 import React from 'react';
