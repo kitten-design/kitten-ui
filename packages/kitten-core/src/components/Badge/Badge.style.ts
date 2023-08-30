@@ -1,12 +1,16 @@
 import type { RecipeVariantProps } from '@kitten-ui/styles/css';
-import { sva } from '@kitten-ui/styles/css';
+import { cva } from '@kitten-ui/styles/css';
 import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
+import { styled } from '@kitten-ui/styles/jsx';
 
-export const badge = sva({
-  slots: ['root', 'label'],
+const BadgeRootStyles = cva({
   base: {
-    root: { position: 'relative' },
-    label: {
+    position: 'relative',
+    rounded: 'full',
+    colorPalette: 'red',
+    fontSize: 'xs',
+
+    '&>[data-badge-label]': {
       '--badge-offset': '0rem',
       '--badge-size': '0.625rem',
       position: 'absolute',
@@ -14,7 +18,7 @@ export const badge = sva({
       w: 'var(--badge-size)',
       h: 'var(--badge-size)',
       px: 0,
-      '&[data-with-label=true]': {
+      '&[data-with-label]': {
         '--badge-size': '1rem',
         w: 'unset',
         minW: 'var(--badge-size)',
@@ -25,17 +29,18 @@ export const badge = sva({
       justifyContent: 'center',
       whiteSpace: 'nowrap',
       rounded: 'inherit',
+      color: 'white',
       bg: { base: 'colorPalette.600', _dark: 'colorPalette.800' },
     },
   },
   variants: {
     inline: {
-      true: { root: { display: 'inline-block' } },
-      false: { root: { display: 'block' } },
+      true: { display: 'inline-block' },
+      false: { display: 'block' },
     },
     withBorder: {
       true: {
-        label: {
+        '&>[data-badge-label]': {
           border: '0.125rem solid',
           borderColor: { base: 'white', _dark: 'dark.700' },
         },
@@ -43,7 +48,7 @@ export const badge = sva({
     },
     processing: {
       true: {
-        label: {
+        '&>[data-badge-label]': {
           _before: {
             content: '""',
             position: 'absolute',
@@ -58,59 +63,63 @@ export const badge = sva({
     },
     position: {
       'top-start': {
-        label: {
+        '&>[data-badge-label]': {
           top: 'var(--badge-offset)',
           left: 'var(--badge-offset)',
           transform: 'translate(-50%,-50%)',
         },
       },
       'top-center': {
-        label: {
+        '&>[data-badge-label]': {
           top: 'var(--badge-offset)',
           left: '50%',
           transform: 'translate(-50%,-50%)',
         },
       },
       'top-end': {
-        label: {
+        '&>[data-badge-label]': {
           top: 'var(--badge-offset)',
           right: 'var(--badge-offset)',
           transform: 'translate(50%,-50%)',
         },
       },
       'middle-start': {
-        label: {
+        '&>[data-badge-label]': {
           top: '50%',
           left: 'var(--badge-offset)',
           transform: 'translate(50%,-50%)',
         },
       },
       'middle-center': {
-        label: { top: '50%', left: '50%', transform: 'translate(50%,-50%)' },
+        '&>[data-badge-label]': {
+          top: '50%',
+          left: '50%',
+          transform: 'translate(50%,-50%)',
+        },
       },
       'middle-end': {
-        label: {
+        '&>[data-badge-label]': {
           top: '50%',
           right: 'var(--badge-offset)',
           transform: 'translate(50%,-50%)',
         },
       },
       'bottom-start': {
-        label: {
+        '&>[data-badge-label]': {
           bottom: 'var(--badge-offset)',
           left: 'var(--badge-offset)',
           transform: 'translate(-50%,50%)',
         },
       },
       'bottom-center': {
-        label: {
+        '&>[data-badge-label]': {
           bottom: 'var(--badge-offset)',
           left: '50%',
           transform: 'translate(-50%,50%)',
         },
       },
       'bottom-end': {
-        label: {
+        '&>[data-badge-label]': {
           bottom: 'var(--badge-offset)',
           right: 'var(--badge-offset)',
           transform: 'translate(50%,50%)',
@@ -126,5 +135,7 @@ export const badge = sva({
   },
 });
 
-export type BadgeVariants = RecipeVariantProps<typeof badge>;
-export type BadgeVariantsProps = BadgeVariants & HTMLStyledProps<'div'>;
+export type BadgeRootVariants = RecipeVariantProps<typeof BadgeRootStyles>;
+export type BadgeRootProps = HTMLStyledProps<'div'>;
+export const BadgeRoot = styled('div', BadgeRootStyles);
+BadgeRoot.displayName = 'BadgeRoot';

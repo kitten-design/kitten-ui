@@ -1,23 +1,19 @@
 import type { RecipeVariantProps } from '@kitten-ui/styles/css';
-import { sva } from '@kitten-ui/styles/css';
+import { cva } from '@kitten-ui/styles/css';
 import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
+import { styled } from '@kitten-ui/styles/jsx';
 
 const colorPalette = 'blue';
 
-export const alert = sva({
-  slots: ['root', 'wrapper', 'body', 'title', 'message', 'icon', 'closeButton'],
+const AlertRootStyles = cva({
   base: {
-    root: {
-      border: '0.0625rem solid',
-      px: 'xl',
-      py: 'md',
-      overflow: 'hidden',
-      position: 'relative',
-    },
-    wrapper: {
-      display: 'flex',
-    },
-    icon: {
+    border: '0.0625rem solid',
+    px: 'xl',
+    py: 'md',
+    overflow: 'hidden',
+    position: 'relative',
+    '& [data-alert-wrapper]': { display: 'flex' },
+    '& [data-alert-icon]': {
       lineHeight: 1,
       w: '1.25rem',
       h: '1.25rem',
@@ -27,8 +23,8 @@ export const alert = sva({
       mr: 'md',
       mt: '0.0625rem',
     },
-    body: { flex: 1 },
-    title: {
+    '& [data-alert-body]': { flex: 1 },
+    '& [data-alert-title]': {
       mb: 'xs',
       display: 'flex',
       alignItems: 'center',
@@ -41,12 +37,12 @@ export const alert = sva({
         pr: 'md',
       },
     },
-    message: {
+    '& [data-alert-message]': {
       textOverflow: 'ellipsis',
       overflow: 'hidden',
       fontSize: 'sm',
     },
-    closeButton: {
+    '& [data-alert-close-button]': {
       w: '1.25rem',
       h: '1.25rem',
       mr: '-md',
@@ -56,82 +52,74 @@ export const alert = sva({
   variants: {
     variant: {
       default: {
-        root: {
-          bg: 'Button.default.bg',
+        bg: 'Button.default.bg',
+        color: 'Button.default.color',
+        borderColor: 'Button.default.borderColor',
+
+        '& [data-with-clos-button]': {
           color: 'Button.default.color',
-          borderColor: 'Button.default.borderColor',
         },
-        closeButton: {
-          color: 'Button.default.color',
-        },
-        message: {
+        '& [data-alert-message]': {
           color: 'Button.default.color',
         },
       },
       filled: {
-        root: {
-          colorPalette,
-          bg: 'colorPalette.ButtonFilled',
-          color: 'white',
-          border: 'none',
-        },
-        closeButton: {
+        colorPalette,
+        bg: 'colorPalette.ButtonFilled',
+        color: 'white',
+        border: 'none',
+
+        '& [data-with-clos-button]': {
           color: 'white',
         },
       },
       light: {
-        root: {
-          colorPalette,
-          bg: 'colorPalette.ButtonLight',
-          color: 'colorPalette.ButtonLightColor',
-          border: 'none',
-        },
-        message: {
+        colorPalette,
+        bg: 'colorPalette.ButtonLight',
+        color: 'colorPalette.ButtonLightColor',
+        border: 'none',
+
+        '& [data-alert-message]': {
           color: 'Button.default.color',
         },
       },
       outline: {
-        root: {
-          colorPalette,
-          bg: 'transparent',
-          color: 'colorPalette.ButtonOutline',
-          borderColor: 'colorPalette.ButtonOutline',
-        },
-        message: {
+        colorPalette,
+        bg: 'transparent',
+        color: 'colorPalette.ButtonOutline',
+        borderColor: 'colorPalette.ButtonOutline',
+
+        '& [data-alert-message]': {
           color: 'Button.default.color',
         },
       },
       transparent: {
-        root: {
-          colorPalette,
-          bg: 'transparent',
-          color: 'colorPalette.ButtonLightColor',
-          border: 'none',
-        },
-        message: {
+        colorPalette,
+        bg: 'transparent',
+        color: 'colorPalette.ButtonLightColor',
+        border: 'none',
+
+        '& [data-alert-message]': {
           color: 'Button.default.color',
         },
       },
       white: {
-        root: {
-          colorPalette,
-          bg: 'white',
-          color: 'colorPalette.ButtonFilled',
-          border: 'none',
-        },
-        message: {
+        colorPalette,
+        bg: 'white',
+        color: 'colorPalette.ButtonFilled',
+        border: 'none',
+
+        '& [data-alert-message]': {
           color: 'black',
         },
       },
       gradient: {
-        root: {
-          colorPalette,
-          gradientFrom: 'colorPalette.400',
-          gradientTo: 'colorPalette.800',
-          bgGradient: 'to-br',
-          color: 'white',
-          border: 'none',
-        },
+        colorPalette,
+        gradientFrom: 'colorPalette.400',
+        gradientTo: 'colorPalette.800',
+        bgGradient: 'to-br',
+        color: 'white',
+        border: 'none',
       },
     },
   },
@@ -140,5 +128,7 @@ export const alert = sva({
   },
 });
 
-export type AlertVariants = RecipeVariantProps<typeof alert>;
-export type AlertVariantsProps = AlertVariants & HTMLStyledProps<'div'>;
+export type AlertRootVariants = RecipeVariantProps<typeof AlertRootStyles>;
+export type AlertRootProps = HTMLStyledProps<'div'>;
+export const AlertRoot = styled('div', AlertRootStyles);
+AlertRoot.displayName = 'AlertRoot';

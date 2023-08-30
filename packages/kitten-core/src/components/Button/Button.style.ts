@@ -14,7 +14,9 @@ export const buttonRootStyles = cva({
     lineHeight: 'none',
     textAlign: 'center',
     cursor: 'pointer',
-    display: 'inline-block',
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     borderRadius: 'sm',
     border: '1px solid',
     borderColor: 'transparent',
@@ -146,7 +148,9 @@ export const buttonRootStyles = cva({
       },
     },
     compact: { true: {} },
-    fullWidth: { true: { display: 'block', w: 'full' } },
+    fullWidth: {
+      true: { display: 'flex', w: 'full' },
+    },
   },
   compoundVariants: [
     {

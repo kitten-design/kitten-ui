@@ -1,16 +1,16 @@
 import type { RecipeVariantProps } from '@kitten-ui/styles/css';
-import { sva } from '@kitten-ui/styles/css';
+import { cva } from '@kitten-ui/styles/css';
 import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
+import { styled } from '@kitten-ui/styles/jsx';
 
-export const divider = sva({
-  slots: ['root', 'label'],
+const DividerRootStyles = cva({
   base: {
-    root: {},
-    label: {
+    borderStyle: 'solid',
+    borderColor: 'Common.borderColor',
+    '& > [data-divider-label]': {
       display: 'flex',
       alignItems: 'center',
       fontSize: 'xs',
-      color: 'Common.dimmedColor',
       whiteSpace: 'nowrap',
       borderColor: 'inherit',
       borderStyle: 'inherit',
@@ -30,78 +30,52 @@ export const divider = sva({
         borderColor: 'inherit',
         borderStyle: 'inherit',
       },
-      '&[data-label-position="left"]': {
-        _before: {
-          display: 'none',
-        },
-      },
-      '&[data-label-position="right"]': {
-        _after: {
-          display: 'none',
-        },
-      },
     },
   },
   variants: {
-    size: {
-      xs: {},
-      sm: {},
-      md: {},
-      lg: {},
-      xl: {},
+    size: { xs: {}, sm: {}, md: {}, lg: {}, xl: {} },
+    labelPosition: {
+      left: {
+        '& > [data-divider-label]': {
+          _before: {
+            display: 'none',
+          },
+        },
+      },
+      right: {
+        '& > [data-divider-label]': {
+          _after: {
+            display: 'none',
+          },
+        },
+      },
     },
     vertical: {
-      true: { root: { display: 'inline', mx: 'xs' } },
-      false: { root: { my: 'xs' } },
+      true: {
+        display: 'inline-flex',
+        mx: 'xs',
+        alignSelf: 'stretch',
+        h: 'auto',
+      },
+      false: { my: 'xs' },
     },
     withLabel: {
-      true: { root: { borderWidth: '0!' } },
-      false: { label: { display: 'none' } },
+      true: { borderWidth: '0!' },
     },
   },
   compoundVariants: [
-    {
-      size: 'xs',
-      vertical: true,
-      css: {
-        root: { alignSelf: 'stretch', h: 'auto', borderLeftWidth: '0.0625rem' },
-      },
-    },
-    {
-      size: 'sm',
-      vertical: true,
-      css: {
-        root: { alignSelf: 'stretch', h: 'auto', borderLeftWidth: '0.125rem' },
-      },
-    },
-    {
-      size: 'md',
-      vertical: true,
-      css: {
-        root: { alignSelf: 'stretch', h: 'auto', borderLeftWidth: '0.1875rem' },
-      },
-    },
-    {
-      size: 'lg',
-      vertical: true,
-      css: {
-        root: { alignSelf: 'stretch', h: 'auto', borderLeftWidth: '0.25rem' },
-      },
-    },
-    {
-      size: 'xl',
-      vertical: true,
-      css: {
-        root: { alignSelf: 'stretch', h: 'auto', borderLeftWidth: '0.3125rem' },
-      },
-    },
+    { size: 'xs', vertical: true, css: { borderLeftWidth: '0.0625rem' } },
+    { size: 'sm', vertical: true, css: { borderLeftWidth: '0.125rem' } },
+    { size: 'md', vertical: true, css: { borderLeftWidth: '0.1875rem' } },
+    { size: 'lg', vertical: true, css: { borderLeftWidth: '0.25rem' } },
+    { size: 'xl', vertical: true, css: { borderLeftWidth: '0.3125rem' } },
 
     {
       size: 'xs',
       vertical: false,
       css: {
-        root: { borderTopWidth: '0.0625rem' },
-        label: {
+        borderTopWidth: '0.0625rem',
+        '& [data-divider-label]': {
           _before: { borderTopWidth: '0.0625rem' },
           _after: { borderTopWidth: '0.0625rem' },
         },
@@ -111,8 +85,8 @@ export const divider = sva({
       size: 'sm',
       vertical: false,
       css: {
-        root: { borderTopWidth: '0.125rem' },
-        label: {
+        borderTopWidth: '0.125rem',
+        '& [data-divider-label]': {
           _before: { borderTopWidth: '0.125rem' },
           _after: { borderTopWidth: '0.125rem' },
         },
@@ -122,8 +96,8 @@ export const divider = sva({
       size: 'md',
       vertical: false,
       css: {
-        root: { borderTopWidth: '0.1875rem' },
-        label: {
+        borderTopWidth: '0.1875rem',
+        '& [data-divider-label]': {
           _before: { borderTopWidth: '0.1875rem' },
           _after: { borderTopWidth: '0.1875rem' },
         },
@@ -133,8 +107,8 @@ export const divider = sva({
       size: 'lg',
       vertical: false,
       css: {
-        root: { borderTopWidth: '0.25rem' },
-        label: {
+        borderTopWidth: '0.25rem',
+        '& [data-divider-label]': {
           _before: { borderTopWidth: '0.25rem' },
           _after: { borderTopWidth: '0.25rem' },
         },
@@ -144,8 +118,8 @@ export const divider = sva({
       size: 'xl',
       vertical: false,
       css: {
-        root: { borderTopWidth: '0.3125rem' },
-        label: {
+        borderTopWidth: '0.3125rem',
+        '& [data-divider-label]': {
           _before: { borderTopWidth: '0.3125rem' },
           _after: { borderTopWidth: '0.3125rem' },
         },
@@ -154,8 +128,11 @@ export const divider = sva({
   ],
   defaultVariants: {
     size: 'xs',
+    vertical: false,
   },
 });
 
-export type DividerVariants = RecipeVariantProps<typeof divider>;
-export type DividerVariantsProps = DividerVariants & HTMLStyledProps<'div'>;
+export type DividerRootVariants = RecipeVariantProps<typeof DividerRootStyles>;
+export type DividerRootProps = HTMLStyledProps<'p'>;
+export const DividerRoot = styled('p', DividerRootStyles);
+DividerRoot.displayName = 'DividerRoot';
