@@ -1,8 +1,6 @@
 import { DataSet } from '@kitten-ui/dataset';
 import { isString } from '@kitten-ui/utils';
-import type { ReactNode } from 'react';
-
-import type { ToastProps } from './Toast';
+import type { CSSProperties, ReactNode } from 'react';
 
 export type ToastPosition =
   | 'top-left'
@@ -23,7 +21,8 @@ export type ToastConfig = {
   message?: ReactNode;
   loading?: boolean;
   withCloseButton?: boolean;
-  css?: ToastProps['css'];
+  className?: string;
+  style?: CSSProperties;
 };
 
 export type ToastConfigWithId = Omit<ToastConfig, 'id'> & { id: string };

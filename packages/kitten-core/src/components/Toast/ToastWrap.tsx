@@ -39,6 +39,7 @@ export default function ToastWrap({
     autoClose: toasterAutoClose,
     message,
     withCloseButton,
+    style,
     ...others
   } = data;
   const autoCloseTimeout = getAutoClose(autoClose, toasterAutoClose);
@@ -73,12 +74,12 @@ export default function ToastWrap({
 
   return (
     <Transition transition="pop" mounted={state === 'entered'}>
-      {(style) => {
+      {(transitionStyle) => {
         return (
           <Toast
             {...others}
             ref={innerRef}
-            style={{ ...style }}
+            style={{ ...style, ...transitionStyle }}
             my="xs"
             withCloseButton={withCloseButton ?? !autoCloseTimeout}
             onMouseEnter={cancelDelayedHide}

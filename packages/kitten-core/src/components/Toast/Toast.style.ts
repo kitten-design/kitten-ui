@@ -16,7 +16,7 @@ const ToastRootStyles = cva({
     pl: '1.375rem',
     pr: 'xs',
     py: 'xs',
-    boxShadow: 'lg',
+    boxShadow: 'sm',
     bg: { base: 'white', _dark: 'dark.600' },
     '&[data-with-icon]': {
       pl: 'xs',

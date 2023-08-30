@@ -7,14 +7,14 @@ import { Loader } from '../Loader';
 import type { ToastRootProps, ToastRootVariants } from './Toast.style';
 import { ToastRoot } from './Toast.style';
 
-export interface Props extends Omit<ToastRootProps, 'title'> {
+export type Props = Omit<ToastRootProps, 'title'> & {
   onClose?(): void;
   icon?: ReactNode;
   title?: ReactNode;
   children?: ReactNode;
   loading?: boolean;
   withCloseButton?: boolean;
-}
+};
 
 export type ToastProps = Props & ToastRootVariants;
 
@@ -56,5 +56,5 @@ export const Toast = cpc<'div', ToastProps>((props, ref) => {
 });
 Toast.displayName = 'Toast';
 Toast.defaultProps = {
-  rounded: 'sm',
+  rounded: 'md',
 };
