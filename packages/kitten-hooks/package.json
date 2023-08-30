@@ -29,7 +29,7 @@
     "build:lib": "tsc --project ./tsconfig.build.json"
   },
   "dependencies": {
-    "@kitten-ui/utils": "0.0.4",
+    "@kitten-ui/utils": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
