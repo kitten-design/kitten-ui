@@ -50,16 +50,16 @@ importers:
         specifier: ^0.25.2
         version: 0.25.2(react-dom@18.2.0)(react@18.2.0)
       '@kitten-ui/dataset':
-        specifier: workspace:*
+        specifier: 0.0.11
         version: link:../kitten-dataset
       '@kitten-ui/hooks':
-        specifier: workspace:*
+        specifier: 0.0.11
         version: link:../kitten-hooks
       '@kitten-ui/styles':
-        specifier: ^0.0.10
-        version: 0.0.10
+        specifier: ^0.0.11
+        version: 0.0.11
       '@kitten-ui/utils':
-        specifier: workspace:*
+        specifier: 0.0.11
         version: link:../kitten-utils
       '@tabler/icons-react':
         specifier: ^2.32.0
@@ -148,7 +148,7 @@ importers:
   packages/kitten-hooks:
     dependencies:
       '@kitten-ui/utils':
-        specifier: 0.0.10
+        specifier: 0.0.11
         version: link:../kitten-utils
       react:
         specifier: ^18.2.0
@@ -1589,7 +1589,7 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@kitten-ui/styles@0.0.10:
+  /@kitten-ui/styles@0.0.11:
     resolution:
       {
         integrity: sha512-t3abWBbPxnQzZRBPlZ/wiE6CjlHnz+YPwLPu0aIVl8SU567Iq9Bgr9R/RQSLqdQZH0Vob8IN5d7IHy4ECHxTsg==,
