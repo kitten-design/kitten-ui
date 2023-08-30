@@ -22,7 +22,7 @@ import type { KittenPosition } from './Tooltip';
 import { useTooltipGroupContext } from './TooltipGroup/TooltipGroup.context';
 import { useFloatingAutoUpdate } from './use-floating-auto-update';
 
-interface UseTooltip {
+type UseTooltip = {
   position: KittenPosition;
   closeDelay?: number;
   openDelay?: number;
@@ -34,7 +34,7 @@ interface UseTooltip {
   events: { hover: boolean; focus: boolean; touch: boolean };
   positionDependencies: any[];
   inline: boolean;
-}
+};
 
 export function useTooltip(settings: UseTooltip) {
   const [uncontrolledOpened, setUncontrolledOpened] = useState(false);
