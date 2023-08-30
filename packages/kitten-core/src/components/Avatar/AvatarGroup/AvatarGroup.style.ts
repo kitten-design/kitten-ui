@@ -1,6 +1,6 @@
-import type { RecipeVariantProps } from '@kitten-ui/style/css';
-import { cva } from '@kitten-ui/style/css';
-import { type HTMLStyledProps, styled } from '@kitten-ui/style/jsx';
+import type { RecipeVariantProps } from '@kitten-ui/styles/css';
+import { cva } from '@kitten-ui/styles/css';
+import { type HTMLStyledProps, styled } from '@kitten-ui/styles/jsx';
 
 const AvatarGroupRootStyles = cva({
   base: {

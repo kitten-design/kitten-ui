@@ -56,6 +56,9 @@ importers:
       '@kitten-ui/hooks':
         specifier: 0.0.8
         version: link:../kitten-hooks
+      '@kitten-ui/styles':
+        specifier: '*'
+        version: 0.0.7
       '@kitten-ui/utils':
         specifier: 0.0.8
         version: link:../kitten-utils
@@ -1247,6 +1250,10 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
+
+  /@kitten-ui/styles@0.0.7:
+    resolution: {integrity: sha512-+vjwmhAKqiiYg0P93aGHe8nrAvUx7ZcFXuST4emEplWfkmgAFQYjuPIvZHiypJ5rnuN97uxf6+8OieCTKityBQ==}
+    dev: false
 
   /@legendapp/state@1.11.1(react@18.2.0):
     resolution: {integrity: sha512-9bso1xOwgkHEgZo4IfzJ1FkGoHuyhOZoe2EATJabzSiYxZYOzKuZbbUSfwl6E22JDKMTbbCoqp9YQWgXQO5n9g==}

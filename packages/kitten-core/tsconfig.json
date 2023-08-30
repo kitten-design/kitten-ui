@@ -17,6 +17,6 @@
     "jsx": "react",
     "baseUrl": "./"
   },
-  "include": ["src", "./node_modules/@kitten-ui/style/*"],
+  "include": ["src", "./node_modules/@kitten-ui/styles/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

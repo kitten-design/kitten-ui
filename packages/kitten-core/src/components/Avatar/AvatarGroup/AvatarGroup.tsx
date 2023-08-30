@@ -1,5 +1,5 @@
-import { token } from '@kitten-ui/style/tokens';
-import type { Properties } from '@kitten-ui/style/types/csstype';
+import { token } from '@kitten-ui/styles/tokens';
+import type { Properties } from '@kitten-ui/styles/types/csstype';
 import { cpc, getChildrenByType } from '@kitten-ui/utils';
 import React, { cloneElement } from 'react';
 

@@ -1,4 +1,4 @@
-import type { Property } from '@kitten-ui/style/types/csstype';
+import type { Property } from '@kitten-ui/styles/types/csstype';
 import type { CSSProperties } from 'react';
 
 import type { KittenTransition } from './transitions';

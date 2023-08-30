@@ -1,4 +1,4 @@
-import type { Property } from '@kitten-ui/style/types/csstype';
+import type { Property } from '@kitten-ui/styles/types/csstype';
 import { rem } from '@kitten-ui/utils';
 import type { CSSProperties } from 'react';
 

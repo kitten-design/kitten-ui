@@ -1,7 +1,7 @@
-import type { RecipeVariantProps } from '@kitten-ui/style/css';
-import { cva } from '@kitten-ui/style/css';
-import type { HTMLStyledProps } from '@kitten-ui/style/jsx';
-import { styled } from '@kitten-ui/style/jsx';
+import type { RecipeVariantProps } from '@kitten-ui/styles/css';
+import { cva } from '@kitten-ui/styles/css';
+import type { HTMLStyledProps } from '@kitten-ui/styles/jsx';
+import { styled } from '@kitten-ui/styles/jsx';
 
 const TitleRootStyles = cva({
   base: { fontWeight: 'bold', fontFamily: 'sans' },

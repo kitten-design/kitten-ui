@@ -14,7 +14,7 @@ export default defineConfig({
       fileName: 'index',
     },
     rollupOptions: {
-      external: ['react', '@kitten-ui/style'],
+      external: ['react', '@kitten-ui/styles'],
       output: {
         globals: { react: 'React' },
       },

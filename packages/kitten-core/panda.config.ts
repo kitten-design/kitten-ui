@@ -5,7 +5,7 @@ import { kittenPreset } from './src/themes';
 export default defineConfig({
   preflight: true,
   emitPackage: true,
-  outdir: '@kitten-ui/style',
+  outdir: '@kitten-ui/styles',
   jsxFramework: 'react',
   presets: [kittenPreset],
   theme: {
