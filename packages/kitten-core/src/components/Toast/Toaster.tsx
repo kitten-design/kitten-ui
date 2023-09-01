@@ -106,5 +106,5 @@ Toaster.defaultProps = {
   autoClose: 3000,
   maxHeight: '100vh',
   duration: 250,
-  containerWidth: '400px',
+  containerWidth: '300px',
 };

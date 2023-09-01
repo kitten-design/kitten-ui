@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Box, Button, Tooltip } from './';
-
+import { Box, Button, toast, Toaster, Tooltip } from './';
+let i = 0;
 const App = () => {
   const [theme, setTheme] = React.useState('light');
 
@@ -15,6 +15,20 @@ const App = () => {
           Toggle theme
         </Button>
       </Tooltip>
+
+      <Button
+        onClick={() => {
+          i++;
+          toast({
+            message: `toast ${i}`,
+            position: 'bottom-right',
+            autoClose: false,
+          });
+        }}>
+        toast
+      </Button>
+
+      <Toaster />
     </Box>
   );
 };

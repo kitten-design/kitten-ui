@@ -73,7 +73,7 @@ export default function ToastWrap({
   }, [autoClose, data.autoClose]);
 
   return (
-    <Transition transition="pop" mounted={state === 'entered'}>
+    <Transition transition="slide-left" mounted={state === 'entered'}>
       {(transitionStyle) => {
         return (
           <Toast
