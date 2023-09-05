@@ -104,7 +104,7 @@ export const Toaster = observer(
 Toaster.displayName = 'Toaster';
 Toaster.defaultProps = {
   autoClose: 3000,
-  maxHeight: '100vh',
+  // maxHeight: '100vh',
   duration: 250,
   containerWidth: '300px',
 };

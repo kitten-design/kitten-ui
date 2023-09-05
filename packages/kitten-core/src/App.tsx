@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Button, toast, Toaster, Tooltip } from './';
+import { Box, Button, Flex, toast, Toaster, Tooltip } from './';
 let i = 0;
 const App = () => {
   const [theme, setTheme] = React.useState('light');
@@ -27,8 +27,15 @@ const App = () => {
         }}>
         toast
       </Button>
-
-      <Toaster />
+      <Flex alignItems={'center'} justifyContent={'center'} gap="xl">
+        <Button>按钮</Button>
+        <Button>按钮</Button>
+        <Button>按钮</Button>
+        <Button>按钮</Button>
+        <Button>按钮</Button>
+        <Button>按钮</Button>
+      </Flex>
+      <Toaster className={theme} />
     </Box>
   );
 };
