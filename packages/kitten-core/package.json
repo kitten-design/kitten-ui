@@ -35,12 +35,12 @@
     "studio": "panda studio -c ./panda.config.ts"
   },
   "dependencies": {
-    "@floating-ui/react": "^0.25.2",
-    "@kitten-ui/dataset": "0.0.11",
-    "@kitten-ui/hooks": "0.0.11",
+    "@floating-ui/react": "^0.25.4",
+    "@kitten-ui/dataset": "workspace:*",
+    "@kitten-ui/hooks": "workspace:*",
     "@kitten-ui/styles": "^0.0.11",
-    "@kitten-ui/utils": "0.0.11",
-    "@tabler/icons-react": "^2.32.0",
+    "@kitten-ui/utils": "workspace:*",
+    "@tabler/icons-react": "^2.34.0",
     "chroma-js": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -48,9 +48,9 @@
     "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.13.1",
-    "@pandacss/types": "^0.13.1",
-    "@types/chroma-js": "^2.4.0",
+    "@pandacss/dev": "^0.14.0",
+    "@pandacss/types": "^0.14.0",
+    "@types/chroma-js": "^2.4.1",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@types/react-transition-group": "^4.4.6",
