@@ -36,10 +36,10 @@
   },
   "dependencies": {
     "@floating-ui/react": "^0.25.4",
-    "@kitten-ui/dataset": "workspace:*",
-    "@kitten-ui/hooks": "workspace:*",
+    "@kitten-ui/dataset": "^0.0.11",
+    "@kitten-ui/hooks": "^0.0.11",
     "@kitten-ui/styles": "^0.0.11",
-    "@kitten-ui/utils": "workspace:*",
+    "@kitten-ui/utils": "^0.0.11",
     "@tabler/icons-react": "^2.34.0",
     "chroma-js": "^2.4.2",
     "react": "^18.2.0",
