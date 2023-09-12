@@ -28,7 +28,7 @@
     "build:lib": "tsc --project ./tsconfig.build.json"
   },
   "devDependencies": {
-    "@types/chroma-js": "^2.4.0",
+    "@types/chroma-js": "^2.4.1",
     "@types/react": "^18.2.21",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
