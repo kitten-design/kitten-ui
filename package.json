@@ -1,13 +1,15 @@
 {
   "name": "kitten-ui",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.12",
   "description": "kitten-ui Components Monorepo",
   "main": "index.js",
   "repository": "https://github.com/kitten-design/kitten-ui.git",
   "author": "Yandif <me.yandif@gmail.com>",
   "scripts": {
     "build": "pnpm --stream -r run build",
+    "publish:pre": "node publish.mjs",
+    "develop:pre": "node publish.mjs --dev",
     "commit": "git-cz"
   },
   "license": "MIT",
