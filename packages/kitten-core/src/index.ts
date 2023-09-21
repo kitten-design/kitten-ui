@@ -10,6 +10,7 @@ export * from './components/Box';
 export * from './components/Button';
 export * from './components/Center';
 export * from './components/CloseButton';
+export * from './components/Container';
 export * from './components/CopyButton';
 export * from './components/Divider';
 export * from './components/Flex';
