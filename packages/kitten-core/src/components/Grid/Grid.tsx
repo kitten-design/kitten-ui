@@ -1,5 +1,4 @@
-import type { Properties } from '@kitten-ui/styles/types/csstype';
-import { cpc } from '@kitten-ui/utils';
+import { cpc, getChildrenByType } from '@kitten-ui/utils';
 import React from 'react';
 
 import type { GridRootProps, GridRootVariants } from './Grid.style';
@@ -8,32 +7,30 @@ import { GridCol } from './GridCol/GridCol';
 
 export interface Props extends GridRootProps {
   columns?: number;
-  minChildWidth?: Properties['minWidth'];
 }
 
 export type GridProps = Props & GridRootVariants;
 
 export const Grid = cpc<'div', GridProps, { Col: typeof GridCol }>(
   (props, ref) => {
-    const { css, minChildWidth, columns, gap, rowGap, columnGap, ...others } =
+    const { style, columns, gap, rowGap, columnGap, children, ...others } =
       props;
+
+    const GridCols = getChildrenByType(children, GridCol);
+
     return (
       <GridRoot
         data-grid
         ref={ref}
-        css={{
-          gridTemplateColumns:
-            columns != null
-              ? `repeat(${columns}, minmax(0, 1fr))`
-              : minChildWidth != null
-              ? `repeat(auto-fit, minmax(${minChildWidth}, 1fr))`
-              : undefined,
-          ...css,
+        style={{
+          gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
+          ...style,
         }}
         rowGap={rowGap || gap}
         columnGap={columnGap || gap}
-        {...others}
-      />
+        {...others}>
+        {GridCols}
+      </GridRoot>
     );
   },
 );

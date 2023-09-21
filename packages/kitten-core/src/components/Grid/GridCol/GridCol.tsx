@@ -13,7 +13,7 @@ export type GridColProps = Props & GridColRootVariants;
 
 export const GridCol = cpc<'div', GridColProps>((props, ref) => {
   const {
-    css,
+    style,
     span,
     rowSpan,
     gridRowStart,
@@ -27,7 +27,7 @@ export const GridCol = cpc<'div', GridColProps>((props, ref) => {
     <GridColRoot
       data-grid-col
       ref={ref}
-      css={{
+      style={{
         gridColumn: span
           ? `span ${span}`
           : gridColumnStart || gridColumnEnd
@@ -38,7 +38,7 @@ export const GridCol = cpc<'div', GridColProps>((props, ref) => {
           : gridRowStart || gridRowEnd
           ? undefined
           : 'auto',
-        ...css,
+        ...style,
       }}
       {...{ gridRowStart, gridRowEnd, gridColumnStart, gridColumnEnd }}
       {...others}
