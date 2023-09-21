@@ -17,6 +17,7 @@ export * from './components/Grid';
 export * from './components/Kbd';
 export * from './components/Loader';
 export * from './components/Portal';
+export * from './components/Stack';
 export * from './components/Tag';
 export * from './components/Text';
 export * from './components/Title';

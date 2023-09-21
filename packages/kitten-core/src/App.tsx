@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Button, Grid } from './';
+import { Box, Button, Grid, Stack } from './';
 
 const App = () => {
   const [theme, setTheme] = React.useState('light');
@@ -10,7 +10,7 @@ const App = () => {
       <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         Toggle theme
       </Button>
-      <Grid columns={12} rowGap={'md'} columnGap={'lg'} minChildWidth={'400px'}>
+      <Grid columns={12} rowGap={'md'} columnGap={'lg'}>
         asdf
         {new Array(3).fill(
           <Grid.Col span={4} bg="pink.200">
@@ -18,6 +18,11 @@ const App = () => {
           </Grid.Col>,
         )}
       </Grid>
+      <Stack h={300} direction={'column'} justify="center">
+        <Button variant="default">1</Button>
+        <Button variant="default">2</Button>
+        <Button variant="default">3</Button>
+      </Stack>
     </Box>
   );
 };
