@@ -33,7 +33,7 @@ export const toast = (options: string | ToastConfig) => {
   const uuid = `kitten-${Math.random().toString(36).slice(2, 11)}`;
 
   if (isString(options)) {
-    toastStore.create({ id: uuid, position: 'top-right', message: options });
+    toastStore.create({ id: uuid, position: 'bottom-right', message: options });
     return uuid;
   } else {
     if (options.id) {
@@ -46,7 +46,7 @@ export const toast = (options: string | ToastConfig) => {
       }
     }
 
-    toastStore.create({ id: uuid, position: 'top-right', ...options });
+    toastStore.create({ id: uuid, position: 'bottom-right', ...options });
     return options.id || uuid;
   }
 };
