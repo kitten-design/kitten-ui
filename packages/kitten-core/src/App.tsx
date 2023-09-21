@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Button, Grid, Stack } from './';
+import { Box, Button, Grid, HStack, Stack, VStack } from './';
 
 const App = () => {
   const [theme, setTheme] = React.useState('light');
@@ -23,6 +23,16 @@ const App = () => {
         <Button variant="default">2</Button>
         <Button variant="default">3</Button>
       </Stack>
+      <VStack direction={'column'} grow>
+        <Button variant="default">1</Button>
+        <Button variant="default">2</Button>
+        <Button variant="default">3</Button>
+      </VStack>
+      <HStack grow>
+        <Button variant="default">1</Button>
+        <Button variant="default">2</Button>
+        <Button variant="default">3</Button>
+      </HStack>
     </Box>
   );
 };
