@@ -48,10 +48,10 @@
     "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.15.0",
-    "@pandacss/types": "^0.15.0",
+    "@pandacss/dev": "^0.15.1",
+    "@pandacss/types": "^0.15.1",
     "@types/chroma-js": "^2.4.1",
-    "@types/react": "^18.2.21",
+    "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
     "@types/react-transition-group": "^4.4.6",
     "@vitejs/plugin-react-swc": "^3.3.2",

@@ -29,7 +29,7 @@
     "build:lib": "tsc --project ./tsconfig.build.json"
   },
   "devDependencies": {
-    "@types/react": "^18.2.21",
+    "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "typescript": "^5.2.2",
