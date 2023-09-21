@@ -1,8 +1,3 @@
-import { enableReactUse } from '@legendapp/state/config/enableReactUse';
-import { enableLegendStateReact } from '@legendapp/state/react';
-
-enableReactUse();
-enableLegendStateReact();
-
 export * from './core';
-export { observer } from '@legendapp/state/react';
+export { enableReactUse } from '@legendapp/state/config/enableReactUse';
+export { Memo, observer } from '@legendapp/state/react';
