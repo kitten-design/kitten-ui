@@ -1,7 +1,7 @@
 {
   "name": "kitten-ui",
   "private": true,
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "kitten-ui Components Monorepo",
   "main": "index.js",
   "repository": "https://github.com/kitten-design/kitten-ui.git",

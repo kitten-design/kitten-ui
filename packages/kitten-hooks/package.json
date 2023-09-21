@@ -1,10 +1,10 @@
 {
   "name": "@kitten-ui/hooks",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "type": "module",
   "main": "dist/index.js",
-  "module": "src/index.ts",
-  "types": "src/index.ts",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
   "sideEffects": false,
   "author": "Yandif <me.yandif@gmail.com>",
   "license": "MIT",
@@ -29,7 +29,7 @@
     "build:lib": "tsc --project ./tsconfig.build.json"
   },
   "dependencies": {
-    "@kitten-ui/utils": "workspace:^",
+    "@kitten-ui/utils": "^0.0.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

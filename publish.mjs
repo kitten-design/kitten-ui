@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { exec } from 'child_process';
 
-const version = '0.0.13';
+const version = '0.0.14';
 const paths = [
   'packages/kitten-core',
   'packages/kitten-core/node_modules/@kitten-ui/styles',
