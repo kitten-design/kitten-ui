@@ -17,6 +17,7 @@ export * from './components/Flex';
 export * from './components/Grid';
 export * from './components/Kbd';
 export * from './components/Loader';
+export * from './components/Popover';
 export * from './components/Portal';
 export * from './components/Stack';
 export * from './components/Tag';
