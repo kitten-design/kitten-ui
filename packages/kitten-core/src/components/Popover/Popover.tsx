@@ -1,4 +1,4 @@
-import { FloatingArrow, useMergeRefs } from '@floating-ui/react';
+import { useMergeRefs } from '@floating-ui/react';
 import { cpc, isElement } from '@kitten-ui/utils';
 import type { ReactNode } from 'react';
 import React, { cloneElement, Fragment, useRef } from 'react';
@@ -7,6 +7,7 @@ import { OptionalPortal } from '../Portal';
 import { Transition, type TransitionOverride } from '../Transition';
 import type { PopoverRootProps, PopoverRootVariants } from './Popover.style';
 import { PopoverRoot } from './Popover.style';
+import { PopoverArrow } from './PopoverArrow';
 import { usePopover } from './use-popover';
 export type KittenPlacement = 'end' | 'start';
 export type KittenSide = 'top' | 'right' | 'bottom' | 'left';
@@ -17,11 +18,12 @@ export type PopoverEvents = {
   touch?: boolean;
   click?: boolean;
 };
-interface Props extends PopoverRootProps {
+
+interface Props extends Omit<PopoverRootProps, 'content'> {
   children: ReactNode;
   position?: KittenPosition;
   refProp?: string;
-  label: ReactNode;
+  content: ReactNode;
   withinPortal?: boolean;
   multiline?: boolean;
   width?: number | 'auto';
@@ -66,7 +68,7 @@ export const Popover = cpc<'div', PopoverProps>((props, ref) => {
     inline,
     transitionProps,
     arrowRadius,
-    label,
+    content,
     style,
     onClick,
     onMouseEnter,
@@ -128,15 +130,16 @@ export const Popover = cpc<'div', PopoverProps>((props, ref) => {
                 },
               })}
               hidden={popover.referenceHidden}>
-              <span data-popover-label>{label}</span>
+              <span data-popover-content>{content}</span>
 
               {withArrow && (
-                <FloatingArrow
+                <PopoverArrow
                   data-popover-arrow
                   ref={arrowRef}
                   context={popover.context}
                   height={arrowSize}
                   width={arrowSize! * 2}
+                  strokeWidth={0.1}
                   tipRadius={arrowRadius}
                 />
               )}
@@ -163,7 +166,7 @@ export const Popover = cpc<'div', PopoverProps>((props, ref) => {
 });
 Popover.displayName = 'Popover';
 Popover.defaultProps = {
-  position: 'top',
+  position: 'bottom',
   refProp: 'ref',
   withinPortal: false,
   withArrow: true,

@@ -8,38 +8,49 @@ const PopoverRootStyles = cva({
     display: 'flex',
     position: 'absolute',
     zIndex: 'popover',
-    px: 'xs',
-    py: 'calc(token(spacing.xs) / 2)',
+    px: 'md',
+    py: 'sm',
     fontSize: 'sm',
-    boxShadow: 'md',
+    boxShadow: 'lg',
     rounded: 'sm',
     bg: { base: 'gray.50', _dark: 'gray.900' },
-    border: '1px solid',
-    borderColor: { base: 'gray.50', _dark: 'gray.900' },
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: { base: 'gray.300', _dark: 'dark.400' },
     maxW: '20rem',
 
-    '& [data-popover-label]': {
+    '& [data-popover-dropdown]': {
       display: 'inline-block',
       maxW: 'calc(100vw - token(spacing.xs) * 2 - 1rem)',
       textOverflow: 'ellipsis',
       overflow: 'hidden',
     },
 
-    '& [data-popover-arrow]': {
-      fill: { base: 'white', _dark: 'gray.800' },
-      border: 0,
+    '& > [data-popover-arrow]': {
+      fill: { base: 'gray.50', _dark: 'gray.900' },
+      stroke: { base: 'gray.300', _dark: 'dark.400' },
       zIndex: 1,
+      position: 'relative',
+      _before: {
+        position: 'absolute',
+        content: '"123"',
+        bg: 'red',
+        width: '10px',
+        height: '1px',
+        zIndex: 1,
+        top: 0,
+      },
     },
   },
   variants: {
     multiline: {
       true: {
-        '& [data-popover-label]': {
+        '& [data-popover-dropdown]': {
           whiteSpace: 'normal',
         },
       },
       false: {
-        '& [data-popover-label]': {
+        '& [data-popover-dropdown]': {
           whiteSpace: 'nowrap',
         },
       },

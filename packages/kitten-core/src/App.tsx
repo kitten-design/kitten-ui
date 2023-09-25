@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Button, Container, Popover, Tooltip } from './';
+import { Box, Button, Popover, Tooltip } from './';
 
 const App = () => {
   const [theme, setTheme] = React.useState('light');
@@ -10,17 +10,29 @@ const App = () => {
       <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         Toggle theme
       </Button>
-      <Container bg="red.100">
-        <Box bg="green.100">123</Box>
-      </Container>
-      <Tooltip label="123123">
-        <Button>123123</Button>
-      </Tooltip>
+
       <br />
-      <Popover
-        children={<Button children="按钮" />}
-        label={<Box w="100px" h="100px" children="hello" />}
-      />
+      <Tooltip label={'Tooltip'}>
+        <span>Toggle theme</span>
+      </Tooltip>
+
+      <br />
+      <br />
+      <Box p="100px">
+        <Popover
+          withArrow={false}
+          content={
+            <Box>
+              <Button children="按钮" />
+              <Button
+                onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+                Toggle theme
+              </Button>
+            </Box>
+          }>
+          <Button children="按钮" />
+        </Popover>
+      </Box>
     </Box>
   );
 };
