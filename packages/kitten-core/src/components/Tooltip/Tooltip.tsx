@@ -11,7 +11,11 @@ import { useTooltip } from './use-tooltip';
 export type KittenPlacement = 'end' | 'start';
 export type KittenSide = 'top' | 'right' | 'bottom' | 'left';
 export type KittenPosition = KittenSide | `${KittenSide}-${KittenPlacement}`;
-
+export type TooltipEvents = {
+  hover?: boolean;
+  focus?: boolean;
+  touch?: boolean;
+};
 interface Props extends TooltipRootProps {
   children: ReactNode;
   position?: KittenPosition;
@@ -32,7 +36,7 @@ interface Props extends TooltipRootProps {
   arrowOffset?: number;
   arrowRadius?: number;
   transitionProps?: TransitionOverride;
-  events?: { hover: boolean; focus: boolean; touch: boolean };
+  events?: TooltipEvents;
   positionDependencies?: any[];
   inline?: boolean;
   keepMounted?: boolean;

@@ -6,8 +6,7 @@ import {
   offset,
   safePolygon,
   shift,
-  useDelayGroup,
-  useDelayGroupContext,
+  useClick,
   useDismiss,
   useFloating,
   useFocus,
@@ -18,11 +17,10 @@ import {
 import { useDidUpdate, useId } from '@kitten-ui/hooks';
 import { useCallback, useState } from 'react';
 
-import type { KittenPosition, TooltipEvents } from './Tooltip';
-import { useTooltipGroupContext } from './TooltipGroup/TooltipGroup.context';
-import { useFloatingAutoUpdate } from './use-floating-auto-update';
+import { useFloatingAutoUpdate } from '../Tooltip/use-floating-auto-update';
+import type { KittenPosition, PopoverEvents } from './Popover';
 
-type UseTooltip = {
+type UsePopover = {
   position: KittenPosition;
   closeDelay?: number;
   openDelay?: number;
@@ -31,35 +29,28 @@ type UseTooltip = {
   offset: number;
   arrowRef: React.RefObject<SVGSVGElement>;
   arrowOffset: number;
-  events: TooltipEvents;
+  events: PopoverEvents;
   positionDependencies: any[];
   inline: boolean;
 };
 
-export function useTooltip(settings: UseTooltip) {
+export function usePopover(settings: UsePopover) {
   const [uncontrolledOpened, setUncontrolledOpened] = useState(false);
 
   const opened = settings.opened ?? uncontrolledOpened;
-  const withinGroup = useTooltipGroupContext();
-  const uid = useId();
 
-  const { delay: groupDelay, currentId, setCurrentId } = useDelayGroupContext();
+  const uid = useId();
 
   const onChange = useCallback(
     (_opened: boolean) => {
       setUncontrolledOpened(_opened);
-
-      if (_opened) {
-        setCurrentId(uid);
-      }
     },
-    [setCurrentId, uid],
+    [uid],
   );
 
   const {
     x,
     y,
-
     context,
     refs,
     update,
@@ -86,15 +77,18 @@ export function useTooltip(settings: UseTooltip) {
     useHover(context, {
       enabled: !!settings.events.hover,
       handleClose: safePolygon({ buffer: 1 }),
-      delay: withinGroup
-        ? groupDelay
-        : { open: settings.openDelay, close: settings.closeDelay },
+      delay: { open: settings.openDelay, close: settings.closeDelay },
       mouseOnly: !settings.events.touch,
     }),
-    useFocus(context, { enabled: !!settings.events.focus, keyboardOnly: true }),
-    useRole(context, { role: 'tooltip' }),
+    useClick(context, {
+      enabled: !!settings.events.click,
+      event: 'click',
+      toggle: true,
+      ignoreMouse: !!settings.events.hover,
+    }),
+    useFocus(context, { enabled: settings.events.focus, keyboardOnly: true }),
+    useRole(context, { role: 'dialog' }),
     useDismiss(context, { enabled: typeof settings.opened === 'undefined' }),
-    useDelayGroup(context, { id: uid }),
   ]);
 
   useFloatingAutoUpdate({
@@ -108,8 +102,6 @@ export function useTooltip(settings: UseTooltip) {
     settings.onPositionChange?.(placement);
   }, [placement]);
 
-  const isGroupPhase = opened && currentId && currentId !== uid;
-
   return {
     x,
     y,
@@ -119,7 +111,6 @@ export function useTooltip(settings: UseTooltip) {
     floating: refs.setFloating,
     getFloatingProps,
     getReferenceProps,
-    isGroupPhase,
     opened,
     placement,
     context,

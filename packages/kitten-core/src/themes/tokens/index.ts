@@ -68,6 +68,7 @@ export const tokens = defineTokens({
     badge: { value: 200 },
     affix: { value: 300 },
     tooltip: { value: 300 },
+    popover: { value: 300 },
     modal: { value: 400 },
     toaster: { value: 500 },
   },
