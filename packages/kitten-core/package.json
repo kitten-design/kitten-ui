@@ -35,29 +35,29 @@
     "studio": "panda studio -c ./panda.config.ts"
   },
   "dependencies": {
-    "@floating-ui/react": "^0.25.4",
+    "@floating-ui/react": "^0.26.1",
     "@kitten-ui/dataset": "workspace:^",
     "@kitten-ui/hooks": "workspace:^",
     "@kitten-ui/styles": "^0.0.14",
     "@kitten-ui/utils": "workspace:^",
-    "@tabler/icons-react": "^2.35.0",
+    "@tabler/icons-react": "^2.40.0",
     "chroma-js": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0",
+    "react-router-dom": "^6.18.0",
     "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.15.2",
-    "@pandacss/types": "^0.15.2",
-    "@types/chroma-js": "^2.4.1",
-    "@types/react": "^18.2.23",
-    "@types/react-dom": "^18.2.7",
-    "@types/react-transition-group": "^4.4.6",
-    "@vitejs/plugin-react-swc": "^3.4.0",
+    "@pandacss/dev": "^0.17.5",
+    "@pandacss/types": "^0.17.5",
+    "@types/chroma-js": "^2.4.2",
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
+    "@types/react-transition-group": "^4.4.8",
+    "@vitejs/plugin-react-swc": "^3.4.1",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
-    "vite": "^4.4.9",
-    "vite-plugin-dts": "^3.6.0"
+    "vite": "^4.5.0",
+    "vite-plugin-dts": "^3.6.3"
   }
 }
