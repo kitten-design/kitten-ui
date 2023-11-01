@@ -91,7 +91,7 @@ export function useTooltip(settings: UseTooltip) {
         : { open: settings.openDelay, close: settings.closeDelay },
       mouseOnly: !settings.events.touch,
     }),
-    useFocus(context, { enabled: !!settings.events.focus, keyboardOnly: true }),
+    useFocus(context, { enabled: !!settings.events.focus }),
     useRole(context, { role: 'tooltip' }),
     useDismiss(context, { enabled: typeof settings.opened === 'undefined' }),
     useDelayGroup(context, { id: uid }),

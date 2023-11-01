@@ -86,7 +86,7 @@ export function usePopover(settings: UsePopover) {
       toggle: true,
       ignoreMouse: !!settings.events.hover,
     }),
-    useFocus(context, { enabled: settings.events.focus, keyboardOnly: true }),
+    useFocus(context, { enabled: settings.events.focus }),
     useRole(context, { role: 'dialog' }),
     useDismiss(context, { enabled: typeof settings.opened === 'undefined' }),
   ]);
