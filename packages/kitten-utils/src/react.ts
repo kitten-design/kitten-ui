@@ -4,10 +4,7 @@ import React, { Children, isValidElement } from 'react';
 /**
  * Get child components of a specific component type
  */
-export function getChildrenByType<T extends FC>(
-  children: ReactNode,
-  Component: T,
-) {
+export function getChildrenByType<T extends FC>(children: ReactNode, Component: T) {
   type C = ReactElement<ComponentProps<T>, T>;
 
   const result =

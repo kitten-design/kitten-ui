@@ -41,17 +41,16 @@ export const Transition: FC<TransitionProps> = (props) => {
     setMounted(true);
   }, []);
 
-  const { transitionDuration, transitionStatus, transitionTimingFunction } =
-    useTransition({
-      mounted,
-      exitDuration,
-      duration,
-      timingFunction,
-      onExit,
-      onEntered,
-      onEnter,
-      onExited,
-    });
+  const { transitionDuration, transitionStatus, transitionTimingFunction } = useTransition({
+    mounted,
+    exitDuration,
+    duration,
+    timingFunction,
+    onExit,
+    onEntered,
+    onEnter,
+    onExited,
+  });
 
   const styles = getTransitionStyles({
     transition,

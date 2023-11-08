@@ -150,9 +150,7 @@ const CloseButtonRootStyles = cva({
   },
 });
 
-export type CloseButtonRootVariants = RecipeVariantProps<
-  typeof CloseButtonRootStyles
->;
+export type CloseButtonRootVariants = RecipeVariantProps<typeof CloseButtonRootStyles>;
 export type CloseButtonRootProps = HTMLStyledProps<'button'>;
 export const CloseButtonRoot = styled('button', CloseButtonRootStyles);
 CloseButtonRoot.displayName = 'CloseButtonRoot';

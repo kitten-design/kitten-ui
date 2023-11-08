@@ -19,10 +19,7 @@ export const Tag = cpc<'div', TagProps>((props, ref) => {
   return (
     <TagRoot data-tag ref={ref} {...others}>
       {leftSection && <styled.span mr="0.3125rem">{leftSection}</styled.span>}
-      <styled.span
-        textOverflow="ellipsis"
-        overflow="hidden"
-        whiteSpace="nowrap">
+      <styled.span textOverflow="ellipsis" overflow="hidden" whiteSpace="nowrap">
         {children}
       </styled.span>
       {rightSection && <styled.span ml="0.3125rem">{rightSection}</styled.span>}

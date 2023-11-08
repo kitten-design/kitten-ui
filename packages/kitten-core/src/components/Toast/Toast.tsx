@@ -19,16 +19,8 @@ export type Props = Omit<ToastRootProps, 'title'> & {
 export type ToastProps = Props & ToastRootVariants;
 
 export const Toast = cpc<'div', ToastProps>((props, ref) => {
-  const {
-    children,
-    title,
-    icon,
-    loading,
-    withCloseButton,
-    colorPalette,
-    onClose,
-    ...others
-  } = props;
+  const { children, title, icon, loading, withCloseButton, colorPalette, onClose, ...others } =
+    props;
 
   return (
     <ToastRoot
@@ -48,9 +40,7 @@ export const Toast = cpc<'div', ToastProps>((props, ref) => {
         <div data-toast-description>{children}</div>
       </div>
 
-      {withCloseButton && (
-        <CloseButton data-toast-close onClick={onClose} size="md" />
-      )}
+      {withCloseButton && <CloseButton data-toast-close onClick={onClose} size="md" />}
     </ToastRoot>
   );
 });

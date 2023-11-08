@@ -6,10 +6,7 @@ import { Toast } from './Toast';
 import type { ToastConfigWithId } from './Toast.event';
 import { toast } from './Toast.event';
 
-const getAutoClose = (
-  autoClose?: boolean | number,
-  toasterAutoClose?: boolean | number,
-) => {
+const getAutoClose = (autoClose?: boolean | number, toasterAutoClose?: boolean | number) => {
   if (typeof toasterAutoClose === 'number') {
     return toasterAutoClose;
   }
@@ -29,19 +26,8 @@ export interface ToastWrapProps {
   innerRef: React.ForwardedRef<HTMLDivElement>;
 }
 
-export default function ToastWrap({
-  data,
-  state,
-  autoClose,
-  innerRef,
-}: ToastWrapProps) {
-  const {
-    autoClose: toasterAutoClose,
-    message,
-    withCloseButton,
-    style,
-    ...others
-  } = data;
+export default function ToastWrap({ data, state, autoClose, innerRef }: ToastWrapProps) {
+  const { autoClose: toasterAutoClose, message, withCloseButton, style, ...others } = data;
   const autoCloseTimeout = getAutoClose(autoClose, toasterAutoClose);
 
   const hideTimeout = useRef<number>();

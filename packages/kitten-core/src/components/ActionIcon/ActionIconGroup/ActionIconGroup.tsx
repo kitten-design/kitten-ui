@@ -14,20 +14,18 @@ export interface Props extends ActionIconGroupRootProps {
 
 export type ActionIconGroupProps = Props & ActionIconGroupRootVariants;
 
-export const ActionIconGroup = cpc<'div', ActionIconGroupProps>(
-  (props, ref) => {
-    const { children, buttonBorderWidth = 1, style, ...others } = props;
+export const ActionIconGroup = cpc<'div', ActionIconGroupProps>((props, ref) => {
+  const { children, buttonBorderWidth = 1, style, ...others } = props;
 
-    const buttons = getChildrenByType(children, ActionIcon);
+  const buttons = getChildrenByType(children, ActionIcon);
 
-    return (
-      <ActionIconGroupRoot
-        ref={ref}
-        style={{ '--border-width': rem(buttonBorderWidth / 2), ...style }}
-        {...others}>
-        {buttons}
-      </ActionIconGroupRoot>
-    );
-  },
-);
+  return (
+    <ActionIconGroupRoot
+      ref={ref}
+      style={{ '--border-width': rem(buttonBorderWidth / 2), ...style }}
+      {...others}>
+      {buttons}
+    </ActionIconGroupRoot>
+  );
+});
 ActionIconGroup.displayName = 'ButtonActionIconGroup';

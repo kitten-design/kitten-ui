@@ -10,8 +10,7 @@ const resetCss: GlobalStyleObject = {
 export const globalCss: GlobalStyleObject = {
   ...resetCss,
   '[data-button]': {
-    transition:
-      'color 0.07s ease,background-color 0.07s ease,border-color 0.07s ease',
+    transition: 'color 0.07s ease,background-color 0.07s ease,border-color 0.07s ease',
   },
   body: {
     m: 0,

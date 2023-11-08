@@ -33,12 +33,8 @@ export function useTransition({
 }: UseTransitionInput) {
   // TODO: 添加 prefers-reduced-motion
   const reduceMotion = false;
-  const [transitionDuration, setTransitionDuration] = useState(
-    reduceMotion ? 0 : duration,
-  );
-  const [transitionStatus, setStatus] = useState<TransitionStatus>(
-    mounted ? 'entered' : 'exited',
-  );
+  const [transitionDuration, setTransitionDuration] = useState(reduceMotion ? 0 : duration);
+  const [transitionStatus, setStatus] = useState<TransitionStatus>(mounted ? 'entered' : 'exited');
   const timeoutRef = useRef<number>(-1);
 
   const handleStateChange = (shouldMount: boolean) => {
@@ -48,11 +44,7 @@ export function useTransition({
     setStatus(shouldMount ? 'pre-entering' : 'pre-exiting');
     window.clearTimeout(timeoutRef.current);
 
-    const newTransitionDuration = reduceMotion
-      ? 0
-      : shouldMount
-      ? duration
-      : exitDuration;
+    const newTransitionDuration = reduceMotion ? 0 : shouldMount ? duration : exitDuration;
     setTransitionDuration(newTransitionDuration);
 
     if (newTransitionDuration === 0) {

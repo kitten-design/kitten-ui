@@ -11,11 +11,7 @@ export const Container = cpc<'div', ContainerProps>((props, ref) => {
   const { paddingX, ...others } = props;
 
   return (
-    <_Container
-      ref={ref}
-      paddingX={paddingX || { base: 'sm', md: 'md', lg: 'lg' }}
-      {...others}
-    />
+    <_Container ref={ref} paddingX={paddingX || { base: 'sm', md: 'md', lg: 'lg' }} {...others} />
   );
 });
 

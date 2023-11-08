@@ -1,9 +1,6 @@
 export const shadows = {
   xs: {
-    value: [
-      '0 0.0625rem 0.1875rem 0 rgba(0,0,0,.05)',
-      ' 0 0.0625rem 0.125rem rgba(0,0,0,.1)',
-    ],
+    value: ['0 0.0625rem 0.1875rem 0 rgba(0,0,0,.05)', ' 0 0.0625rem 0.125rem rgba(0,0,0,.1)'],
   },
   sm: {
     value: [

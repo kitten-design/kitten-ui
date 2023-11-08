@@ -11,11 +11,7 @@ export const VStack = cpc<'div', VStackProps>((props, ref) => {
   const { grow, css, ...others } = props;
 
   return (
-    <_VStack
-      ref={ref}
-      css={{ '& > *': { flexGrow: grow ? 1 : 'unset' }, ...css }}
-      {...others}
-    />
+    <_VStack ref={ref} css={{ '& > *': { flexGrow: grow ? 1 : 'unset' }, ...css }} {...others} />
   );
 });
 

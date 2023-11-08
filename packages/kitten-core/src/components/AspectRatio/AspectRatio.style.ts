@@ -40,9 +40,7 @@ const AspectRatioRootStyles = cva({
   defaultVariants: {},
 });
 
-export type AspectRatioRootVariants = RecipeVariantProps<
-  typeof AspectRatioRootStyles
->;
+export type AspectRatioRootVariants = RecipeVariantProps<typeof AspectRatioRootStyles>;
 export type AspectRatioRootProps = HTMLStyledProps<'div'>;
 export const AspectRatioRoot = styled('div', AspectRatioRootStyles);
 AspectRatioRoot.displayName = 'AspectRatioRoot';

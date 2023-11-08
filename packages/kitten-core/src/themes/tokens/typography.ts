@@ -57,14 +57,7 @@ export const fonts: Tokens['fonts'] = {
     ],
   },
   serif: {
-    value: [
-      'ui-serif',
-      'Georgia',
-      'Cambria',
-      '"Times New Roman"',
-      'Times',
-      'serif',
-    ],
+    value: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
   },
   mono: {
     value: [

@@ -10,12 +10,7 @@ const paths = [
   'packages/kitten-hooks',
   'packages/kitten-utils',
 ];
-const packages = [
-  '@kitten-ui/hooks',
-  '@kitten-ui/core',
-  '@kitten-ui/utils',
-  '@kitten-ui/dataset',
-];
+const packages = ['@kitten-ui/hooks', '@kitten-ui/core', '@kitten-ui/utils', '@kitten-ui/dataset'];
 const dynamicPackages = ['@kitten-ui/styles'];
 const __dirname = process.cwd();
 

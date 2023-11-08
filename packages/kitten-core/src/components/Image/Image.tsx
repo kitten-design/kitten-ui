@@ -14,28 +14,15 @@ export interface Props extends ImageRootProps {
 export type ImageProps = Props & ImageRootVariants;
 
 export const Image = cpc<'a', ImageProps>((props, ref) => {
-  const { src, fallbackSrc, withPlaceHoler, placeholder, alt, ...others } =
-    props;
+  const { src, fallbackSrc, withPlaceHoler, placeholder, alt, ...others } = props;
   const { loaded, error } = useImage(src);
   if (error) {
     if (fallbackSrc) {
-      return (
-        <ImageRoot
-          data-image-fallback
-          ref={ref}
-          src={fallbackSrc}
-          alt={alt}
-          {...others}
-        />
-      );
+      return <ImageRoot data-image-fallback ref={ref} src={fallbackSrc} alt={alt} {...others} />;
     }
     if (withPlaceHoler) {
       return (
-        <ImageRoot
-          data-image-placeholder
-          title={alt}
-          {...others}
-          {...{ as: 'div' }}>
+        <ImageRoot data-image-placeholder title={alt} {...others} {...{ as: 'div' }}>
           {placeholder || <ImageIcon width="2.5rem" height="2.5rem" />}
         </ImageRoot>
       );

@@ -1,11 +1,5 @@
 import type { Observable } from '@legendapp/state';
-import {
-  isArray,
-  isObject,
-  isString,
-  observable,
-  opaqueObject,
-} from '@legendapp/state';
+import { isArray, isObject, isString, observable, opaqueObject } from '@legendapp/state';
 
 import type { DataSet } from './DataSet';
 
@@ -21,16 +15,11 @@ export type Record<T extends RecordData> = {
   setValue<K extends keyof Observable<T>>(key: K, value?: T[K]): void;
   setValue<K extends keyof Observable<T>>(obj: Partial<T>, _?: K): void;
   getValue<K extends keyof Observable<T>>(key: K): T[K];
-  getValue<K extends keyof Observable<T>, A extends K[]>(
-    keys: A,
-  ): PickValues<T, A>;
+  getValue<K extends keyof Observable<T>, A extends K[]>(keys: A): PickValues<T, A>;
   toData(): T;
 };
 
-export const Record = <T extends RecordData>(
-  data: T,
-  dataSet: Observable<DataSet<T>>,
-) => {
+export const Record = <T extends RecordData>(data: T, dataSet: Observable<DataSet<T>>) => {
   const record: Record<T> = {
     data: observable(data),
     dataSet,

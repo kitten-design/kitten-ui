@@ -7,9 +7,7 @@ const App = () => {
 
   return (
     <Box className={theme} w="100vw" h="100vh" overflow={'auto'} styled>
-      <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-        Toggle theme
-      </Button>
+      <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>Toggle theme</Button>
 
       <br />
       <Tooltip label={'Tooltip'}>
@@ -24,8 +22,7 @@ const App = () => {
           content={
             <Box>
               <Button children="按钮" />
-              <Button
-                onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+              <Button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
                 Toggle theme
               </Button>
             </Box>

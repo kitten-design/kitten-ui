@@ -3,10 +3,7 @@ import Chroma from 'chroma-js';
 
 import { colors } from '../../themes/tokens/colors';
 
-type Color = keyof Omit<
-  typeof colors,
-  'current' | 'black' | 'white' | 'transparent'
->;
+type Color = keyof Omit<typeof colors, 'current' | 'black' | 'white' | 'transparent'>;
 
 const chromaToRgba = (chromaColor: Chroma.Color) => {
   const rgbaArray = chromaColor.rgba();

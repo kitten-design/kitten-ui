@@ -3,10 +3,7 @@ import { cpc, rem } from '@kitten-ui/utils';
 import React from 'react';
 
 import { Button } from '../Button';
-import type {
-  ButtonGroupRootProps,
-  ButtonGroupRootVariants,
-} from './ButtonGroup.style';
+import type { ButtonGroupRootProps, ButtonGroupRootVariants } from './ButtonGroup.style';
 import { ButtonGroupRoot } from './ButtonGroup.style';
 
 export interface Props extends ButtonGroupRootProps {

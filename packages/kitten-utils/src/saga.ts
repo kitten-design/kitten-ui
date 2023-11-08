@@ -35,10 +35,7 @@ type SagaOutput = {
 /**
  * Creates a saga that can listen for events and emit events
  */
-export function saga({
-  eventMap,
-  multiply = true,
-}: SagaInput = {}): SagaOutput {
+export function saga({ eventMap, multiply = true }: SagaInput = {}): SagaOutput {
   const map = eventMap || Object.create(null);
 
   return {

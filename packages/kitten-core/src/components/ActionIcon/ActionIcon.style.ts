@@ -145,9 +145,7 @@ const ActionIconRootStyles = cva({
   },
 });
 
-export type ActionIconRootVariants = RecipeVariantProps<
-  typeof ActionIconRootStyles
->;
+export type ActionIconRootVariants = RecipeVariantProps<typeof ActionIconRootStyles>;
 export type ActionIconRootProps = HTMLStyledProps<'button'>;
 export const ActionIconRoot = styled('button', ActionIconRootStyles);
 ActionIconRoot.displayName = 'ActionIconRoot';

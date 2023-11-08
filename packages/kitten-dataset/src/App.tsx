@@ -15,9 +15,7 @@ export const App = () => {
       onClick={() => {
         console.log(ds.current.get() === ds.records[0].get());
         ds.current.set(
-          ds.records[0].get() === ds.current.get()
-            ? ds.records[1].get()
-            : ds.records[0].get(),
+          ds.records[0].get() === ds.current.get() ? ds.records[1].get() : ds.records[0].get(),
         );
         console.log(ds.toData());
       }}>

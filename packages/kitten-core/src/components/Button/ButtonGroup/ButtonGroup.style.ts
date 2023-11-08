@@ -52,9 +52,7 @@ const ButtonGroupRootStyles = cva({
   },
 });
 
-export type ButtonGroupRootVariants = RecipeVariantProps<
-  typeof ButtonGroupRootStyles
->;
+export type ButtonGroupRootVariants = RecipeVariantProps<typeof ButtonGroupRootStyles>;
 export type ButtonGroupRootProps = HTMLStyledProps<'div'>;
 export const ButtonGroupRoot = styled('div', ButtonGroupRootStyles);
 ButtonGroupRoot.displayName = 'ButtonButtonGroupRoot';

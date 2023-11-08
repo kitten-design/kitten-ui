@@ -78,9 +78,7 @@ export const Tooltip = cpc<'div', TooltipProps>((props, ref) => {
   } = props;
 
   if (!isElement(children)) {
-    throw new Error(
-      'Tooltip component children should be an element or a component',
-    );
+    throw new Error('Tooltip component children should be an element or a component');
   }
 
   const tooltip = useTooltip({
@@ -97,11 +95,7 @@ export const Tooltip = cpc<'div', TooltipProps>((props, ref) => {
     inline: inline!,
   });
 
-  const targetRef = useMergeRefs([
-    tooltip.reference,
-    (children as any).ref,
-    ref,
-  ]);
+  const targetRef = useMergeRefs([tooltip.reference, (children as any).ref, ref]);
 
   return (
     <Fragment>
@@ -111,9 +105,7 @@ export const Tooltip = cpc<'div', TooltipProps>((props, ref) => {
           mounted={!disabled && tooltip.opened}
           {...transitionProps}
           transition={transitionProps!.transition || 'fade'}
-          duration={
-            tooltip.isGroupPhase ? 10 : transitionProps!.duration ?? 100
-          }>
+          duration={tooltip.isGroupPhase ? 10 : transitionProps!.duration ?? 100}>
           {(transitionStyles) => (
             <TooltipRoot
               ref={ref}

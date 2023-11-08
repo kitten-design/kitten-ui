@@ -81,9 +81,7 @@ export const Popover = cpc<'div', PopoverProps>((props, ref) => {
   } = props;
 
   if (!isElement(children)) {
-    throw new Error(
-      'Popover component children should be an element or a component',
-    );
+    throw new Error('Popover component children should be an element or a component');
   }
 
   const popover = usePopover({
@@ -100,11 +98,7 @@ export const Popover = cpc<'div', PopoverProps>((props, ref) => {
     inline: inline!,
   });
 
-  const targetRef = useMergeRefs([
-    popover.reference,
-    (children as any).ref,
-    ref,
-  ]);
+  const targetRef = useMergeRefs([popover.reference, (children as any).ref, ref]);
 
   return (
     <Fragment>

@@ -11,11 +11,7 @@ export const Stack = cpc<'div', StackProps>((props, ref) => {
   const { grow, css, ...others } = props;
 
   return (
-    <_Stack
-      ref={ref}
-      css={{ '& > *': { flexGrow: grow ? 1 : 'unset' }, ...css }}
-      {...others}
-    />
+    <_Stack ref={ref} css={{ '& > *': { flexGrow: grow ? 1 : 'unset' }, ...css }} {...others} />
   );
 });
 

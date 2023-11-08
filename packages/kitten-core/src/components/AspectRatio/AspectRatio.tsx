@@ -1,10 +1,7 @@
 import { cpc } from '@kitten-ui/utils';
 import React from 'react';
 
-import type {
-  AspectRatioRootProps,
-  AspectRatioRootVariants,
-} from './AspectRatio.style';
+import type { AspectRatioRootProps, AspectRatioRootVariants } from './AspectRatio.style';
 import { AspectRatioRoot } from './AspectRatio.style';
 
 export interface Props extends AspectRatioRootProps {

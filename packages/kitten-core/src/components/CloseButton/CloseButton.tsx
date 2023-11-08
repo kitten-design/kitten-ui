@@ -2,10 +2,7 @@ import { cpc } from '@kitten-ui/utils';
 import React, { Fragment } from 'react';
 
 import { Loader } from '../Loader';
-import type {
-  CloseButtonRootProps,
-  CloseButtonRootVariants,
-} from './CloseButton.style';
+import type { CloseButtonRootProps, CloseButtonRootVariants } from './CloseButton.style';
 import { CloseButtonRoot } from './CloseButton.style';
 import { CloseIcon } from './CloseIcon';
 
@@ -43,9 +40,7 @@ export const CloseButton = cpc<'button', CloseButtonProps>((props, ref) => {
                 />
               )}
               {variant === 'default' && (
-                <Loader
-                  css={{ '--loader-color': 'colors.Button.default.color' }}
-                />
+                <Loader css={{ '--loader-color': 'colors.Button.default.color' }} />
               )}
             </Fragment>
           );

@@ -28,16 +28,8 @@ export const GridCol = cpc<'div', GridColProps>((props, ref) => {
       data-grid-col
       ref={ref}
       style={{
-        gridColumn: span
-          ? `span ${span}`
-          : gridColumnStart || gridColumnEnd
-          ? undefined
-          : 'auto',
-        gridRow: rowSpan
-          ? `span ${rowSpan}`
-          : gridRowStart || gridRowEnd
-          ? undefined
-          : 'auto',
+        gridColumn: span ? `span ${span}` : gridColumnStart || gridColumnEnd ? undefined : 'auto',
+        gridRow: rowSpan ? `span ${rowSpan}` : gridRowStart || gridRowEnd ? undefined : 'auto',
         ...style,
       }}
       {...{ gridRowStart, gridRowEnd, gridColumnStart, gridColumnEnd }}

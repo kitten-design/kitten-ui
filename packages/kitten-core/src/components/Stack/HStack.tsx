@@ -11,11 +11,7 @@ export const HStack = cpc<'div', HStackProps>((props, ref) => {
   const { grow, css, ...others } = props;
 
   return (
-    <_HStack
-      ref={ref}
-      css={{ '& > *': { flexGrow: grow ? 1 : 'unset' }, ...css }}
-      {...others}
-    />
+    <_HStack ref={ref} css={{ '& > *': { flexGrow: grow ? 1 : 'unset' }, ...css }} {...others} />
   );
 });
 

@@ -64,10 +64,7 @@ export function useTooltip(settings: UseTooltip) {
     refs,
     update,
     placement,
-    middlewareData: {
-      arrow: { x: arrowX, y: arrowY } = {},
-      hide: { referenceHidden } = {},
-    },
+    middlewareData: { arrow: { x: arrowX, y: arrowY } = {}, hide: { referenceHidden } = {} },
   } = useFloating({
     placement: settings.position,
     open: opened,
@@ -86,9 +83,7 @@ export function useTooltip(settings: UseTooltip) {
     useHover(context, {
       enabled: !!settings.events.hover,
       handleClose: safePolygon({ buffer: 1 }),
-      delay: withinGroup
-        ? groupDelay
-        : { open: settings.openDelay, close: settings.closeDelay },
+      delay: withinGroup ? groupDelay : { open: settings.openDelay, close: settings.closeDelay },
       mouseOnly: !settings.events.touch,
     }),
     useFocus(context, { enabled: !!settings.events.focus }),

@@ -12,13 +12,6 @@ export type TextProps = Props & TextRootVariants;
 
 export const Text = cpc<'p', TextProps>((props, ref) => {
   const { inline, ...others } = props;
-  return (
-    <TextRoot
-      data-text
-      ref={ref}
-      {...{ as: inline ? 'span' : 'p' }}
-      {...others}
-    />
-  );
+  return <TextRoot data-text ref={ref} {...{ as: inline ? 'span' : 'p' }} {...others} />;
 });
 Text.displayName = 'Text';

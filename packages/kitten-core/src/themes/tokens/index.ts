@@ -5,13 +5,7 @@ import { borders } from './borders';
 import { colors } from './colors';
 import { shadows } from './shadows';
 import { sizes } from './sizes';
-import {
-  fonts,
-  fontSizes,
-  fontWeights,
-  letterSpacings,
-  lineHeights,
-} from './typography';
+import { fonts, fontSizes, fontWeights, letterSpacings, lineHeights } from './typography';
 
 const defineTokens = <T extends Tokens>(v: T) => v;
 

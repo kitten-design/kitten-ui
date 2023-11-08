@@ -1,9 +1,5 @@
 import { useIsomorphicEffect } from '@kitten-ui/hooks';
-import type {
-  ComponentPropsWithoutRef,
-  MutableRefObject,
-  ReactNode,
-} from 'react';
+import type { ComponentPropsWithoutRef, MutableRefObject, ReactNode } from 'react';
 import React, { useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -30,9 +26,7 @@ export const Portal = (props: PortalProps) => {
 
     if (target) {
       ref.current =
-        typeof target === 'string'
-          ? document.querySelector<HTMLElement>(target)!
-          : target;
+        typeof target === 'string' ? document.querySelector<HTMLElement>(target)! : target;
     }
 
     if (!ref.current) {

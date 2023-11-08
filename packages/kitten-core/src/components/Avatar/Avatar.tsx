@@ -18,31 +18,23 @@ export interface Props extends AvatarRootProps {
 
 export type AvatarProps = Props & AvatarRootVariants;
 
-export const Avatar = cpc<'div', AvatarProps, { Group: typeof AvatarGroup }>(
-  (props, ref) => {
-    const { src, alt, label, children, imageProps, ...others } = props;
+export const Avatar = cpc<'div', AvatarProps, { Group: typeof AvatarGroup }>((props, ref) => {
+  const { src, alt, label, children, imageProps, ...others } = props;
 
-    const { error } = useImage(src);
+  const { error } = useImage(src);
 
-    return (
-      <AvatarRoot
-        data-avatar
-        data-avatar-with-img={!!error}
-        ref={ref}
-        {...others}>
-        {error ? (
-          <div className={AvatarPlaceholder} title={alt}>
-            {getFirstChar(label) || children || (
-              <AvatarIcon data-avatar-placeholder-icon />
-            )}
-          </div>
-        ) : (
-          <img {...imageProps} className={AvatarImage} src={src!} alt={alt} />
-        )}
-      </AvatarRoot>
-    );
-  },
-);
+  return (
+    <AvatarRoot data-avatar data-avatar-with-img={!!error} ref={ref} {...others}>
+      {error ? (
+        <div className={AvatarPlaceholder} title={alt}>
+          {getFirstChar(label) || children || <AvatarIcon data-avatar-placeholder-icon />}
+        </div>
+      ) : (
+        <img {...imageProps} className={AvatarImage} src={src!} alt={alt} />
+      )}
+    </AvatarRoot>
+  );
+});
 Avatar.displayName = 'Avatar';
 Avatar.defaultProps = {
   rounded: 'sm',

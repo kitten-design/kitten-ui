@@ -17,16 +17,7 @@ interface Props extends Omit<AlertRootProps, 'title'> {
 export type AlertProps = Props & AlertRootVariants;
 
 export const Alert = cpc<'div', AlertProps>((props, ref) => {
-  const {
-    id,
-    children,
-    icon,
-    title,
-    withCloseButton,
-    onClose,
-    colorPalette,
-    ...others
-  } = props;
+  const { id, children, icon, title, withCloseButton, onClose, colorPalette, ...others } = props;
 
   const rootId = useId(id);
   const titleId = (title && `${rootId}-title`) || undefined;

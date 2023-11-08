@@ -52,9 +52,7 @@ const ActionIconGroupRootStyles = cva({
   },
 });
 
-export type ActionIconGroupRootVariants = RecipeVariantProps<
-  typeof ActionIconGroupRootStyles
->;
+export type ActionIconGroupRootVariants = RecipeVariantProps<typeof ActionIconGroupRootStyles>;
 export type ActionIconGroupRootProps = HTMLStyledProps<'div'>;
 export const ActionIconGroupRoot = styled('div', ActionIconGroupRootStyles);
 ActionIconGroupRoot.displayName = 'ButtonActionIconGroupRoot';

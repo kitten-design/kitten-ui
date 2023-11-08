@@ -100,10 +100,7 @@ export const PopoverArrow = React.forwardRef(function PopoverArrow(
         pointerEvents: 'none',
         [xOffsetProp]: arrowX,
         [yOffsetProp]: arrowY,
-        [side]:
-          isVerticalSide || isCustomShape
-            ? '100%'
-            : `calc(100% - ${strokeWidth / 2}px)`,
+        [side]: isVerticalSide || isCustomShape ? '100%' : `calc(100% - ${strokeWidth / 2}px)`,
         transform: `${rotation}${transform ?? ''}`,
         ...restStyle,
       }}>
@@ -119,10 +116,7 @@ export const PopoverArrow = React.forwardRef(function PopoverArrow(
       )}
       {/* In Firefox, for left/right placements there's a ~0.5px gap where the
       border can show through. Adding a stroke on the fill removes it. */}
-      <path
-        stroke={strokeWidth && !d ? rest.fill : 'none'}
-        d={dValueOverride}
-      />
+      <path stroke={strokeWidth && !d ? rest.fill : 'none'} d={dValueOverride} />
       {/* Assumes the border-width of the floating element matches the 
       stroke. */}
       <clipPath id={clipPathId}>

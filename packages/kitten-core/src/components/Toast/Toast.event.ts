@@ -37,9 +37,7 @@ export const toast = (options: string | ToastConfig) => {
     return uuid;
   } else {
     if (options.id) {
-      const record = toastStore.records
-        .get()
-        .find((v) => v.getValue('id') === options.id);
+      const record = toastStore.records.get().find((v) => v.getValue('id') === options.id);
       if (record) {
         record?.setValue(options);
         return options.id;
@@ -52,17 +50,13 @@ export const toast = (options: string | ToastConfig) => {
 };
 
 toast.hide = (id: string) => {
-  const index = toastStore.records
-    .get()
-    .findIndex((v) => v.getValue('id') === id);
+  const index = toastStore.records.get().findIndex((v) => v.getValue('id') === id);
 
   toastStore.records.splice(index >>> 0, 1);
 };
 
 toast.update = (options: ToastConfigWithId) => {
-  const record = toastStore.records
-    .get()
-    .find((v) => v.getValue('id') === options.id);
+  const record = toastStore.records.get().find((v) => v.getValue('id') === options.id);
   record?.setValue(options);
 };
 

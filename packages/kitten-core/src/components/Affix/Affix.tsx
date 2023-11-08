@@ -18,10 +18,7 @@ export const Affix = cpc<'div', AffixProps>((props, ref) => {
   const { portalProps, withinPortal, target, ...others } = props;
 
   return (
-    <OptionalPortal
-      {...portalProps}
-      withinPortal={withinPortal}
-      target={target}>
+    <OptionalPortal {...portalProps} withinPortal={withinPortal} target={target}>
       <AffixRoot data-affix ref={ref} {...others} />
     </OptionalPortal>
   );

@@ -22,14 +22,7 @@ export type ToasterProps = Props & ToasterRootVariants;
 
 export const Toaster = observer(
   cpc<'div', ToasterProps>((props, ref) => {
-    const {
-      duration: _duration,
-      autoClose,
-      containerWidth,
-      maxHeight,
-      style,
-      ...others
-    } = props;
+    const { duration: _duration, autoClose, containerWidth, maxHeight, style, ...others } = props;
     const refs = useRef<Record<string, HTMLDivElement | null>>({});
     const data = toastStore.toData();
     const reduceMotion = false;
@@ -80,22 +73,12 @@ export const Toaster = observer(
             '--toaster-max-height': maxHeight,
           }}
           {...others}>
-          <TransitionGroup data-toaster-top-right>
-            {render('top-right')}
-          </TransitionGroup>
+          <TransitionGroup data-toaster-top-right>{render('top-right')}</TransitionGroup>
           <TransitionGroup data-toaster-top>{render('top')}</TransitionGroup>
-          <TransitionGroup data-toaster-top-left>
-            {render('top-left')}
-          </TransitionGroup>
-          <TransitionGroup data-toaster-bottom-right>
-            {render('bottom-right')}
-          </TransitionGroup>
-          <TransitionGroup data-toaster-bottom>
-            {render('bottom')}
-          </TransitionGroup>
-          <TransitionGroup data-toaster-bottom-left>
-            {render('bottom-left')}
-          </TransitionGroup>
+          <TransitionGroup data-toaster-top-left>{render('top-left')}</TransitionGroup>
+          <TransitionGroup data-toaster-bottom-right>{render('bottom-right')}</TransitionGroup>
+          <TransitionGroup data-toaster-bottom>{render('bottom')}</TransitionGroup>
+          <TransitionGroup data-toaster-bottom-left>{render('bottom-left')}</TransitionGroup>
         </ToasterRoot>
       </Portal>
     );

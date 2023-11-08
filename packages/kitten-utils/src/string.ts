@@ -9,11 +9,7 @@ export function getFirstChar(str: string = ''): string {
   if (firstCharCode < 55296 || firstCharCode > 57343) {
     // Not an emoji or surrogate pair
     return str.charAt(0);
-  } else if (
-    firstCharCode >= 55296 &&
-    firstCharCode <= 56319 &&
-    str.length > 1
-  ) {
+  } else if (firstCharCode >= 55296 && firstCharCode <= 56319 && str.length > 1) {
     // High surrogate with subsequent low surrogate
     const secondCharCode = str.charCodeAt(1);
     if (secondCharCode >= 56320 && secondCharCode <= 57343) {

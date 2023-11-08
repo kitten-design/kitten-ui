@@ -55,10 +55,7 @@ export function usePopover(settings: UsePopover) {
     refs,
     update,
     placement,
-    middlewareData: {
-      arrow: { x: arrowX, y: arrowY } = {},
-      hide: { referenceHidden } = {},
-    },
+    middlewareData: { arrow: { x: arrowX, y: arrowY } = {}, hide: { referenceHidden } = {} },
   } = useFloating({
     placement: settings.position,
     open: opened,

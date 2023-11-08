@@ -15,14 +15,6 @@ export const Title = cpc<'h1', TitleProps>((props, ref) => {
     return null;
   }
 
-  return (
-    <TitleRoot
-      data-title
-      ref={ref}
-      order={order}
-      {...{ as: `h${order}` }}
-      {...others}
-    />
-  );
+  return <TitleRoot data-title ref={ref} order={order} {...{ as: `h${order}` }} {...others} />;
 });
 Title.displayName = 'Title';
