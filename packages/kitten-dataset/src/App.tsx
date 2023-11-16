@@ -8,7 +8,7 @@ const ds = DataSet([
 ]);
 
 export const App = () => {
-  const data = ds.current.use();
+  const data = ds.current;
 
   return (
     <div
